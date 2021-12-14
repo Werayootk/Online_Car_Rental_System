@@ -31,3 +31,9 @@ https://material-ui.com/store/collections/free-react-dashboard/
 ```
 https://flatlogic.com/blog/top-5-free-awesome-react-js-material-ui-admin-dashboard-templates/
 ```
+
+```
+https://www.figma.com/file/aERHzwn8W7b8NDgPgAfQim/MUI-for-Figma-v5.0.1-(Free)-(Community)?node-id=4213%3A1335
+https://www.figma.com/file/BEGWBUYuO5MmrgzgeIvfqd/PREVIEW---MUI-for-Figma-v5.0.0-(Light)?node-id=4662%3A14
+https://www.figma.com/file/Wr4xtMF0R6ibWxQ0xseI8s/Devias-Dashboard-Design-Library-Kit-(Community)?node-id=0%3A1
+```
