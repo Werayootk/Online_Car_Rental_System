@@ -37,3 +37,15 @@ https://www.figma.com/file/aERHzwn8W7b8NDgPgAfQim/MUI-for-Figma-v5.0.1-(Free)-(C
 https://www.figma.com/file/BEGWBUYuO5MmrgzgeIvfqd/PREVIEW---MUI-for-Figma-v5.0.0-(Light)?node-id=4662%3A14
 https://www.figma.com/file/Wr4xtMF0R6ibWxQ0xseI8s/Devias-Dashboard-Design-Library-Kit-(Community)?node-id=0%3A1
 ```
+
+```
+https://www.figma.com/file/vJb3YYg7U9GSyMiC9zgHZB/%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%AD%E0%B8%94?node-id=1263%3A4247https://www.figma.com/file/vJb3YYg7U9GSyMiC9zgHZB/%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%AD%E0%B8%94?node-id=1263%3A4247
+```
+
+```
+https://www.figma.com/file/h80Zo0n9HVvzC3te0aciAh/Ant-Design-System-for-Figma-2.0-(Free-Demo)-(Community)?node-id=186%3A5958
+```
+
+```
+https://ant.design/components/icon/
+```
