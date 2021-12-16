@@ -54,3 +54,13 @@ https://ant.design/components/icon/
 ```
 https://calculator.aws/#/estimate?id=65c743a10ab1e0950834aa6116d5c8224c115dee
 ```
+
+# other
+```
+https://www.youtube.com/watch?v=TsVO14-lqp0
+https://www.youtube.com/watch?v=PkF_pk_nS-c
+https://dev.to/kevin_odongo35/aws-rds-mysql-express-vue-and-node-jfj
+https://github.com/Werayootk/nestjs-prisma-starter
+https://github.com/Werayootk/tutorial-blog-backend
+https://github.com/Jerga99/bwm-ng/blob/master/server/services/image-upload.js
+```
