@@ -49,3 +49,8 @@ https://www.figma.com/file/h80Zo0n9HVvzC3te0aciAh/Ant-Design-System-for-Figma-2.
 ```
 https://ant.design/components/icon/
 ```
+
+# AWS Cal
+```
+https://calculator.aws/#/estimate?id=65c743a10ab1e0950834aa6116d5c8224c115dee
+```
