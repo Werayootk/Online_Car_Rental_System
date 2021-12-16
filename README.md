@@ -64,3 +64,9 @@ https://github.com/Werayootk/nestjs-prisma-starter
 https://github.com/Werayootk/tutorial-blog-backend
 https://github.com/Jerga99/bwm-ng/blob/master/server/services/image-upload.js
 ```
+
+# Chat
+```
+https://github.com/Werayootk/chatapplication
+https://www.section.io/engineering-education/creating-a-real-time-chat-app-with-react-socket-io-with-e2e-encryption/
+```
