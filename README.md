@@ -14,7 +14,7 @@ https://www.figma.com/file/M1FeTggX8Lbf4fcCnLMFdn/Online_Car_Rental_System?node-
 
 # ER Diagram and Schema
 ```
-Please see file Draw.io
+https://app.diagrams.net/#HWerayootk%2FOnline_Car_Rental_System%2Fmain%2FOnline_Car_Rental_System.drawio
 ```
 
 # Lib
