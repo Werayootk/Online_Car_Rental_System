@@ -1,0 +1,90 @@
+.SideMenu {
+    position: absolute;
+    width: 258px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  
+    /* Black l White/White */
+    background: #ffffff;
+  }
+  .headerSidebar {
+    position: absolute;
+    width: 256px;
+    height: 146px;
+    left: 0px;
+    top: 0px;
+  }
+  .sidebarLogo {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    left: 57px;
+    top: 7px;
+  
+    background: url(../../assets/images/logo-car.png) no-repeat center
+      center / cover;
+    background-size: 188px 188px;
+  }
+  
+  .menubar {
+    position: absolute;
+    width: 256px;
+    height: auto;
+    left: 0px;
+    top: 146px;
+  }
+  
+  .menu-item {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+  
+    position: static;
+    width: 256px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+  
+    /* Black l White/White */
+  
+    background: #ffffff;
+  
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 0px;
+  }
+  .menu-item:hover,
+  .menu-item:active {
+    background: #ebf8fe;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ant-layout-sider {
+      flex: 0 0 60px !important;
+      max-width: 60px !important;
+      min-width: 60px !important;
+      width: 60px !important;
+    }
+    .SideMenu {
+      width: 60px;
+    }
+    .menubar {
+      width: 60px;
+      top: 60px;
+    }
+    .headerSidebar {
+      width: 60px;
+      height: 60px;
+    }
+    .sidebarLogo {
+      position: static;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  

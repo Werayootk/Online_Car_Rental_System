@@ -1,0 +1,75 @@
+$primary-color:  #2B3E92;
+$secondary-color:  #fff;
+$border-radius: 8px;
+
+.clickable {
+  cursor: pointer;
+}
+
+.bg-theme-blue {
+  background-color: $primary-color;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-blue {
+  padding: 16px 8.5px;
+  background-color: $primary-color;
+  font-size: 14px;
+  color: $secondary-color;
+  border-radius: $border-radius;
+  border: 1px solid $primary-color;
+  font-weight: bold;
+}
+
+.btn-white {
+  padding: 16px 17px;
+  border: 1px solid $primary-color;
+  font-size: 14px;
+  color: $primary-color;
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+  font-weight: bold;
+}
+
+.child-no-after > *::after {
+  content: none !important;
+}
+
+.bg-theme-primary {
+  background: $primary-color !important;
+}
+
+.bg-theme-secondary {
+  background: $secondary-color !important;
+}
+
+.border-theme-primary {
+  border: 1px solid $primary-color !important;
+  border-radius: $border-radius !important;
+}
+
+.color-theme-primary {
+  color: $primary-color !important;
+}
+
+.color-theme-secondary {
+  color: $secondary-color !important;
+}
+
+.border-radius {
+  border-radius: $border-radius !important;
+}
+
+.text-kanit {
+  font-family: "Kanit", sans-serif !important;
+}
+
+
+

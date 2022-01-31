@@ -1,0 +1,13 @@
+.main-container {
+    padding: 20px;
+    margin-left: 20px;
+    min-height: 100vh;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main-container {
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+  
