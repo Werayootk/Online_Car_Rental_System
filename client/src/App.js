@@ -10,6 +10,8 @@ import Customer from './pages/Admin/Customer/Customer';
 import Order from './pages/Admin/Order/Order';
 import Management from './pages/Admin/Management/Management';
 import Cancel from './pages/Admin/Cancel/Cancel';
+//Client Pages
+import Main from './pages/Client/Main/Main';
 
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
@@ -20,6 +22,18 @@ function App() {
       <Route
         exact
         path="/"
+        render={() => {
+          return <Redirect to="/main" />;
+        }}
+      />
+      <Route
+        exact
+        path="/main"
+        component={Main}
+      />
+      <Route
+        exact
+        path="/admin"
         render={() => {
           return <Redirect to="/dashboard" />;
         }}
