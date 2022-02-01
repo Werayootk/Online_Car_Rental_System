@@ -12,6 +12,7 @@ import Management from './pages/Admin/Management/Management';
 import Cancel from './pages/Admin/Cancel/Cancel';
 //Client Pages
 import Main from './pages/Client/Main/Main';
+import Edit from "./pages/Client/Edit/Edit";
 
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
@@ -29,7 +30,7 @@ function App() {
       <Route
         exact
         path="/main"
-        component={Main}
+        component={Edit}
       />
       <Route
         exact

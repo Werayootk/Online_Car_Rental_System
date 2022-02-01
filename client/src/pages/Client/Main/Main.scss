@@ -1,42 +1,3 @@
-.Main {
-  overflow: hidden;
-}
-.Main__help {
-  padding: 10px 15px;
-  text-align: center;
-  display: block;
-}
-
-.Main__help:hover {
-  color: #718daa;
-}
-
-.Main__login {
-  padding: 10px 15px;
-  text-align: center;
-  display: block;
-}
-
-.Main__login:hover {
-  color: #718daa;
-}
-
-.Main__header {
-  width: 256px;
-  height: 146px;
-  left: 0px;
-  top: 0px;
-}
-.Main__Logo {
-  width: 132px;
-  height: 132px;
-  left: 57px;
-  top: 7px;
-  background: url(../../../assets/images/logo-car.png) no-repeat center center /
-    cover;
-  background-size: 188px 188px;
-}
-
 .mainSection {
   position: relative; 
   z-index: 1;
@@ -152,23 +113,3 @@
     -webkit-font-smoothing: antialiased;
   }
 
-/* ================================= 
-  Media Queries
-==================================== */
-@media (min-width: 769px) {
-  .Main,
-  .Main__nav {
-    display: flex;
-  }
-  .Main {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1025px) {
-  .Main {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
