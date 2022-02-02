@@ -1,43 +1,36 @@
 import React from "react";
-import './HeaderClient.scss';
+import "./HeaderClient.scss";
 import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.min.css";
 import { HashRouter as Router, Link, NavLink } from "react-router-dom";
 
 const HeaderClient = () => {
-    const menu = (
-        <Menu>
-          <Menu.Item>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.antgroup.com"
-            >
-              1st menu item
-            </a>
-          </Menu.Item>
-          <Menu.Item icon={<DownOutlined />} disabled>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.aliyun.com"
-            >
-              2nd menu item (disabled)
-            </a>
-          </Menu.Item>
-          <Menu.Item disabled>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.luohanacademy.com"
-            >
-              3rd menu item (disabled)
-            </a>
-          </Menu.Item>
-          <Menu.Item danger>a danger item</Menu.Item>
-        </Menu>
-      );
+  const menu = (
+    <Menu>
+      <Menu.Item>
+        <Link to="/profile">แก้ไขข้อมูลส่วนตัว</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="/editpassword">แก้ไขรหัสผ่าน</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="/booking">การเช่ารถของฉัน</Link>
+      </Menu.Item>
+    </Menu>
+  );
+
+  const menuHelp = (
+    <Menu>
+      <Menu.Item>
+        <Link to="/">วิธีการจอง</Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to="/">เอกสารเช่ารถ</Link>
+      </Menu.Item>
+    </Menu>
+  );
+
   return (
     <nav class="Main navbar navbar-expand-lg collapsed shadow">
       <div className="Main__header">
@@ -47,7 +40,7 @@ const HeaderClient = () => {
       </div>
       <div class="Main__nav">
         <div className="Main__help">
-          <Dropdown overlay={menu}>
+          <Dropdown overlay={menuHelp}>
             <a
               className="ant-dropdown-link"
               onClick={(e) => e.preventDefault()}

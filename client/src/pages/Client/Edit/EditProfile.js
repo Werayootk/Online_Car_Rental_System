@@ -3,9 +3,9 @@ import './EditProfile.scss';
 
 const EditProfile = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            EditProfile
+        </>
     );
 }
 

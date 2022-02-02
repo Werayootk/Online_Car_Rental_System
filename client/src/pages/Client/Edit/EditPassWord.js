@@ -3,9 +3,9 @@ import './EditPassWord.scss';
 
 const EditPassWord = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            EditPassWord
+        </>
     );
 }
 

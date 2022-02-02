@@ -5,7 +5,7 @@ const Edit = () => {
 
   return (
     <>
-         
+         Edit
     </>
   );
 };

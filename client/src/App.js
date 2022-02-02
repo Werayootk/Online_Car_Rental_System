@@ -12,6 +12,9 @@ import Management from './pages/Admin/Management/Management';
 import Cancel from './pages/Admin/Cancel/Cancel';
 //Client Pages
 import Main from './pages/Client/Main/Main';
+import EditProfile from './pages/Client/Edit/EditProfile';
+import EditPassWord from './pages/Client/Edit/EditPassWord';
+import EditBooking from './pages/Client/Edit/EditBooking';
 
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
@@ -30,6 +33,21 @@ function App() {
         exact
         path="/main"
         component={Main}
+      />
+      <MainLayoutRoute
+        exact
+        path="/profile"
+        component={EditProfile}
+      />
+      <MainLayoutRoute
+        exact
+        path="/editpassword"
+        component={EditPassWord}
+      />
+      <MainLayoutRoute
+        exact
+        path="/booking"
+        component={EditBooking}
       />
       <Route
         exact
