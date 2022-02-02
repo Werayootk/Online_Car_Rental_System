@@ -1,11 +1,11 @@
 import React from "react";
-import './Header.scss';
+import './HeaderClient.scss';
 import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.min.css";
 import { HashRouter as Router, Link, NavLink } from "react-router-dom";
 
-const Header = () => {
+const HeaderClient = () => {
     const menu = (
         <Menu>
           <Menu.Item>
@@ -39,7 +39,7 @@ const Header = () => {
         </Menu>
       );
   return (
-    <nav class="Main">
+    <nav class="Main navbar navbar-expand-lg collapsed shadow">
       <div className="Main__header">
         <Link to="/">
           <div className="Main__Logo"></div>
@@ -73,4 +73,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderClient;

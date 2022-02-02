@@ -1,13 +1,7 @@
 import React from "react";
-
 import "./Main.scss";
-import { HashRouter as Router, Link, NavLink } from "react-router-dom";
 import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
-import { DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.min.css";
-
-import Footer from "../../../components/Footer/Footer";
-import Header from "../../../components/Header/Header";
 
 const { Search } = Input;
 const { RangePicker } = DatePicker;
@@ -15,8 +9,7 @@ const onSearch = (value) => console.log(value);
 
 const Main = () => {
   return (
-    <div>
-      <Header />
+    <>
       <section className="mainSection">
         <section className="mainSectionBG">
           <section class="main__banner_container">
@@ -57,8 +50,7 @@ const Main = () => {
           </section>
         </section>
       </section>
-      <Footer />
-    </div>
+    </>
   );
 };
 

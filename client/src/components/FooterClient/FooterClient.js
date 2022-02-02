@@ -1,7 +1,7 @@
 import React from "react";
-import './Footer.scss';
+import './FooterClient.scss';
 
-const Footer = () => {
+const FooterClient = () => {
     return (
         <div class="footer-dark">
         <footer>
@@ -36,4 +36,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FooterClient;

@@ -3,7 +3,7 @@ import 'antd/dist/antd.min.css';
 import './styles/main.scss';
 
 import DashboardLayoutRoute from './components/DashboardLayout/DashboardLayout';
-
+import MainLayoutRoute from "./components/MainLayout/MainLayout";
 //Admin Pages
 import Dashboard from './pages/Admin/Dashboard/Dashboard';
 import Customer from './pages/Admin/Customer/Customer';
@@ -12,7 +12,6 @@ import Management from './pages/Admin/Management/Management';
 import Cancel from './pages/Admin/Cancel/Cancel';
 //Client Pages
 import Main from './pages/Client/Main/Main';
-import Edit from "./pages/Client/Edit/Edit";
 
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
@@ -27,10 +26,10 @@ function App() {
           return <Redirect to="/main" />;
         }}
       />
-      <Route
+      <MainLayoutRoute
         exact
         path="/main"
-        component={Edit}
+        component={Main}
       />
       <Route
         exact

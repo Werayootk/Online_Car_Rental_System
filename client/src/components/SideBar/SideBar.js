@@ -4,7 +4,7 @@ import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import { MenuList } from '../../routes/router';
 import { useLocation } from 'react-router-dom';
-
+const { Header, Footer, Sider, Content } = Layout;
 const menuList = MenuList;
 
 const SideBar = () => {
