@@ -3,12 +3,14 @@
   background: none;
   padding: 0px 0px;
   top: 0px;
-
+  z-index: 12;
 }
 .main-container {
   padding: 0px 0px;
   background: none;
   margin: 0 0;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-main {

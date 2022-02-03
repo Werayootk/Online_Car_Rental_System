@@ -8,11 +8,11 @@ import './MainLayout.scss';
 
 const { Header, Footer, Sider, Content } = Layout;
 
-const MainLayout = ({ children, ...rest }) => {
+export const MainLayout = ({ children, ...rest }) => {
     return (
         <Layout>
-            <Header className="header-nav" style={{zIndex: '12'}}><HeaderClient /></Header>
-            <Content className="main-container" style={{position: 'relative', zIndex: '1'}}>
+            <Header className="header-nav"><HeaderClient /></Header>
+            <Content className="main-container">
                 {children}
             </Content>
         <Footer className="footer-main"><FooterClient /></Footer>

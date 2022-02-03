@@ -36,7 +36,9 @@ const Main = () => {
                   </div>
                   <div className="main_search_date">
                     {/*Input Component calandar */}
-                    <RangePicker showTime size={"large"} />
+                    <RangePicker showTime size={"large"}
+                      placeholder={["วันที่และเวลารับรถ","วันที่และเวลาคืนรถ"]}
+                    />
                   </div>
                   <div className="main_search_button">
                     {/*Input Component Button submit */}

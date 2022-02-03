@@ -3,9 +3,9 @@ import './EditBooking.scss';
 
 const EditBooking = () => {
     return (
-        <>
+        <div className="editbook">
             EditBooking
-        </>
+        </div>
     );
 }
 
