@@ -1,13 +1,7 @@
 .Main {
-    padding: 0 0;
-    margin: 0 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1030;
-    display: block;
-
-  }
+  background-color: #ffff;
+}
+  
   .Main__help {
     padding: 10px 15px;
     text-align: center;
@@ -62,5 +56,6 @@
     .Main {
       flex-direction: row;
       justify-content: space-between;
+      height: 65px;
     }
   }

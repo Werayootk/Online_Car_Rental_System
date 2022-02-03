@@ -1,0 +1,28 @@
+.header-nav {
+  position: sticky;
+  background: none;
+  padding: 0px 0px;
+  top: 0px;
+
+}
+.main-container {
+  padding: 0px 0px;
+  background: none;
+  margin: 0 0;
+}
+
+.footer-main {
+  background: none;
+  padding: 0px 0px;
+}
+
+
+/* ================================= 
+Media Queries
+==================================== */
+@media screen and (max-width: 768px) {
+  .main-container {
+    margin: 0 0;
+    padding: 0px;
+  }
+}

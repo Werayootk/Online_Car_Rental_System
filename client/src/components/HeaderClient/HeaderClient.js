@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{ useState, useEffect }from "react";
 import "./HeaderClient.scss";
 import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
@@ -6,6 +6,7 @@ import "antd/dist/antd.min.css";
 import { HashRouter as Router, Link, NavLink } from "react-router-dom";
 
 const HeaderClient = () => {
+
   const menu = (
     <Menu>
       <Menu.Item>
@@ -32,6 +33,7 @@ const HeaderClient = () => {
   );
 
   return (
+  
     <nav class="Main navbar navbar-expand-lg collapsed shadow">
       <div className="Main__header">
         <Link to="/">

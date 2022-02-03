@@ -11,11 +11,11 @@ const { Header, Footer, Sider, Content } = Layout;
 const MainLayout = ({ children, ...rest }) => {
     return (
         <Layout>
-        <Header style={{ background: 'none',padding: '0px 0px' }}><HeaderClient /></Header>
-            <Content className="site-layout-background main-container">
+            <Header className="header-nav" style={{zIndex: '12'}}><HeaderClient /></Header>
+            <Content className="main-container" style={{position: 'relative', zIndex: '1'}}>
                 {children}
             </Content>
-        <Footer style={{ background: 'none', padding: '0px 0px' }}><FooterClient /></Footer>
+        <Footer className="footer-main"><FooterClient /></Footer>
       </Layout>
     );
 };
