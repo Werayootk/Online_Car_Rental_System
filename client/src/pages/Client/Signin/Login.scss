@@ -1,0 +1,129 @@
+// body {
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-size: 14px;
+//     background: #0069ff;
+// }
+// /* Style the tab */
+// .tab {
+//     overflow: hidden;
+//     border: 1px solid #ccc;
+//     background-color: #f1f1f1;
+// }
+//   /* Style the buttons inside the tab */
+// .tab a {
+//     background-color: inherit;
+//     float: right;
+//     cursor: pointer;
+//     padding: 14px 16px;
+//     transition: 0.3s;
+//     font-size: 17px;
+//     text-decoration: none;
+//     border: 1px solid;
+// }
+// /* Change background color of buttons on hover */
+// .tab a:hover {
+//     background-color: #ddd;
+// }
+// /* Create an active/current tablink class */
+// .tab a.active {
+//     background-color: #ccc;
+// }
+// /* Style the tab content */
+// .tabcontent {
+//     display: none;
+//     padding: 6px 12px;
+//     border: 1px solid #ccc;
+//     border-top: none;
+// }
+// .loginsuccess-container {
+//     padding: 20px;
+//     margin: 0 auto;
+//     width: 80%;
+//     box-shadow: beige;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     background: #fff;
+//     word-break: break-all;
+// }
+
+
+
+.main-container {
+    margin-top: 10%;
+}
+.box-container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    box-shadow: beige;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+.heading {
+    text-align: center;
+    font-weight: 300;
+    color: #444;
+    margin: 0 auto 45px;
+    font-size: 35px;
+    line-height: 38px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.form-fields, .form-fields button {
+    width: 100%;
+    margin: 5px 0;
+    line-height: 28px;
+    border-radius: 5px;
+}
+.form-fields input {
+    width: 100%;
+    line-height: 40px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.signIn {
+    padding: 10px 32px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background: #15CD72;
+    text-align: center;
+    cursor: pointer;
+    height: auto;
+    -webkit-appearance: none;
+}
+
+.login-choice span {
+    color: #5b6987;
+    display: -ms-grid;
+    display: grid;
+    font-size: 16px;
+    width: 100%;
+    line-height: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -ms-grid-columns: minmax(20px,1fr) auto minmax(20px,1fr);
+    grid-template-columns: minmax(20px,1fr) auto minmax(20px,1fr);
+    grid-gap: 19px;
+}
+.login-choice span:after, .login-choice span:before {
+    content: "";
+    border-top: 1px solid #e5e8ed;
+}
+
+.footer, .footer a {
+    text-align: center;
+    color: #000
+}
+
+.footer span {
+    text-decoration: underline 1px solid;
+}
+

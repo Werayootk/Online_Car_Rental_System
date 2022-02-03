@@ -1,1 +1,53 @@
+.box-container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    box-shadow: beige;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+.main-container {
+    margin-top: 10%;
+}
+.form-fields, .form-fields button {
+    width: 100%;
+    margin: 5px 0;
+    line-height: 28px;
+    border-radius: 5px;
+}
+.form-fields input {
+    width: 100%;
+    line-height: 40px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.createaccount {
+    padding: 15px;
+    background-color: #0069ff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+    text-align: center;
+    border-radius: 5px;
+}
 
+.center {
+    text-align: center
+}
+.footer, .footer a {
+    text-align: center;
+    color: #000
+}
+
+.footer span {
+    text-decoration: underline 1px solid;
+}

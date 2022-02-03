@@ -58,10 +58,13 @@ const HeaderClient = () => {
               className="ant-dropdown-link"
               onClick={(e) => e.preventDefault()}
             >
-              เข้าสู่ระบบ
+              บัญชีของฉัน
               <DownOutlined />
             </a>
           </Dropdown>
+        </div>
+        <div className="Main__login">
+        <Link to="/login">เข้าสู่ระบบ</Link> 
         </div>
       </div>
     </nav>
