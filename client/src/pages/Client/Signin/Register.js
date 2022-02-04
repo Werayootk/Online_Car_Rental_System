@@ -6,7 +6,7 @@ import SocialLogin from './SocialLogin';
 const Register = () => {
 
   return (
-    <div className="main-container">
+    <div className="main-container-register">
         <form>
             <div className="box-container">
                 <h2 class="heading">

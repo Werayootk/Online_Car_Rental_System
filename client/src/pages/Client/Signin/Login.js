@@ -7,7 +7,7 @@ import SocialLogin from './SocialLogin';
 const Login = () => {
 
   return (
-    <div className="main-container">
+    <div className="main-container-login">
     <form>
       <div className="box-container">
         <h2 className="heading">Sign In</h2>
