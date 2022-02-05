@@ -1,0 +1,80 @@
+.search-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+}
+
+.filter-section {
+    display: block;
+    font-family: Roboto,helvetica neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #000;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.filter-section p {
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.filter__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.filter-section .filter__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.clean-btn {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0078ff;
+    font-size: 12px;
+}
+
+.filter__tab {
+    background-color: #e9ecef;
+}
+
+.tab-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #d1d6dd;
+}
+
+.filter-section .tab-title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.filter-section .tab-title p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

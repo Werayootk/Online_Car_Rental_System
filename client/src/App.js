@@ -1,10 +1,11 @@
 import "./App.css";
 import "antd/dist/antd.min.css";
 import "./styles/main.scss";
-
+//Layout
 import DashboardLayoutRoute from "./components/DashboardLayout/DashboardLayout";
 import MainLayoutRoute from "./components/MainLayout/MainLayout";
 import EditLayoutRoute from "./components/EditLayout/EditLayout";
+import ProgressBookLayoutRoute from "./components/ProgressBookLayout/ProgressBookLayout";
 //Admin Pages
 import Dashboard from "./pages/Admin/Dashboard/Dashboard";
 import Customer from "./pages/Admin/Customer/Customer";
@@ -45,11 +46,16 @@ function App() {
       <MainLayoutRoute exact path="/login" component={Login} />
       <MainLayoutRoute exact path="/signup" component={Register} />
       <MainLayoutRoute exact path="/forgot" component={ForgotPassword} />
-      <MainLayoutRoute exact path="/search-car" component={Booking} />
 
       <EditLayoutRoute exact path="/profile" component={EditProfile} />
       <EditLayoutRoute exact path="/editpassword" component={EditPassWord} />
       <EditLayoutRoute exact path="/booking" component={EditBooking} />
+
+      <ProgressBookLayoutRoute exact path="/search-car" component={Booking} />
+      <ProgressBookLayoutRoute exact path="/search-car-detail" component={Booking} />
+      <ProgressBookLayoutRoute exact path="/search-car-book" component={Booking} />
+      <ProgressBookLayoutRoute exact path="/search-car-verify" component={Booking} />
+
       <Route
         exact
         path="/admin"
