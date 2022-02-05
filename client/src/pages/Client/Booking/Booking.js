@@ -1,5 +1,5 @@
 import React from "react";
-import "./ฺBooking.scss";
+import "./Booking.scss";
 
 const Booking = () => {
 

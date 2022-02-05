@@ -9,7 +9,7 @@ const Register = () => {
     <div className="main-container-register">
         <form>
             <div className="box-container">
-                <h2 class="heading">
+                <h2 className="heading">
                 Create Your Account
                 </h2>
                 <div className="form-fields">

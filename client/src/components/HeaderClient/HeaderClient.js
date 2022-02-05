@@ -34,13 +34,13 @@ const HeaderClient = () => {
 
   return (
   
-    <nav class="Main navbar navbar-expand-lg collapsed shadow">
+    <nav className="Main navbar navbar-expand-lg collapsed shadow">
       <div className="Main__header">
         <Link to="/">
           <div className="Main__Logo"></div>
         </Link>
       </div>
-      <div class="Main__nav">
+      <div className="Main__nav">
         <div className="Main__help">
           <Dropdown overlay={menuHelp}>
             <a

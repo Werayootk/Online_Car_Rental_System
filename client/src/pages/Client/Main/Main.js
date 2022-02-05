@@ -2,17 +2,24 @@ import React from "react";
 import "./Main.scss";
 import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
 import "antd/dist/antd.min.css";
+import { useHistory } from "react-router-dom";
 
 const { Search } = Input;
 const { RangePicker } = DatePicker;
 const onSearch = (value) => console.log(value);
 
+
 const Main = () => {
+  const history = useHistory();
+  const routeChange = () => {
+    let path = `/search-car`;
+    history.push(path);
+  }
   return (
     <>
       <section className="mainSection">
         <section className="mainSectionBG">
-          <section class="main__banner_container">
+          <section className="main__banner_container">
             <div className="main__Overlay"></div>
             <div className="main__content_section">
               <div className="main__heading_text">
@@ -42,7 +49,9 @@ const Main = () => {
                   </div>
                   <div className="main_search_button">
                     {/*Input Component Button submit */}
-                    <Button type="primary" block>
+                    <Button type="primary" block
+                    onClick={routeChange}
+                    >
                       ค้นหารถว่าง
                     </Button>
                   </div>
