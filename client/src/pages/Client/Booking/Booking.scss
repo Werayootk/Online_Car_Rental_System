@@ -78,3 +78,34 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+.tab-content {
+    max-height: 1500px;
+    overflow: unset;
+    background-color: #eef1f4;
+}
+
+.filter-category {
+    // padding: 10px;
+    display: flex;
+    width: 100%;
+    padding: 6px 10px;
+    min-height: 88px;
+    justify-content: center;
+}
+
+.category-item {
+
+}
+
+.d-inline-flex {
+    display: inline-flex!important;
+}
+
+.flex-row {
+    flex-direction: row!important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap!important;
+}
