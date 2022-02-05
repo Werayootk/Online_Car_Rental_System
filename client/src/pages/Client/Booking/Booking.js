@@ -16,11 +16,11 @@ const Booking = () => {
           <div className="filter-section">
             <div className="filter__header">
               <p>ฟิลเตอร์</p>
-              <span class="clean-btn">ล้างค่าทั้งหมด</span>
+              <span className="clean-btn">ล้างค่าทั้งหมด</span>
             </div>
             <div className="filter__tab ">
               <div className="tab-header">
-                <p class="tab-title">ขนาดรถ</p>
+                <p className="tab-title">ขนาดรถ</p>
               </div>
               <div className="tab-content">
                 <div className="filter-category">
