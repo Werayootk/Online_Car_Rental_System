@@ -1,7 +1,6 @@
 import React from "react";
 import "./Login.scss";
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
-
 import SocialLogin from './SocialLogin';
 
 const Login = () => {
@@ -27,7 +26,8 @@ const Login = () => {
       </div>
     </form>
     <div className="footer">
-       <p>Don't have an account? <Link to={'/signup'}><span>Create one now</span></Link></p>
+        <p>Don't have an account? <Link to={'/signup'}><span>Create one now</span></Link></p>
+        <p><Link to={'/forgot'}><span>Forgot password?</span></Link></p>
     </div>
   </div>
   );

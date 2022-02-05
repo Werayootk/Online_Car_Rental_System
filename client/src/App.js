@@ -18,6 +18,7 @@ import EditPassWord from "./pages/Client/Edit/EditPassWord";
 import EditBooking from "./pages/Client/Edit/EditBooking";
 import Login from './pages/Client/Signin/Login';
 import Register from './pages/Client/Signin/Register';
+import ForgotPassword from './pages/Client/Signin/ForgotPassword';
 
 import { Redirect, Route, Switch } from "react-router-dom";
 import { withRouter } from "react-router-dom";
@@ -42,6 +43,7 @@ function App() {
       <MainLayoutRoute exact path="/main" component={Main} />
       <MainLayoutRoute exact path="/login" component={Login} />
       <MainLayoutRoute exact path="/signup" component={Register} />
+      <MainLayoutRoute exact path="/forgot" component={ForgotPassword} />
 
       <EditLayoutRoute exact path="/profile" component={EditProfile} />
       <EditLayoutRoute exact path="/editpassword" component={EditPassWord} />
