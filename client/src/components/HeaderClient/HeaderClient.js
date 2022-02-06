@@ -18,6 +18,9 @@ const HeaderClient = () => {
       <Menu.Item>
         <Link to="/booking">การเช่ารถของฉัน</Link>
       </Menu.Item>
+      <Menu.Item>
+        <Link to="/logout">ออกจากระบบ</Link>
+      </Menu.Item>
     </Menu>
   );
 

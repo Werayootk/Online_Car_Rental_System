@@ -4,7 +4,7 @@ import './CardCarCategory.scss';
 
 const CardCarCategory = (props) => {
     return (
-        props.carCategory.map((v, i) =>
+        props.carcategory.map((v, i) =>
             <div className="category-button" key={v.id}>
                 <div className="category-type flex-center flex-column">
                     <img className="img-fluid" src={v.path} alt="car type" />  

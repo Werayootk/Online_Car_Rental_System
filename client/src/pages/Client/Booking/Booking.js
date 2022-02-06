@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Booking.scss";
-import { CarType } from "../../../config/car_type";
 import CardCarCategory from "../../../components/CardCarCategory/CardCarCategory";
+import CardCarDetail from "../../../components/CardCarDetail/CardCarDetail";
+import { CarType } from "../../../config/car_type";
+import { carData } from '../../../mockup/car_data';
 
 const Booking = () => {
   const [carType, setCarType] = useState(CarType);
+  const [CarData, setCarData] = useState(carData);
 
   return (
     <div className="search-container container">
@@ -25,14 +28,28 @@ const Booking = () => {
               <div className="tab-content">
                 <div className="filter-category">
                   <div className="category-item d-inline-flex flex-row flex-wrap">
-                    <CardCarCategory carCategory={carType} />
+                    <CardCarCategory carcategory={carType} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-12 col-lg-8">row 2</div>
+        <div className="col-12 col-lg-8">
+          <div className="filter-bar">
+            <div className="car-summary">พบรถว่าง 105 คัน จาก 21 บริษัทรถเช่าและตรงกับตัวกรองของคุณ  <span className="clean-btn">ล้างค่าทั้งหมด</span></div>
+            <div className="filter-badge"></div>
+            <div className="filter-sort">
+              <div className="sort-item sort-item--title">เรียงโดย</div>
+              <div className="sort-item ">จำนวนครั้งที่ถูกเช่า</div>
+              <div className="sort-item active">ราคารวม (จากต่ำสุดก่อน)</div>
+            </div>
+          </div>
+          <div className="row car-listing">
+            <div></div>
+            <CardCarDetail cardata={ CarData }/>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -109,3 +109,68 @@
 .flex-wrap {
     flex-wrap: wrap!important;
 }
+
+.filter-bar {
+    padding: 10px 0;
+}
+
+.car-summary {
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #4a4a4a;
+}
+
+.filter-bar .filter-badge {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.filter-bar .filter-sort {
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.filter-bar .filter-sort .sort-item--title {
+    cursor: default;
+    flex-grow: 0;
+    flex-basis: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #e9ecef;
+    border-radius: 2px 0 0 2px;
+}
+
+.filter-bar .filter-sort .sort-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 5px 10px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    cursor: pointer; 
+    color: #4a4a4a;
+}
+
+.filter-bar .filter-sort .sort-item.active {
+    background-color: #30374b;
+    color: #fff;
+}
+
+.car-listing {
+    transform: translateZ(0);
+}
+
+.row {
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
