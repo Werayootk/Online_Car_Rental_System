@@ -1,8 +1,10 @@
 import React from "react";
 import "./CardCarDetail.scss";
 import { CarOutlined, UserOutlined } from "@ant-design/icons";
+import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 
 const CardCarDetail = (props) => {
+
   return props.cardata.map((v, i) => (
     <div className="col-card" key={v.id}>
       <div className="car-card--candidate">
@@ -42,8 +44,8 @@ const CardCarDetail = (props) => {
           </section>
           <div className="btn-detail">
             <button className="btn btn-primary rent-button">
-              {" "}
-              ดูรายละเอียดก่อนจอง
+            <Link to='/search-car-detail' className="link-car">{" ดูรายละเอียดก่อนจอง "}
+              </Link>
             </button>
           </div>
         </section>
