@@ -18,8 +18,8 @@ const BookingDetail = (props) => {
                 <Image
                   className="sliderimg"
                   src="https://assets.drivehub.co/uploads/car/photo/attachment/22716/fa2e472d-305a-4654-b0ef-8428d5c9b536.jpg"
-                />
-            </div>
+                          />                          
+                      </div>
           </div>
         </div>
       </div>
