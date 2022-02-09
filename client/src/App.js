@@ -22,6 +22,7 @@ import Register from './pages/Client/Signin/Register';
 import ForgotPassword from './pages/Client/Signin/ForgotPassword';
 import Booking from './pages/Client/Booking/Booking';
 import BookingDetail from "./pages/Client/Booking/BookingDetail";
+import BookingReserving from "./pages/Client/Booking/BookingReserving";
 
 import { Redirect, Route, Switch } from "react-router-dom";
 import { withRouter } from "react-router-dom";
@@ -54,7 +55,7 @@ function App() {
 
       <ProgressBookLayoutRoute exact path="/search-car" component={Booking} />
       <ProgressBookLayoutRoute exact path="/search-car-detail" component={BookingDetail} />
-      <ProgressBookLayoutRoute exact path="/search-car-book" component={Booking} />
+      <ProgressBookLayoutRoute exact path="/search-car-book" component={BookingReserving} />
       <ProgressBookLayoutRoute exact path="/search-car-verify" component={Booking} />
 
       <Route

@@ -22,11 +22,89 @@
   padding-right: 7%;
 }
 
+.merged_container .right_container {
+  width: 40%;
+  position: relative;
+}
+
+.price_container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .mt-3,
 .my-3 {
   margin-top: 1rem !important;
 }
 
+.details_box_wrapper {
+  background: #9b9b9b;
+}
+
+.picker_title {
+  color: #9b9b9b;
+  font-weight: 700;
+}
+
+.calendar_picker_wrapper {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #eceeef;
+}
+
+.price_wrapper {
+  margin: 15px;
+  background-color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.price_wrapper .title_price {
+  background-color: #eee;
+  width: 100%;
+  color: #0078ff;
+  padding: 3px 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price_wrapper .row-price {
+  padding: 7px 10px;
+  border-bottom: 1px solid #eceeef;
+}
+
+.price_wrapper .row-price .col-auto {
+  max-width: 77%;
+}
+
+.mr-auto, .mx-auto {
+  margin-right: auto!important;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.row-price {
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+.price_wrapper .summary-price {
+  font-weight: 800;
+  padding: 0;
+  font-size: 16px;
+}
 .merged_container .header_container {
   display: block;
 //   flex-direction: row;
@@ -113,6 +191,13 @@ padding-top: 10%;
 .table__car_detail {
   margin-bottom: 5%;
 }
+
+.submit_button_wrapper .button_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 // @media screen and (min-width: 1200px){
 //     .container, .container-lg, .container-md, .container-sm, .container-xl {
