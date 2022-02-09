@@ -133,3 +133,23 @@ export const carData = [
         "available_for": "online"
     }
 ];
+
+export const imagesTest = [
+    {
+      original: 'https://assets.drivehub.co/uploads/car/photo/attachment/22716/fa2e472d-305a-4654-b0ef-8428d5c9b536.jpg',
+      thumbnail: 'https://assets.drivehub.co/uploads/car/photo/attachment/22716/thumb_fa2e472d-305a-4654-b0ef-8428d5c9b536.jpg',
+    },
+    {
+      original: 'https://assets.drivehub.co/uploads/car/photo/attachment/22719/950c7090-caed-4f31-af6d-85648de9b795.jpg',
+      thumbnail: 'https://assets.drivehub.co/uploads/car/photo/attachment/22719/thumb_950c7090-caed-4f31-af6d-85648de9b795.jpg',
+    },
+    {
+      original: 'https://assets.drivehub.co/uploads/car/photo/attachment/22718/ba3e15b3-97b9-4b6b-a449-16d01b3c2dd0.jpg',
+      thumbnail: 'https://assets.drivehub.co/uploads/car/photo/attachment/22718/thumb_ba3e15b3-97b9-4b6b-a449-16d01b3c2dd0.jpg',
+    },
+    {
+      original: 'https://s3.ap-southeast-1.amazonaws.com/assets.drivehub.co/uploads/tmp/8a45d560-62ef-44ea-b79b-88d182e7c812/11.jpg',
+      thumbnail: 'https://s3.ap-southeast-1.amazonaws.com/assets.drivehub.co/uploads/tmp/8a45d560-62ef-44ea-b79b-88d182e7c812/11.jpg',
+    },
+];
+

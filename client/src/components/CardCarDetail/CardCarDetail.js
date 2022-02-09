@@ -5,7 +5,7 @@ import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 
 const CardCarDetail = (props) => {
 
-  return props.cardata.map((v, i) => (
+  return props.items.map((v, i) => (
     <div className="col-card" key={v.id}>
       <div className="car-card--candidate">
         <section>

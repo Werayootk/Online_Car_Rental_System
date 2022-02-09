@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./BookingDetail.scss";
-import { carData } from "../../../mockup/car_data";
-import { Image } from "antd";
+import ImageGallery from "react-image-gallery";
+import TableCarDetail from "../../../components/TableCarDetail/TableCarDetail";
+import { imagesTest, carData } from "../../../mockup/car_data";
 
 const BookingDetail = (props) => {
+  const [imgcar, setImgcar] = useState(imagesTest);
+  const [carDetail, setCarDetail] = useState(carData[0]);
+
   return (
     <div className="container merged_container">
       <div className="mt-3 left_container">
@@ -15,11 +19,11 @@ const BookingDetail = (props) => {
           <div className="header_right"></div>
           <div className="gallery_wrapper pb-2">
             <div className="gallery">
-                <Image
-                  className="sliderimg"
-                  src="https://assets.drivehub.co/uploads/car/photo/attachment/22716/fa2e472d-305a-4654-b0ef-8428d5c9b536.jpg"
-                          />                          
-                      </div>
+              <ImageGallery items={imagesTest} />
+            </div>
+          </div>
+          <div className="table__car_detail">
+          <TableCarDetail items={carDetail} />
           </div>
         </div>
       </div>

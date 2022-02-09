@@ -28,7 +28,7 @@ const Booking = () => {
               <div className="tab-content">
                 <div className="filter-category">
                   <div className="category-item d-inline-flex flex-row flex-wrap">
-                    <CardCarCategory carcategory={carType} />
+                    <CardCarCategory items={carType} />
                   </div>
                 </div>
               </div>
@@ -47,7 +47,7 @@ const Booking = () => {
           </div>
           <div className="row car-listing">
             <div></div>
-            <CardCarDetail cardata={ CarData }/>
+            <CardCarDetail items={ CarData }/>
           </div>
         </div>
       </div>
