@@ -85,7 +85,7 @@
   padding-bottom: 8px;
   margin-bottom: 8px;
   border-bottom: 1px solid #d8d8d8;
-  margin-top: 45%;
+  margin-top: 35%;
 }
 
 .cardetail h4 {
@@ -108,6 +108,93 @@
   min-width: 140px;
 }
 
+.gallery_wrapper_verify {
+  padding-top: 1%;
+  width: 100%;
+  margin-bottom: 1%;
+}
 
+.rentaldetail {
+  background-color: #fff;
+  margin-bottom: 16px;
+}
 
+.rentaldetail .padding__inner {
+  padding: 8px 16px;
+}
+
+.rentaldetail h3 {
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.rentaldetail h4 {
+  font-size: 12px;
+  color: #6f6f6f;
+  font-weight: 700;
+  margin-top: .5em;
+  margin-bottom: .5rem;
+  line-height: 1.3;
+}
+
+.rentaldetail .border__bottom {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 8px;
+}
+
+.rentaldetail p {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.rentaldetail .pair__full, .rentaldetail .pickup__return {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rentaldetail .pickup__return>div {
+  flex: 1 1;
+}
+
+.rentaldetail .border__left {
+  border-left: 1px solid #bebebe;
+  padding-left: 16px;
+}
+
+.rentaldetail .pair__full, .rentaldetail .pickup__return {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rentaldetail .pair__full {
+  margin-bottom: 8px;
+}
+
+.rentaldetail .mb0 {
+  margin-bottom: 0!important;
+}
+
+.rentaldetail .pair__full--total {
+  background: #e8f0f8;
+  padding: 8px 16px;
+}
+
+.rentaldetail .pair__full--total p {
+  font-weight: 700;
+}
+
+.rentaldetail .total {
+  color: #0078ff;
+}
+
+.rentaldetail .padding__inner {
+  padding: 8px 16px;
+}
+
+.rentaldetail .center {
+  align-items: center;
+}
 
