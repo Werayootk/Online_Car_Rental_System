@@ -1,0 +1,119 @@
+.booking__list .booking-card {
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.23);
+    margin-bottom: 1rem;
+}
+
+.card {
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 0 solid #fff;
+    border-radius: .3125rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+}
+
+.booking__list .booking-card__body.finished {
+    opacity: .6;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: .5rem;
+}
+
+.booking__list .booking-card__body img {
+    height: 140px;
+    min-width: 220px;
+    object-fit: cover;
+    width: auto;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    flex-shrink: 0;
+    /* width: 100%; */
+}
+
+.d-lg-block {
+    display: block!important;
+}
+
+.rounded-0 {
+    border-radius: 0!important;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+.booking__list .booking-card__body .booking-detail {
+    padding-left: 1rem;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.pb-1, .py-1 {
+    padding-bottom: .25rem!important;
+}
+
+.pt-1, .py-1 {
+    padding-top: .25rem!important;
+}
+
+.booking__list .booking-card__body .booking-detail>div:first-child div:first-child, .booking__list .booking-card__body .booking-detail>div:last-child div:first-child {
+    min-width: 190px;
+}
+
+.booking__list .booking-card__body .booking-detail-item {
+    color: #6f6f6f;
+    font-size: 12px;
+}
+
+.booking__list .booking-card__body .booking-detail-item p {
+    color: #000;
+    font-size: 16px;
+}
+
+.booking p {
+    margin: 0;
+}
+
+.font-weight-bold {
+    font-weight: 700!important;
+}
+
+.booking__list .booking-card__body .booking-detail-item {
+    color: #6f6f6f;
+    font-size: 12px;
+}
+
+.booking__list .booking-card__body .booking-detail-item p {
+    color: #000;
+    font-size: 16px;
+}
+
+.booking p {
+    margin: 0;
+}
+
+.booking__list .booking-card__footer {
+    background-color: #fff;
+    border-top: 1px solid #e2eaf3;
+    color: #0078ff;
+    cursor: pointer;
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 .3125rem .3125rem;
+}
+
+.booking-pagination {
+    display: flex;
+    padding-top: 1rem!important;
+    justify-content: center;
+}
