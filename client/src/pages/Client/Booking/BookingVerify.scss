@@ -1,0 +1,113 @@
+.merged_container .left_container_verify {
+  position: relative;
+  width: 40%;
+  padding-left: 7%;
+}
+
+.merged_container .right_container_verify {
+  width: 60%;
+  position: relative;
+  padding-left: 7%;
+}
+
+.booking-status {
+  background-color: #fff;
+  padding: 10px 16px;
+  margin-bottom: 15px;
+}
+
+.booking-status .status-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+}
+
+.booking-status small {
+  color: #6f6f6f;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.booking-status .status-header p {
+  margin: 0;
+}
+
+.booking-status p {
+  font-weight: 700;
+}
+
+.customer-detail {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.customer-detail p {
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.customer-detail .detail-items {
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.customer-detail .detail-items .item {
+  margin-bottom: 16px;
+}
+
+.customer-detail .detail-items .item span {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.cardetail {
+  padding: 16px;
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+.cardetail h3, .cardetail h4 {
+  margin-bottom: 16px;
+}
+
+.cardetail h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cardetail .title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-top: 45%;
+}
+
+.cardetail h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: .5em;
+}
+
+.cardetail .detail {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+.cardetail .detail .pair {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  min-width: 140px;
+}
+
+
+
+

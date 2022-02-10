@@ -7,6 +7,7 @@ import {
   MailOutlined,
   MobileOutlined,
 } from "@ant-design/icons";
+import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 
 const BookingReserving = () => {
   const [value, setValue] = useState(1);
@@ -73,8 +74,8 @@ const BookingReserving = () => {
       </div>
       <div className="submit_button_wrapper_reserve"> 
         <div className="button_box_reserve">
-        <button className="btn btn-secondary">ย้อนกลับ</button>
-        <button className="btn btn-primary_reserve">ทำการจองรถ</button>
+        <Link to='/search-car-book'><button className="btn btn-secondary">ย้อนกลับ</button></Link>
+        <Link to='/search-car-verify'><button className="btn btn-primary_reserve">ทำการจองรถ</button></Link>
         </div>
       </div>
     </div>

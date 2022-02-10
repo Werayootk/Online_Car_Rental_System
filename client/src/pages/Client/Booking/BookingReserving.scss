@@ -77,10 +77,10 @@
 
   .button_box_reserve {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
-  .submit_button_wrapper_reserve button:first-child {
+  .submit_button_wrapper_reserve a {
     flex: 1 1;
   }
 
