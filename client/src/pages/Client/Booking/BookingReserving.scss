@@ -3,9 +3,9 @@
   left: 50%;
   width: 50%;
   // top: 50%;
-  margin-top: 15%;
+  margin-top: 20%;
   transform: translate(-50%, -50%);
-  border: 5px solid #ffff00;
+//   border: 5px solid #ffff00;
   padding: 10px;
   background-color: #ffff;
 }
@@ -57,13 +57,45 @@
 }
 
 .mail-icon {
-    position: absolute;
-    top: 12px;
-    right: 635px;
+    position: relative;
+    top: 25px;
+    right: -14px;
   }
 
   .mobile-icon {
-    position: absolute;
-    top: 5px;
-    right: 635px;
+    position: relative;
+    top: 25px;
+    right: -14px;
+  }
+
+  .submit_button_wrapper_reserve {
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #eceeef;
+    margin-top: 2px;
+  }
+
+  .button_box_reserve {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .submit_button_wrapper_reserve button:first-child {
+    flex: 1 1;
+  }
+
+  .btn-secondary {
+    width: 30%;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    box-shadow: none;
+    font-size: 0.9rem;
+  }
+
+  .btn-primary_reserve {
+      width: 50%;
+      color: #fff;
+      background-color: #0078ff;
+      border-color: #0078ff;
   }
