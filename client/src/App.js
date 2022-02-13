@@ -10,7 +10,8 @@ import ProgressBookLayoutRoute from "./components/ProgressBookLayout/ProgressBoo
 import Dashboard from "./pages/Admin/Dashboard/Dashboard";
 import Customer from "./pages/Admin/Customer/Customer";
 import Order from "./pages/Admin/Order/Order";
-import Management from "./pages/Admin/Management/Management";
+import ManagementCar from "./pages/Admin/ManagementCar/ManagementCar";
+import Location from "./pages/Admin/Location/Location";
 import Cancel from "./pages/Admin/Cancel/Cancel";
 //Client Pages
 import Main from "./pages/Client/Main/Main";
@@ -69,7 +70,8 @@ function App() {
       <DashboardLayoutRoute exact path="/dashboard" component={Dashboard} />
       <DashboardLayoutRoute exact path="/customer" component={Customer} />
       <DashboardLayoutRoute exact path="/order" component={Order} />
-      <DashboardLayoutRoute exact path="/management" component={Management} />
+      <DashboardLayoutRoute exact path="/management" component={ManagementCar} />
+      <DashboardLayoutRoute exact path="/location" component={Location} />
       <DashboardLayoutRoute exact path="/cancel" component={Cancel} />
     </Switch>
   );

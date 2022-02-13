@@ -9,6 +9,7 @@ import {
   KeyOutlined,
   LoginOutlined,
 } from "@ant-design/icons";
+import MapIcon from '@mui/icons-material/Map';
 
 export const MenuList = [
   {
@@ -41,13 +42,20 @@ export const MenuList = [
   },
   {
     id: 5,
+    nameEN: "Management locations",
+    nameTH: "จัดการสถานที่รับและคืนรถ",
+    path: "/location",
+    icon: <MapIcon />,
+  },
+  {
+    id: 6,
     nameEN: "Cancel order",
     nameTH: "รายการยกเลิกการจอง",
     path: "/cancel",
     icon: <CloseCircleOutlined />,
   },
   {
-    id: 6,
+    id: 7,
     nameEN: "Logout",
     nameTH: "ออกจากระบบ",
     path: "/logout",
