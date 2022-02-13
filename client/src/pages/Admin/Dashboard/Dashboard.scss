@@ -1,0 +1,95 @@
+.Dashboard {
+    #date-box {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin: 8% 8%;
+      }
+
+      #card-box {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 8% 8%;
+
+        .content {
+          text-align: center;
+          margin-top: 5px;
+        }
+      }
+      .ant-card-body {
+        padding: 10px;
+        min-height: 100px;
+      }
+    
+      #progress-box {
+        margin-left: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        .colRight {
+          text-align: right;
+        }
+      }
+      .ant-card {
+        padding: 5px;
+        margin: 5px;
+      }
+    
+      .title,
+      .ant-card-head-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color: #253e87;
+      }
+      .sub-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+      }
+      .lable {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+      }
+      .lable-sm {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 0px;
+      }
+      .lable-lg {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 46px;
+      }
+
+      button {
+        width: 100%;
+        background-color: #2b3e92;
+        color: #ffffff;
+        border-radius: 10px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .Dashboard #progress-box {
+      margin: 20px 0;
+    }
+    .ant-space-vertical {
+      flex-direction: unset;
+    }
+    .Dashboard .lable {
+      font-size: 0.8rem;
+    }
+    .Dashboard .lable-lg {
+      font-size: 1rem;
+    }
+  }

@@ -49,3 +49,24 @@ export const CANCEL_FILTER_OPTIONS = [
     value: CancelOptions.ORDER_NO,
   }
 ];
+
+export const OrderOptions = {
+  FIRST_NAME: -1,
+  LAST_NAME: 0,
+  ORDER_NO: 1,
+};
+
+export const ORDER_FILTER_OPTIONS = [
+  {
+    text: "ชื่อ",
+    value: OrderOptions.FIRST_NAME,
+  },
+  {
+    text: "นามสกุล",
+    value: OrderOptions.LAST_NAME,
+  },
+  {
+    text: "หมายเลขออเดอร์",
+    value: OrderOptions.ORDER_NO,
+  }
+];

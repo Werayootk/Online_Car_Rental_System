@@ -1,18 +1,18 @@
 import React from "react";
-import './Cancel.scss';
+import './Order.scss';
 import { Col, Row } from 'antd';
 import { FileTextOutlined } from '@ant-design/icons';
 
-import SearchFilterCancel from './SearchFilterCancel';
+import SearchFilterOrder from './SearchFilterOrder';
 import Table from "../../../components/Table/Table";
 
 import { TablePaginationConfig } from 'antd/es/table';
 import { ColumnType } from 'antd/es/table';
-import { CANCEL_FILTER_OPTIONS } from '../../../config/filter';
+import { ORDER_FILTER_OPTIONS } from '../../../config/filter';
 
 const { Column } = Table;
 
-const ResponsibilityCancelElement = (props) => {
+const ResponsibilityOrderElement = (props) => {
     const handleFilterOptionChange = (value) => {
         console.log(value);
     }
@@ -21,17 +21,17 @@ const ResponsibilityCancelElement = (props) => {
         console.log(value);
     }
 
-    const filterOptions = [{text: 'ทั้งหมด', value: 'ALL'}, ...CANCEL_FILTER_OPTIONS];
+    const filterOptions = [{text: 'ทั้งหมด', value: 'ALL'}, ...ORDER_FILTER_OPTIONS];
 
     return (
         <Row>
         <Col span={24}>
-          <SearchFilterCancel
+          <SearchFilterOrder
             filters={{ options: filterOptions, defaultValue: 'ALL' }}
             onFilterChange={handleFilterOptionChange}
           />
         </Col>
-        <Col className="cancel-table-container" span={24}>
+        <Col className="order-table-container" span={24}>
           <Table
             pagination={props.pagination}
             loading={props.loading}
@@ -57,7 +57,7 @@ const ResponsibilityCancelElement = (props) => {
               key="action"
               title="ดูรายละเอียด"
               render={() => (
-                <span className="cancel-table-action-icon">
+                <span className="order-table-action-icon">
                     <FileTextOutlined className="clickable" />
                 </span>
               )}
@@ -68,4 +68,4 @@ const ResponsibilityCancelElement = (props) => {
     );
 };
 
-export default ResponsibilityCancelElement;
+export default ResponsibilityOrderElement;
