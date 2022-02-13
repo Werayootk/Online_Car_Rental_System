@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
+import { Route, Switch, useRouteMatch, withRouter } from 'react-router-dom';
+
 import PicturesWall from "../../../components/PicturesWall/PicturesWall";
 import "./ManagementCar.scss";
 import { Avatar, Row, Col, Input, Button } from "antd";
+
 const { TextArea } = Input;
 
 
@@ -71,6 +74,7 @@ const UpdateCar = (props) => {
     
       const onSubmitDelete = () => {
         console.log("del car");
+        props.history.push(`/management/delete-car`);
       };
     return (
         <div className="cars">
@@ -137,14 +141,13 @@ const UpdateCar = (props) => {
             <Button onClick={onSubmitImport}>นำเข้าข้อมูลรถ</Button>
           </Col>
           <Col sm={{ span: 24 }} lg={{ span: 8 }}>
-          <Link to='/management/delete-car'>  <Button id="btn-del" onClick={onSubmitDelete}>
+          <Button id="btn-del" onClick={onSubmitDelete}>
               ลบข้อมูลรถ
-                    </Button>
-                    </Link>
+          </Button>
           </Col>
         </Row>
       </div>
     );
 };
 
-export default UpdateCar;
+export default withRouter(UpdateCar);

@@ -71,6 +71,7 @@ function App() {
       <DashboardLayoutRoute exact path="/customer" component={Customer} />
       <DashboardLayoutRoute exact path="/order" component={Order} />
       <DashboardLayoutRoute exact path="/management" component={ManagementCar} />
+      <DashboardLayoutRoute exact path="/management/:del" component={ManagementCar} />
       <DashboardLayoutRoute exact path="/location" component={Location} />
       <DashboardLayoutRoute exact path="/cancel" component={Cancel} />
     </Switch>

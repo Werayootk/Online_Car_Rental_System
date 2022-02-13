@@ -16,12 +16,12 @@ const ManagementCar = (props) => {
             }
             />
             <Route
-                path='/management/delete-car'
-                render={() => {
-                    console.log('del success')
-                    return <DeleteCar />
-                }}
-            />
+        path='/management/:del'
+        render={() => {
+          console.log('del success')
+          return <DeleteCar />
+        }}
+      />
         </Switch>
     );
 };
