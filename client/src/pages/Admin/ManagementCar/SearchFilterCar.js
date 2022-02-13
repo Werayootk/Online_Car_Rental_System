@@ -39,7 +39,7 @@ const SelectFilter = styled(Select)`
   }
 `
 
-const SearchFilterCustomer = (props) => {
+const SearchFilterCar = (props) => {
     const { filters, onFilterChange } = props;
 
     const handleFilterChange = (value) => {
@@ -47,11 +47,11 @@ const SearchFilterCustomer = (props) => {
     };
     
     const handleSearchChange = (e) => {
-      props.onSearch?.(e.target.value);
+        props.onSearch?.(e.target.value);
     };
 
     return (
-    <SearchFilterLayout>
+        <SearchFilterLayout>
       <Col span={24}>
         <Row align="middle">
           <Col span={6}>
@@ -90,4 +90,4 @@ const SearchFilterCustomer = (props) => {
     );
 };
 
-export default SearchFilterCustomer;
+export default SearchFilterCar;

@@ -77,7 +77,7 @@ const UpdateCar = (props) => {
         props.history.push(`/management/delete-car`);
       };
     return (
-        <div className="cars">
+        <div className="car">
         <Row>
           <Col sm={{ span: 24 }} lg={{ span: 8 }}>
             <b>ข้อมูลรถ</b>

@@ -70,3 +70,39 @@ export const ORDER_FILTER_OPTIONS = [
     value: OrderOptions.ORDER_NO,
   }
 ];
+
+export const CarOptions = {
+  ID: -1,
+  BRAND: 0,
+  SEAT: 1,
+  CAR_TYPE: 2,
+  GEAR_TYPE: 3,
+  REGISTRATE_YEAR:4
+};
+
+export const CAR_FILTER_OPTIONS = [
+  {
+    text: "CAR ID",
+    value: CarOptions.ID,
+  },
+  {
+    text: "CAR Brand",
+    value: CarOptions.BRAND,
+  },
+  {
+    text: "Seat",
+    value: CarOptions.SEAT,
+  },
+  {
+    text: "CAR Type",
+    value: CarOptions.CAR_TYPE,
+  },
+  {
+    text: "Gear",
+    value: CarOptions.GEAR_TYPE,
+  },
+  {
+    text: "Year",
+    value: CarOptions.REGISTRATE_YEAR,
+  },
+];
