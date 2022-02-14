@@ -21,7 +21,7 @@ const InputLocation = (props) => {
 
   return (
       <div id="input-box">
-          <div className="content"> 
+      <div className="content"> 
       <Row align="middle">
         <Col span={9}>
           <Select
@@ -54,8 +54,22 @@ const InputLocation = (props) => {
 
 const TableLocation = (props) => {
   return (
-    <div>
-      <ResponsibilityLocation />
+    <div className="customer-container">
+      <Row>
+        <Col span={20} style={{ paddingLeft: 22 }}>
+          <ResponsibilityLocation
+            dataSource={null}
+            pagination={{
+              onChange: null,
+              total: 50,
+              showSizeChanger: false,
+            }}
+            loading={null}
+            currentPagination={1}
+            onPagination={null}
+          />
+        </Col>
+      </Row>
     </div>
   );
 };
