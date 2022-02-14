@@ -106,3 +106,24 @@ export const CAR_FILTER_OPTIONS = [
     value: CarOptions.REGISTRATE_YEAR,
   },
 ];
+
+export const LocationOptions = {
+  ID: -1,
+  PROVINCE: 0,
+  LOCATION: 1
+};
+
+export const LOCATION_FILTER_OPTIONS = [
+  {
+    text: "ID",
+    value: LocationOptions.ID,
+  },
+  {
+    text: "Province",
+    value: LocationOptions.PROVINCE,
+  },
+  {
+    text: "Location",
+    value: LocationOptions.LOCATION,
+  }
+];
