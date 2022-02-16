@@ -26,9 +26,13 @@
     - 6. after paid send data to db bill_id format (bookingid+datetime) 
     - 7. implement request cancel 
     - 8. if admin approve cancel booking will update car status and refund
+- [ ] Define E2E
 
 ### Admin Frontend Todo list
 
+- [ ] /dashboard?start_datetime=&end_datetime
+    - 
+- [ ] Venus
 - [ ] Venus
 
 <br />
@@ -37,9 +41,7 @@
 
 - [ ] Create DB and Schema follow ER-diagram
 - [ ] Implement Auth service (JWT and Social login)
-
-
-
+- [ ] Define Test case
 ## Useful link example
 
 ```
