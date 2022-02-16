@@ -1,8 +1,8 @@
 ### Client Frontend Todo list
 
 - [x] Draft All UI
-- [ ] Venus
-- [ ] Venus
+- [ ] After Done Backend Implement Auth (PrivateRoute, JWT, Social Login)
+- [ ] Create Page for [SUCCESS, FAIL, 404, Loading]
 - [ ] Venus
 
 <br />
