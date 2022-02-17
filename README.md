@@ -70,6 +70,10 @@ https://aaryanadil.com/react-social-login-tutorial-google-facebook-and-twitter-o
 https://github.com/safak/youtube/tree/jwt
 https://github.com/safak/youtube/tree/react-loading-screen
 https://github.com/safak/youtube/tree/react-social-login
+https://github.com/Werayootk/cc10-fakebuck-web
+https://github.com/Werayootk/cc10-fakebuck-api
+https://github.com/Werayootk/cc10-expense-tracker
+
 ```
 
 ## Liberty
