@@ -31,21 +31,54 @@
 ### Admin Frontend Todo list
 
 - [ ] /dashboard?start_datetime=&end_datetime
-    - 
-- [ ] Venus
-- [ ] Venus
-
-<br />
+    - 1. select datetime and implement filter
+    - 2. รอการอนุมัติ => Book_status, จ่ายเงินแล้ว
+         จำนวนการยกเลิก => Book_status OR Refund
+         รายได้ => Book_status คืนรถ และ คำนวนรวมเงิน
+         รถที่ว่าง => Car_status Avaliable count
+         รถที่ใช้อยู๋ => Car_status UnAvaliable
+- [ ] /customer
+    - 1. GET /customer
+    - 2. GET /customer/:user_id
+    - 3. POST /customer/:user_id
+    - 4. DELETE /customer/:user_id
+    - 5. Paginate filter search
+    - 6. Modal to Button DELETE OR EDIT(POST)
+- [ ] /order
+    - 1. GET /order
+    - 2. GET /order/:booking_id
+    - 3. POST /order/:booking_id
+    - 4. Paginate filter search
+    - 5. Modal to Button APPROVE REJECT OR EDIT(POST)
+- [ ] /management 
+    - 1. GET /car
+    - 2. GET /car/:car_id
+    - 3. POST /car/:car_id
+    - 4. DELETE /car/:car_id
+    - 5. PUT /car/:car_id
+    - 6. Image upload cloudinary and return url
+    - 7. filter search car 
+    - 8. Modal button for DELETE AND EDIT(POST)
+- [ ] /location
+    - 1. GET /location
+    - 2. GET /location/:location_id
+    - 3. POST /location/:location_id
+    - 4. DELETE /location/:location_id
+    - 5. filter search location
+    - 6. Modal button for DELETE AND EDIT(POST)
+- [ ] /cancel
+    - 1. filter search
+    - 2. Modal button for Refund AND EDIT(POST)
+    - 3. GET /cancel
+    - 4. GET /cancel/:booking_id
+    - 5. POST /cancel/:booking_id
 
 ### SERVER Backend Todo list
 
 - [ ] Create DB and Schema follow ER-diagram
 - [ ] Implement Auth service (JWT and Social login)
 - [ ] Define Test case
-- [ ] Login
-```
-POST /api/v1/admin/login
-```
+- [ ] GenDoc API
 
 ## Useful link example
 
@@ -73,7 +106,6 @@ https://github.com/safak/youtube/tree/react-social-login
 https://github.com/Werayootk/cc10-fakebuck-web
 https://github.com/Werayootk/cc10-fakebuck-api
 https://github.com/Werayootk/cc10-expense-tracker
-
 ```
 
 ## Liberty
