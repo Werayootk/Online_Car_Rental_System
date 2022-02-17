@@ -67,6 +67,9 @@ https://github.com/Werayootk/jwt-authentication-react
 https://javascript.plainenglish.io/implementing-infinite-scroll-in-react-34b112813de7
 https://alexanderleon.medium.com/implement-social-authentication-with-react-restful-api-9b44f4714fa
 https://aaryanadil.com/react-social-login-tutorial-google-facebook-and-twitter-oauth2
+https://github.com/safak/youtube/tree/jwt
+https://github.com/safak/youtube/tree/react-loading-screen
+https://github.com/safak/youtube/tree/react-social-login
 ```
 
 ## Liberty
