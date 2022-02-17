@@ -42,6 +42,11 @@
 - [ ] Create DB and Schema follow ER-diagram
 - [ ] Implement Auth service (JWT and Social login)
 - [ ] Define Test case
+- [ ] Login
+```
+POST /api/v1/admin/login
+```
+
 ## Useful link example
 
 ```
@@ -53,8 +58,15 @@ https://www.youtube.com/watch?v=LWB1s6P0wgE
 https://github.com/codecamp-official-thailand/backend-todo-list-authentication/tree/success
 https://github.com/codecamp-official-thailand/exercise-frontend-authentication/tree/success
 https://www.youtube.com/playlist?list=PL2pMBsI7XJjN4Xt5Q-y8OrH5a4t30cdZ2
+https://github.com/marketplace/actions/deploy-to-heroku
 https://morioh.com/p/1af43c8e11a9?f=603c719d1528b00f7934320a&fbclid=IwAR16yX3QN3YKvOepfEsrfLI7BMF1B7at9FAGEra3onKElke4509lfR6rPkg
 https://www.youtube.com/watch?v=lwOsI8LtVEQ
+https://engineering.thinknet.co.th/%E0%B8%97%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A-login-facebook-%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-passportjs-express-7c8f7461f719
+https://www.loginradius.com/blog/async/facebook-authentication-using-node-and-passport/
+https://github.com/Werayootk/jwt-authentication-react
+https://javascript.plainenglish.io/implementing-infinite-scroll-in-react-34b112813de7
+https://alexanderleon.medium.com/implement-social-authentication-with-react-restful-api-9b44f4714fa
+https://aaryanadil.com/react-social-login-tutorial-google-facebook-and-twitter-oauth2
 ```
 
 ## Liberty
