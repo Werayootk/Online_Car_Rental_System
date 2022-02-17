@@ -83,4 +83,5 @@ https://sequelize.org/
 https://www.npmjs.com/package/sequelize-cli#documentation
 https://www.passportjs.org/
 https://jwt.io/
+https://redux-toolkit.js.org/
 ```
