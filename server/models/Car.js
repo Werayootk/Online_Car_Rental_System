@@ -22,6 +22,10 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'cars'
     });
 
+  model.associate = models => {
+    model.hasOne(models.Order, { foreignKey: 'car_id' }),
+    model.hasMany(models.Image_car, { foreignKey: 'car_id' })
+  }
     return model;
 }
 

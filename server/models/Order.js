@@ -21,6 +21,12 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'orders'
     });
+  
+  model.associate = models => {
+    model.belongsTo(models.User, { foreignKey: 'user_id' }),
+    model.hasOne(models.Billing, { foreignKey: 'order_id' }),
+    model.belongsTo(models.Car, { foreignKey: 'car_id' })  
+  }
 
     return model;
 }

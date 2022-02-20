@@ -7,6 +7,10 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'image_car'
     });
 
+    model.associate = models => {
+        model.belongsTo(models.Car, { foreignKey: 'car_id' })
+    }
+    
     return model;
 }
 

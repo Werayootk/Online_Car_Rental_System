@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="2">
     <diagram id="hd5o-zbOTmuF9NX8m5Dz" name="ER Diagram">
-        <mxGraphModel dx="824" dy="-298" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="808" dy="-298" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -567,7 +567,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="4CtJ401IrEmegCLP5Ub-" name="Relational Database Schema">
-        <mxGraphModel dx="824" dy="529" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="808" dy="529" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="KppEOSR4Ip3MGHpC3uJf-0"/>
                 <mxCell id="KppEOSR4Ip3MGHpC3uJf-1" parent="KppEOSR4Ip3MGHpC3uJf-0"/>

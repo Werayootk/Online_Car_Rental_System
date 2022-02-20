@@ -18,7 +18,11 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'billings'
     });
+  model.associate = models => {
+    model.belongsTo(models.User, { foreignKey: 'user_id' }),
+    model.belongsTo(models.Order, { foreignKey: 'order_id' })
 
+  }
     return model;
 }
 

@@ -13,6 +13,9 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'login'
     });
 
+    model.associate = models => {
+     model.belongsTo(models.User, { foreignKey: 'user_id' })
+    }
     return model;
 }
 

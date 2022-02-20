@@ -11,10 +11,19 @@ module.exports = (sequelize, DataTypes) => {
     },
     email: {
       type: DataTypes.STRING(255)
+    },
+    status: {
+      type: DataTypes.STRING(10)
     }
   }, {
     tableName : 'users'
   });
+
+  model.associate = models => {
+    model.hasMany(models.Order, { foreignKey: 'user_id' }),
+    model.hasOne(models.Login, { foreignKey: 'user_id' }),
+    model.hasMany(models.Billing, { foreignKey: 'user_id' })
+  };
 
   return model;
 };

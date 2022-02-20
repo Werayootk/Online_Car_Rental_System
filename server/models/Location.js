@@ -9,6 +9,9 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'locations'
     });
+  
+  model.associate = models => {
+  }
 
     return model;
 }
