@@ -106,6 +106,8 @@ https://github.com/safak/youtube/tree/react-social-login
 https://github.com/Werayootk/cc10-fakebuck-web
 https://github.com/Werayootk/cc10-fakebuck-api
 https://github.com/Werayootk/cc10-expense-tracker
+https://github.com/codecamp-official-thailand/exercise-frontend-authentication/tree/success
+https://github.com/codecamp-official-thailand/backend-todo-list-authentication/tree/success
 ```
 
 ## Liberty
