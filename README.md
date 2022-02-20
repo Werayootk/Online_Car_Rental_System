@@ -108,6 +108,7 @@ https://github.com/Werayootk/cc10-fakebuck-api
 https://github.com/Werayootk/cc10-expense-tracker
 https://github.com/codecamp-official-thailand/exercise-frontend-authentication/tree/success
 https://github.com/codecamp-official-thailand/backend-todo-list-authentication/tree/success
+https://medium.com/nerd-for-tech/google-oauth2-0-authentication-using-node-js-and-passportjs-1a77f42b1111
 ```
 
 ## Liberty
