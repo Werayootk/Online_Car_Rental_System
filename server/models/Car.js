@@ -1,40 +1,42 @@
 module.exports = (sequelize, DataTypes) => {
-    const model = sequelize.define('Car', {
-        car_brand: {
-            type: DataTypes.STRING(100)
-          },
-          car_register: {
-            type: DataTypes.STRING(10)
-          },
-          car_type: {
-            type: DataTypes.STRING(100)
-          },
-          car_transmission: {
-            type: DataTypes.STRING(100)
-        },
-        car_seat: {
-            type: DataTypes.STRING(100)
-          },
-          car_status: {
-            type: DataTypes.STRING(100)
-          }
-    }, {
-        tableName: 'cars'
+  const Car = sequelize.define(
+    "Car",
+    {
+      car_brand: {
+        type: DataTypes.STRING,
+        unique: true,
+      },
+      car_register: {
+        type: DataTypes.STRING,
+      },
+      car_type: {
+        type: DataTypes.STRING,
+      },
+      car_transmission: {
+        type: DataTypes.STRING,
+      },
+      car_seat: {
+        type: DataTypes.STRING,
+      },
+      car_status: {
+        type: DataTypes.STRING,
+      },
+    },{
+      timestamps: false
+    }
+  );
+
+  Car.associate = (models) => {
+    Car.hasOne(models.Order, {
+      foreignKey: 'car_id',
+      allowNull: false
     });
 
-  model.associate = models => {
-    model.hasOne(models.Order, { foreignKey: 'car_id' }),
-    model.hasMany(models.Image_car, { foreignKey: 'car_id' })
-  }
-    return model;
-}
+    Car.hasMany(models.Image_car, {
+      foreignKey: 'car_id',
+      allowNull: false
+    });
+  };
 
-/**
- * cid
- * car_brand
- * car_register
- * car_type
- * car_transmission
- * car_seat
- * car_status
- */
+  return Car;
+};

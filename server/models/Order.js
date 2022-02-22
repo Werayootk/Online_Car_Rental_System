@@ -1,44 +1,46 @@
 module.exports = (sequelize, DataTypes) => {
-    const model = sequelize.define('Order', {
-        start_datetime: {
-            type: DataTypes.DATE
-          },
-          end_datetime: {
-            type: DataTypes.DATE
-          },
-          pickup_location: {
-            type: DataTypes.STRING(100)
-          },
-          return_location: {
-            type: DataTypes.STRING(100)
-        },
-        refund: {
-            type: DataTypes.STRING(100)
-          },
-          booking_status: {
-            type: DataTypes.STRING(100)
-          }
-    }, {
-        tableName: 'orders'
+  const Order = sequelize.define(
+    "Order",
+    {
+      return_location: {
+        type: DataTypes.STRING,
+      },
+      refund: {
+        type: DataTypes.STRING,
+      },
+      booking_status: {
+        type: DataTypes.STRING,
+      },
+      pickup_location: {
+        type: DataTypes.STRING,
+      },
+      start_datetime: {
+        type: DataTypes.DATE,
+      },
+      end_datetime: {
+        type: DataTypes.DATE,
+      },
+    },{
+      timestamps: false
+    }
+  );
+
+  Order.associate = (models) => {
+    Order.belongsTo(models.User, {
+      foreignKey: 'user_id',
+      allowNull: false
     });
-  
-  model.associate = models => {
-    model.belongsTo(models.User, { foreignKey: 'user_id' }),
-    model.hasOne(models.Billing, { foreignKey: 'order_id' }),
-    model.belongsTo(models.Car, { foreignKey: 'car_id' })  
-  }
 
-    return model;
-}
+    Order.hasOne(models.Billing, {
+      foreignKey: 'order_id',
+      allowNull: false
+    });
 
-/**
- * uid
- * cid
- * oid
- * start_datetime
- * end_datetime
- * pickup_location
- * return_location
- * refund
- * booking_status
- */
+    Order.belongsTo(models.Car, {
+      foreignKey: 'car_id',
+      allowNull: false
+    });  
+  };
+
+  return Order;
+};

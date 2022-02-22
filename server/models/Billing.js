@@ -1,38 +1,39 @@
 module.exports = (sequelize, DataTypes) => {
-    const model = sequelize.define('Billing', {
-        total_amount: {
-            type: DataTypes.INTEGER
-          },
-          paid_date: {
-            type: DataTypes.DATE
-          },
-          bill_date: {
-            type: DataTypes.DATE
-        },
-        bill_status: {
-            type: DataTypes.STRING(100)
-          },
-          amount: {
-            type: DataTypes.INTEGER
-          }
-    }, {
-        tableName: 'billings'
+  const Billing = sequelize.define(
+    "Billing",
+    {
+      bill_date: {
+        type: DataTypes.DATE,
+        unique: true,
+      },
+      paid_date: {
+        type: DataTypes.DATE,
+      },
+      bill_status: {
+        type: DataTypes.STRING,
+      },
+      amount: {
+        type: DataTypes.INTEGER,
+      },
+      total_amount: {
+        type: DataTypes.INTEGER,
+      },
+    },{
+      timestamps: false
+    }
+  );
+
+  Billing.associate = (models) => {
+    Billing.belongsTo(models.User, {
+      foreignKey: 'user_id',
+      allowNull: false
     });
-  model.associate = models => {
-    model.belongsTo(models.User, { foreignKey: 'user_id' }),
-    model.belongsTo(models.Order, { foreignKey: 'order_id' })
 
-  }
-    return model;
-}
+    Billing.belongsTo(models.Order, {
+      foreignKey: 'order_id',
+      allowNull: false
+    });
+  };
 
-/**
- * bill_id
- * oid
- * uid
- * total_amount
- * paid_date
- * bill_date
- * bill_status
- * amount
- */
+  return Billing;
+};

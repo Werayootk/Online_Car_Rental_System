@@ -1,21 +1,27 @@
 module.exports = (sequelize, DataTypes) => {
-    const model = sequelize.define('Image_car', {
-        img_url: {
-            type: DataTypes.STRING(255)
-          }
-    }, {
-        tableName: 'image_car'
-    });
-
-    model.associate = models => {
-        model.belongsTo(models.Car, { foreignKey: 'car_id' })
+  const Image_car = sequelize.define(
+    "Image_car",
+    {
+      img_url: {
+        type: DataTypes.STRING,
+      }
+    },{
+      timestamps: false
     }
-    
-    return model;
-}
+  );
+
+  Image_car.associate = (models) => {
+    Image_car.belongsTo(models.Car, {
+      foreignKey: 'car_id',
+      allowNull: false
+    });
+  };
+
+  return Image_car;
+};
+
 
 /**
- * img_id
- * cid
- * img_url
- */
+        model.belongsTo(models.Car, { foreignKey: 'car_id' })
+
+*/

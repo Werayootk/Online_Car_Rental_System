@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Passw0rd",
-    "database": "car_easy_life_db",
+    "database": "car_easy_life",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

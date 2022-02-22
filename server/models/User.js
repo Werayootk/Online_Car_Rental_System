@@ -1,47 +1,47 @@
 module.exports = (sequelize, DataTypes) => {
-  const model = sequelize.define(
+  const User = sequelize.define(
     "User",
     {
-      username: {
-        type: DataTypes.STRING(100),
+      email: {
+        type: DataTypes.STRING,
+        unique: true,
+        validate: {
+          notEmpty: true,
+        },
+      },
+      first_name: {
+        type: DataTypes.STRING,
+      },
+      last_name: {
+        type: DataTypes.STRING,
+      },
+      phone_number: {
+        type: DataTypes.STRING,
         unique: true,
       },
       password: {
-        type: DataTypes.STRING(255),
-      },
-      first_name: {
-        type: DataTypes.STRING(255),
-      },
-      last_name: {
-        type: DataTypes.STRING(255),
-      },
-      tel: {
-        type: DataTypes.STRING(255),
-      },
-      email: {
-        type: DataTypes.STRING(255),
+        type: DataTypes.STRING,
+        allowNull: false,
       },
       status: {
-        type: DataTypes.STRING(10),
+        type: DataTypes.STRING,
       },
-    },
-    {
-      tableName: "users",
+    },{
+      timestamps: false
     }
   );
 
-  model.associate = (models) => {
-    model.hasMany(models.Order, { foreignKey: "user_id" }),
-    model.hasMany(models.Billing, { foreignKey: "user_id" });
+  User.associate = (models) => {
+    User.hasMany(models.Order, {
+      foreignKey: "user_id",
+      allowNull: false
+    });
+
+    User.hasMany(models.Billing, {
+      foreignKey: "user_id",
+      allowNull: false
+    });
   };
 
-  return model;
+  return User;
 };
-
-/*
-uid
-first_name
-last_name
-tel
-email 
-*/
