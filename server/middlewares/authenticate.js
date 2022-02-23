@@ -1,3 +1,4 @@
-const passport = require('passport');
+const passport = require("passport");
 
-module.exports = passport.authenticate('jwt', { session: false });
+module.exports = passport.authenticate("jwt", { session: false });
+

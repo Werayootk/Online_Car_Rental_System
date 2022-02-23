@@ -75,11 +75,11 @@
 
 ### SERVER Backend Todo list
 
-- [ ] Create DB and Schema follow ER-diagram
+- [x] Create DB and Schema follow ER-diagram
 - [ ] Implement Auth service (JWT and Social login)
+- [ ] Implement forget password gen new pass and alert to email
 - [ ] Define Test case
 - [ ] GenDoc API
-
 ## Useful link example
 
 ```
@@ -111,6 +111,8 @@ https://github.com/codecamp-official-thailand/backend-todo-list-authentication/t
 https://medium.com/nerd-for-tech/google-oauth2-0-authentication-using-node-js-and-passportjs-1a77f42b1111
 https://dev.to/zion/facebook-and-google-authentication-with-node-js-and-doppler-maf
 https://codeforgeek.com/facebook-login-using-nodejs-express/
+https://dev.to/asim_ansari7/setting-up-social-logins-with-node-js-and-passport-js-1m16
+https://gabrieleromanato.name/nodejs-social-login-in-expressjs-using-twitter-google-facebook-and-linkedin-with-passport
 ```
 
 ## Liberty

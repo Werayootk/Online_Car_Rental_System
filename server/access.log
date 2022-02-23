@@ -1,0 +1,6 @@
+::1 - - [23/Feb/2022:03:47:57 +0000] "GET /users/me HTTP/1.1" 200 128 "-" "PostmanRuntime/7.29.0"
+::1 - - [23/Feb/2022:08:02:57 +0000] "GET /users/facebook HTTP/1.1" 302 0 "-" "PostmanRuntime/7.29.0"
+::1 - - [23/Feb/2022:08:08:27 +0000] "GET /users/facebook/callback HTTP/1.1" 302 0 "-" "PostmanRuntime/7.29.0"
+::1 - - [23/Feb/2022:08:32:10 +0000] "GET /users/facebook/ HTTP/1.1" 302 0 "-" "PostmanRuntime/7.29.0"
+::1 - - [23/Feb/2022:08:32:15 +0000] "GET /users/google HTTP/1.1" 302 0 "-" "PostmanRuntime/7.29.0"
+::1 - - [23/Feb/2022:08:33:12 +0000] "POST /users/facebook/ HTTP/1.1" 404 47 "-" "PostmanRuntime/7.29.0"
