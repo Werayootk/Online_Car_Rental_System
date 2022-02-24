@@ -3,7 +3,6 @@ require("./config/passport");
 
 const express = require("express");
 const fs = require('fs');
-const morgan = require('morgan');
 const path = require('path');
 const cors = require("cors");
 const helmet = require("helmet");
@@ -12,13 +11,9 @@ const passport = require('passport');
 
 const db = require("./models");
 const userRoute = require("./routes/userRoute");
-
+const morganMiddleware = require("./middlewares/morganMiddleware");
 const app = express();
-// create a write stream (in append mode)
-var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
-
-// setup the logger
-app.use(morgan('combined', { stream: accessLogStream }))
+app.use(morganMiddleware);
 
 app.use(cors());
 app.use(helmet());
