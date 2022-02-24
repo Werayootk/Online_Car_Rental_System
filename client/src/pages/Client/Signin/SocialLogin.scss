@@ -7,11 +7,12 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
-}
-
-.signup-buttons a {
     vertical-align: middle;
     text-decoration: none;
+}
+
+.signup-buttons:hover {
+    cursor: pointer;
 }
 
 .signup-buttons svg {

@@ -41,7 +41,7 @@ function App() {
       />
       <Route
         exact
-        path="/logout"
+        path="/users/logout"
         render={() => {
           return <Redirect to="/main" />;
         }}

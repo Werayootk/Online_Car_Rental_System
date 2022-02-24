@@ -5,14 +5,20 @@ import {ReactComponent as Facebook_Logo} from '../../../assets/images/facebook-i
 import {ReactComponent as Google_Logo} from '../../../assets/images/google-icon.svg';
 
 const SocialLogin = () => {
-
+    const google = () => {
+        window.open("http://localhost:8000/users/google", "_self");
+      };
+    
+      const facebook = () => {
+        window.open("http://localhost:8000/users/facebook", "_self");
+      };
     return (
-        <div className="signup-buttons">
+        <div className="signup-buttons" onClick={google}>
             <div className="google-signup">
-                <Link to={'/'}><Google_Logo/>Google</Link>
+                <Google_Logo/>Google
             </div>
-            <div className="facebook-signup">
-                <Link to={'/'}><Facebook_Logo/>Facebook</Link>
+            <div className="facebook-signup" onClick={facebook}>
+                <Facebook_Logo/>Facebook
             </div>
     </div>
     );

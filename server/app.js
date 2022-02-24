@@ -12,6 +12,7 @@ const passport = require('passport');
 
 const db = require("./models");
 const userRoute = require("./routes/userRoute");
+
 const app = express();
 // create a write stream (in append mode)
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
