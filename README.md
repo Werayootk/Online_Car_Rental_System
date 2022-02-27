@@ -131,3 +131,13 @@ https://www.passportjs.org/
 https://jwt.io/
 https://redux-toolkit.js.org/
 ```
+
+## User for test
+```
+# ADMIN
+email : test1@test.com
+password : admin1234
+# User
+email : test2@test.com
+password : user1234
+```

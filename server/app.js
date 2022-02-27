@@ -11,6 +11,7 @@ const passport = require('passport');
 
 const db = require("./models");
 const userRoute = require("./routes/userRoute");
+const adminRoute = require("./routes/adminRoute");
 const morganMiddleware = require("./middlewares/morganMiddleware");
 const app = express();
 app.use(morganMiddleware);
@@ -33,6 +34,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use("/users", userRoute);
+app.use("/admin", adminRoute);
 
 app.use((req, res) => {
   res.status(404).json({ message: "resource not found on this server" });
