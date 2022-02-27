@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ade829b9-f35a-46c1-9787-e44e76cce456",
+		"_postman_id": "d3b5d887-3659-4978-a883-8e3df38ed279",
 		"name": "Car easy life API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\":\"test1@test.com\",\n    \"password\": \"admin1234\",\n    \"first_name\": \"admin1\",\n    \"last_name\": \"admin1\",\n    \"phone_number\":\"12345678\",\n    \"status\": \"admin\"\n}",
+					"raw": "{\n    \"email\":\"test2@test.com\",\n    \"password\": \"user1234\",\n    \"first_name\": \"user1\",\n    \"last_name\": \"user1\",\n    \"phone_number\":\"12345679\",\n    \"status\": \"user\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,14 +64,14 @@
 			"response": []
 		},
 		{
-			"name": "Get_Profile",
+			"name": "Me",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsImlhdCI6MTY0NTU4NTc5OSwiZXhwIjoxNjQ4MTc3Nzk5fQ.ZStKtHiEL_wTPnOuL4No3TDB-KcO7yFgphEIccxnHWA",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ1OTMzMTY0LCJleHAiOjE2NDg1MjUxNjR9.fG_HnRwWQWpvSBV-BK0KZ1bQM3JmylktqWnifi4FZCk",
 							"type": "string"
 						}
 					]
@@ -88,6 +88,26 @@
 					"path": [
 						"users",
 						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_get_customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"customer"
 					]
 				}
 			},

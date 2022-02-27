@@ -34,3 +34,115 @@
 [35m[39m
 2022-02-27 11:04:02:42 [35mhttp[39m: [35m::1 - - GET /admin/customer 401 37 - 8.481 ms[39m
 [35m[39m
+2022-02-27 14:36:19:3619 [35mhttp[39m: [35m::1 - - POST /users/login 200 356 - 358.052 ms[39m
+[35m[39m
+2022-02-27 14:36:43:3643 [35mhttp[39m: [35m::1 - - GET /admin/customer 500 35 - 20.783 ms[39m
+[35m[39m
+2022-02-27 14:54:10:5410 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 10 - 103.744 ms[39m
+[35m[39m
+2022-02-27 14:54:39:5439 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 10 - 64.122 ms[39m
+[35m[39m
+2022-02-27 18:32:21:3221 [35mhttp[39m: [35m::1 - - GET /admin/customer?skip=3&take=10 200 25 - 102.680 ms[39m
+[35m[39m
+2022-02-27 18:45:40:4540 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 301.148 ms[39m
+[35m[39m
+2022-02-27 18:45:53:4553 [35mhttp[39m: [35m::1 - - POST /users/register 500 30 - 121.505 ms[39m
+[35m[39m
+2022-02-27 18:45:58:4558 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 94.091 ms[39m
+[35m[39m
+2022-02-27 18:46:12:4612 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 115.446 ms[39m
+[35m[39m
+2022-02-27 18:46:52:4652 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 99.017 ms[39m
+[35m[39m
+2022-02-27 18:47:09:479 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 98.235 ms[39m
+[35m[39m
+2022-02-27 18:47:27:4727 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 91.549 ms[39m
+[35m[39m
+2022-02-27 18:47:46:4746 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 90.799 ms[39m
+[35m[39m
+2022-02-27 18:48:00:480 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 98.237 ms[39m
+[35m[39m
+2022-02-27 18:48:17:4817 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 123.084 ms[39m
+[35m[39m
+2022-02-27 18:48:29:4829 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 103.268 ms[39m
+[35m[39m
+2022-02-27 18:48:42:4842 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 88.382 ms[39m
+[35m[39m
+2022-02-27 18:49:42:4942 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 89.024 ms[39m
+[35m[39m
+2022-02-27 18:49:54:4954 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 84.903 ms[39m
+[35m[39m
+2022-02-27 18:50:07:507 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 97.010 ms[39m
+[35m[39m
+2022-02-27 18:50:21:5021 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 100.995 ms[39m
+[35m[39m
+2022-02-27 18:50:35:5035 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 94.877 ms[39m
+[35m[39m
+2022-02-27 18:50:50:5050 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 89.210 ms[39m
+[35m[39m
+2022-02-27 18:51:01:511 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 88.077 ms[39m
+[35m[39m
+2022-02-27 18:51:53:5153 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 101.081 ms[39m
+[35m[39m
+2022-02-27 18:52:07:527 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 193.200 ms[39m
+[35m[39m
+2022-02-27 18:52:19:5219 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 99.249 ms[39m
+[35m[39m
+2022-02-27 18:52:35:5235 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 157.925 ms[39m
+[35m[39m
+2022-02-27 18:52:54:5254 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 94.757 ms[39m
+[35m[39m
+2022-02-27 18:53:07:537 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 92.425 ms[39m
+[35m[39m
+2022-02-27 18:53:19:5319 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 98.184 ms[39m
+[35m[39m
+2022-02-27 18:53:32:5332 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 89.093 ms[39m
+[35m[39m
+2022-02-27 18:53:46:5346 [35mhttp[39m: [35m::1 - - POST /users/register 201 26 - 85.452 ms[39m
+[35m[39m
+2022-02-27 18:53:53:5353 [35mhttp[39m: [35m::1 - - GET /admin/customer?skip=3&take=10 - - - - ms[39m
+[35m[39m
+2022-02-27 19:26:36:2636 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 - - 106.541 ms[39m
+[35m[39m
+2022-02-27 19:28:05:285 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 14 - 86.118 ms[39m
+[35m[39m
+2022-02-27 20:54:54:5454 [35mhttp[39m: [35m::1 - - GET /admin/customer 500 72 - 116.722 ms[39m
+[35m[39m
+2022-02-27 20:56:10:5610 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=test3@test.com 500 77 - 38.131 ms[39m
+[35m[39m
+2022-02-27 20:58:04:584 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=test3@test.com 500 77 - 113.005 ms[39m
+[35m[39m
+2022-02-27 21:01:55:155 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=test3@test.com 500 77 - 118.355 ms[39m
+[35m[39m
+2022-02-27 21:02:41:241 [35mhttp[39m: [35m::1 - - GET /admin/customer?first_name=user3 500 72 - 23.798 ms[39m
+[35m[39m
+2022-02-27 21:03:18:318 [35mhttp[39m: [35m::1 - - GET /admin/customer?first_name=user3 500 72 - 124.980 ms[39m
+[35m[39m
+2022-02-27 21:06:34:634 [35mhttp[39m: [35m::1 - - GET /admin/customer?first_name=user3 200 1971 - 127.666 ms[39m
+[35m[39m
+2022-02-27 21:07:51:751 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=test 400 25 - 80.873 ms[39m
+[35m[39m
+2022-02-27 21:08:00:80 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=test 400 25 - 16.380 ms[39m
+[35m[39m
+2022-02-27 21:08:57:857 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=test 200 22 - 88.511 ms[39m
+[35m[39m
+2022-02-27 21:10:12:1012 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=test 200 1971 - 85.183 ms[39m
+[35m[39m
+2022-02-27 21:10:50:1050 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 22 - 14.986 ms[39m
+[35m[39m
+2022-02-27 21:12:32:1232 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 1971 - 229.501 ms[39m
+[35m[39m
+2022-02-27 21:18:02:182 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=te 200 1971 - 84.963 ms[39m
+[35m[39m
+2022-02-27 21:18:32:1832 [35mhttp[39m: [35m::1 - - GET /admin/customer?email=te&offset=2&limit=2 200 411 - 28.704 ms[39m
+[35m[39m
+2022-02-27 21:26:16:2616 [35mhttp[39m: [35m::1 - - GET /admin/customer?fisrt_name=user 200 22 - 94.016 ms[39m
+[35m[39m
+2022-02-27 21:26:22:2622 [35mhttp[39m: [35m::1 - - GET /admin/customer?fisrt_name=user2 200 22 - 19.162 ms[39m
+[35m[39m
+2022-02-27 21:26:35:2635 [35mhttp[39m: [35m::1 - - GET /admin/customer?first_name=user 200 1971 - 18.665 ms[39m
+[35m[39m
+2022-02-27 21:26:50:2650 [35mhttp[39m: [35m::1 - - GET /admin/customer?last_name=user 200 1971 - 17.481 ms[39m
+[35m[39m
+2022-02-27 21:27:15:2715 [35mhttp[39m: [35m::1 - - GET /admin/customer?phone_number=1111113 200 1971 - 15.076 ms[39m
+[35m[39m
