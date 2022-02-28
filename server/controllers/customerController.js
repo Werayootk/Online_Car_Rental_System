@@ -1,6 +1,5 @@
-const { Op, where } = require("sequelize");
+const { Op } = require("sequelize");
 const db = require("../models");
-
 class FilterCustomer {
   email;
   first_name;
@@ -68,7 +67,7 @@ const getCustomerList = async (paginate, filterCustomer) => {
       data: result,
       total: totalResult,
       offset: paginate.offset,
-      limit: paginate.limit
+      limit: paginate.limit,
     };
   } else {
     const result = await db.User.findAll({
@@ -83,7 +82,7 @@ const getCustomerList = async (paginate, filterCustomer) => {
       data: result,
       total: totalResult,
       offset: paginate.offset,
-      limit: paginate.limit
+      limit: paginate.limit,
     };
   }
 };
@@ -118,3 +117,85 @@ exports.getCustomerAll = async (req, res, next) => {
   }
 };
 
+exports.getCustomerById = async (req, res, next) => {
+  try {
+    const { customerId } = req.params;
+
+    const dataCustomer = await db.User.findOne({
+      where: {
+        id: {
+          [Op.eq]: customerId,
+        },
+      },
+    });
+
+    if (!dataCustomer) {
+      return res.status(400).json({ message: "this customer not found" });
+    }
+    res.status(200).json({ dat: dataCustomer });
+  } catch (err) {
+    next(err);
+  }
+};
+
+exports.updateCustomerById = async (req, res, next) => {
+  try {
+    const { customerId } = req.params;
+
+    const dataCustomer = await db.User.findOne({
+      where: {
+        id: {
+          [Op.eq]: customerId,
+        },
+      },
+    });
+
+    if (!dataCustomer) {
+      return res.status(400).json({ message: "this customer not found" });
+    }
+
+    if (req.query["email"]) {
+      dataCustomer.email = req.query["email"];
+    }
+    if (req.query["first_name"]) {
+      dataCustomer.first_name = req.query["first_name"];
+    }
+    if (req.query["last_name"]) {
+      dataCustomer.last_name = req.query["last_name"];
+    }
+    if (req.query["phone_number"]) {
+      dataCustomer.phone_number = req.query["phone_number"];
+    }
+    if (req.query["status"]) {
+      dataCustomer.status = req.query["status"];
+    }
+
+    await dataCustomer.save();
+    res.status(200).json({ message: "customer was updated." });
+  } catch (err) {
+    next(err);
+  }
+};
+
+exports.deleteCustomerById = async (req, res, next) => {
+  try {
+    const { customerId } = req.params;
+
+    const dataCustomer = await db.User.findOne({
+      where: {
+        id: {
+          [Op.eq]: customerId,
+        },
+      },
+    });
+
+    if (!dataCustomer) {
+      return res.status(400).json({ message: "this customer not found" });
+    }
+
+    await dataCustomer.destroy();
+    res.status(204).json({ message: "this customer was deleted" });
+  } catch (err) {
+    next(err);
+  }
+};

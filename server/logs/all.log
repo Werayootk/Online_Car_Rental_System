@@ -222,3 +222,35 @@
 [35m[39m
 2022-02-28 07:42:58:4258 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 1973 - 229.621 ms[39m
 [35m[39m
+2022-02-28 07:51:26:5126 [35mhttp[39m: [35m::1 - - GET /admin/customer?phone_number=111 200 44 - 285.621 ms[39m
+[35m[39m
+2022-02-28 07:51:38:5138 [35mhttp[39m: [35m::1 - - GET /admin/customer?id=3 200 620 - 39.950 ms[39m
+[35m[39m
+2022-02-28 07:51:50:5150 [35mhttp[39m: [35m::1 - - GET /admin/customer 200 1973 - 34.872 ms[39m
+[35m[39m
+2022-02-28 08:20:52:2052 [35mhttp[39m: [35m::1 - - GET /admin/customer?first_name=user1 200 1973 - 559.226 ms[39m
+[35m[39m
+2022-02-28 09:42:26:4226 [35mhttp[39m: [35m::1 - - PATCH /admin/customer/2 - - - - ms[39m
+[35m[39m
+2022-02-28 09:46:02:462 [35mhttp[39m: [35m::1 - - GET /admin/customer/2 401 32 - 12.684 ms[39m
+[35m[39m
+2022-02-28 09:46:30:4630 [35mhttp[39m: [35m::1 - - GET /admin/customer/2 200 198 - 148.648 ms[39m
+[35m[39m
+2022-02-28 09:46:36:4636 [35mhttp[39m: [35m::1 - - PUT /admin/customer/2 404 47 - 1.037 ms[39m
+[35m[39m
+2022-02-28 09:46:49:4649 [35mhttp[39m: [35m::1 - - PUT /admin/customer/2 404 47 - 0.941 ms[39m
+[35m[39m
+2022-02-28 09:46:54:4654 [35mhttp[39m: [35m::1 - - PATCH /admin/customer/2 200 35 - 119.626 ms[39m
+[35m[39m
+2022-02-28 09:46:57:4657 [35mhttp[39m: [35m::1 - - GET /admin/customer/2 200 198 - 17.305 ms[39m
+[35m[39m
+2022-02-28 10:07:19:719 [35mhttp[39m: [35m::1 - - GET /admin/customer/2?first_name=edit_user1&last_name=edit_user1 200 198 - 142.751 ms[39m
+[35m[39m
+2022-02-28 10:07:34:734 [35mhttp[39m: [35m::1 - - PATCH /admin/customer/2?first_name=edit_user1&last_name=edit_user1 200 35 - 44.166 ms[39m
+[35m[39m
+2022-02-28 10:07:38:738 [35mhttp[39m: [35m::1 - - GET /admin/customer/2 200 203 - 18.049 ms[39m
+[35m[39m
+2022-02-28 10:08:29:829 [35mhttp[39m: [35m::1 - - PATCH /admin/customer/2?first_name=edit_user1&last_name=edit_user1 200 35 - 156.108 ms[39m
+[35m[39m
+2022-02-28 10:08:32:832 [35mhttp[39m: [35m::1 - - GET /admin/customer/2 200 208 - 17.255 ms[39m
+[35m[39m
