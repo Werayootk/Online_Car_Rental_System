@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       province: {
         type: DataTypes.STRING,
+        allowNull: false
       },
       location: {
         type: DataTypes.STRING,

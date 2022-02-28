@@ -10,6 +10,7 @@ router.get("/customer/:customerId", authWithAdmin, customerController.getCustome
 router.patch("/customer/:customerId", authWithAdmin, customerController.updateCustomerById);
 router.delete("/customer/:customerId", authWithAdmin, customerController.deleteCustomerById);
 
+router.post("/location", authWithAdmin, locationController.addLocation);
 router.get("/location", authWithAdmin, locationController.getLocationAll);
 router.get("/location/:locationId", authWithAdmin, locationController.getLocationById);
 router.patch("/location/:locationId", authWithAdmin, locationController.updateLocationById);

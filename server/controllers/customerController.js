@@ -132,7 +132,7 @@ exports.getCustomerById = async (req, res, next) => {
     if (!dataCustomer) {
       return res.status(400).json({ message: "this customer not found" });
     }
-    res.status(200).json({ dat: dataCustomer });
+    res.status(200).json({ data: dataCustomer });
   } catch (err) {
     next(err);
   }

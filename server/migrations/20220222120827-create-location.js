@@ -9,7 +9,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       province: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       location: {
         type: Sequelize.STRING
