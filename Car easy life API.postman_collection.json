@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d3b5d887-3659-4978-a883-8e3df38ed279",
+		"_postman_id": "18b2e07b-949d-4e47-9dba-5765a2d693eb",
 		"name": "Car easy life API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -96,6 +96,16 @@
 		{
 			"name": "admin_get_customer",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2MDA3Njk5LCJleHAiOjE2NDg1OTk2OTl9.W7OWmKpx1ZhjCHmjSYwMvG-em44RrQHwgnQiG_5nRtA",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -108,6 +118,247 @@
 					"path": [
 						"admin",
 						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_customer_ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/customer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"customer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_customer_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/customer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"customer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_customer_ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2MDA3Njk5LCJleHAiOjE2NDg1OTk2OTl9.W7OWmKpx1ZhjCHmjSYwMvG-em44RrQHwgnQiG_5nRtA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/customer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"customer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_location",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2MDIxMzk2LCJleHAiOjE2NDg2MTMzOTZ9.v_pYekLzCWwmllzrA0W6Er3RGaG_GIYOO0r3fchhbzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_location_ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2MDIxMzk2LCJleHAiOjE2NDg2MTMzOTZ9.v_pYekLzCWwmllzrA0W6Er3RGaG_GIYOO0r3fchhbzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/location/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"location",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_location_ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2MDIxMzk2LCJleHAiOjE2NDg2MTMzOTZ9.v_pYekLzCWwmllzrA0W6Er3RGaG_GIYOO0r3fchhbzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/location/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"location",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_location_ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2MDIxMzk2LCJleHAiOjE2NDg2MTMzOTZ9.v_pYekLzCWwmllzrA0W6Er3RGaG_GIYOO0r3fchhbzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/location/3?province=non",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"location",
+						"3"
+					],
+					"query": [
+						{
+							"key": "province",
+							"value": "non"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_location",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2MDIxMzk2LCJleHAiOjE2NDg2MTMzOTZ9.v_pYekLzCWwmllzrA0W6Er3RGaG_GIYOO0r3fchhbzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"bkk\",\r\n    \"location\": \"sam yarn\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/admin/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"location"
 					]
 				}
 			},

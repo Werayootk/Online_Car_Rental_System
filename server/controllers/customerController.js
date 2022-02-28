@@ -7,13 +7,13 @@ class FilterCustomer {
   phone_number;
   id;
   static fromQuery(query) {
-    const filter = new FilterCustomer();
-    filter.email = query["email"];
-    filter.first_name = query["first_name"];
-    filter.last_name = query["last_name"];
-    filter.phone_number = query["phone_number"];
-    filter.id = query["id"];
-    return filter;
+    const _filterCustomer = new FilterCustomer();
+    _filterCustomer.email = query["email"];
+    _filterCustomer.first_name = query["first_name"];
+    _filterCustomer.last_name = query["last_name"];
+    _filterCustomer.phone_number = query["phone_number"];
+    _filterCustomer.id = query["id"];
+    return _filterCustomer;
   }
 }
 
