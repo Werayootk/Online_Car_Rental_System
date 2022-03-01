@@ -113,6 +113,8 @@ https://dev.to/zion/facebook-and-google-authentication-with-node-js-and-doppler-
 https://codeforgeek.com/facebook-login-using-nodejs-express/
 https://dev.to/asim_ansari7/setting-up-social-logins-with-node-js-and-passport-js-1m16
 https://gabrieleromanato.name/nodejs-social-login-in-expressjs-using-twitter-google-facebook-and-linkedin-with-passport
+https://stackoverflow.com/questions/62142940/how-to-upload-multiple-images-to-cloudinary
+https://github.com/expressjs/multer
 ```
 
 ## Liberty
