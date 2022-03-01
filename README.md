@@ -115,6 +115,10 @@ https://dev.to/asim_ansari7/setting-up-social-logins-with-node-js-and-passport-j
 https://gabrieleromanato.name/nodejs-social-login-in-expressjs-using-twitter-google-facebook-and-linkedin-with-passport
 https://stackoverflow.com/questions/62142940/how-to-upload-multiple-images-to-cloudinary
 https://github.com/expressjs/multer
+https://github.com/Werayootk/nodejs-microservices
+https://medium.com/swlh/real-time-exchange-information-with-microservices-and-nodejs-e6bf6623bca6
+chatroom react socket io
+https://github.com/Werayootk/MicroservicesWithRabbitMQAndSocketIO
 ```
 
 ## Liberty
@@ -132,6 +136,7 @@ https://www.npmjs.com/package/sequelize-cli#documentation
 https://www.passportjs.org/
 https://jwt.io/
 https://redux-toolkit.js.org/
+https://redux-saga.js.org/
 ```
 
 ## User for test
