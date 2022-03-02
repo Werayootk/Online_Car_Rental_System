@@ -45,6 +45,11 @@ module.exports = {
       },
       pickup_location: {
         type: Sequelize.STRING
+      },
+      booking_no: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true
       }
     });
   },

@@ -12,6 +12,9 @@ const passport = require('passport');
 const db = require("./models");
 const userRoute = require("./routes/userRoute");
 const adminRoute = require("./routes/adminRoute");
+const searchCarRoute = require('./routes/searchCarRoute');
+const myBookingRoute = require('./routes/myBookingRoute');
+const paymentRoute = require('./routes/paymentRoute');
 const morganMiddleware = require("./middlewares/morganMiddleware");
 const app = express();
 app.use(morganMiddleware);
@@ -34,8 +37,11 @@ app.use('/static', express.static('public/images'));
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use("/users", userRoute);
 app.use("/admin", adminRoute);
+app.use("/user", userRoute);
+app.use('/search-car', searchCarRoute);
+app.use('/booking', myBookingRoute);
+app.use('/payment', paymentRoute);
 
 app.use((req, res) => {
   res.status(404).json({ message: "resource not found on this server" });

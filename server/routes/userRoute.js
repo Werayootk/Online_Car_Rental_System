@@ -5,6 +5,7 @@ const passport = require("passport");
 
 const authController = require("../controllers/authController");
 const userController = require("../controllers/userController");
+
 const authenticateMiddleware = require("../middlewares/authenticateMiddleware");
 
 const router = express.Router();
@@ -12,6 +13,9 @@ const router = express.Router();
 router.get("/me", authenticateMiddleware, userController.getMe);
 router.post("/register", authController.register);
 router.post("/login", authController.login);
+
+// router.post("/order", authWithAdmin, orderController.createOrder); ==> Create By user
+// router.post("/bill", authWithAdmin, billController.createOrder); ==> Create By user
 
 router.get("/google", passport.authenticate("google", { scope: ["email"] }));
 router.get("/facebook", passport.authenticate("facebook", { scope: ["profile", "email"] }));

@@ -14,6 +14,11 @@ module.exports = (sequelize, DataTypes) => {
       pickup_location: {
         type: DataTypes.STRING,
       },
+      booking_no: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        unique: true,
+      },
       start_datetime: {
         type: DataTypes.DATE,
       },

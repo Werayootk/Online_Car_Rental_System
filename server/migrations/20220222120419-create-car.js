@@ -26,6 +26,9 @@ module.exports = {
       },
       car_status: {
         type: Sequelize.STRING
+      },
+      car_price: {
+        type: Sequelize.INTEGER
       }
     });
   },

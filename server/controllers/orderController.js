@@ -38,14 +38,6 @@ exports.updateOrderById = async (req, res, next) => {
     }
 };
 
-exports.createOrder = async (req, res, next) => {
-    try {
-
-    } catch (err) {
-      next(err);
-    }
-};
-
 exports.deleteOrderById = async (req, res, next) => {
     try {
 

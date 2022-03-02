@@ -21,6 +21,9 @@ module.exports = (sequelize, DataTypes) => {
       car_status: {
         type: DataTypes.STRING,
       },
+      car_price: {
+        type : DataTypes.INTEGER
+      }
     },{
       timestamps: false
     }

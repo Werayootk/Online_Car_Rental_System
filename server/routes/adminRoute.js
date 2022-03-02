@@ -4,6 +4,7 @@ const customerController = require('../controllers/customerController');
 const locationController = require("../controllers/locationController");
 const carController = require('../controllers/carController');
 const orderController = require('../controllers/orderController');
+const billController = require("../controllers/billController");
 
 const authWithAdmin = require('../middlewares/authWithAdmin');
 const upload = require('../middlewares/upload');
@@ -26,10 +27,14 @@ router.get("/car/:carId", authWithAdmin, carController.getCarById);
 router.patch("/car/:carId", authWithAdmin, carController.updateCarById);
 router.delete("/car/:carId", authWithAdmin, carController.deleteCarById);
 
-router.post("/order", authWithAdmin, orderController.createOrder);
 router.get("/order", authWithAdmin, orderController.getOrderAll);
 router.get("/order/:orderId", authWithAdmin, orderController.getOrderById);
 router.patch("/order/:orderId", authWithAdmin, orderController.updateOrderById);
 router.delete("/order/:orderId", authWithAdmin, orderController.deleteOrderById);
+
+router.get("/bill", authWithAdmin, billController.getBillAll);
+router.get("/bill/:billID", authWithAdmin, billController.getBillById);
+router.patch("/bill/:billID", authWithAdmin, billController.updateBillById);
+router.delete("/bill/:billID", authWithAdmin, billController.deleteBillById);
 
 module.exports = router;
