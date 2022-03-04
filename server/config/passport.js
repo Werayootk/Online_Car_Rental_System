@@ -27,7 +27,6 @@ passport.use(
   })
 );
 
-//Crate db user login from social
 passport.use(
   new GoogleStrategy(
     {
@@ -46,8 +45,7 @@ passport.use(
         } else {
           await User.create({
             email: emailUser,
-            first_name: 'After playground',
-            last_name: 'After playground',
+            first_name: profile.name,
             status:"Google User"
           });
         }
@@ -77,9 +75,8 @@ passport.use(
         } else {
           await User.create({
             email: emailUser,
-            first_name: 'After playground',
-            last_name: 'After playground',
-            status:"Google User"
+            first_name: profile.name,
+            status:"Facebook User"
           });
         }
       } catch (err) {
