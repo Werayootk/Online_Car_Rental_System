@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const express = require("express");
 const passport = require("passport");
 
@@ -14,11 +12,11 @@ router.get("/me", authenticateMiddleware, userController.getMe);
 router.post("/register", authController.register);
 router.post("/login", authController.login);
 
-// router.post("/order", authWithAdmin, orderController.createOrder); ==> Create By user
-// router.post("/bill", authWithAdmin, billController.createOrder); ==> Create By user
-
-router.get("/google", passport.authenticate("google", { scope: ["email"] }));
-router.get("/facebook", passport.authenticate("facebook", { scope: ["profile", "email"] }));
+router.get("/google", passport.authenticate("google", { scope: ["https://www.googleapis.com/auth/userinfo.email","https://www.googleapis.com/auth/userinfo.profile"] }));
+router.get("/facebook", passport.authenticate("facebook", { scope: ["email"] }));
+router.get("/login/success", userController.getSocialUserLogin);
+router.get("/login/failed", userController.getSocialUserFail);
+router.get("/logout", userController.getSocialUserLogout);
 
 router.get('/google/callback', 
   passport.authenticate('google', {
@@ -41,28 +39,5 @@ router.get('/facebook/callback',
     console.log('Facebook called us back!');
   }
 );
-
-router.get("/login/failed", (req, res) => {
-  res.status(401).json({
-    success: false,
-    message: "failure",
-  });
-});
-
-router.get("/login/success", (req, res) => {
-  if (req.user) {
-    res.status(200).json({
-      success: true,
-      message: "successful logged in",
-      user: req.user,
-      cookies: req.cookies
-    });
-  }
-});
-
-router.get("/logout", (req, res) => {
-  req.logout();
-  res.redirect(process.env.CLIENT_URL);
-});
 
 module.exports = router;

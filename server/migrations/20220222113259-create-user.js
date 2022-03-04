@@ -23,8 +23,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       password: {
-        type: Sequelize.STRING,
-        allowNull: false
+        type: Sequelize.STRING
       },
       status: {
         type: Sequelize.STRING

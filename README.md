@@ -119,6 +119,11 @@ https://github.com/Werayootk/nodejs-microservices
 https://medium.com/swlh/real-time-exchange-information-with-microservices-and-nodejs-e6bf6623bca6
 chatroom react socket io
 https://github.com/Werayootk/MicroservicesWithRabbitMQAndSocketIO
+https://stackoverflow.com/questions/38259861/google-oauth-not-returning-email-passport-authentication
+https://stackoverflow.com/questions/22880876/passport-facebook-authentication-is-not-providing-email-for-all-facebook-account
+https://requests-oauthlib.readthedocs.io/en/latest/examples/google.html
+https://developers.google.com/oauthplayground/
+https://developers.facebook.com/tools/explorer/
 ```
 ## Liberty
 

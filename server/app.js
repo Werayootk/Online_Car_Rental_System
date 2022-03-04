@@ -25,8 +25,6 @@ app.use(helmet());
 app.use(cookieSession({
   name: 'session',
   keys: [process.env.COOKIE_KEY_ONE, process.env.COOKIE_KEY_TWO],
-
-  // Cookie Options
   maxAge: 24 * 60 * 60 * 1000 // 24 hours
 }));
 
