@@ -11,14 +11,16 @@ createCarOrder
     ?car_id=&location=&user_id=&pickup_datetime=2022-02-17%2010:00&return_datetime=2022-02-19%2010:00
        - Genarate Booking_no format(user_id+car_id+location_id+datetime)
        - After create Order Create Bill
-updateOrderAndBillStatus
-    4. after frontend will redirect to omise after completed payment
-       UPDATE Order and Bill date and status
 */
 
 exports.getCarListAll = async (req, res, next) => {
     try {
-
+      /**
+       * 1. Query data from Car By status avaliable with limit offset count 
+       * 2. Query with filter Car type By ?car_type with limit offset count
+       * 3. Query data with order aec or dsec car_price
+       * 4. return data
+       */
     } catch (err) {
       next(err);
     }
@@ -27,7 +29,10 @@ exports.getCarListAll = async (req, res, next) => {
 
 exports.getCarDetailById = async (req, res, next) => {
     try {
-
+      /**
+       * 1. Query data from carId
+       * 2. return data
+       */
     } catch (err) {
       next(err);
     }
@@ -35,15 +40,11 @@ exports.getCarDetailById = async (req, res, next) => {
 
 exports.createCarOrder = async (req, res, next) => {
     try {
-
-    } catch (err) {
-      next(err);
-    }
-};
-
-exports.updateOrderAndBillStatus = async (req, res, next) => {
-    try {
-
+      /**
+       * 1. create data from ?car_id=&location=&user_id=&pickup_datetime=2022-02-17%2010:00&return_datetime=2022-02-19%2010:00
+       * 2. create to order and bill
+       * 3. update data car_status
+       */ 
     } catch (err) {
       next(err);
     }

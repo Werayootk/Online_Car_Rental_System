@@ -9,7 +9,11 @@ const db = require("../models");
 
 exports.getBookingList = async (req, res, next) => {
     try {
-
+      const { userId } = req.params
+      /**
+       * 1. Query Data Booking(Order) by userId include model (user, billing, car)
+       * 2. return data
+       */
     } catch (err) {
       next(err);
     }
@@ -17,15 +21,21 @@ exports.getBookingList = async (req, res, next) => {
 
 exports.getBookingByStatus = async (req, res, next) => {
     try {
-
+      /**
+       * 1. Query Data Booking(Order) by status from ? Booking_no include model (user, billing, car)
+       * 2. return data
+       */
     } catch (err) {
-      next(err);
+     next(err);
     }
 };
 
 exports.cancelBookingById = async (req, res, next) => {
     try {
-
+      /**
+       * 1. Query Data Booking(Order) ? Booking_no 
+       * 2. return data
+       */
     } catch (err) {
       next(err);
     }
