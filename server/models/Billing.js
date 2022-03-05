@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
     {
       bill_date: {
         type: DataTypes.DATE,
-        unique: true,
       },
       paid_date: {
         type: DataTypes.DATE,

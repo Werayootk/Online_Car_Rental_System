@@ -4,6 +4,6 @@ const authenticateMiddleware = require("../middlewares/authenticateMiddleware");
 
 const router = express.Router();
 
-router.patch('/bill-status/:userId', authenticateMiddleware, paymentController.updateBillStatusByUser);
+router.patch('/bill-status/:booking_no', authenticateMiddleware, paymentController.updateBillStatusByUser);
 
 module.exports = router;

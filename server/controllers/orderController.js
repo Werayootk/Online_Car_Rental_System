@@ -172,15 +172,6 @@ exports.updateOrderById = async (req, res, next) => {
         })
       }
 
-      id;
-      return_location;
-      refund;
-      booking_status;
-      pickup_location;
-      booking_no;
-      start_datetime;
-      end_datetime;
-
       if (req.query["id"]) {
         dataOrder.id = req.query["id"];
       }
