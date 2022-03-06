@@ -126,6 +126,10 @@ https://developers.google.com/oauthplayground/
 https://developers.facebook.com/tools/explorer/
 https://www.codegrepper.com/code-examples/javascript/sequelize+nested+include
 https://sebhastian.com/sequelize-nested-include/
+https://sebhastian.com/sequelize-nested-include/
+https://sebhastian.com/sequelize-join/
+https://sebhastian.com/sequelize-lazy-loading/
+https://sebhastian.com/sequelize-eager-loading/
 ```
 ## Liberty
 
