@@ -19,9 +19,3 @@ module.exports = (sequelize, DataTypes) => {
 
   return Image_car;
 };
-
-
-/**
-        model.belongsTo(models.Car, { foreignKey: 'car_id' })
-
-*/

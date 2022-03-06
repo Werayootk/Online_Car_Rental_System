@@ -124,6 +124,8 @@ https://stackoverflow.com/questions/22880876/passport-facebook-authentication-is
 https://requests-oauthlib.readthedocs.io/en/latest/examples/google.html
 https://developers.google.com/oauthplayground/
 https://developers.facebook.com/tools/explorer/
+https://www.codegrepper.com/code-examples/javascript/sequelize+nested+include
+https://sebhastian.com/sequelize-nested-include/
 ```
 ## Liberty
 

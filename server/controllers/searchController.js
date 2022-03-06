@@ -84,7 +84,8 @@ exports.getCarListAll = async (req, res, next) => {
       return res.status(400).json({
         message: "Not found car available",
       });
-    }
+    };
+    
     car_type_filter = car_type ? car_type.split(",") : [];
     const data = await getCarListFilterAndSort(
       paginate,
