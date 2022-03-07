@@ -1,12 +1,25 @@
 const multer = require('multer');
+const path = require('path');
 
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'public/images');
+  destination: function (req, file, cb) {
+    console.log('multer des');
+    cb(null, path.join(__dirname, './images/'))
   },
-  filename: (req, file, cb) => {
-    cb(null, '' + new Date().getTime() + '.' + file.mimetype.split('/')[1]);
+  filename: function(req, file, cb) {
+    console.log('multer filename');
+    cb(null, file.originalname + "-" + new Date().getTime() + '.' + file.mimetype.split('/')[1]);
   }
 });
 
-module.exports = multer({ storage });
+module.exports = multer({
+  storage: storage,
+  fileFilter: (req, file, cb) => {
+    let ext = path.extname(file.originalname);  
+    if (ext !== ".jpg" && ext !== ".jpeg" && ext !== ".png") {
+      cb(new Error("File type is not supported"), false);
+      return;
+    }
+    cb(null, true);
+  },
+});

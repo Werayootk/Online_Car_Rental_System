@@ -130,6 +130,7 @@ https://sebhastian.com/sequelize-nested-include/
 https://sebhastian.com/sequelize-join/
 https://sebhastian.com/sequelize-lazy-loading/
 https://sebhastian.com/sequelize-eager-loading/
+https://stackoverflow.com/questions/39350040/uploading-multiple-files-with-multer
 ```
 ## Liberty
 

@@ -1,5 +1,6 @@
 const { Op } = require("sequelize");
 const path = require('path');
+const fs = require('fs');
 const db = require("../models");
 const cloudinary = require("../utils/cloudinary");
 
@@ -222,6 +223,8 @@ exports.addCar = async (req, res, next) => {
       car_status,
       car_price,
     } = req.body;
+    
+    const carPrice = parseInt(car_price);
 
     const existCar = await db.Car.findOne({
       where: {
@@ -237,31 +240,43 @@ exports.addCar = async (req, res, next) => {
       })
     }
 
-  const newCar = await db.Car.create({
+    const newCar = await db.Car.create({
       car_brand,
       car_register,
       car_type,
       car_transmission,
       car_seat,
       car_status,
-      car_price,
+      car_price: carPrice,
     });
 
+
     const urls = [];
-    const files = req.files;
-    for (const file of files) {
-      const { path } = file;
-      const newPath = await cloudinaryImageUploadMethod(path);
-      urls.push(newPath);
+    // const files = req.files;
+    // for (const file of files) {
+    //   const { path } = file;
+    //   const newPath = await cloudinaryImageUploadMethod(path);
+    //   urls.push(newPath);
+    // }
+
+    // for (const url of urls) {
+    //   const newImgCar = await db.Image_car.create({
+    //     car_id: newCar.id,
+    //     img_url: url
+    //   });
+    // }
+
+    let result = {};
+    if (req.file) {
+      result = await cloudinaryImageUploadMethod(req.file.path);
+      fs.unlinkSync(req.file.path);
     }
 
-    for (const url of urls) {
-      const newImgCar = await db.Image_car.create({
-        car_id: newCar.id,
-        img_url: url
-      });
-    }
-
+    const newImgCar = await db.Image_car.create({
+          car_id: newCar.id,
+          img_url: result.secure_url
+        });
+    
     res.status(201).json({ message: "car created" });
   } catch (err) {
     next(err);

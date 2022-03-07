@@ -176,3 +176,21 @@ exports.createCarOrder = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.getProvinceAndLocation = async (req, res, next) => {
+  try {
+    const dataLocation = await db.Location.findAll();
+
+    if (dataLocation == undefined) {
+      return res.status(400).json({
+        message: 'No Location'
+      });
+    }
+
+    return res.status(200).json({
+      data: dataLocation
+    })
+  } catch (err) {
+    next(err);
+  }
+}
