@@ -20,14 +20,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/users/register",
+					"raw": "http://localhost:8000/user/register",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"users",
+						"user",
 						"register"
 					]
 				}
@@ -49,14 +49,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/users/login",
+					"raw": "http://localhost:8000/user/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"users",
+						"user",
 						"login"
 					]
 				}
@@ -359,6 +359,124 @@
 					"path": [
 						"admin",
 						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get_location",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2NjE2OTkxLCJleHAiOjE2NDkyMDg5OTF9.vCay5uREOKsHBDVfeSJLxY8vBvXoSoJ6pCGeVOYjXok",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/search-car/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search-car",
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_car_ADMIN",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2NjM5ODM0LCJleHAiOjE2NDkyMzE4MzR9.850G5vdR7HH0yGkwWPddecu0QB1uaWiTYNuWNtPwwMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "car_brand",
+							"value": "Toyota Vios 2015",
+							"contentType": "application/json",
+							"type": "default"
+						},
+						{
+							"key": "car_register",
+							"value": "2015",
+							"contentType": "application/json",
+							"type": "default"
+						},
+						{
+							"key": "car_type",
+							"value": "small",
+							"contentType": "application/json",
+							"type": "default"
+						},
+						{
+							"key": "car_transmission",
+							"value": "auto",
+							"contentType": "application/json",
+							"type": "default"
+						},
+						{
+							"key": "car_seat",
+							"value": "5",
+							"contentType": "application/json",
+							"type": "default"
+						},
+						{
+							"key": "car_status",
+							"value": "available",
+							"contentType": "application/json",
+							"type": "default"
+						},
+						{
+							"key": "car_price",
+							"value": "1050",
+							"contentType": "application/json",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"contentType": "",
+							"type": "file",
+							"src": []
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/admin/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"car"
 					]
 				}
 			},

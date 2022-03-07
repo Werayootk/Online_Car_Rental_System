@@ -131,6 +131,14 @@ https://sebhastian.com/sequelize-join/
 https://sebhastian.com/sequelize-lazy-loading/
 https://sebhastian.com/sequelize-eager-loading/
 https://stackoverflow.com/questions/39350040/uploading-multiple-files-with-multer
+https://afteracademy.com/blog/file-upload-with-multer-in-nodejs-and-express
+https://bmshamsnahid.medium.com/nodejs-file-upload-using-multer-3a904516f6d2
+https://forum.freecodecamp.org/t/handling-file-upload-in-node-js-multer-postman/436593
+https://medium.com/@nitinpatel_20236/image-upload-via-nodejs-server-3fe7d3faa642
+https://www.bacancytechnology.com/blog/file-upload-using-multer-with-nodejs-and-express
+https://www.bezkoder.com/node-js-express-file-upload/
+https://codeforgeek.com/file-uploads-using-node-js/
+
 ```
 ## Liberty
 

@@ -21,7 +21,7 @@ router.get("/location/:locationId", authWithAdmin, locationController.getLocatio
 router.patch("/location/:locationId", authWithAdmin, locationController.updateLocationById);
 router.delete("/location/:locationId", authWithAdmin, locationController.deleteLocationById);
 
-router.post("/car", authWithAdmin, upload.single('image'), carController.addCar);
+router.post("/car", authWithAdmin, upload.array('image', 5), carController.addCar);
 router.get("/car", authWithAdmin, carController.getCarAll);
 router.get("/car/:carId", authWithAdmin, carController.getCarById);
 router.patch("/car/:carId", authWithAdmin, carController.updateCarById);

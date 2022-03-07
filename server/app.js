@@ -30,7 +30,7 @@ app.use(cookieSession({
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use('/static', express.static('public/images'));
+app.use(express.static(__dirname));
 
 app.use(passport.initialize());
 app.use(passport.session());

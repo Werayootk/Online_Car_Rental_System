@@ -252,30 +252,30 @@ exports.addCar = async (req, res, next) => {
 
 
     const urls = [];
-    // const files = req.files;
-    // for (const file of files) {
-    //   const { path } = file;
-    //   const newPath = await cloudinaryImageUploadMethod(path);
-    //   urls.push(newPath);
-    // }
-
-    // for (const url of urls) {
-    //   const newImgCar = await db.Image_car.create({
-    //     car_id: newCar.id,
-    //     img_url: url
-    //   });
-    // }
-
-    let result = {};
-    if (req.file) {
-      result = await cloudinaryImageUploadMethod(req.file.path);
-      fs.unlinkSync(req.file.path);
+    const files = req.files;
+    for (const file of files) {
+      const { path } = file;
+      const newPath = await cloudinaryImageUploadMethod(path);
+      urls.push(newPath);
     }
 
-    const newImgCar = await db.Image_car.create({
-          car_id: newCar.id,
-          img_url: result.secure_url
-        });
+    for (const url of urls) {
+      const newImgCar = await db.Image_car.create({
+        car_id: newCar.id,
+        img_url: url
+      });
+    }
+
+    // let result = {};
+    // if (req.file) {
+    //   result = await cloudinaryImageUploadMethod(req.file.path);
+    //   fs.unlinkSync(req.file.path);
+    // }
+
+    // const newImgCar = await db.Image_car.create({
+    //       car_id: newCar.id,
+    //       img_url: result.secure_url
+    // });
     
     res.status(201).json({ message: "car created" });
   } catch (err) {
