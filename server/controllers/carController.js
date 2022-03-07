@@ -1,8 +1,11 @@
 const { Op } = require("sequelize");
 const path = require('path');
 const fs = require('fs');
+const util = require("util");
 const db = require("../models");
 const cloudinary = require("../utils/cloudinary");
+
+const uploadPromise = util.promisify(cloudinary.uploader.upload);
 
 const cloudinaryImageUploadMethod = async (file) => {
   return new Promise((resolve) => {
@@ -14,6 +17,8 @@ const cloudinaryImageUploadMethod = async (file) => {
     });
   });
 };
+
+
 class FilterCar {
   id;
   car_brand;
@@ -250,33 +255,24 @@ exports.addCar = async (req, res, next) => {
       car_price: carPrice,
     });
 
-
     const urls = [];
     const files = req.files;
     for (const file of files) {
       const { path } = file;
       const newPath = await cloudinaryImageUploadMethod(path);
+      console.log(newPath);
       urls.push(newPath);
     }
 
     for (const url of urls) {
+      const urlString = String(url.res);
+      console.log(urlString);
       const newImgCar = await db.Image_car.create({
         car_id: newCar.id,
-        img_url: url
+        img_url: urlString
       });
     }
 
-    // let result = {};
-    // if (req.file) {
-    //   result = await cloudinaryImageUploadMethod(req.file.path);
-    //   fs.unlinkSync(req.file.path);
-    // }
-
-    // const newImgCar = await db.Image_car.create({
-    //       car_id: newCar.id,
-    //       img_url: result.secure_url
-    // });
-    
     res.status(201).json({ message: "car created" });
   } catch (err) {
     next(err);

@@ -402,7 +402,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2NjM5ODM0LCJleHAiOjE2NDkyMzE4MzR9.850G5vdR7HH0yGkwWPddecu0QB1uaWiTYNuWNtPwwMs",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2NjU3MjY5LCJleHAiOjE2NDkyNDkyNjl9.2Sn7A-f6KGfxmE94HEBTx0bykvFsO8ABO7I4w7UnPzQ",
 							"type": "string"
 						}
 					]
@@ -458,7 +458,12 @@
 							"key": "image",
 							"contentType": "",
 							"type": "file",
-							"src": []
+							"src": [
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 0.jpg",
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 1.jpg",
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 2.jpg",
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 3.jpg"
+							]
 						}
 					],
 					"options": {
