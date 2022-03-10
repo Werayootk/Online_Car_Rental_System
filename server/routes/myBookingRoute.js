@@ -4,8 +4,8 @@ const authenticateMiddleware = require("../middlewares/authenticateMiddleware");
 
 const router = express.Router();
 
-router.get('/booking-list', authenticateMiddleware, bookingController.getBookingList);
-router.get('/booking-status/:userId', authenticateMiddleware, bookingController.getBookingByStatus);
-router.patch('/cancel-booking/:userId', authenticateMiddleware, bookingController.cancelBookingById);
+router.get('/booking-list', authenticateMiddleware, bookingController.getBookingList); //tested
+router.get('/booking-status/:booking_no', authenticateMiddleware, bookingController.getBookingByStatus); //tested
+router.patch('/cancel-booking/:booking_no', authenticateMiddleware, bookingController.cancelBookingById); //tested
 
 module.exports = router;

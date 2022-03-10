@@ -7,36 +7,91 @@ const db = require("../models");
  * patch Order cancel status by id
  */
 const getBookingStatusFilter = async (paginate, filterBookingStatus, userId) => {
-  const countBookingStatusFilter = await db.Order.count({
-    where: {
-      [Op.and]: {
-        [Op.eq]: {
-         user_id : userId
-        },
-        [Op.eq]: {
-          booking_status: filterBookingStatus
+  if (filterBookingStatus) {
+    const countBookingStatusFilter = await db.Order.count({
+      where: {
+        [Op.and]: {
+          user_id: {
+            [Op.eq] : userId
+          },
+          booking_status: {
+            [Op.eq]: filterBookingStatus
+          }
         }
-      }
-    },
-  });
-  const BookingStatusFilter = await db.Order.findAll({
-    where: {
-      [Op.and]: {
-        [Op.eq]: {
-         user_id : userId
-        },
-        [Op.eq]: {
-          booking_status: filterBookingStatus
+      },
+    });
+  
+    if (countBookingStatusFilter == 0) {
+      return res.status(400).json({
+        message: "Not found booking status",
+      });
+    };
+  
+    const BookingStatusFilter = await db.Order.findAll({
+      where: {
+        [Op.and]: {
+          user_id: {
+            [Op.eq] : userId
+          },
+          booking_status: {
+            [Op.eq]: filterBookingStatus
+          }
         }
-      }
-    },
-  });
-  return {
-    data: BookingStatusFilter,
-    total: countBookingStatusFilter,
-    offset: paginate.offset,
-    limit: paginate.limit,
-  };
+      }, include: [
+        {
+          model: db.Car,
+          as: 'Car',
+        }, {
+          model: db.User,
+          as: 'User',
+          attributes:['email','first_name','last_name','phone_number']
+        }
+      ]
+    });
+    return {
+      data: BookingStatusFilter,
+      total: countBookingStatusFilter,
+      offset: paginate.offset,
+      limit: paginate.limit,
+    };
+  } else {
+    const countBooking = await db.Order.count({
+      where: {
+          user_id: {
+            [Op.eq] : userId
+          }
+      },
+    });
+  
+    if (countBooking == 0) {
+      return res.status(400).json({
+        message: "Not found booking status",
+      });
+    };
+  
+    const Booking = await db.Order.findAll({
+      where: {
+          user_id: {
+            [Op.eq] : userId
+          }
+      }, include: [
+        {
+          model: db.Car,
+          as: 'Car',
+        }, {
+          model: db.User,
+          as: 'User',
+          attributes:['email','first_name','last_name','phone_number']
+        }
+      ]
+    });
+    return {
+      data: Booking,
+      total: countBooking,
+      offset: paginate.offset,
+      limit: paginate.limit,
+    };
+  }
 }
 
 exports.getBookingList = async (req, res, next) => {
@@ -53,25 +108,6 @@ exports.getBookingList = async (req, res, next) => {
       const paginate = {
         offset: isNaN(offset) ? 0 : offset,
         limit: isNaN(limit) ? 3 : limit,
-      };
-
-      const countBookingStatus = await db.Order.count({
-        where: {
-          [Op.and]: {
-            [Op.eq]: {
-             user_id : userId
-            },
-            [Op.eq]: {
-              booking_status: booking_status
-            }
-          }
-        },
-      });
-  
-      if (countBookingStatus == 0) {
-        return res.status(400).json({
-          message: "Not found booking status",
-        });
       };
 
       const data = await getBookingStatusFilter(
@@ -93,26 +129,27 @@ exports.getBookingByStatus = async (req, res, next) => {
        * 2. return data
        * note frontend send ?booking_no find userId and carId
        */
-      const { booking_no, userId } = req.params;
-      const getBookingDetail = await db.User.findOne({
-        where: {
-          [Op.eq]: {
-            id: userId
-          }
-        }, include: [{
-          model: db.Order,
-          as: 'Booking_data',
-          where: { booking_no: booking_no }, include: [{
+      const { booking_no } = req.params;
+      const userId = req.user.id;
+      const getBookingDetail = await db.Order.findAll({
+        where: { booking_no: booking_no },
+        include: [
+          {
             model: db.Car,
-            as: 'Car_data', include: [{
-              model: db.Image_car,
-              as: 'Image_car_url'
-            }]
-          }]
-        }]
+            as: 'Car',
+          }, {
+            model: db.User,
+            as: 'User',
+            where: { id: userId },
+            attributes:['email','first_name','last_name','phone_number']
+          },{
+            model: db.Billing,
+            as: 'Billing'
+          }
+        ]
       });
 
-      if (getBookingDetail) {
+      if (!getBookingDetail) {
         return res.status(400).json({
           message: 'Not found this booking.'
         });
@@ -133,22 +170,17 @@ exports.cancelBookingById = async (req, res, next) => {
        * 2. return data
        * note frontend send ?booking_no find and update status cancel
        */
-      const { booking_no, userId } = req.params;
+      const { booking_no } = req.params;
+      const userId = req.user.id;
 
-      const getBookingData = await db.User.findOne({
+      const getBookingData = await db.Order.findOne({
         where: {
-          [Op.eq]: {
-            id: userId
-          },
-          include: [{
-            model: db.Order,
-            as: 'Booking_data',
-            where: { booking_no: booking_no }
-          }]
+          user_id: userId,
+          booking_no: booking_no
         },
       });
       
-      if (getBookingData) {
+      if (!getBookingData) {
         return res.status(400).json({
           message: 'Not found this booking.'
         });

@@ -872,6 +872,37 @@
 			"response": []
 		},
 		{
+			"name": "user_get_Booking_Detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZmlyc3RfbmFtZSI6InVzZXI1IiwibGFzdF9uYW1lIjoidXNlcjUiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2ODk1OTE2LCJleHAiOjE2NDk0ODc5MTZ9.uf7VI9ujZpW0slSff_amOWxl347WZOovutI2jFinBqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/booking/booking-status/8301646895989105",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"booking",
+						"booking-status",
+						"8301646895989105"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "admin_get_Booking",
 			"request": {
 				"auth": {
@@ -1088,6 +1119,37 @@
 							"key": "total_amount",
 							"value": "10000"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_cancel_Booking_ByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZmlyc3RfbmFtZSI6InVzZXI1IiwibGFzdF9uYW1lIjoidXNlcjUiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2OTAzOTIyLCJleHAiOjE2NDk0OTU5MjJ9.770WKiA4PMIIG_DE8rmBQr0VqJigTEqpuIe1JWiRxVI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/booking/cancel-booking/8301646895989105",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"booking",
+						"cancel-booking",
+						"8301646895989105"
 					]
 				}
 			},

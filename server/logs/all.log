@@ -802,3 +802,35 @@
 [35m[39m
 2022-03-10 14:55:38:5538 [35mhttp[39m: [35m::1 - - PATCH /admin/bill/2?bill_date=2013-08-03T02:00:00Z&paid_date=2013-08-03T02:00:00Z&bill_status=%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%A5%E0%B8%A2&amount=1000&total_amount=10000 200 31 - 259.908 ms[39m
 [35m[39m
+2022-03-10 15:27:12:2712 [35mhttp[39m: [35m::1 - - GET /booking/booking-list 500 57 - 182.110 ms[39m
+[35m[39m
+2022-03-10 15:35:08:358 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=pending_payment 500 47 - 501.161 ms[39m
+[35m[39m
+2022-03-10 15:35:54:3554 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=pending_payment 200 323 - 240.398 ms[39m
+[35m[39m
+2022-03-10 15:39:29:3929 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=pending_payment 500 35 - 168.515 ms[39m
+[35m[39m
+2022-03-10 15:40:10:4010 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=pending_payment 200 494 - 272.262 ms[39m
+[35m[39m
+2022-03-10 15:40:58:4058 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=pending_payment 200 521 - 316.504 ms[39m
+[35m[39m
+2022-03-10 15:43:08:438 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=pending_payment 200 595 - 233.761 ms[39m
+[35m[39m
+2022-03-10 15:47:23:4723 [35mhttp[39m: [35m::1 - - GET /booking/booking-list 200 595 - 289.904 ms[39m
+[35m[39m
+2022-03-10 16:10:37:1037 [35mhttp[39m: [35m::1 - - GET /booking/8301646895989105 404 47 - 15.021 ms[39m
+[35m[39m
+2022-03-10 16:11:28:1128 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/8301646895989105 500 168 - 295.178 ms[39m
+[35m[39m
+2022-03-10 16:12:29:1229 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/8301646895989105 400 37 - 166.396 ms[39m
+[35m[39m
+2022-03-10 16:12:51:1251 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/8301646895989105 400 37 - 59.118 ms[39m
+[35m[39m
+2022-03-10 16:13:11:1311 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/8301646895989105 200 730 - 219.354 ms[39m
+[35m[39m
+2022-03-10 16:18:31:1831 [35mhttp[39m: [35m::1 - - PATCH /booking/cancel-booking/8301646895989105 401 26 - 34.142 ms[39m
+[35m[39m
+2022-03-10 16:18:42:1842 [35mhttp[39m: [35m::1 - - POST /user/login 200 349 - 559.611 ms[39m
+[35m[39m
+2022-03-10 16:18:57:1857 [35mhttp[39m: [35m::1 - - PATCH /booking/cancel-booking/8301646895989105 201 33 - 123.388 ms[39m
+[35m[39m
