@@ -27,14 +27,12 @@ router.get("/car/:carId", authWithAdmin, carController.getCarById); //tested
 router.patch("/car/:carId", authWithAdmin, carController.updateCarById); //tested
 router.delete("/car/:carId", authWithAdmin, carController.deleteCarById); //tested
 
-router.get("/order", authWithAdmin, orderController.getOrderAll);
-router.get("/order/:orderId", authWithAdmin, orderController.getOrderById);
-router.patch("/order/:orderId", authWithAdmin, orderController.updateOrderById);
-router.delete("/order/:orderId", authWithAdmin, orderController.deleteOrderById);
+router.get("/order", authWithAdmin, orderController.getOrderAll); //tested
+router.get("/order/:orderId", authWithAdmin, orderController.getOrderById); //tested
+router.patch("/order/:orderId", authWithAdmin, orderController.updateOrderById); //tested
 
-router.get("/bill", authWithAdmin, billController.getBillAll);
-router.get("/bill/:billID", authWithAdmin, billController.getBillById);
-router.patch("/bill/:billID", authWithAdmin, billController.updateBillById);
-router.delete("/bill/:billID", authWithAdmin, billController.deleteBillById);
+router.get("/bill", authWithAdmin, billController.getBillAll); //tested
+router.get("/bill/:billID", authWithAdmin, billController.getBillById); //tested
+router.patch("/bill/:billID", authWithAdmin, billController.updateBillById); //tested
 
 module.exports = router;

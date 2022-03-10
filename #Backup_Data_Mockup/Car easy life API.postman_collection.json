@@ -37,6 +37,16 @@
 		{
 			"name": "login_admin",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -402,7 +412,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2NjU3MjY5LCJleHAiOjE2NDkyNDkyNjl9.2Sn7A-f6KGfxmE94HEBTx0bykvFsO8ABO7I4w7UnPzQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
 							"type": "string"
 						}
 					]
@@ -414,19 +424,19 @@
 					"formdata": [
 						{
 							"key": "car_brand",
-							"value": "Toyota Vios 2015",
+							"value": "Toyota Vellfire 2014",
 							"contentType": "application/json",
 							"type": "default"
 						},
 						{
 							"key": "car_register",
-							"value": "2015",
+							"value": "2014",
 							"contentType": "application/json",
 							"type": "default"
 						},
 						{
 							"key": "car_type",
-							"value": "small",
+							"value": "van",
 							"contentType": "application/json",
 							"type": "default"
 						},
@@ -438,7 +448,7 @@
 						},
 						{
 							"key": "car_seat",
-							"value": "5",
+							"value": "7",
 							"contentType": "application/json",
 							"type": "default"
 						},
@@ -450,7 +460,7 @@
 						},
 						{
 							"key": "car_price",
-							"value": "1050",
+							"value": "2900",
 							"contentType": "application/json",
 							"type": "default"
 						},
@@ -459,10 +469,11 @@
 							"contentType": "",
 							"type": "file",
 							"src": [
-								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 0.jpg",
-								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 1.jpg",
-								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 2.jpg",
-								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vios 2015/Toyota Vios 2015 3.jpg"
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vellfire 2014/Toyota Vellfire 2014 0.jpg",
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vellfire 2014/Toyota Vellfire 2014 1.jpg",
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vellfire 2014/Toyota Vellfire 2014 2.jpg",
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vellfire 2014/Toyota Vellfire 2014 3.jpg",
+								"/C:/Users/01werayoot_kun/source/repos/Data_Car/car_img/Toyota Vellfire 2014/Toyota Vellfire 2014 4.jpg"
 							]
 						}
 					],
@@ -482,6 +493,601 @@
 					"path": [
 						"admin",
 						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_car_ADMIN",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/car?offset=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"car"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_car_ByID_ADMIN",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/car/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"car",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_car_ADMIN",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/admin/car/2?car_seat=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"car",
+						"2"
+					],
+					"query": [
+						{
+							"key": "car_seat",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_car_ADMIN",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/car/39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"car",
+						"39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test6@test.com\", \r\n    \"password\":\"user1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_search_car",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZmlyc3RfbmFtZSI6InVzZXIxIiwibGFzdF9uYW1lIjoidXNlcjEiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2ODg0MTY2LCJleHAiOjE2NDk0NzYxNjZ9.mUPQijFh3-6uM_IOI3WucOD4ZbRq8LrwC0_PPeI6_44",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/search-car/car-list?sort_price=desc&car_type=eco,small,suv&limit=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search-car",
+						"car-list"
+					],
+					"query": [
+						{
+							"key": "sort_price",
+							"value": "desc"
+						},
+						{
+							"key": "car_type",
+							"value": "eco,small,suv"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get_Location",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZmlyc3RfbmFtZSI6InVzZXIxIiwibGFzdF9uYW1lIjoidXNlcjEiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2ODg0MTY2LCJleHAiOjE2NDk0NzYxNjZ9.mUPQijFh3-6uM_IOI3WucOD4ZbRq8LrwC0_PPeI6_44",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/search-car/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search-car",
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get_car_ByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZmlyc3RfbmFtZSI6InVzZXIxIiwibGFzdF9uYW1lIjoidXNlcjEiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2ODg0MTY2LCJleHAiOjE2NDk0NzYxNjZ9.mUPQijFh3-6uM_IOI3WucOD4ZbRq8LrwC0_PPeI6_44",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/search-car/car-detail/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search-car",
+						"car-detail",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_create_Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZmlyc3RfbmFtZSI6InVzZXI1IiwibGFzdF9uYW1lIjoidXNlcjUiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2ODk1OTE2LCJleHAiOjE2NDk0ODc5MTZ9.uf7VI9ujZpW0slSff_amOWxl347WZOovutI2jFinBqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/search-car/booking-detail?car=30&location=หาดกะรน&pickup_datetime=2022-04-15T02:00:00Z&return_datetime=2022-04-17T02:00:00Z&price_per_day=1000&total_price=2100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search-car",
+						"booking-detail"
+					],
+					"query": [
+						{
+							"key": "car",
+							"value": "30"
+						},
+						{
+							"key": "location",
+							"value": "หาดกะรน"
+						},
+						{
+							"key": "pickup_datetime",
+							"value": "2022-04-15T02:00:00Z"
+						},
+						{
+							"key": "return_datetime",
+							"value": "2022-04-17T02:00:00Z"
+						},
+						{
+							"key": "price_per_day",
+							"value": "1000"
+						},
+						{
+							"key": "total_price",
+							"value": "2100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get_Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZmlyc3RfbmFtZSI6InVzZXI1IiwibGFzdF9uYW1lIjoidXNlcjUiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2ODk1OTE2LCJleHAiOjE2NDk0ODc5MTZ9.uf7VI9ujZpW0slSff_amOWxl347WZOovutI2jFinBqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/booking/booking-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"booking",
+						"booking-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_get_Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/order?return_location=หาด",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"order"
+					],
+					"query": [
+						{
+							"key": "return_location",
+							"value": "หาด"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_get_Booking_ByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/order/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_Booking_ByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/order/2?booking_status=test&refund=norefund",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"order",
+						"2"
+					],
+					"query": [
+						{
+							"key": "booking_status",
+							"value": "test"
+						},
+						{
+							"key": "refund",
+							"value": "norefund"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_get_Bill",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/bill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"bill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_get_Bill_ByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/bill/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"bill",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_update_Bill_ByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImFkbWluMSIsImxhc3RfbmFtZSI6ImFkbWluMSIsInN0YXR1cyI6ImFkbWluIiwiaWF0IjoxNjQ2ODczNjQ0LCJleHAiOjE2NDk0NjU2NDR9.pM1AGKg2wZwbbZU0oxWM9EvxbeOo_Y7EVqqyEqVNUT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/bill/2?bill_date=2013-08-03T02:00:00Z&paid_date=2013-08-03T02:00:00Z&bill_status=ยังไม่จ่ายเลย&amount=1000&total_amount=10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"bill",
+						"2"
+					],
+					"query": [
+						{
+							"key": "bill_date",
+							"value": "2013-08-03T02:00:00Z"
+						},
+						{
+							"key": "paid_date",
+							"value": "2013-08-03T02:00:00Z"
+						},
+						{
+							"key": "bill_status",
+							"value": "ยังไม่จ่ายเลย"
+						},
+						{
+							"key": "amount",
+							"value": "1000"
+						},
+						{
+							"key": "total_amount",
+							"value": "10000"
+						}
 					]
 				}
 			},

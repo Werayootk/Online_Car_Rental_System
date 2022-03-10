@@ -186,9 +186,6 @@ exports.updateCarById = async (req, res, next) => {
       });
     }
 
-    if (req.query["id"]) {
-      dataCar.id = req.query["id"];
-    }
     if (req.query["car_brand"]) {
       dataCar.car_brand = req.query["car_brand"];
     }

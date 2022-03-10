@@ -172,9 +172,6 @@ exports.updateOrderById = async (req, res, next) => {
         })
       }
 
-      if (req.query["id"]) {
-        dataOrder.id = req.query["id"];
-      }
       if (req.query["return_location"]) {
         dataOrder.return_location = req.query["return_location"];
       }
@@ -191,35 +188,13 @@ exports.updateOrderById = async (req, res, next) => {
         dataOrder.booking_no = req.query["booking_no"];
       }
       if (req.query["start_datetime"]) {
-        dataOrder.car_status = req.query["car_status"];
+        dataOrder.start_datetime = Date.parse(req.query["start_datetime"]);
       }
-      if (req.query["start_datetime"]) {
-        dataOrder.start_datetime = req.query["start_datetime"];
+      if (req.query["end_datetime"]) {
+        dataOrder.end_datetime = Date.parse(req.query["end_datetime"]);
       }
-    await dataOrder.save();
-    } catch (err) {
-      next(err);
-    }
-};
-
-exports.deleteOrderById = async (req, res, next) => {
-    try {
-      const { orderId } = req.params;
-
-      const dataOrder = await db.Order.findOne({
-        where: {
-          id: {
-            [Op.eq]: orderId,
-          },
-        },
-      });
-  
-      if (!dataOrder) {
-        return res.status(400).json({ message: "this order not found" });
-      }
-  
-      await dataOrder.destroy();
-      res.status(204).json({ message: "this order was deleted" });
+      await dataOrder.save();
+      return res.status(200).json({ message: "this order was updated" });
     } catch (err) {
       next(err);
     }

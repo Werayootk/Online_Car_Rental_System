@@ -1,28 +1,31 @@
 const { Op } = require("sequelize");
 const db = require("../models");
+const JWT = require("jsonwebtoken");
+const { use } = require("passport");
+const { token } = require("morgan");
 
 const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
-  const withFilterCarList = filterCarList.map(elem => {
+  const withFilterCarList = filterCarList.map((elem) => {
     return {
-      [Op.eq]: elem
-    }
+      car_type: {
+        [Op.eq]: elem,
+      },
+    };
   });
 
   if (filterCarList.length == 0) {
     const countCarAvailable = await db.Car.count({
       where: {
-        [Op.eq]: {
-          car_status: "available",
-        },
+        car_status: "available",
       },
     });
     const carAvailable = await db.Car.findAll({
       where: {
-        [Op.eq]: {
-          car_status: "available",
-        },
-        order: [["car_price", sortPrice]],
+        car_status: "available",
       },
+      order: [["car_price", sortPrice]],
+      offset: paginate.offset,
+      limit: paginate.limit,
     });
     return {
       data: carAvailable,
@@ -33,21 +36,21 @@ const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
   } else {
     const countCarAvailableWithFilter = await db.Car.count({
       where: {
-        [Op.and]: {
-          [Op.eq]: { car_status: "available" },
-          [Op.or]: [withFilterCarList]
-        }
+        car_status: "available",
+        [Op.or]: withFilterCarList,
       },
     });
+
     const carAvailableWithFilter = await db.Car.findAll({
       where: {
-        [Op.and]: {
-          [Op.eq]: { car_status: "available" },
-          [Op.or]: [withFilterCarList]
-        },
-        order: [["car_price", sortPrice]],
+        car_status: "available",
+        [Op.or]: withFilterCarList,
       },
+      order: [["car_price", sortPrice]],
+      offset: paginate.offset,
+      limit: paginate.limit,
     });
+
     return {
       data: carAvailableWithFilter,
       total: countCarAvailableWithFilter,
@@ -65,7 +68,7 @@ exports.getCarListAll = async (req, res, next) => {
      * 3. Query data with order asc or desc car_price
      * 4. return data
      */
-    const { car_type, sort_price } = req.params;
+    const { car_type, sort_price } = req.query;
     const offset = Number(req.query["offset"]);
     const limit = Number(req.query["limit"]);
     const paginate = {
@@ -74,7 +77,7 @@ exports.getCarListAll = async (req, res, next) => {
     };
     const countCarAvailable = await db.Car.count({
       where: {
-          car_status: "available"
+        car_status: "available",
       },
     });
 
@@ -82,13 +85,15 @@ exports.getCarListAll = async (req, res, next) => {
       return res.status(400).json({
         message: "Not found car available",
       });
-    };
-    
+    }
+
+    sortPrice = sort_price ? sort_price : "asc";
     car_type_filter = car_type ? car_type.split(",") : [];
+
     const data = await getCarListFilterAndSort(
       paginate,
       car_type_filter,
-      sort_price
+      sortPrice
     );
     return res.status(200).json(data);
   } catch (err) {
@@ -103,11 +108,20 @@ exports.getCarDetailById = async (req, res, next) => {
      * 2. return data
      */
     const { carId } = req.params;
+    const car_id = Number(carId);
+    console.log(car_id);
     const data = await db.Car.findOne({
       where: {
-        [Op.eq]: carId
-      }
+        id: car_id,
+      },
     });
+
+    if (!data) {
+      return res.status(400).json({
+        message: 'car not found'
+      })
+    }
+
     return res.status(200).json(data);
   } catch (err) {
     next(err);
@@ -122,53 +136,56 @@ exports.createCarOrder = async (req, res, next) => {
      * 3. update data car_status
      */
     const {
-      carId,
-      locationId,
-      userId,
+      car,
+      location,
       pickup_datetime,
       return_datetime,
       price_per_day,
-      total_price
-    } = req.params;
+      total_price,
+    } = req.query;
 
-    const pickupDateTime = Date(pickup_datetime);
-    const returnDateTime = Date(return_datetime);
+    // userId from Token and Oauth
+    console.log(req.user.id);
 
-    if (carId || locationId || userId) {
+    if (!car || !location) {
       return res.status(400).json({
-        message: 'Cannot create this booking'
-      })
+        message: "Cannot create this booking",
+      });
     }
+    const carId = Number(car);
+    const userNo = String(req.user.id);
+    const pickupDateTime = Date.parse(pickup_datetime); //2022-03-10T02:00:00Z
+    const returnDateTime = Date.parse(return_datetime);
     const time_Stamps = String(Date.now());
-    const createBookingNumber = `${userId}${carId}${locationId}${time_Stamps}`;
+    const createBookingNumber = `${userNo}${car}${time_Stamps}`;
     const pricePerDay = Number(price_per_day);
     const totalPrice = Number(total_price);
 
     const newOrder = await db.Order.create({
-      user_id: userId,
+      user_id: req.user.id,
       car_id: carId,
       booking_no: createBookingNumber,
-      refund: '',
-      booking_status: 'pending_payment',
+      refund: "",
+      booking_status: "pending_payment",
       pickup_location: location,
       return_location: location,
       start_datetime: pickupDateTime,
-      end_datetime: returnDateTime
+      end_datetime: returnDateTime,
     });
     await newOrder.save();
 
     const newBill = await db.Billing.create({
-      user_id: userId,
+      user_id: req.user.id,
       order_id: newOrder.id,
       bill_date: Date.now(),
-      bill_status: 'pending_payment',
+      bill_status: "pending_payment",
       amount: pricePerDay,
-      total_amount: totalPrice
+      total_amount: totalPrice,
     });
     await newBill.save();
 
     return res.status(201).json({
-      message: 'Order and Bill is created.'
+      message: "Order and Bill is created.",
     });
   } catch (err) {
     next(err);
@@ -181,14 +198,14 @@ exports.getProvinceAndLocation = async (req, res, next) => {
 
     if (dataLocation == undefined) {
       return res.status(400).json({
-        message: 'No Location'
+        message: "No Location",
       });
     }
 
     return res.status(200).json({
-      data: dataLocation
-    })
+      data: dataLocation,
+    });
   } catch (err) {
     next(err);
   }
-}
+};

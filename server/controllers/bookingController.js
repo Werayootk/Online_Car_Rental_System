@@ -46,7 +46,8 @@ exports.getBookingList = async (req, res, next) => {
        * 2. return data
        * note frontend GET all Booking of user find Order include order include car ?booking_status
        */
-      const { userId, booking_status } = req.params;
+      const { booking_status } = req.query;
+      const userId = req.user.id;
       const offset = Number(req.query["offset"]);
       const limit = Number(req.query["limit"]);
       const paginate = {

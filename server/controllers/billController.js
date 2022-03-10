@@ -117,12 +117,12 @@ exports.getBillAll = async (req, res, next) => {
 
 exports.getBillById = async (req, res, next) => {
     try {
-      const { billId } = req.params;
+      const { billID } = req.params;
 
       const dataBill = await db.Billing.findOne({
         where: {
           id: {
-            [Op.eq]: billId,
+            [Op.eq]: billID,
           },
         },
       });
@@ -141,12 +141,12 @@ exports.getBillById = async (req, res, next) => {
 
 exports.updateBillById = async (req, res, next) => {
     try {
-      const { billId } = req.params;
+      const { billID } = req.params;
 
       const dataBill = await db.Billing.findOne({
         where: {
           id: {
-            [Op.eq]: billId,
+            [Op.eq]: billID,
           },
         },
       });
@@ -155,50 +155,24 @@ exports.updateBillById = async (req, res, next) => {
           message: "this Bill not found"
         })
       }
-
-      if (req.query["id"]) {
-        dataBill.id = req.query["id"];
-      }
+      // 2013-08-03T02:00:00Z
       if (req.query["bill_date"]) {
-        dataBill.bill_date = req.query["bill_date"];
+        dataBill.bill_date = Date.parse(req.query["bill_date"]);
       }
       if (req.query["paid_date"]) {
-        dataBill.paid_date = req.query["paid_date"];
+        dataBill.paid_date = Date.parse(req.query["paid_date"]);
       }
       if (req.query["bill_status"]) {
         dataBill.bill_status = req.query["bill_status"];
       }
       if (req.query["amount"]) {
-        dataBill.amount = req.query["amount"];
+        dataBill.amount = Number(req.query["amount"]);
       }
       if (req.query["total_amount"]) {
-        dataBill.total_amount = req.query["total_amount"];
+        dataBill.total_amount = Number(req.query["total_amount"]);
       }
     await dataBill.save();
     res.status(200).json({ message: "Bill was updated." });
-    } catch (err) {
-      next(err);
-    }
-};
-
-exports.deleteBillById = async (req, res, next) => {
-    try {
-      const { billId } = req.params;
-
-      const dataBill = await db.Billing.findOne({
-        where: {
-          id: {
-            [Op.eq]: billId,
-          },
-        },
-      });
-  
-      if (!dataBill) {
-        return res.status(400).json({ message: "this bill not found" });
-      }
-  
-      await dataBill.destroy();
-      res.status(204).json({ message: "this bill was deleted" });
     } catch (err) {
       next(err);
     }
