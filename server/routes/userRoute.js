@@ -8,9 +8,9 @@ const authenticateMiddleware = require("../middlewares/authenticateMiddleware");
 
 const router = express.Router();
 
-router.get("/me", authenticateMiddleware, userController.getMe);
-router.post("/register", authController.register);
-router.post("/login", authController.login);
+router.get("/me", authenticateMiddleware, userController.getMe); //tested
+router.post("/register", authController.register); //tested
+router.post("/login", authController.login); //tested
 
 router.get("/google", passport.authenticate("google", { scope: ["https://www.googleapis.com/auth/userinfo.email","https://www.googleapis.com/auth/userinfo.profile"] }));
 router.get("/facebook", passport.authenticate("facebook", { scope: ["email"] }));

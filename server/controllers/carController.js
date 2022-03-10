@@ -287,13 +287,19 @@ exports.deleteCarById = async (req, res, next) => {
       where: {
         id: {
           [Op.eq]: carId,
-        },
+        }
       },
     });
 
     if (!dataCar) {
       return res.status(400).json({ message: "this car not found" });
     }
+
+    await db.Image_car.destroy({
+      where: {
+        car_id: dataCar.id
+      }
+    });
 
     await dataCar.destroy();
     res.status(204).json({ message: "this car was deleted" });

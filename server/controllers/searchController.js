@@ -12,14 +12,14 @@ const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
     const countCarAvailable = await db.Car.count({
       where: {
         [Op.eq]: {
-          car_status: "Available",
+          car_status: "available",
         },
       },
     });
     const carAvailable = await db.Car.findAll({
       where: {
         [Op.eq]: {
-          car_status: "Available",
+          car_status: "available",
         },
         order: [["car_price", sortPrice]],
       },
@@ -34,7 +34,7 @@ const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
     const countCarAvailableWithFilter = await db.Car.count({
       where: {
         [Op.and]: {
-          [Op.eq]: { car_status: "Available" },
+          [Op.eq]: { car_status: "available" },
           [Op.or]: [withFilterCarList]
         }
       },
@@ -42,7 +42,7 @@ const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
     const carAvailableWithFilter = await db.Car.findAll({
       where: {
         [Op.and]: {
-          [Op.eq]: { car_status: "Available" },
+          [Op.eq]: { car_status: "available" },
           [Op.or]: [withFilterCarList]
         },
         order: [["car_price", sortPrice]],
@@ -74,13 +74,11 @@ exports.getCarListAll = async (req, res, next) => {
     };
     const countCarAvailable = await db.Car.count({
       where: {
-        [Op.eq]: {
-          car_status: "Available",
-        },
+          car_status: "available"
       },
     });
 
-    if (countCarAvailable == 0) {
+    if (countCarAvailable.length == 0) {
       return res.status(400).json({
         message: "Not found car available",
       });

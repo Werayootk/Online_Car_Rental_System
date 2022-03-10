@@ -10,22 +10,22 @@ const authWithAdmin = require('../middlewares/authWithAdmin');
 const upload = require('../middlewares/upload');
 
 const router = express.Router();
-router.get("/customer", authWithAdmin, customerController.getCustomerAll);
-router.get("/customer/:customerId", authWithAdmin, customerController.getCustomerById);
-router.patch("/customer/:customerId", authWithAdmin, customerController.updateCustomerById);
-router.delete("/customer/:customerId", authWithAdmin, customerController.deleteCustomerById);
+router.get("/customer", authWithAdmin, customerController.getCustomerAll); //tested
+router.get("/customer/:customerId", authWithAdmin, customerController.getCustomerById); //tested
+router.patch("/customer/:customerId", authWithAdmin, customerController.updateCustomerById); //tested
+router.delete("/customer/:customerId", authWithAdmin, customerController.deleteCustomerById); //tested
 
-router.post("/location", authWithAdmin, locationController.addLocation);
-router.get("/location", authWithAdmin, locationController.getLocationAll);
-router.get("/location/:locationId", authWithAdmin, locationController.getLocationById);
-router.patch("/location/:locationId", authWithAdmin, locationController.updateLocationById);
-router.delete("/location/:locationId", authWithAdmin, locationController.deleteLocationById);
+router.post("/location", authWithAdmin, locationController.addLocation); //tested
+router.get("/location", authWithAdmin, locationController.getLocationAll); //tested
+router.get("/location/:locationId", authWithAdmin, locationController.getLocationById); //tested
+router.patch("/location/:locationId", authWithAdmin, locationController.updateLocationById); //tested
+router.delete("/location/:locationId", authWithAdmin, locationController.deleteLocationById); //tested
 
-router.post("/car", authWithAdmin, upload.array('image', 5), carController.addCar);
-router.get("/car", authWithAdmin, carController.getCarAll);
-router.get("/car/:carId", authWithAdmin, carController.getCarById);
-router.patch("/car/:carId", authWithAdmin, carController.updateCarById);
-router.delete("/car/:carId", authWithAdmin, carController.deleteCarById);
+router.post("/car", authWithAdmin, upload.array('image', 5), carController.addCar); //tested
+router.get("/car", authWithAdmin, carController.getCarAll); //tested
+router.get("/car/:carId", authWithAdmin, carController.getCarById); //tested
+router.patch("/car/:carId", authWithAdmin, carController.updateCarById); //tested
+router.delete("/car/:carId", authWithAdmin, carController.deleteCarById); //tested
 
 router.get("/order", authWithAdmin, orderController.getOrderAll);
 router.get("/order/:orderId", authWithAdmin, orderController.getOrderById);
