@@ -10,16 +10,16 @@ const db = require("../models");
        * 4. save()
        * 5. return res
        */
-      const { booking_no, booking_status, bill_status } = req.params;
+      const { booking_no } = req.params;
+      const { booking_status, bill_status } = req.query;
       const getBooking = await db.Order.findOne({
         where: {
-          [Op.eq]: {
-            booking_no: booking_no
-          }
+          booking_no: booking_no,
+          user_id: req.user.id
         }
       });
 
-      if (getBooking) {
+      if (!getBooking) {
         return res.status(400).json({
           message: 'Not found booking number.'
         })  
@@ -27,11 +27,10 @@ const db = require("../models");
 
       const getBill = await db.Billing.findOne({
         where: {
-          [Op.eq]: {
             order_id: getBooking.id
-          }
         }
       });
+
       getBill.bill_status = bill_status;
       getBooking.booking_status = booking_status;
       await getBill.save();

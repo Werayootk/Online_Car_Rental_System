@@ -649,7 +649,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"test6@test.com\", \r\n    \"password\":\"user1234\"\r\n}",
+					"raw": "{\r\n    \"email\":\"test2@test.com\", \r\n    \"password\":\"user1234\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1118,6 +1118,47 @@
 						{
 							"key": "total_amount",
 							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_update_Payment_ByOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZmlyc3RfbmFtZSI6InVzZXIxIiwibGFzdF9uYW1lIjoidXNlcjEiLCJzdGF0dXMiOiJ1c2VyIiwiaWF0IjoxNjQ2OTU3OTAyLCJleHAiOjE2NDk1NDk5MDJ9.qE2DrnkSzg8MQk9-tmJj3dwHzvcDqEKAj_nsqJD3eks",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/payment/bill-status/331646894424625?booking_status=paid&bill_status=paid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"payment",
+						"bill-status",
+						"331646894424625"
+					],
+					"query": [
+						{
+							"key": "booking_status",
+							"value": "paid"
+						},
+						{
+							"key": "bill_status",
+							"value": "paid"
 						}
 					]
 				}
