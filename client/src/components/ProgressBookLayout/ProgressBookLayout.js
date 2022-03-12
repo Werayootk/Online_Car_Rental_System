@@ -13,20 +13,23 @@ const ProgressBarLayout = ({ children, ...rest }) => {
     );
 };
 
-const ProgressBookLayoutRoute = ({ component: Component, ...rest }) => {
+const ProgressBookLayoutRoute = ({ component: Component, role, setRole, ...rest }) => {
+  if (role === 'user') {
     return (
-        <Route
-        {...rest}
-        render={(props) => (
-          <MainLayout>
-            <ProgressBarLayout>
-              <Component {...props} />
-            </ProgressBarLayout>
-          </MainLayout>
-        )}
-        />
-
-    );
+      <Route
+      {...rest}
+      render={(props) => (
+        <MainLayout>
+          <ProgressBarLayout>
+            <Component {...props} />
+          </ProgressBarLayout>
+        </MainLayout>
+      )}
+      />
+  );
+  } else {
+    return <Redirect to="/login" />
+  }    
 };
 
 export default ProgressBookLayoutRoute;

@@ -21,16 +21,28 @@ export const MainLayout = ({ children, ...rest }) => {
 };
 
 
-const MainLayoutRoute = ({ component: Component, ...rest }) => {
-    return (
-        <Route
-            {...rest}
-            render={(props) => (
-                <MainLayout>
-                    <Component {...props} />
-                </MainLayout>
-            )}
-        />
-    );
+const MainLayoutRoute = ({ component: Component, role, setRole, ...rest }) => {
+        /**
+         * 1. guest can access for login sign up bra bra
+         * 2. user redirect has been auth for access navbar change for edit
+         * 3. admin redirect to dashboard
+         * check 3 case
+         */
+    if (role === 'user') {
+        return <Redirect to="/home" /> 
+    } else if (role === 'admin') {
+        return <Redirect to="/dashboard" /> 
+    }
+        return (
+            <Route
+                {...rest}
+                render={(props) => (
+                    <MainLayout>
+                        <Component {...props} />
+                    </MainLayout>
+                )}
+            />
+        );
 };
+
 export default MainLayoutRoute;

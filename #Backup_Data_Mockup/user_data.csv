@@ -1,4 +1,4 @@
-id,first_name,last_name,email,phone_number,password,status
+id,first_name,last_name,email,phone_number,password,role
 1,admin1,admin1,test1@test.com,12345678,$2a$10$N4hbG134sn9uR9A.wRkT2usd9.mxi/XMPx6k3aQja1Ouo0T40Dp.a,admin
 3,user1,user1,test2@test.com,12345679,$2a$10$r1asYlX1KnMe7Ox8KhNQbe3oZonnJeS5SERUECmXRtERQAUcmK6YO,user
 4,user2,user2,test3@test.com,111111111,$2a$10$r1asYlX1KnMe7Ox8KhNQbe3oZonnJeS5SERUECmXRtERQAUcmK6YO,user

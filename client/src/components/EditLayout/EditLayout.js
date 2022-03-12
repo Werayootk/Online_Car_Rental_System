@@ -16,19 +16,23 @@ const EditLayout = ({ children, ...rest }) => {
   );
 };
 
-const EditLayoutRoute = ({ component: Component, ...rest }) => {
-  return (
-    <Route
-      {...rest}
-      render={(props) => (
-        <MainLayout>
-          <EditLayout>
-            <Component {...props} />
-          </EditLayout>
-        </MainLayout>
-      )}
-    />
-  );
+const EditLayoutRoute = ({ component: Component, role, setRole, ...rest }) => {
+  if (role === 'user') {
+    return (
+      <Route
+        {...rest}
+        render={(props) => (
+          <MainLayout>
+            <EditLayout>
+              <Component {...props} />
+            </EditLayout>
+          </MainLayout>
+        )}
+      />
+    );
+  } else {
+    return <Redirect to="/login" />
+  }
 };
 
 export default EditLayoutRoute;

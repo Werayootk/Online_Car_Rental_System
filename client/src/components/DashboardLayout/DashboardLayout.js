@@ -24,7 +24,8 @@ const DashboardLayout = ({ children, ...rest }) => {
       );
 };
 
-const DashboardLayoutRoute = ({component:Component, ...rest}) => {
+const DashboardLayoutRoute = ({ component: Component, role, setRole, ...rest }) => {
+  if (role === 'admin') {
     return (
             <Route
               {...rest}
@@ -35,6 +36,9 @@ const DashboardLayoutRoute = ({component:Component, ...rest}) => {
               )}
             />
     );
+  } else {
+    return <Redirect to="/" />
+  }
 }
 
 export default DashboardLayoutRoute;
