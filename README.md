@@ -3,6 +3,7 @@
 - [x] Draft All UI
 - [ ] After Done Backend Implement Auth (PrivateRoute, JWT, Social Login)
 - [ ] Create Page for [SUCCESS, FAIL, 404, Loading]
+- [ ] Edit form Require firstname lastname and phone email
 - [ ] /main 
     - 1. Validate input 
     - 2. Dropdown location data from backend 
@@ -26,7 +27,6 @@
     - 6. after paid send data to db bill_id format (bookingid+datetime) 
     - 7. implement request cancel 
     - 8. if admin approve cancel booking will update car status and refund
-- [ ] Define E2E
 
 ### Admin Frontend Todo list
 
@@ -76,12 +76,9 @@
 ### SERVER Backend Todo list
 
 - [x] Create DB and Schema follow ER-diagram
-- [ ] Implement Auth service (JWT and Social login)
+- [x] Implement Auth service (JWT and Social login)
 - [ ] Implement forget password gen new pass and alert to email
-- [ ] Define Test case
-- [ ] GenDoc API
 ## Useful link example
-
 ```
 https://www.drivehub.co/
 https://keerati.co/2018/05/20/how-to-omisejs-vue-react/
@@ -140,6 +137,7 @@ https://www.bezkoder.com/node-js-express-file-upload/
 https://codeforgeek.com/file-uploads-using-node-js/
 https://www.bezkoder.com/node-js-upload-multiple-files/
 https://www.codegrepper.com/code-examples/javascript/yyyymmddThhmmss+to+date+javascript
+https://itnext.io/password-reset-emails-in-your-react-app-made-easy-with-nodemailer-bb27968310d7
 ```
 ## Liberty
 

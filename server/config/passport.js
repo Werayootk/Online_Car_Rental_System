@@ -46,7 +46,7 @@ passport.use(
           await User.create({
             email: emailUser,
             first_name: profile.name,
-            status:"Google User"
+            status:"user"
           });
         }
       } catch (err) {
@@ -76,7 +76,7 @@ passport.use(
           await User.create({
             email: emailUser,
             first_name: profile.name,
-            status:"Facebook User"
+            status:"user"
           });
         }
       } catch (err) {
