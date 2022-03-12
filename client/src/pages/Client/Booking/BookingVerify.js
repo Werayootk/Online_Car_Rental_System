@@ -14,6 +14,12 @@ import ImageGallery from "react-image-gallery";
 
 import { imagesTest, carData } from "../../../mockup/car_data";
 
+/** TODO 11
+ * 1. axios booking no
+ * 2. axios cancel
+ * 3. add Omise re payment condition
+ * 
+ */
 const BookingVerify = (props) => {
   const [imgcar, setImgcar] = useState(imagesTest);
 

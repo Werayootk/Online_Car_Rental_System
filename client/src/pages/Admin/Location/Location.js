@@ -4,6 +4,12 @@ import { Input, Select, Button, Row, Col } from "antd";
 
 import ResponsibilityLocation from "./ResponsibilityLocation";
 
+/**TODO 16
+ * 0. form input antd validate
+ * 1. sync datasoucre
+ * 2. axios create locaction
+ * 3. axios filter paginate
+ */
 const { Option } = Select;
 
 const InputLocation = (props) => {

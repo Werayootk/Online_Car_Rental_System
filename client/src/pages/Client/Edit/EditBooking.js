@@ -4,6 +4,14 @@ import { ReactComponent as Empty_Book } from "../../../assets/images/empty-booki
 import CardCarBooking from '../../../components/CardCarBooking/CardCarBooking';
 import { Select } from "antd";
 
+/** TODO 7
+ * 0. mockup data on DB
+ * 1. useEffect and dependency with state Option call axios ? status
+ * 2. send data after axios to card
+ * 3. Card implement Paginate useEffect change By select
+ * 4. Select Card Redirect to BookingVerify 
+ */
+
 const { Option } = Select;
 
 const EditBooking = () => {

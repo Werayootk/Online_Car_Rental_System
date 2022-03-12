@@ -3,6 +3,12 @@ import './Cancel.scss';
 import ResponsibilityCancel from './ResponsibilityCancel';
 import { Tabs, Row, Col, Modal } from "antd";
 
+/**TODO 17
+ * 1. sync data sourece table
+ * 2. spin
+ * 3. filter
+ */
+
 const Cancel = () => {
     return (
         <div className="cancel-container">

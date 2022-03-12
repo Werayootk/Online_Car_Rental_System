@@ -3,6 +3,13 @@ import './Order.scss';
 import ResponsibilityOrder from './ResponsibilityOrder';
 import { Tabs, Row, Col, Modal } from "antd";
 
+/** TODO 14
+  * 1. sync data source with paginate
+ * 2. spin
+ * 3. filter by
+ * 4. Modal for EDIT data 
+ */
+
 const Order = () => {
     return (
         <div className="order-container">

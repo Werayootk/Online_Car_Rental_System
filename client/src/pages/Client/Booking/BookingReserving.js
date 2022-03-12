@@ -9,6 +9,14 @@ import {
 } from "@ant-design/icons";
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 
+/* TODO 10
+  1. form antd and validate
+  2. useContent
+  3. add Omise payment
+  4. axios create order and bill and payment
+  4. redirect to finish step by booking NO
+*/
+
 const BookingReserving = () => {
   const [value, setValue] = useState(1);
   const onChangePayment = (e) => {

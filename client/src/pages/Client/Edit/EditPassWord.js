@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import "./EditPassWord.scss";
 import { Field, Form, Formik } from "formik";
 import { EyeOutlined, EyeInvisibleOutlined } from "@ant-design/icons";
+
+/** TODO 6
+ * 1. Add validate on formilk
+ * 2. axios to BE notification
+ */
+
 const EditPassWord = () => {
   const [ToggleOldPassword, setToggleOldPassword] = useState(false);
   const [ToggleNewPassword, setToggleNewPassword] = useState(false);

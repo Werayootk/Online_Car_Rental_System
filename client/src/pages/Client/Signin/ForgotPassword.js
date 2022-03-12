@@ -2,6 +2,12 @@ import React from "react";
 import "./ForgotPassword.scss";
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 
+/** TODO 4
+ * 1. axios call backend
+ * 2. add antd validate
+ * 3. add page reset password
+ */
+
 const ForgotPassword = () => {
   return (
     <div className="main-container-forgot">

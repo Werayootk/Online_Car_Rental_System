@@ -6,6 +6,12 @@ import TableCarDetail from "../../../components/TableCarDetail/TableCarDetail";
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 
 import { imagesTest, carData } from "../../../mockup/car_data";
+/**TODO 9
+ * 1. axios data car
+ * 2. get state location pickup return date from context
+ * 3. cal date cal price save content
+ * 4. select this car redirect
+ */
 
 const BookingDetail = (props) => {
   const [imgcar, setImgcar] = useState(imagesTest);

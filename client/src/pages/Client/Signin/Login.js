@@ -3,6 +3,13 @@ import "./Login.scss";
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 
+/** TODO 2
+ * 1. use form antd for validate
+ * 2. implement social login and check data store to DB
+ * 3. axios Test login JWT and Get Token store to local setToken follow krunot add notification success
+ * 4. Test redirect private route with login or not login
+ */
+
 const Login = () => {
 
   return (

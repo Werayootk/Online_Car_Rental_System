@@ -2,6 +2,10 @@ import React from "react";
 import "./EditProfile.scss";
 import { useFormik } from "formik";
 
+/** TODO 5
+ * 1. Reform use antd add validate
+ * 2. axios call backend to edit profile notification
+ */
 const EditProfile = () => {
   const formik = useFormik({
     initialValues: {

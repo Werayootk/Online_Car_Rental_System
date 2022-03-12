@@ -3,6 +3,12 @@ import "./Register.scss";
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 
+/** TODO 3
+ *  1. reform first_name and last_name
+ *  2. Add validate use antd
+ *  3. axios register save token follow krunot
+ *  
+ */
 const Register = () => {
 
   return (

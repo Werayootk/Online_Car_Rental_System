@@ -5,6 +5,13 @@ import CardCarDetail from "../../../components/CardCarDetail/CardCarDetail";
 import { CarType } from "../../../config/car_type";
 import { carData } from '../../../mockup/car_data';
 
+/** TODO 8
+ * 1. axios data car availiable to setState send to Card
+ * 2. implement infinity scroll down fetch data
+ * 3. implement filter and sort axios
+ * 4. click car detail to redirect save state car detail
+ */
+
 const Booking = () => {
   const [carType, setCarType] = useState(CarType);
   const [CarData, setCarData] = useState(carData);
