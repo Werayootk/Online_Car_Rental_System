@@ -77,7 +77,7 @@
 
 - [x] Create DB and Schema follow ER-diagram
 - [x] Implement Auth service (JWT and Social login)
-- [ ] Implement forget password gen new pass and alert to email
+- [x] Implement forget password gen new pass and alert to email
 ## Useful link example
 ```
 https://www.drivehub.co/

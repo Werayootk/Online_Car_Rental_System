@@ -35,7 +35,7 @@ exports.register = async (req, res, next) => {
       first_name,
       last_name,
       phone_number,
-      status: 'user',
+      role: 'user',
       password: hashedPassword,
       resetPasswordToken: null,
       resetPasswordExpires: null,
@@ -75,17 +75,17 @@ exports.login = async (req, res, next) => {
       id: user.id,
       first_name: user.first_name,
       last_name: user.last_name,
-      status: user.status
+      role: user.role
     };
     const token = jwt.sign(payload, process.env.JWT_SECRET_KEY, {
       expiresIn: 60 * 60 * 24 * 30
     });
 
-    const { id, first_name, last_name, phone_number, status } = user;
+    const { id, first_name, last_name, phone_number, role } = user;
 
     res.status(200).json({
       token,
-      user: { id, first_name, last_name, phone_number, status, email }
+      user: { id, first_name, last_name, phone_number, role, email }
     });
   } catch (err) {
     next(err);

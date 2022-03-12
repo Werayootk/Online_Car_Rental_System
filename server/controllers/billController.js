@@ -1,6 +1,5 @@
 const { Op } = require("sequelize");
 const db = require("../models");
-
 class FilterBill {
   id;
   bill_date;

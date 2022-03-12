@@ -14,10 +14,10 @@ const authWithAdmin = (req, res, next) => {
                     where: { id: token.id },
                 });
                 req.user = user;
-                const { status } = user;
-                if (status != 'admin') {
+                const { role } = user;
+                if (role != 'admin') {
                     res.status(401).json({ message: 'you unauthorized admin.' });
-                } else if(status == 'admin'){
+                } else if(role == 'admin'){
                     next();
                 }
             } catch (error) {
