@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.scss";
 import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
 import "antd/dist/antd.min.css";
+import axios from '../../../config/axios';
 import { useHistory } from "react-router-dom";
 
 const { Search } = Input;
