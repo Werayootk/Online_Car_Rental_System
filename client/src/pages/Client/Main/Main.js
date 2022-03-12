@@ -5,10 +5,16 @@ import "antd/dist/antd.min.css";
 import axios from '../../../config/axios';
 import { useHistory } from "react-router-dom";
 
+/**
+ * 1. Login show/hide condition user
+ * 2. validate input required
+ * 3. useEffect axios get location render component dropdown
+ * 4. Create useBookingContext (location car pickup_date return_date price total_price booking_status booking_no)
+ */
+
 const { Search } = Input;
 const { RangePicker } = DatePicker;
 const onSearch = (value) => console.log(value);
-
 
 const Main = () => {
   const history = useHistory();

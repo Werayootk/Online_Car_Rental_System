@@ -6,15 +6,15 @@ const { getToken, removeToken } = localStorageServices;
 axios.defaults.baseURL = "http://localhost:8000"
 
 axios.interceptors.request.use(
-    (config) => {
-        if (config.url.includes('/login') || config.url.includes('/register')) {
-            return config;
+    (req) => {
+        if (req.url.includes('/login') || req.url.includes('/register')) {
+            return req;
         }
         const token = getToken();
         if (token) {
-            config.headers['Authorization'] = `Bearer ${token}`;           
+            req.headers['Authorization'] = `Bearer ${token}`;           
         }
-        return config;
+        return req;
     }, (err) => {
         Promise.reject(err);
     }
