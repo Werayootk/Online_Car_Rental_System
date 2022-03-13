@@ -6,11 +6,11 @@ import {ReactComponent as Google_Logo} from '../../../assets/images/google-icon.
 
 const SocialLogin = () => {
     const google = () => {
-        window.open("http://localhost:8000/users/google", "_self");
+        window.open("http://localhost:8000/user/google", "_self");
       };
     
       const facebook = () => {
-        window.open("http://localhost:8000/users/facebook", "_self");
+        window.open("http://localhost:8000/user/facebook", "_self");
       };
     return (
         <div className="signup-buttons" onClick={google}>

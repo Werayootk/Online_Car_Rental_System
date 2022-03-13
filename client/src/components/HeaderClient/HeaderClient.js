@@ -4,9 +4,12 @@ import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.min.css";
 import { HashRouter as Router, Link, NavLink } from "react-router-dom";
+import localStorageServices from "../../services/localStorageUserServices";
+
+const { getRole } = localStorageServices;
 
 const HeaderClient = (props) => {
-  const [role, setRole] = useState(props.role);
+  const [role, setRole] = useState(getRole());
 
   const menu = (
     <Menu>
@@ -20,7 +23,7 @@ const HeaderClient = (props) => {
         <Link to="/booking">การเช่ารถของฉัน</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="/user/logout">ออกจากระบบ</Link>
+        <Link to="/logout">ออกจากระบบ</Link>
       </Menu.Item>
     </Menu>
   );

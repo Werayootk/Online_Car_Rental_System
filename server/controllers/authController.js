@@ -13,7 +13,6 @@ exports.register = async (req, res, next) => {
       password,
       first_name,
       last_name,
-      phone_number,
     } = req.body;
 
     const isEmail = emailFormat.test(email);
@@ -34,14 +33,14 @@ exports.register = async (req, res, next) => {
       email: isEmail ? email : Error,
       first_name,
       last_name,
-      phone_number,
+      phone_number: null,
       role: 'user',
       password: hashedPassword,
       resetPasswordToken: null,
       resetPasswordExpires: null,
     });
 
-    res.status(201).json({ message: 'user created' });
+    res.status(201).json({ message: 'สมัครใช้งานสำเร็จ' });
   } catch (err) {
     next(err);
   }
@@ -85,7 +84,8 @@ exports.login = async (req, res, next) => {
 
     res.status(200).json({
       token,
-      user: { id, first_name, last_name, phone_number, role, email }
+      user: { id, first_name, last_name, phone_number, role, email },
+      message: 'เข้าสู่ระบบสำเร็จ'
     });
   } catch (err) {
     next(err);

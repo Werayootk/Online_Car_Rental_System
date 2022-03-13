@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect, useState } from "react";
 import { Redirect, Route, RouteProps, withRouter } from 'react-router-dom';
 import { Layout } from 'antd';
 
@@ -6,6 +6,8 @@ import HeaderClient from '../HeaderClient/HeaderClient';
 import FooterClient from '../FooterClient/FooterClient';
 import './MainLayout.scss';
 
+import localStorageServices from "../../services/localStorageUserServices";
+const { getRole } = localStorageServices;
 const { Header, Footer, Sider, Content } = Layout;
 
 export const MainLayout = ({ children, ...rest }) => {
@@ -21,11 +23,10 @@ export const MainLayout = ({ children, ...rest }) => {
 };
 
 
-const MainLayoutRoute = ({ component: Component, role, setRole, ...rest }) => {
-
-    if (role === 'user') {
-        return <Redirect to="/home" /> 
-    } else if (role === 'admin') {
+const MainLayoutRoute = ({ component: Component , ...rest }) => {
+    const [role, setRole] = useState(getRole());
+    
+    if (role === 'admin') {
         return <Redirect to="/dashboard" /> 
     }
         return (

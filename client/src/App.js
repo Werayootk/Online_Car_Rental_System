@@ -46,7 +46,7 @@ function App() {
       />
       <Route
       exact
-      path="/user/logout"
+      path="/logout"
       render={() => {
         localStorageServices.removeToken();
         setRole(localStorageServices.getRole());
