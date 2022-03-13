@@ -50,6 +50,7 @@ function App() {
       render={() => {
         localStorageServices.removeToken();
         setRole(localStorageServices.getRole());
+        //clear redux return intaistate
         return <Redirect to="/" />;
       }}
     />
