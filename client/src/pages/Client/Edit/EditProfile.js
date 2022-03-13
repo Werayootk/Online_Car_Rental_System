@@ -1,21 +1,14 @@
 import React,{ useState, useEffect } from "react";
 import "./EditProfile.scss";
-import { useFormik } from "formik";
 import { Form ,notification, Button, Input} from 'antd'
-import { HashRouter as Router, Link, NavLink, useHistory } from "react-router-dom";
 import localStorageServices from "../../../services/localStorageUserServices";
 import userService from '../../../services/userServices';
-/** TODO 5
- * 1. Reform use antd add validate
- * 2. axios call backend to edit profile notification
- * 3. useEffect set useState replace values from
- */
+
  const { Item } = Form;
 const { Password } = Input;
 const { getUserInfo } = localStorageServices;
 
 const EditProfile = () => {
-  const history = useHistory();
   const [userInfo, setuserInfo] = useState(getUserInfo());
 
   const onClickEditProfile = async (values) => {
