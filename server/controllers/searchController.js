@@ -142,7 +142,7 @@ exports.createCarOrder = async (req, res, next) => {
       return_datetime,
       price_per_day,
       total_price,
-    } = req.query;
+    } = req.body;
 
     // userId from Token and Oauth
     console.log(req.user.id);

@@ -1,18 +1,18 @@
 import React from "react";
 import "./Main.scss";
-import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
+import { Menu, Dropdown, Input, DatePicker, Button, Form } from "antd";
 import "antd/dist/antd.min.css";
 import axios from '../../../config/axios';
 import { useHistory } from "react-router-dom";
 
 /**
  * TODO 1
- * 1. Login show/hide condition user
- * 2. validate input required
+ * 1. Login show/hide condition user ==> Test
+ * 2. validate input required 
  * 3. useEffect axios get location render component dropdown
  * 4. Create useBookingContext (location car pickup_date return_date price total_price booking_status booking_no)
  * 5. Create usePaymentContext
- * 6. 4 - 5 will refactor in redux 
+ * 6. 4 - 5 will refactor in redux  
  */
 
 const { Search } = Input;

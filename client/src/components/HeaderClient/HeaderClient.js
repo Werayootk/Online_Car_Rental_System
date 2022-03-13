@@ -1,11 +1,12 @@
-import React ,{ useState, useEffect }from "react";
+import React, { useState, useEffect } from "react";
 import "./HeaderClient.scss";
 import { Menu, Dropdown, Input, DatePicker, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.min.css";
 import { HashRouter as Router, Link, NavLink } from "react-router-dom";
 
-const HeaderClient = () => {
+const HeaderClient = (props) => {
+  const [role, setRole] = useState(props.role);
 
   const menu = (
     <Menu>
@@ -19,7 +20,7 @@ const HeaderClient = () => {
         <Link to="/booking">การเช่ารถของฉัน</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="/users/logout">ออกจากระบบ</Link>
+        <Link to="/user/logout">ออกจากระบบ</Link>
       </Menu.Item>
     </Menu>
   );
@@ -36,7 +37,6 @@ const HeaderClient = () => {
   );
 
   return (
-  
     <nav className="Main navbar navbar-expand-lg collapsed shadow">
       <div className="Main__header">
         <Link to="/">
@@ -55,20 +55,26 @@ const HeaderClient = () => {
             </a>
           </Dropdown>
         </div>
-        <div className="Main__login">
-          <Dropdown overlay={menu}>
-            <a
-              className="ant-dropdown-link"
-              onClick={(e) => e.preventDefault()}
-            >
-              บัญชีของฉัน
-              <DownOutlined />
-            </a>
-          </Dropdown>
-        </div>
-        <div className="Main__login">
-        <Link to="/login">เข้าสู่ระบบ</Link> 
-        </div>
+
+        {role === "user" && (
+          <div className="Main__login">
+            <Dropdown overlay={menu}>
+              <a
+                className="ant-dropdown-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                บัญชีของฉัน
+                <DownOutlined />
+              </a>
+            </Dropdown>
+          </div>
+        )}
+
+        {role === undefined && (
+          <div className="Main__login">
+            <Link to="/login">เข้าสู่ระบบ</Link>
+          </div>
+        )}
       </div>
     </nav>
   );
