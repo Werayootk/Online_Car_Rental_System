@@ -8,7 +8,6 @@ const authenticateMiddleware = require("../middlewares/authenticateMiddleware");
 
 const router = express.Router();
 
-router.get("/me", authenticateMiddleware, userController.getMe); //tested
 router.post("/register", authController.register); //tested
 router.post("/login", authController.login); //tested
 router.post("/forgot-password", authController.forgotPassword);
@@ -20,6 +19,10 @@ router.get("/facebook", passport.authenticate("facebook", { scope: ["email"] }))
 router.get("/login/success", userController.getSocialUserLogin);
 router.get("/login/failed", userController.getSocialUserFail);
 router.get("/logout", userController.getSocialUserLogout);
+
+router.get("/me", authenticateMiddleware, userController.getMe); //tested
+router.put("/edit-profile", authenticateMiddleware, userController.editUserProfile);
+router.put("/edit-password", authenticateMiddleware, userController.editUserPassword);
 
 router.get('/google/callback', 
   passport.authenticate('google', {

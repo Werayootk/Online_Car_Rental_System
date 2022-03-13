@@ -22,6 +22,14 @@ export class userService {
     updatePassword(body) {
         return axios.put(`${this.API_USER_PATH}/update-password`, body);
     }
+
+    editUserProfile(body) {
+        return axios.put(`${this.API_USER_PATH}/edit-profile`, body);
+    }
+
+    editUserPassword(body) {
+        return axios.put(`${this.API_USER_PATH}/edit-password`, body);
+    }
 }
 
 export default new userService()

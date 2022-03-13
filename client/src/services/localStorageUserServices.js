@@ -33,6 +33,18 @@ const getUserName = () => {
     }
 }
 
+const getUserInfo = () => {
+    const token = getToken()
+    const userInfo = {};
+    if (token) {
+        userInfo.first_name = jwt_decode(token).first_name;
+        userInfo.last_name = jwt_decode(token).last_name;
+        userInfo.email = jwt_decode(token).email;
+        userInfo.phone_number = jwt_decode(token).phone_number;
+        return userInfo;
+    }
+}
+
 const getUserID = () => {
     const token = getToken()
     if (token){
@@ -47,7 +59,8 @@ const localStorageServices = {
     removeToken,
     getRole,
     getUserName,
-    getUserID
+    getUserID,
+    getUserInfo
 }
 
 export default localStorageServices
