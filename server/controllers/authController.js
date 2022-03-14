@@ -3,6 +3,7 @@ const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const { User } = require('../models');
+const { Op } = require("sequelize");
 
 const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -110,7 +111,10 @@ exports.forgotPassword = async (req, res, next) => {
     if (!user) {
       return res
         .status(400)
-        .json({ message: 'Not Found Email in System.' });
+        .json({
+          success: false,
+          message: 'ไม่พบ Email ในระบบ'
+        });
     }
 
     const token = crypto.randomBytes(20).toString('hex');
@@ -121,8 +125,8 @@ exports.forgotPassword = async (req, res, next) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: `${process.env.EMAIL_ADDRESS}`,
-        pass: `${process.env.EMAIL_PASSWORD}`,
+        user: `${process.env.EMAIL_ADDRESS || "werayoot5800@gmail.com"}`,
+        pass: `${process.env.EMAIL_PASSWORD || "zdhjobmlzshhoioi"}`,
       },
     });
 
@@ -143,7 +147,7 @@ exports.forgotPassword = async (req, res, next) => {
       } else {
         console.log('here is the res: ', response);
         return res.status(200).json({
-          message: 'recovery email sent'
+          message: 'ส่ง Link Reset รหัสผ่านไปให้ทาง Email แล้ว'
         });
       }
     });
@@ -172,7 +176,7 @@ exports.resetPassword = async (req, res, next) => {
 
     return res.status(200).json({
       email: user.email,
-      message: 'password reset link a-ok',
+      message: 'password reset link ok',
     });
   } catch (err) {
     next(err);
@@ -183,8 +187,7 @@ exports.updatePassword = async (req, res, next) => {
   try {
     const user = await User.findOne({
       where: {
-        email: req.body.email,
-        resetPasswordToken: req.query.resetPasswordToken,
+        resetPasswordToken: req.body.resetPasswordToken,
         resetPasswordExpires: {
           [Op.gt]: Date.now(),
         },
@@ -205,11 +208,12 @@ exports.updatePassword = async (req, res, next) => {
     });
 
     return res.status(200).json({
-      message: 'password updated'
+      message: 'password updated successfully.'
     });
     
   } catch (err) {
     next(err);
   }
 }
+
 

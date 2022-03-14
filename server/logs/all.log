@@ -968,3 +968,77 @@
 [35m[39m
 2022-03-14 00:03:31:331 [35mhttp[39m: [35m::1 - - POST /user/login 200 442 - 96.888 ms[39m
 [35m[39m
+2022-03-14 07:44:54:4454 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 4.707 ms[39m
+[35m[39m
+2022-03-14 07:44:55:4455 [35mhttp[39m: [35m::1 - - POST /user/login 200 449 - 935.768 ms[39m
+[35m[39m
+2022-03-14 07:46:42:4642 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 0.920 ms[39m
+[35m[39m
+2022-03-14 07:46:42:4642 [35mhttp[39m: [35m::1 - - POST /user/login 200 442 - 165.286 ms[39m
+[35m[39m
+2022-03-14 07:47:23:4723 [35mhttp[39m: [35m::1 - - OPTIONS /user/edit-password 204 0 - 0.252 ms[39m
+[35m[39m
+2022-03-14 07:47:23:4723 [35mhttp[39m: [35m::1 - - PUT /user/edit-password 200 98 - 223.648 ms[39m
+[35m[39m
+2022-03-14 07:47:49:4749 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 1.179 ms[39m
+[35m[39m
+2022-03-14 07:47:50:4750 [35mhttp[39m: [35m::1 - - POST /user/login 400 39 - 168.391 ms[39m
+[35m[39m
+2022-03-14 07:47:55:4755 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 0.316 ms[39m
+[35m[39m
+2022-03-14 07:47:55:4755 [35mhttp[39m: [35m::1 - - POST /user/login 200 442 - 160.641 ms[39m
+[35m[39m
+2022-03-14 07:48:12:4812 [35mhttp[39m: [35m::1 - - OPTIONS /user/edit-profile 204 0 - 0.263 ms[39m
+[35m[39m
+2022-03-14 07:48:12:4812 [35mhttp[39m: [35m::1 - - PUT /user/edit-profile 200 74 - 34.595 ms[39m
+[35m[39m
+2022-03-14 08:17:47:1747 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 8.530 ms[39m
+[35m[39m
+2022-03-14 08:17:48:1748 [35mhttp[39m: [35m::1 - - POST /user/forgot-password 400 70 - 912.661 ms[39m
+[35m[39m
+2022-03-14 08:18:25:1825 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 0.820 ms[39m
+[35m[39m
+2022-03-14 08:18:25:1825 [35mhttp[39m: [35m::1 - - POST /user/forgot-password 400 70 - 36.946 ms[39m
+[35m[39m
+2022-03-14 08:18:36:1836 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 0.310 ms[39m
+[35m[39m
+2022-03-14 08:18:36:1836 [35mhttp[39m: [35m::1 - - POST /user/forgot-password 400 70 - 20.333 ms[39m
+[35m[39m
+2022-03-14 08:19:13:1913 [35mhttp[39m: [35m::1 - - OPTIONS /user/register 204 0 - 0.966 ms[39m
+[35m[39m
+2022-03-14 08:19:13:1913 [35mhttp[39m: [35m::1 - - POST /user/register 201 65 - 217.286 ms[39m
+[35m[39m
+2022-03-14 08:19:32:1932 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 0.262 ms[39m
+[35m[39m
+2022-03-14 08:19:32:1932 [35mhttp[39m: [35m::1 - - POST /user/login 200 469 - 139.249 ms[39m
+[35m[39m
+2022-03-14 08:19:47:1947 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 0.321 ms[39m
+[35m[39m
+2022-03-14 08:22:32:2232 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 2.839 ms[39m
+[35m[39m
+2022-03-14 08:28:33:2833 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 6.413 ms[39m
+[35m[39m
+2022-03-14 08:31:42:3142 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 3.056 ms[39m
+[35m[39m
+2022-03-14 08:31:45:3145 [35mhttp[39m: [35m::1 - - POST /user/forgot-password 200 102 - 2929.923 ms[39m
+[35m[39m
+2022-03-14 08:32:36:3236 [35mhttp[39m: [35m::1 - - OPTIONS /user/update-password 204 0 - 0.936 ms[39m
+[35m[39m
+2022-03-14 08:32:36:3236 [35mhttp[39m: [35m::1 - - PUT /user/update-password 500 31 - 12.163 ms[39m
+[35m[39m
+2022-03-14 08:37:16:3716 [35mhttp[39m: [35m::1 - - OPTIONS /user/update-password 204 0 - 0.357 ms[39m
+[35m[39m
+2022-03-14 08:37:16:3716 [35mhttp[39m: [35m::1 - - PUT /user/update-password 500 31 - 33.121 ms[39m
+[35m[39m
+2022-03-14 08:38:56:3856 [35mhttp[39m: [35m::1 - - OPTIONS /user/update-password 204 0 - 4.332 ms[39m
+[35m[39m
+2022-03-14 08:38:56:3856 [35mhttp[39m: [35m::1 - - PUT /user/update-password 404 47 - 52.928 ms[39m
+[35m[39m
+2022-03-14 08:50:36:5036 [35mhttp[39m: [35m::1 - - OPTIONS /user/update-password 204 0 - 3.517 ms[39m
+[35m[39m
+2022-03-14 08:50:36:5036 [35mhttp[39m: [35m::1 - - PUT /user/update-password 500 31 - 377.255 ms[39m
+[35m[39m
+2022-03-14 08:52:04:524 [35mhttp[39m: [35m::1 - - OPTIONS /user/update-password 204 0 - 2.347 ms[39m
+[35m[39m
+2022-03-14 08:52:04:524 [35mhttp[39m: [35m::1 - - PUT /user/update-password 500 31 - 20.337 ms[39m
+[35m[39m

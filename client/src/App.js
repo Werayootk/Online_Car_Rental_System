@@ -22,6 +22,7 @@ import EditBooking from "./pages/Client/Edit/EditBooking";
 import Login from "./pages/Client/Signin/Login";
 import Register from "./pages/Client/Signin/Register";
 import ForgotPassword from "./pages/Client/Signin/ForgotPassword";
+import ResetPassword from "./pages/Client/Signin/ResetPassword";
 import Booking from "./pages/Client/Booking/Booking";
 import BookingDetail from "./pages/Client/Booking/BookingDetail";
 import BookingReserving from "./pages/Client/Booking/BookingReserving";
@@ -79,6 +80,14 @@ function App() {
         exact
         path="/forgot"
         component={ForgotPassword}
+        role={role}
+        setRole={setRole}
+      />
+
+      <MainLayoutRoute
+        exact
+        path="/reset/:param_token"
+        component={ResetPassword}
         role={role}
         setRole={setRole}
       />
