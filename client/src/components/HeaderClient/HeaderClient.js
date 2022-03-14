@@ -13,16 +13,16 @@ const HeaderClient = (props) => {
 
   const menu = (
     <Menu>
-      <Menu.Item>
+      <Menu.Item key={1}>
         <Link to="/profile">แก้ไขข้อมูลส่วนตัว</Link>
       </Menu.Item>
-      <Menu.Item>
+      <Menu.Item key={2}>
         <Link to="/editpassword">แก้ไขรหัสผ่าน</Link>
       </Menu.Item>
-      <Menu.Item>
+      <Menu.Item key={3}>
         <Link to="/booking">การเช่ารถของฉัน</Link>
       </Menu.Item>
-      <Menu.Item>
+      <Menu.Item key={4}>
         <Link to="/logout">ออกจากระบบ</Link>
       </Menu.Item>
     </Menu>
@@ -30,10 +30,10 @@ const HeaderClient = (props) => {
 
   const menuHelp = (
     <Menu>
-      <Menu.Item>
+      <Menu.Item key={5}>
         <Link to="/">วิธีการจอง</Link>
       </Menu.Item>
-      <Menu.Item>
+      <Menu.Item key={6}>
         <Link to="/">เอกสารเช่ารถ</Link>
       </Menu.Item>
     </Menu>

@@ -1,30 +1,77 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Main.scss";
-import { Menu, Dropdown, Input, DatePicker, Button, Form } from "antd";
+import {
+  Menu,
+  Dropdown,
+  Input,
+  DatePicker,
+  Button,
+  Form,
+  TreeSelect,
+  Spin,
+} from "antd";
 import "antd/dist/antd.min.css";
-import axios from '../../../config/axios';
 import { useHistory } from "react-router-dom";
-
+import { v4 as uuidv4 } from "uuid";
+import searchCarService from "../../../services/searchCarServices";
 /**
  * TODO 1
  * 1. Login show/hide condition user ==> Test
- * 2. validate input required 
+ * 2. validate input required
  * 3. useEffect axios get location render component dropdown
  * 4. Create useBookingContext (location car pickup_date return_date price total_price booking_status booking_no)
  * 5. Create usePaymentContext
- * 6. 4 - 5 will refactor in redux  
+ * 6. 4 - 5 will refactor in redux
  */
 
 const { Search } = Input;
 const { RangePicker } = DatePicker;
-const onSearch = (value) => console.log(value);
+const { TreeNode } = TreeSelect;
+const { Item } = Form;
 
 const Main = () => {
   const history = useHistory();
-  const routeChange = () => {
-    let path = `/search-car`;
-    history.push(path);
+  const [getLocation, setGetLocation] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
+
+  const fetchLocation = async () => {
+    setLoading(true);
+    await searchCarService
+      .getProvinceAndLocation()
+      .then((res) => {
+        setGetLocation(res.data);
+      })
+      .catch((err) => {
+        setError(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    fetchLocation();
+  }, []);
+
+  if (loading) {
+    return <Spin />;
   }
+
+  if (error || !Array.isArray(getLocation.data)) {
+    return <p>There was an error loading your data!</p>;
+  }
+
+  const onClickSearchCar = async (values) => {
+    console.log(values);
+    //console.log(getLocation.data);
+    // await getLocation.data.map(v => {
+    //   return console.log(v.id);
+    // })
+    //get data form
+    //set state redux global
+    //history.push(`/search-car`);
+  };
   return (
     <>
       <section className="mainSection">
@@ -40,33 +87,67 @@ const Main = () => {
                   ใช้บริการรถเช่าทั่วประเทศ
                 </h4>
               </div>
-              <div className="main__search_box">
-                <div className="main__search_box_container">
-                  <div className="main_search_car">
-                    {/*Input Component serach car*/}
-                    <Search
-                      placeholder="ค้นหาสถานที่รับรถ"
-                      enterButton="Search"
-                      size="large"
-                      onSearch={onSearch}
-                    />
-                  </div>
-                  <div className="main_search_date">
-                    {/*Input Component calandar */}
-                    <RangePicker showTime size={"large"}
-                      placeholder={["วันที่และเวลารับรถ","วันที่และเวลาคืนรถ"]}
-                    />
-                  </div>
-                  <div className="main_search_button">
-                    {/*Input Component Button submit */}
-                    <Button type="primary" block
-                    onClick={routeChange}
-                    >
-                      ค้นหารถว่าง
-                    </Button>
+              <Form name="searchCar" onFinish={onClickSearchCar}>
+                <div className="main__search_box">
+                  <div className="main__search_box_container">
+                    <div className="main_search_car">
+                      <Item
+                        name="location"
+                        rules={[
+                          {
+                            required: false,
+                            message: "โปรดเลือกสถานที่",
+                          },
+                        ]}
+                      >
+                        <TreeSelect
+                          style={{
+                            width: 418,
+                          }}
+                          placeholder="ค้นหารถเช่าที่ว่าง"
+                          key="tree_main"
+                        >
+                          {getLocation.data?.map((item) => {
+                            return <TreeNode
+                              key={uuidv4()}
+                              title={item.province}
+                              value={item.location}
+                            />;
+                          })}
+                        </TreeSelect>
+                      </Item>
+                    </div>
+                    <div className="main_search_date">
+                      <Item
+                        name="range-picker"
+                        rules={[
+                          {
+                            type: "array",
+                            required: false,
+                            message: "Please select time!",
+                          },
+                        ]}
+                      >
+                        <RangePicker
+                          showTime
+                          size={"large"}
+                          placeholder={[
+                            "วันที่และเวลารับรถ",
+                            "วันที่และเวลาคืนรถ",
+                          ]}
+                        />
+                      </Item>
+                    </div>
+                    <div className="main_search_button">
+                      <Item>
+                        <Button type="primary" block htmlType="submit">
+                          ค้นหารถว่าง
+                        </Button>
+                      </Item>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Form>
             </div>
           </section>
         </section>
