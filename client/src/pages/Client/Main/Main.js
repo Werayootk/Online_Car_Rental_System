@@ -108,11 +108,14 @@ const Main = () => {
                           key="tree_main"
                         >
                           {getLocation.data?.map((item) => {
-                            return <TreeNode
-                              key={uuidv4()}
-                              title={item.province}
-                              value={item.location}
-                            />;
+                            return (
+                                <TreeNode
+                                key={item.id}
+                                title={item.location}
+                                value={item.location}
+                                >
+                                </TreeNode>
+                            )
                           })}
                         </TreeSelect>
                       </Item>
