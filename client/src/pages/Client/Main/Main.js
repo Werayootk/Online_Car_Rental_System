@@ -18,7 +18,7 @@ import searchCarService from "../../../services/searchCarServices";
  * TODO 1
  * 1. Login show/hide condition user ==> Test
  * 2. validate input required
- * 3. useEffect axios get location render component dropdown
+ * 3. Split Tree by province 
  * 4. Create useBookingContext (location car pickup_date return_date price total_price booking_status booking_no)
  * 5. Create usePaymentContext
  * 6. 4 - 5 will refactor in redux
