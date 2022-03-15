@@ -1806,3 +1806,239 @@
 [35m[39m
 2022-03-14 17:35:19:3519 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 37.617 ms[39m
 [35m[39m
+2022-03-14 17:45:33:4533 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 84.472 ms[39m
+[35m[39m
+2022-03-14 17:45:35:4535 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 11.219 ms[39m
+[35m[39m
+2022-03-14 17:45:36:4536 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 29.860 ms[39m
+[35m[39m
+2022-03-14 17:45:38:4538 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 46.913 ms[39m
+[35m[39m
+2022-03-14 17:45:39:4539 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 24.215 ms[39m
+[35m[39m
+2022-03-14 17:45:39:4539 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.607 ms[39m
+[35m[39m
+2022-03-14 17:45:40:4540 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 9.870 ms[39m
+[35m[39m
+2022-03-14 17:45:41:4541 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.218 ms[39m
+[35m[39m
+2022-03-14 17:45:41:4541 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.975 ms[39m
+[35m[39m
+2022-03-14 17:45:42:4542 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.253 ms[39m
+[35m[39m
+2022-03-14 17:45:43:4543 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 8.039 ms[39m
+[35m[39m
+2022-03-14 17:45:43:4543 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 18.516 ms[39m
+[35m[39m
+2022-03-14 17:45:44:4544 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 13.463 ms[39m
+[35m[39m
+2022-03-14 17:45:45:4545 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.701 ms[39m
+[35m[39m
+2022-03-14 17:45:46:4546 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 30.281 ms[39m
+[35m[39m
+2022-03-14 17:45:46:4546 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 22.141 ms[39m
+[35m[39m
+2022-03-14 17:45:47:4547 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.706 ms[39m
+[35m[39m
+2022-03-14 17:45:48:4548 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 11.851 ms[39m
+[35m[39m
+2022-03-14 17:45:48:4548 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.974 ms[39m
+[35m[39m
+2022-03-14 17:45:49:4549 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 28.693 ms[39m
+[35m[39m
+2022-03-14 17:45:50:4550 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 23.271 ms[39m
+[35m[39m
+2022-03-14 17:45:50:4550 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 13.215 ms[39m
+[35m[39m
+2022-03-14 17:45:51:4551 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 8.074 ms[39m
+[35m[39m
+2022-03-14 17:45:51:4551 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 13.318 ms[39m
+[35m[39m
+2022-03-14 17:45:52:4552 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 7.177 ms[39m
+[35m[39m
+2022-03-14 17:45:53:4553 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 33.241 ms[39m
+[35m[39m
+2022-03-14 17:45:54:4554 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 13.739 ms[39m
+[35m[39m
+2022-03-14 17:45:54:4554 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 10.103 ms[39m
+[35m[39m
+2022-03-14 17:45:55:4555 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 8.326 ms[39m
+[35m[39m
+2022-03-14 17:45:56:4556 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 13.399 ms[39m
+[35m[39m
+2022-03-14 17:45:56:4556 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 42.604 ms[39m
+[35m[39m
+2022-03-14 17:45:58:4558 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 10.220 ms[39m
+[35m[39m
+2022-03-14 17:46:01:461 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.761 ms[39m
+[35m[39m
+2022-03-14 17:46:05:465 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.169 ms[39m
+[35m[39m
+2022-03-14 17:46:06:466 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.194 ms[39m
+[35m[39m
+2022-03-14 17:46:07:467 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 10.518 ms[39m
+[35m[39m
+2022-03-14 17:46:08:468 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.572 ms[39m
+[35m[39m
+2022-03-14 17:46:08:468 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.005 ms[39m
+[35m[39m
+2022-03-14 17:46:09:469 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.168 ms[39m
+[35m[39m
+2022-03-14 17:46:10:4610 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 3.939 ms[39m
+[35m[39m
+2022-03-14 17:46:11:4611 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 3.745 ms[39m
+[35m[39m
+2022-03-14 17:46:11:4611 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 3.997 ms[39m
+[35m[39m
+2022-03-14 17:46:12:4612 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 8.959 ms[39m
+[35m[39m
+2022-03-14 17:46:13:4613 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 9.503 ms[39m
+[35m[39m
+2022-03-14 17:46:14:4614 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.850 ms[39m
+[35m[39m
+2022-03-14 17:46:15:4615 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.001 ms[39m
+[35m[39m
+2022-03-14 17:46:16:4616 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.050 ms[39m
+[35m[39m
+2022-03-14 17:46:17:4617 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.296 ms[39m
+[35m[39m
+2022-03-14 17:46:18:4618 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 8.138 ms[39m
+[35m[39m
+2022-03-14 17:46:18:4618 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 7.647 ms[39m
+[35m[39m
+2022-03-14 17:46:19:4619 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 3.827 ms[39m
+[35m[39m
+2022-03-14 17:46:20:4620 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.147 ms[39m
+[35m[39m
+2022-03-14 17:46:21:4621 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.713 ms[39m
+[35m[39m
+2022-03-14 17:46:22:4622 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.513 ms[39m
+[35m[39m
+2022-03-14 17:46:22:4622 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 8.023 ms[39m
+[35m[39m
+2022-03-14 17:46:35:4635 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 7.412 ms[39m
+[35m[39m
+2022-03-14 17:46:38:4638 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 8.406 ms[39m
+[35m[39m
+2022-03-14 17:46:47:4647 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.500 ms[39m
+[35m[39m
+2022-03-14 17:46:48:4648 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.312 ms[39m
+[35m[39m
+2022-03-14 17:46:53:4653 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.676 ms[39m
+[35m[39m
+2022-03-14 17:46:55:4655 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.122 ms[39m
+[35m[39m
+2022-03-14 17:46:56:4656 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 3.954 ms[39m
+[35m[39m
+2022-03-14 17:46:57:4657 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 7.527 ms[39m
+[35m[39m
+2022-03-14 17:47:02:472 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 7.406 ms[39m
+[35m[39m
+2022-03-14 17:47:04:474 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.296 ms[39m
+[35m[39m
+2022-03-14 17:47:05:475 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.941 ms[39m
+[35m[39m
+2022-03-14 17:47:06:476 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 13.686 ms[39m
+[35m[39m
+2022-03-14 17:47:07:477 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 6.516 ms[39m
+[35m[39m
+2022-03-14 17:47:08:478 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.271 ms[39m
+[35m[39m
+2022-03-14 17:47:09:479 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 10.960 ms[39m
+[35m[39m
+2022-03-14 17:47:10:4710 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 7.200 ms[39m
+[35m[39m
+2022-03-14 17:47:10:4710 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 15.602 ms[39m
+[35m[39m
+2022-03-14 17:47:11:4711 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 4.902 ms[39m
+[35m[39m
+2022-03-14 17:47:16:4716 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 5.040 ms[39m
+[35m[39m
+2022-03-14 17:47:18:4718 [35mhttp[39m: [35m::1 - - GET /search-car/location 401 26 - 7.140 ms[39m
+[35m[39m
+2022-03-14 19:10:40:1040 [35mhttp[39m: [35m::1 - - GET /search-car/location 200 22153 - 4749.874 ms[39m
+[35m[39m
+2022-03-14 19:19:57:1957 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 132.108 ms[39m
+[35m[39m
+2022-03-14 19:25:48:2548 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 51.484 ms[39m
+[35m[39m
+2022-03-14 19:25:49:2549 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 26.408 ms[39m
+[35m[39m
+2022-03-14 19:27:57:2757 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 36.798 ms[39m
+[35m[39m
+2022-03-14 19:30:14:3014 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 38.516 ms[39m
+[35m[39m
+2022-03-14 19:31:02:312 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 8.044 ms[39m
+[35m[39m
+2022-03-14 19:31:02:312 [35mhttp[39m: [35m::1 - - POST /user/login 400 39 - 505.176 ms[39m
+[35m[39m
+2022-03-14 19:31:05:315 [35mhttp[39m: [35m::1 - - POST /user/login 400 39 - 115.182 ms[39m
+[35m[39m
+2022-03-14 19:31:09:319 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 0.626 ms[39m
+[35m[39m
+2022-03-14 19:31:09:319 [35mhttp[39m: [35m::1 - - POST /user/login 200 469 - 135.724 ms[39m
+[35m[39m
+2022-03-14 19:31:09:319 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.244 ms[39m
+[35m[39m
+2022-03-14 19:31:09:319 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 28.240 ms[39m
+[35m[39m
+2022-03-14 20:17:36:1736 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 2.750 ms[39m
+[35m[39m
+2022-03-14 20:17:36:1736 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 62.394 ms[39m
+[35m[39m
+2022-03-14 20:18:46:1846 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.168 ms[39m
+[35m[39m
+2022-03-14 20:18:46:1846 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 19.295 ms[39m
+[35m[39m
+2022-03-14 20:18:57:1857 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.249 ms[39m
+[35m[39m
+2022-03-14 20:18:57:1857 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 29.997 ms[39m
+[35m[39m
+2022-03-14 20:19:23:1923 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.133 ms[39m
+[35m[39m
+2022-03-14 20:19:23:1923 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 14.079 ms[39m
+[35m[39m
+2022-03-14 20:20:46:2046 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 1.617 ms[39m
+[35m[39m
+2022-03-14 20:20:46:2046 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 20.682 ms[39m
+[35m[39m
+2022-03-14 20:21:54:2154 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.134 ms[39m
+[35m[39m
+2022-03-14 20:21:54:2154 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 22.236 ms[39m
+[35m[39m
+2022-03-14 20:22:06:226 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.227 ms[39m
+[35m[39m
+2022-03-14 20:22:06:226 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 20.222 ms[39m
+[35m[39m
+2022-03-14 20:45:45:4545 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 1.017 ms[39m
+[35m[39m
+2022-03-14 20:45:45:4545 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 205.312 ms[39m
+[35m[39m
+2022-03-15 06:39:42:3942 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.303 ms[39m
+[35m[39m
+2022-03-15 06:39:42:3942 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 32.785 ms[39m
+[35m[39m
+2022-03-15 06:59:08:598 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 5.492 ms[39m
+[35m[39m
+2022-03-15 06:59:08:598 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 131.951 ms[39m
+[35m[39m
+2022-03-15 07:00:44:044 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.264 ms[39m
+[35m[39m
+2022-03-15 07:00:44:044 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 39.834 ms[39m
+[35m[39m
+2022-03-15 07:02:59:259 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.309 ms[39m
+[35m[39m
+2022-03-15 07:02:59:259 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 32.741 ms[39m
+[35m[39m
+2022-03-15 07:04:56:456 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.995 ms[39m
+[35m[39m
+2022-03-15 07:04:56:456 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 21.463 ms[39m
+[35m[39m
+2022-03-15 07:05:32:532 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.314 ms[39m
+[35m[39m
+2022-03-15 07:05:32:532 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 19.129 ms[39m
+[35m[39m
+2022-03-15 08:22:49:2249 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 2.499 ms[39m
+[35m[39m
+2022-03-15 08:22:49:2249 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 148.636 ms[39m
+[35m[39m

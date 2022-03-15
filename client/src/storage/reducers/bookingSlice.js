@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    dataList: [],
+    bookingList: [],
     totalQuantity: 0
 }
 
@@ -10,6 +10,9 @@ const bookingSlice = createSlice({
     initialState,
     reducers: {
         //add data (car location pickup/return date/time price total_price)
+
+        // change data
+        
     }
 });
 

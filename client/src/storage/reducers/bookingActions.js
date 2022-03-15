@@ -1,9 +1,6 @@
 import { bookingActions } from './bookingSlice';
 
-export const fetchBookingData = () => {
-    
-}
-
+// Create Order
 export const sendBookingData = () => {
     
 }

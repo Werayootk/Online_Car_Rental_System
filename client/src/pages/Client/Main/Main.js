@@ -23,8 +23,6 @@ import searchCarService from "../../../services/searchCarServices";
  * 5. Create usePaymentContext
  * 6. 4 - 5 will refactor in redux
  */
-
-const { Search } = Input;
 const { RangePicker } = DatePicker;
 const { TreeNode } = TreeSelect;
 const { Item } = Form;
@@ -33,17 +31,17 @@ const Main = () => {
   const history = useHistory();
   const [getLocation, setGetLocation] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState();
 
   const fetchLocation = async () => {
-    setLoading(true);
+    // setLoading(true);
     await searchCarService
       .getProvinceAndLocation()
       .then((res) => {
+
         setGetLocation(res.data);
       })
       .catch((err) => {
-        setError(err);
+        console.error(err);
       })
       .finally(() => {
         setLoading(false);
@@ -58,16 +56,8 @@ const Main = () => {
     return <Spin />;
   }
 
-  if (error || !Array.isArray(getLocation.data)) {
-    return <p>There was an error loading your data!</p>;
-  }
-
   const onClickSearchCar = async (values) => {
     console.log(values);
-    //console.log(getLocation.data);
-    // await getLocation.data.map(v => {
-    //   return console.log(v.id);
-    // })
     //get data form
     //set state redux global
     //history.push(`/search-car`);
@@ -95,7 +85,7 @@ const Main = () => {
                         name="location"
                         rules={[
                           {
-                            required: false,
+                            required: true,
                             message: "โปรดเลือกสถานที่",
                           },
                         ]}
@@ -113,8 +103,8 @@ const Main = () => {
                                 key={item.id}
                                 title={item.location}
                                 value={item.location}
-                                >
-                                </TreeNode>
+                              >
+                              </TreeNode>
                             )
                           })}
                         </TreeSelect>
@@ -126,7 +116,7 @@ const Main = () => {
                         rules={[
                           {
                             type: "array",
-                            required: false,
+                            required: true,
                             message: "Please select time!",
                           },
                         ]}
