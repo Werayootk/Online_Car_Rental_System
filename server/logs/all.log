@@ -2196,3 +2196,7 @@
 [35m[39m
 2022-03-15 13:52:04:524 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 25.043 ms[39m
 [35m[39m
+2022-03-15 17:35:57:3557 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 11.095 ms[39m
+[35m[39m
+2022-03-15 17:35:57:3557 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 333.211 ms[39m
+[35m[39m

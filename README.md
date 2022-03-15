@@ -142,6 +142,7 @@ https://www.npmjs.com/package/react-infinite-scroll-component
 https://v5.reactrouter.com/web/example/query-parameters
 https://stackoverflow.com/questions/35352638/how-to-get-parameter-value-from-query-string
 https://stackoverflow.com/questions/53843548/pagination-and-card-components-with-ant-design-antd
+https://codesandbox.io/s/blissful-boyd-6px43?file=/src/App.js
 ```
 ## Liberty
 
