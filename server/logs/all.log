@@ -2742,3 +2742,37 @@
 [35m[39m
 2022-03-15 22:45:59:4559 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 25.389 ms[39m
 [35m[39m
+2022-03-15 22:55:29:5529 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 7.778 ms[39m
+[35m[39m
+2022-03-15 22:55:29:5529 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 1.706 ms[39m
+[35m[39m
+2022-03-15 22:55:29:5529 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.233 ms[39m
+[35m[39m
+2022-03-15 22:55:30:5530 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 864.957 ms[39m
+[35m[39m
+2022-03-15 22:55:30:5530 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 76.475 ms[39m
+[35m[39m
+2022-03-15 22:55:30:5530 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 78.420 ms[39m
+[35m[39m
+2022-03-15 22:58:01:581 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.778 ms[39m
+[35m[39m
+2022-03-15 22:58:01:581 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.484 ms[39m
+[35m[39m
+2022-03-15 22:58:02:582 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 97.981 ms[39m
+[35m[39m
+2022-03-15 22:58:02:582 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 85.517 ms[39m
+[35m[39m
+2022-03-15 22:58:07:587 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.245 ms[39m
+[35m[39m
+2022-03-15 22:58:07:587 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.227 ms[39m
+[35m[39m
+2022-03-15 22:58:07:587 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 24.251 ms[39m
+[35m[39m
+2022-03-15 22:58:07:587 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 25.875 ms[39m
+[35m[39m
+2022-03-15 22:58:08:588 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 82.978 ms[39m
+[35m[39m
+2022-03-15 22:58:22:5822 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium&sort_price=asc 204 0 - 0.865 ms[39m
+[35m[39m
+2022-03-15 22:58:22:5822 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=asc 304 - - 57.440 ms[39m
+[35m[39m
