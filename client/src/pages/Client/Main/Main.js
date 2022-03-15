@@ -13,22 +13,17 @@ import {
 import "antd/dist/antd.min.css";
 import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
+import { useDispatch } from 'react-redux';
+import { bookingActions } from "../../../storage/reducers/bookingSlice";
 import searchCarService from "../../../services/searchCarServices";
-/**
- * TODO 1
- * 1. Login show/hide condition user ==> Test
- * 2. validate input required
- * 3. Split Tree by province 
- * 4. Create useBookingContext (location car pickup_date return_date price total_price booking_status booking_no)
- * 5. Create usePaymentContext
- * 6. 4 - 5 will refactor in redux
- */
+
 const { RangePicker } = DatePicker;
 const { TreeNode } = TreeSelect;
 const { Item } = Form;
 
 const Main = () => {
   const history = useHistory();
+  const dispatch = useDispatch();
   const [getLocation, setGetLocation] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -52,15 +47,26 @@ const Main = () => {
     fetchLocation();
   }, []);
 
-  if (loading) {
-    return <Spin />;
-  }
+  // if (loading) {
+  //   return <Spin />;
+  // }
 
   const onClickSearchCar = async (values) => {
-    console.log(values);
-    //get data form
-    //set state redux global
-    //history.push(`/search-car`);
+    const findLocationId = getLocation.data?.filter(item => item.location === values.location);
+    const resultLocationId = findLocationId[0].id ? findLocationId[0].id : null;
+    dispatch(
+      bookingActions.addToBookingList({
+        carId: null,
+        locationId: resultLocationId,
+        car: null,
+        location: values.location,
+        pickup_date: values.range_picker[0],
+        return_date: values.range_picker[1],
+        car_price: null,
+        total_price: null
+      })
+    );
+    history.push(`/search-car`);
   };
   return (
     <>
@@ -89,6 +95,7 @@ const Main = () => {
                             message: "โปรดเลือกสถานที่",
                           },
                         ]}
+                        
                       >
                         <TreeSelect
                           style={{
@@ -100,7 +107,7 @@ const Main = () => {
                           {getLocation.data?.map((item) => {
                             return (
                                 <TreeNode
-                                key={item.id}
+                                key={item.id + Date.now()}
                                 title={item.location}
                                 value={item.location}
                               >
@@ -112,7 +119,7 @@ const Main = () => {
                     </div>
                     <div className="main_search_date">
                       <Item
-                        name="range-picker"
+                        name="range_picker"
                         rules={[
                           {
                             type: "array",

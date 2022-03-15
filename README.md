@@ -137,6 +137,11 @@ https://codeforgeek.com/file-uploads-using-node-js/
 https://www.bezkoder.com/node-js-upload-multiple-files/
 https://www.codegrepper.com/code-examples/javascript/yyyymmddThhmmss+to+date+javascript
 https://itnext.io/password-reset-emails-in-your-react-app-made-easy-with-nodemailer-bb27968310d7
+https://jasonwatmore.com/post/2017/03/14/react-pagination-example-with-logic-like-google
+https://www.npmjs.com/package/react-infinite-scroll-component
+https://v5.reactrouter.com/web/example/query-parameters
+https://stackoverflow.com/questions/35352638/how-to-get-parameter-value-from-query-string
+https://stackoverflow.com/questions/53843548/pagination-and-card-components-with-ant-design-antd
 ```
 ## Liberty
 
