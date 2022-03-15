@@ -22,7 +22,11 @@ const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
     const carAvailable = await db.Car.findAll({
       where: {
         car_status: "available",
-      },
+      },include: [
+        {
+          model: db.Image_car,
+        }
+      ],
       order: [["car_price", sortPrice]],
       offset: paginate.offset,
       limit: paginate.limit,
@@ -45,7 +49,11 @@ const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
       where: {
         car_status: "available",
         [Op.or]: withFilterCarList,
-      },
+      },include: [
+        {
+          model: db.Image_car
+        }
+      ],
       order: [["car_price", sortPrice]],
       offset: paginate.offset,
       limit: paginate.limit,

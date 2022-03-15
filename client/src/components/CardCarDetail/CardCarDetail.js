@@ -2,41 +2,43 @@ import React from "react";
 import "./CardCarDetail.scss";
 import { CarOutlined, UserOutlined } from "@ant-design/icons";
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const CardCarDetail = (props) => {
+  const { items } = props;
 
-  return props.items.map((v, i) => (
-    <div className="col-card" key={v.id}>
+  return items.data?.map((item) => (
+    <div className="col-card" key={item.id}>
       <div className="car-card--candidate">
         <section>
           <div className="avatar">
-            <img src={v.thumbnail_images[0]} className="img-car" />
+            <img src={item.Image_cars[0].img_url} className="img-car" width={355} height={240} />
           </div>
         </section>
         <section>
           <header>
             <h2>
-              <span className="mr-1">{v.title.th}</span>
+              <span className="mr-1">{item.car_brand}</span>
             </h2>
           </header>
           <section className="body">
             <div>
               <div className="padding-content">
-                <CarOutlined /> <span>{v.type}</span>
+                <CarOutlined /> <span>{item.car_type}</span>
               </div>
               <div className="padding-content">
                 <UserOutlined />
-                <span>{v.passengers}</span>
+                <span>{item.car_seat}</span>
               </div>
               <div className="padding-content">
                 <img src="/images/gear.svg" />
-                <span>{v.transmission}</span>
+                <span>{item.car_transmission}</span>
               </div>
             </div>
             <div className="align-right">
               <div className="price">
                 <h3>
-                  950<small>/วัน</small>
+                  {item.car_price}<small>/วัน</small>
                 </h3>
                 <div className="total">รวม ฿1,900</div>
               </div>

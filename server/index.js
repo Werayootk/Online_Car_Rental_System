@@ -37,7 +37,7 @@ app.use(passport.session());
 
 app.use("/admin", adminRoute);
 app.use("/user", userRoute);
-app.use('/search-car', searchCarRoute);
+app.use('/search-car', searchCarRoute);  
 app.use('/booking', myBookingRoute);
 app.use('/payment', paymentRoute);
 
