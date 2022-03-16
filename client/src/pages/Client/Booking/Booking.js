@@ -4,17 +4,13 @@ import CardCarCategory from "../../../components/CardCarCategory/CardCarCategory
 import CardCarDetail from "../../../components/CardCarDetail/CardCarDetail";
 import { CarType } from "../../../config/car_type";
 import searchCarService from "../../../services/searchCarServices";
-import axios from '../../../config/axios';
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useHistory, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Spin } from "antd";
 
 /** TODO 8
- * 1. axios data car availiable to setState send to Card
  * 2. implement infinity scroll down fetch data
- * 3. implement filter and sort
- * 3. redux save state car
  * 4. click car detail to redirect save state car detail
  */
 
@@ -29,15 +25,12 @@ const Booking = () => {
   const [valSortPrice, setValSortPrice] = useState("asc");
   const [getCarData, setGetCarData] = useState();
   const [loading, setLoading] = useState(true);
-  const componentMounted = useRef(true);
 
   const fetchCarAvailable = async (params) => {
     await searchCarService
       .getCarListAll(params)
       .then((res) => {
-        //if (componentMounted.current) {
           setGetCarData(res.data);
-        //}
       })
       .catch((err) => {
         console.error(err);
@@ -45,30 +38,15 @@ const Booking = () => {
       .finally(() => {
         setLoading(false);
       });
-
-    // const response = await axios.get('/search-car/car-list', params);
-    // setGetCarData(response.data);
-    // setLoading(false);
   };
 
   useEffect(() => {
-    setLoading(true);
-    const params = valCarCategory ? valCarCategory : ""
-    fetchCarAvailable(params);
-    console.log("Effect fetch data");
-  },[])
-
-  useEffect(() => {
-    //params logic ?car_type sort_price offset=0 limit=4
       setLoading(true);
       const carType = valCarCategory ? valCarCategory.toString() : "";
       const params = `?car_type=${carType}&sort_price=${valSortPrice}`;
       fetchCarAvailable(params);
       history.push(`${location.pathname}${params}`);
       console.log("Effect fetch data have params: "+`${location.pathname}${params}`);  
-    // return () => {
-    //   componentMounted.current = false;
-    // }
   }, [valSortPrice, valCarCategory]);
 
   return (
@@ -96,13 +74,13 @@ const Booking = () => {
                 <div className="filter-category">
                   <div className="category-item d-inline-flex flex-row flex-wrap">
                     <CardCarCategory
-                      items={carType}
+                      carCategory={carType}
                       sendClear={isActiveClear}
                       onChange={(val) => {
                         setValCarCategory(val);
                         console.log(val);
                       }}
-                    />
+                     />
                   </div>
                 </div>
               </div>

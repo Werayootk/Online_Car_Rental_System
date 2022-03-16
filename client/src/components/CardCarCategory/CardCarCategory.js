@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./CardCarCategory.scss";
 
 const CardCarCategory = (props) => {
-    const { items, onChange, sendClear } = props;
+    const { carCategory, onChange, sendClear } = props;
     const [isActiveCarType1, setActiveCarType1] = useState(false);
     const [isActiveCarType2, setActiveCarType2] = useState(false);
     const [isActiveCarType3, setActiveCarType3] = useState(false);
@@ -71,13 +71,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType1(!isActiveCarType1);
-                      !isActiveCarType1 ? selectedCar(items[0].val) : removeSelectedCar(items[0].val);
+                      !isActiveCarType1 ? selectedCar(carCategory[0].val) : removeSelectedCar(carCategory[0].val);
                   }}
         >
-          <img className="img-fluid" src={items[0].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[0].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[0].type}</span>
-            {items[0].price}
+            <span className="type-title">{carCategory[0].type}</span>
+            {carCategory[0].price}
           </p>
         </div>
       </div>
@@ -90,13 +90,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType2(!isActiveCarType2);
-                      !isActiveCarType2 ? selectedCar(items[1].val) : removeSelectedCar(items[1].val);
+                      !isActiveCarType2 ? selectedCar(carCategory[1].val) : removeSelectedCar(carCategory[1].val);
                   }}
         >
-          <img className="img-fluid" src={items[1].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[1].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[1].type}</span>
-            {items[1].price}
+            <span className="type-title">{carCategory[1].type}</span>
+            {carCategory[1].price}
           </p>
         </div>
       </div>
@@ -109,13 +109,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType3(!isActiveCarType3);
-                      !isActiveCarType3 ? selectedCar(items[2].val) : removeSelectedCar(items[2].val);
+                      !isActiveCarType3 ? selectedCar(carCategory[2].val) : removeSelectedCar(carCategory[2].val);
                   }}
         >
-          <img className="img-fluid" src={items[2].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[2].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[2].type}</span>
-            {items[2].price}
+            <span className="type-title">{carCategory[2].type}</span>
+            {carCategory[2].price}
           </p>
         </div>
       </div>
@@ -128,13 +128,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType4(!isActiveCarType4);
-                      !isActiveCarType4 ? selectedCar(items[3].val) : removeSelectedCar(items[3].val);
+                      !isActiveCarType4 ? selectedCar(carCategory[3].val) : removeSelectedCar(carCategory[3].val);
                   }}
         >
-          <img className="img-fluid" src={items[3].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[3].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[3].type}</span>
-            {items[3].price}
+            <span className="type-title">{carCategory[3].type}</span>
+            {carCategory[3].price}
           </p>
         </div>
       </div>
@@ -147,13 +147,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType5(!isActiveCarType5);
-                      !isActiveCarType5 ? selectedCar(items[4].val) : removeSelectedCar(items[4].val);
+                      !isActiveCarType5 ? selectedCar(carCategory[4].val) : removeSelectedCar(carCategory[4].val);
                   }}
         >
-          <img className="img-fluid" src={items[4].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[4].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[4].type}</span>
-            {items[4].price}
+            <span className="type-title">{carCategory[4].type}</span>
+            {carCategory[4].price}
           </p>
         </div>
       </div>
@@ -166,13 +166,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType6(!isActiveCarType6);
-                      !isActiveCarType6 ? selectedCar(items[5].val) : removeSelectedCar(items[5].val);
+                      !isActiveCarType6 ? selectedCar(carCategory[5].val) : removeSelectedCar(carCategory[5].val);
                   }}
         >
-          <img className="img-fluid" src={items[5].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[5].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[5].type}</span>
-            {items[5].price}
+            <span className="type-title">{carCategory[5].type}</span>
+            {carCategory[5].price}
           </p>
         </div>
       </div>
@@ -185,13 +185,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType7(!isActiveCarType7);
-                      !isActiveCarType7 ? selectedCar(items[6].val) : removeSelectedCar(items[6].val);
+                      !isActiveCarType7 ? selectedCar(carCategory[6].val) : removeSelectedCar(carCategory[6].val);
                   }}
         >
-          <img className="img-fluid" src={items[6].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[6].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[6].type}</span>
-            {items[6].price}
+            <span className="type-title">{carCategory[6].type}</span>
+            {carCategory[6].price}
           </p>
         </div>
       </div>
@@ -204,13 +204,13 @@ const CardCarCategory = (props) => {
           }
                   onClick={() => {
                       setActiveCarType8(!isActiveCarType8);
-                      !isActiveCarType8 ? selectedCar(items[7].val) : removeSelectedCar(items[7].val);
+                      !isActiveCarType8 ? selectedCar(carCategory[7].val) : removeSelectedCar(carCategory[7].val);
                   }}
         >
-          <img className="img-fluid" src={items[7].path} alt="car type" />
+          <img className="img-fluid" src={carCategory[7].path} alt="car type" />
           <p className="text-center">
-            <span className="type-title">{items[7].type}</span>
-            {items[7].price}
+            <span className="type-title">{carCategory[7].type}</span>
+            {carCategory[7].price}
           </p>
         </div>
       </div>

@@ -28,11 +28,9 @@ const Main = () => {
   const [loading, setLoading] = useState(false);
 
   const fetchLocation = async () => {
-    // setLoading(true);
     await searchCarService
       .getProvinceAndLocation()
       .then((res) => {
-
         setGetLocation(res.data);
       })
       .catch((err) => {
@@ -47,13 +45,10 @@ const Main = () => {
     fetchLocation();
   }, []);
 
-  // if (loading) {
-  //   return <Spin />;
-  // }
-
   const onClickSearchCar = async (values) => {
     const findLocationId = getLocation.data?.filter(item => item.location === values.location);
     const resultLocationId = findLocationId[0].id ? findLocationId[0].id : null;
+    const diff_of_days = Math.floor((values.range_picker[1] - values.range_picker[0]) / ((1000 * 3600 * 24)));
     dispatch(
       bookingActions.addToBookingList({
         carId: null,
@@ -62,6 +57,7 @@ const Main = () => {
         location: values.location,
         pickup_date: values.range_picker[0],
         return_date: values.range_picker[1],
+        diff_days:diff_of_days,
         car_price: null,
         total_price: null
       })

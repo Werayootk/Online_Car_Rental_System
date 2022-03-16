@@ -2,6 +2,8 @@ import "./App.css";
 import "antd/dist/antd.min.css";
 import "./styles/main.scss";
 import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
 //Layout
 import DashboardLayoutRoute from "./components/DashboardLayout/DashboardLayout";
 import MainLayoutRoute from "./components/MainLayout/MainLayout";
@@ -32,9 +34,11 @@ import localStorageServices from "./services/localStorageUserServices";
 
 import { Redirect, Route, Switch } from "react-router-dom";
 import { withRouter } from "react-router-dom";
+import { bookingActions } from "./storage/reducers/bookingSlice";
 
 function App() {
   const [role, setRole] = useState(localStorageServices.getRole());
+  const dispatch = useDispatch();
 
   return (
     <Switch>
@@ -51,7 +55,7 @@ function App() {
       render={() => {
         localStorageServices.removeToken();
         setRole(localStorageServices.getRole());
-        //clear redux return intaistate
+        dispatch(bookingActions.clearBookingState());
         return <Redirect to="/" />;
       }}
     />

@@ -2776,3 +2776,689 @@
 [35m[39m
 2022-03-15 22:58:22:5822 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=asc 304 - - 57.440 ms[39m
 [35m[39m
+2022-03-16 07:13:15:1315 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 5.014 ms[39m
+[35m[39m
+2022-03-16 07:13:15:1315 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.281 ms[39m
+[35m[39m
+2022-03-16 07:13:16:1316 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 161.977 ms[39m
+[35m[39m
+2022-03-16 07:13:16:1316 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 121.209 ms[39m
+[35m[39m
+2022-03-16 07:13:16:1316 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 53.051 ms[39m
+[35m[39m
+2022-03-16 07:17:56:1756 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 1.121 ms[39m
+[35m[39m
+2022-03-16 07:17:56:1756 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 131.387 ms[39m
+[35m[39m
+2022-03-16 07:18:39:1839 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.517 ms[39m
+[35m[39m
+2022-03-16 07:18:39:1839 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.246 ms[39m
+[35m[39m
+2022-03-16 07:18:39:1839 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 86.105 ms[39m
+[35m[39m
+2022-03-16 07:18:39:1839 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 150.321 ms[39m
+[35m[39m
+2022-03-16 07:18:39:1839 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 33.552 ms[39m
+[35m[39m
+2022-03-16 08:35:32:3532 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 10.258 ms[39m
+[35m[39m
+2022-03-16 08:35:32:3532 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 382.881 ms[39m
+[35m[39m
+2022-03-16 08:36:03:363 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.329 ms[39m
+[35m[39m
+2022-03-16 08:36:03:363 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.281 ms[39m
+[35m[39m
+2022-03-16 08:36:03:363 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 196.825 ms[39m
+[35m[39m
+2022-03-16 08:36:03:363 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 223.760 ms[39m
+[35m[39m
+2022-03-16 08:36:03:363 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 97.095 ms[39m
+[35m[39m
+2022-03-16 08:39:23:3923 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.389 ms[39m
+[35m[39m
+2022-03-16 08:39:23:3923 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.246 ms[39m
+[35m[39m
+2022-03-16 08:39:23:3923 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 81.143 ms[39m
+[35m[39m
+2022-03-16 08:39:23:3923 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 68.891 ms[39m
+[35m[39m
+2022-03-16 08:39:23:3923 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 32.874 ms[39m
+[35m[39m
+2022-03-16 08:43:31:4331 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 6.570 ms[39m
+[35m[39m
+2022-03-16 08:43:31:4331 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.433 ms[39m
+[35m[39m
+2022-03-16 08:43:31:4331 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.198 ms[39m
+[35m[39m
+2022-03-16 08:43:31:4331 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 170.003 ms[39m
+[35m[39m
+2022-03-16 08:43:31:4331 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 121.288 ms[39m
+[35m[39m
+2022-03-16 08:43:31:4331 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 27.966 ms[39m
+[35m[39m
+2022-03-16 08:46:39:4639 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 4.922 ms[39m
+[35m[39m
+2022-03-16 08:46:39:4639 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.243 ms[39m
+[35m[39m
+2022-03-16 08:46:39:4639 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.177 ms[39m
+[35m[39m
+2022-03-16 08:46:40:4640 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 184.832 ms[39m
+[35m[39m
+2022-03-16 08:46:55:4655 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.244 ms[39m
+[35m[39m
+2022-03-16 08:46:55:4655 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.231 ms[39m
+[35m[39m
+2022-03-16 08:46:55:4655 [35mhttp[39m: [35m::1 - - GET /search-car/car-list - - - - ms[39m
+[35m[39m
+2022-03-16 08:46:55:4655 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc - - - - ms[39m
+[35m[39m
+2022-03-16 08:46:56:4656 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 200 2159 - 102.828 ms[39m
+[35m[39m
+2022-03-16 08:46:56:4656 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 200 2159 - 222.870 ms[39m
+[35m[39m
+2022-03-16 08:46:56:4656 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 41.921 ms[39m
+[35m[39m
+2022-03-16 08:47:00:470 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.275 ms[39m
+[35m[39m
+2022-03-16 08:47:00:470 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 49.747 ms[39m
+[35m[39m
+2022-03-16 08:48:07:487 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 3.882 ms[39m
+[35m[39m
+2022-03-16 08:48:07:487 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 97.733 ms[39m
+[35m[39m
+2022-03-16 08:48:27:4827 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.258 ms[39m
+[35m[39m
+2022-03-16 08:48:27:4827 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 37.124 ms[39m
+[35m[39m
+2022-03-16 08:50:05:505 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.332 ms[39m
+[35m[39m
+2022-03-16 08:50:05:505 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 34.158 ms[39m
+[35m[39m
+2022-03-16 08:51:09:519 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.500 ms[39m
+[35m[39m
+2022-03-16 08:51:09:519 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 38.979 ms[39m
+[35m[39m
+2022-03-16 08:54:48:5448 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 2.611 ms[39m
+[35m[39m
+2022-03-16 08:54:48:5448 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 92.182 ms[39m
+[35m[39m
+2022-03-16 08:57:43:5743 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 1.078 ms[39m
+[35m[39m
+2022-03-16 08:57:43:5743 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 55.666 ms[39m
+[35m[39m
+2022-03-16 08:58:23:5823 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.242 ms[39m
+[35m[39m
+2022-03-16 08:58:23:5823 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 43.784 ms[39m
+[35m[39m
+2022-03-16 09:07:00:70 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 5.095 ms[39m
+[35m[39m
+2022-03-16 09:07:00:70 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.191 ms[39m
+[35m[39m
+2022-03-16 09:07:00:70 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.197 ms[39m
+[35m[39m
+2022-03-16 09:07:00:70 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 376.068 ms[39m
+[35m[39m
+2022-03-16 09:07:00:70 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 287.800 ms[39m
+[35m[39m
+2022-03-16 09:07:00:70 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 90.500 ms[39m
+[35m[39m
+2022-03-16 09:16:29:1629 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 7.328 ms[39m
+[35m[39m
+2022-03-16 09:16:29:1629 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.546 ms[39m
+[35m[39m
+2022-03-16 09:16:30:1630 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 285.597 ms[39m
+[35m[39m
+2022-03-16 09:16:30:1630 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 434.056 ms[39m
+[35m[39m
+2022-03-16 09:16:30:1630 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 45.186 ms[39m
+[35m[39m
+2022-03-16 09:17:53:1753 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.656 ms[39m
+[35m[39m
+2022-03-16 09:17:53:1753 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.212 ms[39m
+[35m[39m
+2022-03-16 09:17:53:1753 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 67.245 ms[39m
+[35m[39m
+2022-03-16 09:17:53:1753 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 95.919 ms[39m
+[35m[39m
+2022-03-16 09:17:54:1754 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 23.678 ms[39m
+[35m[39m
+2022-03-16 09:18:30:1830 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.347 ms[39m
+[35m[39m
+2022-03-16 09:18:30:1830 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.226 ms[39m
+[35m[39m
+2022-03-16 09:18:30:1830 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 57.547 ms[39m
+[35m[39m
+2022-03-16 09:18:30:1830 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 53.809 ms[39m
+[35m[39m
+2022-03-16 09:18:31:1831 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 57.812 ms[39m
+[35m[39m
+2022-03-16 09:19:13:1913 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.297 ms[39m
+[35m[39m
+2022-03-16 09:19:13:1913 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 135.979 ms[39m
+[35m[39m
+2022-03-16 09:19:24:1924 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.276 ms[39m
+[35m[39m
+2022-03-16 09:19:24:1924 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.244 ms[39m
+[35m[39m
+2022-03-16 09:19:25:1925 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 58.048 ms[39m
+[35m[39m
+2022-03-16 09:19:25:1925 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 21.221 ms[39m
+[35m[39m
+2022-03-16 09:19:25:1925 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 22.780 ms[39m
+[35m[39m
+2022-03-16 09:22:45:2245 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.435 ms[39m
+[35m[39m
+2022-03-16 09:22:45:2245 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.195 ms[39m
+[35m[39m
+2022-03-16 09:22:45:2245 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 63.620 ms[39m
+[35m[39m
+2022-03-16 09:22:45:2245 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 24.316 ms[39m
+[35m[39m
+2022-03-16 09:22:46:2246 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 40.684 ms[39m
+[35m[39m
+2022-03-16 09:27:22:2722 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 4.423 ms[39m
+[35m[39m
+2022-03-16 09:27:22:2722 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 117.083 ms[39m
+[35m[39m
+2022-03-16 09:29:12:2912 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.743 ms[39m
+[35m[39m
+2022-03-16 09:29:12:2912 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.261 ms[39m
+[35m[39m
+2022-03-16 09:29:12:2912 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 217.464 ms[39m
+[35m[39m
+2022-03-16 09:29:12:2912 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 159.579 ms[39m
+[35m[39m
+2022-03-16 09:29:12:2912 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 38.453 ms[39m
+[35m[39m
+2022-03-16 09:31:22:3122 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.804 ms[39m
+[35m[39m
+2022-03-16 09:31:23:3123 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 99.282 ms[39m
+[35m[39m
+2022-03-16 09:31:35:3135 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.220 ms[39m
+[35m[39m
+2022-03-16 09:31:35:3135 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.214 ms[39m
+[35m[39m
+2022-03-16 09:31:36:3136 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 82.847 ms[39m
+[35m[39m
+2022-03-16 09:31:36:3136 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 87.285 ms[39m
+[35m[39m
+2022-03-16 09:31:36:3136 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 26.301 ms[39m
+[35m[39m
+2022-03-16 09:34:48:3448 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=eco&sort_price=asc 204 0 - 1.020 ms[39m
+[35m[39m
+2022-03-16 09:34:48:3448 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=eco&sort_price=asc 200 2267 - 138.748 ms[39m
+[35m[39m
+2022-03-16 09:34:50:3450 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=eco,small&sort_price=asc 204 0 - 0.213 ms[39m
+[35m[39m
+2022-03-16 09:34:50:3450 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=eco,small&sort_price=asc 200 2159 - 48.760 ms[39m
+[35m[39m
+2022-03-16 09:34:51:3451 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=eco&sort_price=asc 304 - - 31.312 ms[39m
+[35m[39m
+2022-03-16 09:34:51:3451 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.269 ms[39m
+[35m[39m
+2022-03-16 09:34:51:3451 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 32.733 ms[39m
+[35m[39m
+2022-03-16 09:34:52:3452 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=suv&sort_price=asc 204 0 - 0.323 ms[39m
+[35m[39m
+2022-03-16 09:34:52:3452 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=suv&sort_price=asc 200 2764 - 43.849 ms[39m
+[35m[39m
+2022-03-16 09:34:53:3453 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 77.904 ms[39m
+[35m[39m
+2022-03-16 09:39:29:3929 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.273 ms[39m
+[35m[39m
+2022-03-16 09:39:29:3929 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 94.429 ms[39m
+[35m[39m
+2022-03-16 09:40:08:408 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.841 ms[39m
+[35m[39m
+2022-03-16 09:40:08:408 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.244 ms[39m
+[35m[39m
+2022-03-16 09:40:08:408 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 76.517 ms[39m
+[35m[39m
+2022-03-16 09:40:08:408 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 79.244 ms[39m
+[35m[39m
+2022-03-16 09:40:08:408 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 27.828 ms[39m
+[35m[39m
+2022-03-16 09:45:20:4520 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 7.949 ms[39m
+[35m[39m
+2022-03-16 09:45:20:4520 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 109.342 ms[39m
+[35m[39m
+2022-03-16 09:46:09:469 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.720 ms[39m
+[35m[39m
+2022-03-16 09:46:09:469 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 114.535 ms[39m
+[35m[39m
+2022-03-16 09:46:26:4626 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.851 ms[39m
+[35m[39m
+2022-03-16 09:46:26:4626 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.300 ms[39m
+[35m[39m
+2022-03-16 09:46:26:4626 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 156.635 ms[39m
+[35m[39m
+2022-03-16 09:46:26:4626 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 158.887 ms[39m
+[35m[39m
+2022-03-16 09:46:26:4626 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 47.413 ms[39m
+[35m[39m
+2022-03-16 09:46:45:4645 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium&sort_price=asc 204 0 - 0.229 ms[39m
+[35m[39m
+2022-03-16 09:46:45:4645 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=asc 304 - - 84.720 ms[39m
+[35m[39m
+2022-03-16 09:46:46:4646 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium,small&sort_price=asc 204 0 - 0.291 ms[39m
+[35m[39m
+2022-03-16 09:46:46:4646 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium,small&sort_price=asc 200 2639 - 40.202 ms[39m
+[35m[39m
+2022-03-16 09:46:47:4647 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium,small,luxury&sort_price=asc 204 0 - 0.194 ms[39m
+[35m[39m
+2022-03-16 09:46:47:4647 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium,small,luxury&sort_price=asc 200 2639 - 32.612 ms[39m
+[35m[39m
+2022-03-16 09:46:50:4650 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium,small,luxury,suv&sort_price=asc 204 0 - 0.193 ms[39m
+[35m[39m
+2022-03-16 09:46:50:4650 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium,small,luxury,suv&sort_price=asc 200 2639 - 45.990 ms[39m
+[35m[39m
+2022-03-16 09:46:55:4655 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium,luxury,suv&sort_price=asc 204 0 - 0.232 ms[39m
+[35m[39m
+2022-03-16 09:46:55:4655 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium,luxury,suv&sort_price=asc 200 2753 - 30.004 ms[39m
+[35m[39m
+2022-03-16 09:46:55:4655 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=luxury,suv&sort_price=asc 204 0 - 0.346 ms[39m
+[35m[39m
+2022-03-16 09:46:55:4655 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=luxury,suv&sort_price=asc 200 2765 - 31.616 ms[39m
+[35m[39m
+2022-03-16 09:46:56:4656 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=luxury&sort_price=asc 204 0 - 0.304 ms[39m
+[35m[39m
+2022-03-16 09:46:56:4656 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=luxury&sort_price=asc 200 2987 - 37.929 ms[39m
+[35m[39m
+2022-03-16 09:47:05:475 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=luxury&sort_price=desc 204 0 - 0.174 ms[39m
+[35m[39m
+2022-03-16 09:47:05:475 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=luxury&sort_price=desc 200 3119 - 41.378 ms[39m
+[35m[39m
+2022-03-16 10:00:51:051 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 19.482 ms[39m
+[35m[39m
+2022-03-16 10:00:51:051 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.238 ms[39m
+[35m[39m
+2022-03-16 10:00:51:051 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 289.029 ms[39m
+[35m[39m
+2022-03-16 10:00:51:051 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 244.938 ms[39m
+[35m[39m
+2022-03-16 10:00:52:052 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 816.686 ms[39m
+[35m[39m
+2022-03-16 10:01:28:128 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.223 ms[39m
+[35m[39m
+2022-03-16 10:01:28:128 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 46.010 ms[39m
+[35m[39m
+2022-03-16 10:01:40:140 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.813 ms[39m
+[35m[39m
+2022-03-16 10:01:40:140 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.204 ms[39m
+[35m[39m
+2022-03-16 10:01:40:140 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 66.526 ms[39m
+[35m[39m
+2022-03-16 10:01:40:140 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 74.698 ms[39m
+[35m[39m
+2022-03-16 10:01:41:141 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 30.980 ms[39m
+[35m[39m
+2022-03-16 10:02:48:248 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.306 ms[39m
+[35m[39m
+2022-03-16 10:02:48:248 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.196 ms[39m
+[35m[39m
+2022-03-16 10:02:48:248 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 68.864 ms[39m
+[35m[39m
+2022-03-16 10:02:48:248 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 65.483 ms[39m
+[35m[39m
+2022-03-16 10:02:48:248 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 29.666 ms[39m
+[35m[39m
+2022-03-16 10:14:20:1420 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 48.114 ms[39m
+[35m[39m
+2022-03-16 10:14:20:1420 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.198 ms[39m
+[35m[39m
+2022-03-16 10:14:20:1420 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.554 ms[39m
+[35m[39m
+2022-03-16 10:14:21:1421 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 151.568 ms[39m
+[35m[39m
+2022-03-16 10:14:21:1421 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 268.658 ms[39m
+[35m[39m
+2022-03-16 10:14:21:1421 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 26.065 ms[39m
+[35m[39m
+2022-03-16 10:15:52:1552 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.435 ms[39m
+[35m[39m
+2022-03-16 10:15:52:1552 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.190 ms[39m
+[35m[39m
+2022-03-16 10:15:52:1552 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 265.588 ms[39m
+[35m[39m
+2022-03-16 10:15:52:1552 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 157.720 ms[39m
+[35m[39m
+2022-03-16 10:15:52:1552 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 69.274 ms[39m
+[35m[39m
+2022-03-16 10:16:00:160 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.294 ms[39m
+[35m[39m
+2022-03-16 10:16:00:160 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.216 ms[39m
+[35m[39m
+2022-03-16 10:16:06:166 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.181 ms[39m
+[35m[39m
+2022-03-16 10:16:06:166 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 41.266 ms[39m
+[35m[39m
+2022-03-16 10:16:25:1625 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.196 ms[39m
+[35m[39m
+2022-03-16 10:16:25:1625 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.217 ms[39m
+[35m[39m
+2022-03-16 10:16:25:1625 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 95.248 ms[39m
+[35m[39m
+2022-03-16 10:16:25:1625 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 102.663 ms[39m
+[35m[39m
+2022-03-16 10:16:25:1625 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 26.973 ms[39m
+[35m[39m
+2022-03-16 10:19:12:1912 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.264 ms[39m
+[35m[39m
+2022-03-16 10:19:12:1912 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 149.779 ms[39m
+[35m[39m
+2022-03-16 10:19:31:1931 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.228 ms[39m
+[35m[39m
+2022-03-16 10:19:31:1931 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.639 ms[39m
+[35m[39m
+2022-03-16 10:19:31:1931 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 62.232 ms[39m
+[35m[39m
+2022-03-16 10:19:31:1931 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 88.274 ms[39m
+[35m[39m
+2022-03-16 10:19:31:1931 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 33.263 ms[39m
+[35m[39m
+2022-03-16 10:20:53:2053 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.927 ms[39m
+[35m[39m
+2022-03-16 10:20:53:2053 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.197 ms[39m
+[35m[39m
+2022-03-16 10:20:53:2053 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 63.979 ms[39m
+[35m[39m
+2022-03-16 10:20:53:2053 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 59.928 ms[39m
+[35m[39m
+2022-03-16 10:20:55:2055 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 515.717 ms[39m
+[35m[39m
+2022-03-16 10:21:10:2110 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.223 ms[39m
+[35m[39m
+2022-03-16 10:21:10:2110 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 34.580 ms[39m
+[35m[39m
+2022-03-16 10:21:28:2128 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.230 ms[39m
+[35m[39m
+2022-03-16 10:21:28:2128 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.222 ms[39m
+[35m[39m
+2022-03-16 10:21:28:2128 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 89.998 ms[39m
+[35m[39m
+2022-03-16 10:21:28:2128 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 84.506 ms[39m
+[35m[39m
+2022-03-16 10:21:28:2128 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 84.810 ms[39m
+[35m[39m
+2022-03-16 10:32:07:327 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 4.038 ms[39m
+[35m[39m
+2022-03-16 10:32:07:327 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.189 ms[39m
+[35m[39m
+2022-03-16 10:32:08:328 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 336.908 ms[39m
+[35m[39m
+2022-03-16 10:32:08:328 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 206.858 ms[39m
+[35m[39m
+2022-03-16 10:32:09:329 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 105.663 ms[39m
+[35m[39m
+2022-03-16 10:32:18:3218 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.411 ms[39m
+[35m[39m
+2022-03-16 10:32:18:3218 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 30.104 ms[39m
+[35m[39m
+2022-03-16 10:32:36:3236 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.319 ms[39m
+[35m[39m
+2022-03-16 10:32:36:3236 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 1.367 ms[39m
+[35m[39m
+2022-03-16 10:32:37:3237 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 281.448 ms[39m
+[35m[39m
+2022-03-16 10:32:37:3237 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 269.126 ms[39m
+[35m[39m
+2022-03-16 10:32:37:3237 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 95.874 ms[39m
+[35m[39m
+2022-03-16 10:33:06:336 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.208 ms[39m
+[35m[39m
+2022-03-16 10:33:06:336 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.207 ms[39m
+[35m[39m
+2022-03-16 10:33:06:336 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 74.137 ms[39m
+[35m[39m
+2022-03-16 10:33:06:336 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 69.495 ms[39m
+[35m[39m
+2022-03-16 10:33:06:336 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 27.603 ms[39m
+[35m[39m
+2022-03-16 10:42:04:424 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 9.865 ms[39m
+[35m[39m
+2022-03-16 10:42:04:424 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.213 ms[39m
+[35m[39m
+2022-03-16 10:42:07:427 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 2487.284 ms[39m
+[35m[39m
+2022-03-16 10:42:07:427 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 2347.294 ms[39m
+[35m[39m
+2022-03-16 10:42:07:427 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 230.239 ms[39m
+[35m[39m
+2022-03-16 10:42:12:4212 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.205 ms[39m
+[35m[39m
+2022-03-16 10:42:12:4212 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 46.855 ms[39m
+[35m[39m
+2022-03-16 10:42:31:4231 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list 204 0 - 0.258 ms[39m
+[35m[39m
+2022-03-16 10:42:31:4231 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.197 ms[39m
+[35m[39m
+2022-03-16 10:42:31:4231 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 53.048 ms[39m
+[35m[39m
+2022-03-16 10:42:31:4231 [35mhttp[39m: [35m::1 - - GET /search-car/car-list 304 - - 81.134 ms[39m
+[35m[39m
+2022-03-16 10:42:31:4231 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 29.153 ms[39m
+[35m[39m
+2022-03-16 10:42:44:4244 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=van&sort_price=asc 204 0 - 0.202 ms[39m
+[35m[39m
+2022-03-16 10:42:44:4244 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=van&sort_price=asc 304 - - 80.844 ms[39m
+[35m[39m
+2022-03-16 10:49:05:495 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=van,small&sort_price=asc 204 0 - 7.219 ms[39m
+[35m[39m
+2022-03-16 10:49:05:495 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=van,small&sort_price=asc 200 2638 - 292.759 ms[39m
+[35m[39m
+2022-03-16 10:49:07:497 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small&sort_price=asc 204 0 - 0.210 ms[39m
+[35m[39m
+2022-03-16 10:49:08:498 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small&sort_price=asc 200 2638 - 45.930 ms[39m
+[35m[39m
+2022-03-16 10:51:26:5126 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,van&sort_price=asc 204 0 - 4.736 ms[39m
+[35m[39m
+2022-03-16 10:51:26:5126 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,van&sort_price=asc 200 2638 - 262.547 ms[39m
+[35m[39m
+2022-03-16 10:51:27:5127 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=van&sort_price=asc 204 0 - 0.199 ms[39m
+[35m[39m
+2022-03-16 10:51:27:5127 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=van&sort_price=asc 304 - - 70.082 ms[39m
+[35m[39m
+2022-03-16 10:51:48:5148 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=van,hybrid&sort_price=asc 204 0 - 0.301 ms[39m
+[35m[39m
+2022-03-16 10:51:49:5149 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=van,hybrid&sort_price=asc 200 3004 - 83.162 ms[39m
+[35m[39m
+2022-03-16 10:51:53:5153 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=hybrid&sort_price=asc 204 0 - 0.197 ms[39m
+[35m[39m
+2022-03-16 10:51:54:5154 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=hybrid&sort_price=asc 200 1461 - 134.287 ms[39m
+[35m[39m
+2022-03-16 11:08:28:828 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 6.462 ms[39m
+[35m[39m
+2022-03-16 11:08:28:828 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.188 ms[39m
+[35m[39m
+2022-03-16 11:08:28:828 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 256.041 ms[39m
+[35m[39m
+2022-03-16 11:08:28:828 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 20.287 ms[39m
+[35m[39m
+2022-03-16 11:14:58:1458 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 8.317 ms[39m
+[35m[39m
+2022-03-16 11:14:58:1458 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 315.235 ms[39m
+[35m[39m
+2022-03-16 11:14:59:1459 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 32.705 ms[39m
+[35m[39m
+2022-03-16 11:16:51:1651 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.164 ms[39m
+[35m[39m
+2022-03-16 11:16:51:1651 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 60.127 ms[39m
+[35m[39m
+2022-03-16 11:16:51:1651 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 25.025 ms[39m
+[35m[39m
+2022-03-16 11:17:29:1729 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.234 ms[39m
+[35m[39m
+2022-03-16 11:17:29:1729 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 39.932 ms[39m
+[35m[39m
+2022-03-16 11:17:45:1745 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.240 ms[39m
+[35m[39m
+2022-03-16 11:17:45:1745 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 302.241 ms[39m
+[35m[39m
+2022-03-16 11:17:46:1746 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 89.849 ms[39m
+[35m[39m
+2022-03-16 11:19:21:1921 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=luxury&sort_price=asc 204 0 - 0.240 ms[39m
+[35m[39m
+2022-03-16 11:19:21:1921 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=luxury&sort_price=asc 304 - - 70.416 ms[39m
+[35m[39m
+2022-03-16 11:35:12:3512 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 6.788 ms[39m
+[35m[39m
+2022-03-16 11:35:12:3512 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 208.530 ms[39m
+[35m[39m
+2022-03-16 11:35:12:3512 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 42.291 ms[39m
+[35m[39m
+2022-03-16 11:36:24:3624 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.236 ms[39m
+[35m[39m
+2022-03-16 11:36:24:3624 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 76.248 ms[39m
+[35m[39m
+2022-03-16 11:36:24:3624 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 27.441 ms[39m
+[35m[39m
+2022-03-16 11:50:02:502 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 8.989 ms[39m
+[35m[39m
+2022-03-16 11:50:02:502 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 1.193 ms[39m
+[35m[39m
+2022-03-16 11:50:02:502 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 602.074 ms[39m
+[35m[39m
+2022-03-16 11:50:02:502 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 36.090 ms[39m
+[35m[39m
+2022-03-16 11:50:05:505 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.208 ms[39m
+[35m[39m
+2022-03-16 11:50:05:505 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 25.870 ms[39m
+[35m[39m
+2022-03-16 11:50:48:5048 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.257 ms[39m
+[35m[39m
+2022-03-16 11:50:49:5049 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 41.398 ms[39m
+[35m[39m
+2022-03-16 11:50:55:5055 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.273 ms[39m
+[35m[39m
+2022-03-16 11:50:55:5055 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 32.104 ms[39m
+[35m[39m
+2022-03-16 11:51:10:5110 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 1.182 ms[39m
+[35m[39m
+2022-03-16 11:51:10:5110 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 73.047 ms[39m
+[35m[39m
+2022-03-16 11:51:11:5111 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 39.922 ms[39m
+[35m[39m
+2022-03-16 11:55:22:5522 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.348 ms[39m
+[35m[39m
+2022-03-16 11:55:22:5522 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 49.397 ms[39m
+[35m[39m
+2022-03-16 11:55:22:5522 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 24.037 ms[39m
+[35m[39m
+2022-03-16 11:55:28:5528 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.222 ms[39m
+[35m[39m
+2022-03-16 11:55:28:5528 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 24.831 ms[39m
+[35m[39m
+2022-03-16 11:55:28:5528 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 19.444 ms[39m
+[35m[39m
+2022-03-16 11:56:09:569 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.258 ms[39m
+[35m[39m
+2022-03-16 11:56:09:569 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 47.148 ms[39m
+[35m[39m
+2022-03-16 11:56:09:569 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 30.563 ms[39m
+[35m[39m
+2022-03-16 11:58:39:5839 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 1.044 ms[39m
+[35m[39m
+2022-03-16 11:58:39:5839 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 87.865 ms[39m
+[35m[39m
+2022-03-16 11:58:39:5839 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 30.579 ms[39m
+[35m[39m
+2022-03-16 11:59:42:5942 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.259 ms[39m
+[35m[39m
+2022-03-16 11:59:42:5942 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 43.726 ms[39m
+[35m[39m
+2022-03-16 11:59:42:5942 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 36.337 ms[39m
+[35m[39m
+2022-03-16 12:00:05:05 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.255 ms[39m
+[35m[39m
+2022-03-16 12:00:06:06 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 49.068 ms[39m
+[35m[39m
+2022-03-16 12:00:06:06 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 42.492 ms[39m
+[35m[39m
+2022-03-16 12:00:22:022 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.205 ms[39m
+[35m[39m
+2022-03-16 12:00:22:022 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 56.407 ms[39m
+[35m[39m
+2022-03-16 12:00:23:023 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 21.655 ms[39m
+[35m[39m
+2022-03-16 12:01:41:141 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.212 ms[39m
+[35m[39m
+2022-03-16 12:01:42:142 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 62.881 ms[39m
+[35m[39m
+2022-03-16 12:01:42:142 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 89.113 ms[39m
+[35m[39m
+2022-03-16 12:02:31:231 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.175 ms[39m
+[35m[39m
+2022-03-16 12:02:32:232 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 35.647 ms[39m
+[35m[39m
+2022-03-16 12:02:32:232 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 20.855 ms[39m
+[35m[39m
+2022-03-16 12:02:40:240 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.183 ms[39m
+[35m[39m
+2022-03-16 12:02:40:240 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 16.754 ms[39m
+[35m[39m
+2022-03-16 12:02:40:240 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 22.760 ms[39m
+[35m[39m
+2022-03-16 12:03:51:351 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.208 ms[39m
+[35m[39m
+2022-03-16 12:03:51:351 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 42.072 ms[39m
+[35m[39m
+2022-03-16 12:03:51:351 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 31.973 ms[39m
+[35m[39m
+2022-03-16 12:04:10:410 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.841 ms[39m
+[35m[39m
+2022-03-16 12:04:10:410 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 31.788 ms[39m
+[35m[39m
+2022-03-16 12:04:11:411 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 30.221 ms[39m
+[35m[39m
+2022-03-16 12:06:31:631 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.424 ms[39m
+[35m[39m
+2022-03-16 12:06:31:631 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 65.766 ms[39m
+[35m[39m
+2022-03-16 12:06:31:631 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 37.487 ms[39m
+[35m[39m
+2022-03-16 12:06:38:638 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.229 ms[39m
+[35m[39m
+2022-03-16 12:06:38:638 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 29.558 ms[39m
+[35m[39m
+2022-03-16 12:06:38:638 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 33.270 ms[39m
+[35m[39m
+2022-03-16 12:06:42:642 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 32.503 ms[39m
+[35m[39m
+2022-03-16 12:06:42:642 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 26.312 ms[39m
+[35m[39m
+2022-03-16 12:06:51:651 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.932 ms[39m
+[35m[39m
+2022-03-16 12:06:51:651 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 21.082 ms[39m
+[35m[39m
+2022-03-16 12:06:51:651 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 24.369 ms[39m
+[35m[39m
+2022-03-16 12:06:56:656 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 21.559 ms[39m
+[35m[39m
+2022-03-16 12:06:56:656 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 30.583 ms[39m
+[35m[39m
+2022-03-16 12:06:59:659 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.246 ms[39m
+[35m[39m
+2022-03-16 12:06:59:659 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 23.875 ms[39m
+[35m[39m
+2022-03-16 12:07:00:70 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 108.763 ms[39m
+[35m[39m
+2022-03-16 12:07:08:78 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.229 ms[39m
+[35m[39m
+2022-03-16 12:07:08:78 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 85.615 ms[39m
+[35m[39m
+2022-03-16 12:07:08:78 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 29.525 ms[39m
+[35m[39m
+2022-03-16 12:09:42:942 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.291 ms[39m
+[35m[39m
+2022-03-16 12:09:42:942 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 91.738 ms[39m
+[35m[39m
+2022-03-16 12:09:42:942 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 40.901 ms[39m
+[35m[39m
+2022-03-16 12:21:01:211 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 5.296 ms[39m
+[35m[39m
+2022-03-16 12:21:01:211 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc 204 0 - 0.194 ms[39m
+[35m[39m
+2022-03-16 12:21:01:211 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 247.655 ms[39m
+[35m[39m
+2022-03-16 12:21:01:211 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc 304 - - 42.923 ms[39m
+[35m[39m
