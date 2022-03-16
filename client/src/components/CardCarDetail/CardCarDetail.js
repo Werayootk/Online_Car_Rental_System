@@ -3,7 +3,6 @@ import "./CardCarDetail.scss";
 import { CarOutlined, UserOutlined } from "@ant-design/icons";
 import { HashRouter as Router, Link, NavLink, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { bookingActions } from "../../storage/reducers/bookingSlice";
 import formatBATH from '../../util/formatBATH';
 import mappingCarType from '../../util/mappingCarType';

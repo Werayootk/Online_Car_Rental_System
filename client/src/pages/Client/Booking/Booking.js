@@ -4,10 +4,10 @@ import CardCarCategory from "../../../components/CardCarCategory/CardCarCategory
 import CardCarDetail from "../../../components/CardCarDetail/CardCarDetail";
 import { CarType } from "../../../config/car_type";
 import searchCarService from "../../../services/searchCarServices";
-import InfiniteScroll from "react-infinite-scroll-component";
 import { useHistory, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Spin } from "antd";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 /** TODO 8
  * 2. implement infinity scroll down fetch data
@@ -23,14 +23,16 @@ const Booking = () => {
   const [isActiveSortPrice, setActiveSortPrice] = useState(false);
   const [valCarCategory, setValCarCategory] = useState();
   const [valSortPrice, setValSortPrice] = useState("asc");
-  const [getCarData, setGetCarData] = useState();
+  const [getCarData, setGetCarData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [hasMoreCar, setHasMoreCar] = useState(true);
+  const [offsetData, setOffsetData] = useState(1);
 
   const fetchCarAvailable = async (params) => {
     await searchCarService
       .getCarListAll(params)
       .then((res) => {
-          setGetCarData(res.data);
+        setGetCarData(res.data);
       })
       .catch((err) => {
         console.error(err);
@@ -41,12 +43,14 @@ const Booking = () => {
   };
 
   useEffect(() => {
-      setLoading(true);
-      const carType = valCarCategory ? valCarCategory.toString() : "";
-      const params = `?car_type=${carType}&sort_price=${valSortPrice}`;
-      fetchCarAvailable(params);
-      history.push(`${location.pathname}${params}`);
-      console.log("Effect fetch data have params: "+`${location.pathname}${params}`);  
+    setLoading(true);
+    const carType = valCarCategory ? valCarCategory.toString() : "";
+    const params = `?car_type=${carType}&sort_price=${valSortPrice}&offset=0`;
+    fetchCarAvailable(params);
+    history.push(`${location.pathname}${params}`);
+    console.log(
+      "Effect fetch data have params: " + `${location.pathname}${params}`
+    );
   }, [valSortPrice, valCarCategory]);
 
   return (
@@ -80,7 +84,7 @@ const Booking = () => {
                         setValCarCategory(val);
                         console.log(val);
                       }}
-                     />
+                    />
                   </div>
                 </div>
               </div>
@@ -90,7 +94,8 @@ const Booking = () => {
         <div className="col-12 col-lg-8">
           <div className="filter-bar">
             <div className="car-summary">
-              พบรถว่าง {getCarData?.total.toString()} คัน จากที่ตรงกับตัวกรองของคุณ{" "}
+              พบรถว่าง {getCarData?.total} คัน
+              จากที่ตรงกับตัวกรองของคุณ{" "}
               <span
                 className="clean-btn"
                 onClick={() => setActiveClear(!isActiveClear)}
@@ -127,8 +132,10 @@ const Booking = () => {
           </div>
           <div className="row car-listing">
             <div></div>
-            { !loading && <CardCarDetail items={getCarData} />}
-            { loading && <div className="spin-position"><Spin size="large"/></div>}
+              {!loading && <CardCarDetail items={getCarData} />}
+              {loading &&  <div className="spin-position">
+                    <Spin size="large" />
+                  </div>}
           </div>
         </div>
       </div>
