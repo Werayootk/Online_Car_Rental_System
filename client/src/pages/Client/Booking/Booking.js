@@ -23,16 +23,18 @@ const Booking = () => {
   const [isActiveSortPrice, setActiveSortPrice] = useState(false);
   const [valCarCategory, setValCarCategory] = useState();
   const [valSortPrice, setValSortPrice] = useState("asc");
-  const [getCarData, setGetCarData] = useState([]);
+  const [getCarData, setGetCarData] = useState();
+  const [getCarDataAll, setGetCarDataAll] = useState([]);
   const [loading, setLoading] = useState(true);
   const [hasMoreCar, setHasMoreCar] = useState(true);
-  const [offsetData, setOffsetData] = useState(1);
+  const [offsetData, setOffsetData] = useState(4);
 
   const fetchCarAvailable = async (params) => {
     await searchCarService
       .getCarListAll(params)
       .then((res) => {
         setGetCarData(res.data);
+        setGetCarDataAll(res.data.data);
       })
       .catch((err) => {
         console.error(err);
@@ -51,7 +53,30 @@ const Booking = () => {
     console.log(
       "Effect fetch data have params: " + `${location.pathname}${params}`
     );
+    setHasMoreCar(true);
+    setOffsetData(4);
   }, [valSortPrice, valCarCategory]);
+
+  const fetchCar = async () => {
+    const car_Type = valCarCategory ? valCarCategory.toString() : "";
+    const param = `?car_type=${car_Type}&sort_price=${valSortPrice}&offset=${offsetData}`;
+    console.log(`?car_type=${car_Type}&sort_price=${valSortPrice}&offset=${offsetData}`);
+    setLoading(true);
+    const response = await searchCarService.getCarListAll(param);
+    console.log(response.data);
+    setLoading(false);
+    return response.data.data;
+  }
+
+  const fetchMoreCar = async () => {
+    const carFromServer = await fetchCar();
+    setGetCarDataAll([...getCarDataAll, ...carFromServer]);
+    if (carFromServer.length === 0 || carFromServer.length < 4) {
+      setHasMoreCar(false);
+      console.log(carFromServer);
+    }
+    setOffsetData(offsetData + 4);
+  };
 
   return (
     <div className="search-container container">
@@ -132,10 +157,22 @@ const Booking = () => {
           </div>
           <div className="row car-listing">
             <div></div>
-              {!loading && <CardCarDetail items={getCarData} />}
+              {/* {!loading && <CardCarDetail items={getCarDataAll} />}
               {loading &&  <div className="spin-position">
                     <Spin size="large" />
-                  </div>}
+              </div>} */}
+            {!loading && 
+            <InfiniteScroll
+              className="inf_loop"
+              dataLength={getCarData.total} //This is important field to render the next data
+              next={fetchMoreCar}
+              hasMore={hasMoreCar}
+              loader={<Spin size="large" className="spin-position" />}
+              endMessage={"ไม่พบข้อมูลแล้ว"}
+            >
+              <CardCarDetail items={getCarDataAll} />
+              </InfiniteScroll>
+            }
           </div>
         </div>
       </div>

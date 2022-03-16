@@ -15,7 +15,7 @@ const CardCarDetail = (props) => {
   const history = useHistory();
 
   const onClickUpdateCarDetail = (index) => {
-    const selectedThisCar = items.data[index];
+    const selectedThisCar = items[index];
     dispatch(
       bookingActions.updateCarToBookingList({
         index: (bookingItems.length - 1),
@@ -29,7 +29,7 @@ const CardCarDetail = (props) => {
     // history.push('/search-car-detail');
   };
  
-  return items.data?.map((item, index) => (
+  return items?.map((item, index) => (
     <div className="col-card" key={item.id}>
       <div className="car-card--candidate">
         <section>
