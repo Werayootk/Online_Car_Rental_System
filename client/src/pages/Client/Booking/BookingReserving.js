@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import "./BookingReserving.scss";
-import { Radio } from "antd";
+import { Radio, Button, Form, Input } from "antd";
 import {
   BankOutlined,
   CreditCardOutlined,
   MailOutlined,
   MobileOutlined,
 } from "@ant-design/icons";
-import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { bookingActions } from "../../../storage/reducers/bookingSlice";
+import searchCarServices from "../../../services/searchCarServices";
+import { HashRouter as Router, Link, NavLink } from "react-router-dom";
+import localStorageServices from "../../../services/localStorageUserServices";
 
+const { Item } = Form;
+const { getUserInfo } = localStorageServices;
 /* TODO 10
-  1. form antd and validate
-  2. useSelector last state
   3. Add Omise payment client and server 
   4. axios create order and bill and payment 
   4. component fetchData order and bill store to redux for use in mybooking
@@ -19,73 +23,125 @@ import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 */
 
 const BookingReserving = () => {
+  const [userInfo, setuserInfo] = useState(getUserInfo());
+  const bookingItems = useSelector((state) => state.booking.bookingList);
+  const bookingItem = bookingItems[bookingItems.length - 1];
   const [value, setValue] = useState(1);
+  const [loading, setLoading] = useState(true);
+
   const onChangePayment = (e) => {
     console.log("radio checked", e.target.value);
     setValue(e.target.value);
+  };
+
+  const onSubmitBooking = (values) => {
+    console.log(values);
   };
 
   return (
     <div className="center-form-Book">
       <div className="contact_form_wrapper">
         <p className="form_title">รายละเอียดของผู้ขับรถ</p>
-        <form className="booking_customer">
+        <Form name="submitBooking" onFinish={onSubmitBooking}>
           <div className="form-group">
-            <input
-              placeholder="ชื่อ"
+            <Item
               name="first_name"
-              type="text"
-              className="form-control"
-              value=""
-            />
+              label="ชื่อจริง"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your First-Name!",
+                },
+              ]}
+            >
+              <Input placeholder={userInfo.first_name || "ชื่อ"} value={userInfo.first_name} />
+            </Item>
           </div>
           <div className="form-group">
-            <input
-              placeholder="นามสกุล"
+            <Item
               name="last_name"
-              type="text"
-              className="form-control"
-              value=""
-            />
+              label="นามสกุล"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your Last-Name!",
+                },
+              ]}
+            >
+              <Input placeholder={userInfo.last_name || "นามสกุล"} value={userInfo.last_name} />
+            </Item>
           </div>
           <div className="form-group">
-            <MailOutlined className="mail-icon" />
-            <input
-              placeholder="    อีเมลสำหรับยืนยันการจอง"
+            <Item
               name="email"
-              type="email"
-              className="form-control"
-              value=""
-            />
+              label="อีเมล"
+              rules={[
+                {
+                  type: "email",
+                  message: "The input is not valid E-mail!",
+                },
+                {
+                  required: true,
+                  message: "Please input your Email!",
+                },
+              ]}
+            >
+              <Input placeholder={userInfo.email || "E-mail"} value={userInfo.email}/>
+            </Item>
           </div>
           <div className="form-group">
-            <MobileOutlined className="mobile-icon" />
-            <input
-              placeholder="   กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก"
+            <Item
               name="phone_number"
-              type="tel"
-              className="form-control"
-              value=""
-            />
+              label="หมายเลขโทรศัพทฺ์"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your phone number!",
+                },
+                {
+                  min: 10,
+                  message: "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก",
+                },
+              ]}
+              hasFeedback
+            >
+              <Input placeholder={userInfo.phone_number || "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก"}  value={userInfo.phone_number} />
+            </Item>
           </div>
-        </form>
-      </div>
-      <div className="radio-form">
-        <Radio.Group onChange={onChangePayment} value={value}>
-          <Radio value={1}>
-            <CreditCardOutlined style={{ fontSize: "150%" }} />{" "}
-            ชำระผ่านบัตรเครดิต
-          </Radio>
-          <Radio value={2}>
-            <BankOutlined style={{ fontSize: "150%" }} /> ชำระโอนผ่านธนาคาร
-          </Radio>
-        </Radio.Group>
-      </div>
-      <div className="submit_button_wrapper_reserve"> 
-        <div className="button_box_reserve">
-        <Link to='/search-car-book'><button className="btn btn-secondary">ย้อนกลับ</button></Link>
-        <Link to='/search-car-verify'><button className="btn btn-primary_reserve">ทำการจองรถ</button></Link>
-        </div>
+          <div className="radio-form">
+            <Item name="radio-group"
+                 rules={[
+                  {
+                    required: true,
+                    message: 'กรุณาเลือกวิธีชำระเงิน',
+                  },
+                ]}
+            >
+              <Radio.Group onChange={onChangePayment} value={value}>
+                <Radio value={1}>
+                  <CreditCardOutlined style={{ fontSize: "150%" }} />{" "}
+                  ชำระผ่านบัตรเครดิต
+                </Radio>
+                <Radio value={2}>
+                  <BankOutlined style={{ fontSize: "150%" }} />{" "}
+                  ชำระโอนผ่านธนาคาร
+                </Radio>
+              </Radio.Group>
+            </Item>
+          </div>
+          <div className="submit_button_wrapper_reserve">
+            <div className="button_box_reserve">
+              <Link to="/search-car-verify">
+                <Button type="primary" htmlType="submit" size={700}>
+                  ทำการจองรถ
+                </Button>
+              </Link>
+              <Link to="/search-car-book">
+                <Button size={500}>ย้อนกลับ</Button>
+              </Link>
+            </div>
+          </div>
+        </Form>
       </div>
     </div>
   );

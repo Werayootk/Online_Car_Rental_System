@@ -153,13 +153,9 @@ const Booking = () => {
           </div>
           <div className="row car-listing">
             <div></div>
-              {/* {!loading && <CardCarDetail items={getCarDataAll} />}
-              {loading &&  <div className="spin-position">
-                    <Spin size="large" />
-              </div>} */}
             {!loading && 
             <InfiniteScroll
-              className="inf_loop"
+              style={{ overflowY: 'hidden' }}
               dataLength={getCarData.total}
               next={fetchMoreCar}
               hasMore={hasMoreCar}

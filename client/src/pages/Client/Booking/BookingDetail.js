@@ -12,14 +12,6 @@ import mappingImgUrl from "../../../util/mappingImgUrl";
 import { bookingActions } from "../../../storage/reducers/bookingSlice";
 import searchCarServices from "../../../services/searchCarServices";
 
-/**TODO 9
- * 0. useQuery Get data from url axios get data car car_id to display card car detail
- * 0. uitl mapping sturture collection img
- * 1. useSelector select last state => show vale change date
- * 2. dispatch update change time date re cal date cal price save content
- * 3. select this car redirect 
- */
-
 const BookingDetail = (props) => {
   const bookingItems = useSelector((state) => state.booking.bookingList);
   const bookingItem = bookingItems[bookingItems.length - 1];
@@ -43,7 +35,7 @@ const BookingDetail = (props) => {
   useEffect(() => {
     const carId = query.get("car_id");
     fetchCarDetail(carId);
-  },[])
+  }, []);
 
   return (
     <div className="container merged_container">

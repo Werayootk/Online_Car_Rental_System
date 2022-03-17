@@ -73,11 +73,12 @@
     background: #fff;
     border-top: 1px solid #eceeef;
     margin-top: 2px;
+    text-align: center;
   }
 
   .button_box_reserve {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .submit_button_wrapper_reserve a {
