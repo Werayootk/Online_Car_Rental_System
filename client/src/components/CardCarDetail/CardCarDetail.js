@@ -16,17 +16,19 @@ const CardCarDetail = (props) => {
 
   const onClickUpdateCarDetail = (index) => {
     const selectedThisCar = items[index];
+    const paramCarDetail = `?car_id=${selectedThisCar.id}&car_brand=${selectedThisCar.car_brand}`;
+    const totalPrice = Number(bookingItem.diff_days) * Number(selectedThisCar.car_price);
+    console.log(paramCarDetail);
     dispatch(
       bookingActions.updateCarToBookingList({
         index: (bookingItems.length - 1),
         carId: selectedThisCar.id,
         car: selectedThisCar.car_brand,
         car_price: selectedThisCar.car_price,
-        total_price: Number(bookingItem.diff_days)*Number(selectedThisCar.car_price)
+        total_price: totalPrice
       })
     )
-    //?params car_id car_brand 
-    // history.push('/search-car-detail');
+    history.push(`/search-car-detail${paramCarDetail}`);
   };
  
   return items?.map((item, index) => (

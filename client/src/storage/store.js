@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 
 import bookingSlice from './reducers/bookingSlice';
 import orderSlice from './reducers/orderSlice';
@@ -9,7 +9,10 @@ const store = configureStore({
         booking: bookingSlice.reducer,
         order: orderSlice.reducer,
         bill: billSlice.reducer,
-    }
+    },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+        serializableCheck: false,
+      }),
 });
 
 export default store;

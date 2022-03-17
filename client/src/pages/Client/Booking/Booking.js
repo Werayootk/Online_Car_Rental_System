@@ -9,11 +9,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Spin } from "antd";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-/** TODO 8
- * 2. implement infinity scroll down fetch data
- * 4. click car detail to redirect save state car detail
- */
-
 const Booking = () => {
   const [carType, setCarType] = useState(CarType);
   const history = useHistory();
@@ -65,6 +60,7 @@ const Booking = () => {
     const response = await searchCarService.getCarListAll(param);
     console.log(response.data);
     setLoading(false);
+    history.push(`${location.pathname}${param}`);
     return response.data.data;
   }
 
@@ -164,7 +160,7 @@ const Booking = () => {
             {!loading && 
             <InfiniteScroll
               className="inf_loop"
-              dataLength={getCarData.total} //This is important field to render the next data
+              dataLength={getCarData.total}
               next={fetchMoreCar}
               hasMore={hasMoreCar}
               loader={<Spin size="large" className="spin-position" />}
