@@ -12,8 +12,10 @@ import Paper from "@mui/material/Paper";
 
 import { UserOutlined, CarOutlined } from "@ant-design/icons";
 import { ReactComponent as Gear } from "../../assets/images/gear.svg";
+import mappingCarType from "../../util/mappingCarType";
 
 const TableCarDetail = (props) => {
+  const { carList } = props;
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
       backgroundColor: theme.palette.common.black,
@@ -49,7 +51,7 @@ const TableCarDetail = (props) => {
               ปีจดทะเบียน
             </StyledTableCell>
             <StyledTableCell align="center">
-              {props.items.registration_year}
+              {carList.car_register}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
@@ -57,7 +59,7 @@ const TableCarDetail = (props) => {
                 เกียร์
             </StyledTableCell>
             <StyledTableCell align="center">
-            <Gear /> {props.items.type}
+            <Gear /> {carList.car_transmission}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
@@ -65,7 +67,7 @@ const TableCarDetail = (props) => {
                 ประเภท
             </StyledTableCell>
             <StyledTableCell align="center">
-            <CarOutlined /> {props.items.transmission}
+            <CarOutlined /> {mappingCarType(carList.car_type)}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
@@ -73,7 +75,7 @@ const TableCarDetail = (props) => {
                 จำนวนผู้โดยสาร
             </StyledTableCell>
             <StyledTableCell align="center">
-            <UserOutlined /> {props.items.passengers}
+            <UserOutlined /> {carList.car_seat}
             </StyledTableCell>
           </StyledTableRow>
         </TableBody>

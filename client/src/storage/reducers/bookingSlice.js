@@ -33,7 +33,14 @@ const bookingSlice = createSlice({
         clearBookingState(state, action) {
             state.bookingList = [];
         },
-        //updateTimeToBookingList
+        updateTimeToBookingList(state, action) {
+            const { index, pickup_change_date, return_change_date, diff_change_days, total_change_price } = action.payload;
+            const existingBooking = state.bookingList[index];
+            existingBooking.pickup_date = pickup_change_date;
+            existingBooking.return_change_date = return_change_date;
+            existingBooking.diff_change_days = diff_change_days;
+            existingBooking.total_change_price = total_change_price;
+        }
     }
 });
 

@@ -121,7 +121,11 @@ exports.getCarDetailById = async (req, res, next) => {
     const data = await db.Car.findOne({
       where: {
         id: car_id,
-      },
+      },include: [
+        {
+          model: db.Image_car,
+        }
+      ]
     });
 
     if (!data) {

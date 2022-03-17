@@ -11,10 +11,11 @@ import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 
 /* TODO 10
   1. form antd and validate
-  2. useContent
-  3. add Omise payment
-  4. axios create order and bill and payment
-  4. redirect to finish step by booking NO
+  2. useSelector last state
+  3. Add Omise payment client and server 
+  4. axios create order and bill and payment 
+  4. component fetchData order and bill store to redux for use in mybooking
+  5. redirect to finish page success (create page )step by booking NO
 */
 
 const BookingReserving = () => {
