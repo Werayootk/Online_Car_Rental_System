@@ -124,7 +124,7 @@ const BookingVerify = (props) => {
                 <small
                   style={{ fontSize: "14px", textDecoration:"underline",color:"red"}}
                 >
-                  กำหนดการชำระเงิน
+                  ดำเนินการชำระเงิน
                 </small>
               </span>
             </div>

@@ -151,6 +151,7 @@ exports.createCarOrder = async (req, res, next) => {
       return_datetime,
       price_per_day,
       total_price,
+      payment_status
     } = req.body;
 
     // userId from Token and Oauth
@@ -175,7 +176,7 @@ exports.createCarOrder = async (req, res, next) => {
       car_id: carId,
       booking_no: createBookingNumber,
       refund: "",
-      booking_status: "pending_payment",
+      booking_status: payment_status,
       pickup_location: location,
       return_location: location,
       start_datetime: pickupDateTime,
@@ -187,7 +188,7 @@ exports.createCarOrder = async (req, res, next) => {
       user_id: req.user.id,
       order_id: newOrder.id,
       bill_date: Date.now(),
-      bill_status: "pending_payment",
+      bill_status: payment_status,
       amount: pricePerDay,
       total_amount: totalPrice,
     });
@@ -195,6 +196,9 @@ exports.createCarOrder = async (req, res, next) => {
 
     return res.status(201).json({
       message: "Order and Bill is created.",
+      booking_no: newOrder.booking_no,
+      booking_status: newOrder.booking_status,
+      bill_status: newBill.bill_status
     });
   } catch (err) {
     next(err);

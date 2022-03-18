@@ -29,8 +29,6 @@ import Booking from "./pages/Client/Booking/Booking";
 import BookingDetail from "./pages/Client/Booking/BookingDetail";
 import BookingReserving from "./pages/Client/Booking/BookingReserving";
 import BookingVerify from "./pages/Client/Booking/BookingVerify";
-import PaymentMessage from './pages/Others/PaymentMessage';
-import Success from './pages/Others/Success';
 
 import localStorageServices from "./services/localStorageUserServices";
 
@@ -145,22 +143,6 @@ function App() {
         exact
         path="/search-car-verify"
         component={BookingVerify}
-        role={role}
-        setRole={setRole}
-      />
-
-      <ProgressBookLayoutRoute
-        exact
-        path="/search-car-verify/order-create"
-        component={Success}
-        role={role}
-        setRole={setRole}
-      />
-
-      <ProgressBookLayoutRoute
-        exact
-        path="/search-car-verify/payment-message"
-        component={PaymentMessage}
         role={role}
         setRole={setRole}
       />

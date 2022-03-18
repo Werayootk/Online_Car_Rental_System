@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./BookingReserving.scss";
-import { Radio, Button, Form, Input } from "antd";
+import { Radio, Button, Form, Input, notification } from "antd";
 import {
   BankOutlined,
   CreditCardOutlined,
@@ -10,15 +10,15 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { bookingActions } from "../../../storage/reducers/bookingSlice";
 import searchCarServices from "../../../services/searchCarServices";
+import paymentService from "../../../services/paymentServices";
 import { HashRouter as Router, Link, NavLink } from "react-router-dom";
 import localStorageServices from "../../../services/localStorageUserServices";
+import Script from "react-load-script";
+import { useHistory, useLocation } from 'react-router-dom';
 
+let OmiseCard;
 const { Item } = Form;
 const { getUserInfo } = localStorageServices;
-/* TODO 10
-  3. Add Omise payment client and server 
-  5. redirect to finish page success (create page)step by booking NO
-*/
 
 const BookingReserving = () => {
   const [userInfo, setuserInfo] = useState(getUserInfo());
@@ -26,18 +26,157 @@ const BookingReserving = () => {
   const bookingItem = bookingItems[bookingItems.length - 1];
   const [selectPayment, setSelectPayment] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [formData, setFormData] = useState();
+  const [resOmise, setResOmise] = useState();
+  const [resBooking, setResBooking] = useState();
+  const history = useHistory();
 
   const onChangePayment = (e) => {
-    console.log("radio checked", e.target.value);
-    setSelectPayment(e.target.value); //1 credit, 2 internet bank
+    setSelectPayment(e.target.value); //1 credit, 2 internet-bank
   };
 
-  const onSubmitBooking = (values) => {
+  const createOrderAndBill = async (status) => {
+   /**
+     * 1. Check status resOmise if success => create Order and Bill with status "ชำระเงินแล้ว" => redirect to verify
+     * 2. else => create Order and Bill with status "รอชำระเงิน" => redirect to verify
+    */
+    if (status === "successful") {
+      const data_success = {
+        car: bookingItem.carId,
+        location: bookingItem.location,
+        pickup_datetime: bookingItem.pickup_date,
+        return_datetime: bookingItem.return_date,
+        price_per_day: bookingItem.car_price,
+        total_price: bookingItem.total_price,
+        payment_status:"ชำระเงินแล้ว"
+      };
+      await searchCarServices.createCarOrder(data_success).then(res => {
+        setResBooking(res.data);
+        notification.success({
+          message: res.data.message,
+        });
+      }).catch(err => {
+        console.error(err);
+      });
+
+    } else {
+      const data_unsuccess = {
+        car: bookingItem.carId,
+        location: bookingItem.location,
+        pickup_datetime: bookingItem.pickup_date,
+        return_datetime: bookingItem.return_date,
+        price_per_day: bookingItem.car_price,
+        total_price: bookingItem.total_price,
+        payment_status:"รอชำระเงิน"
+      };
+      await searchCarServices.createCarOrder(data_unsuccess).then(res => {
+        setResBooking(res.data);
+        notification.success({
+          message: res.data.message,
+        });
+      }).catch(err => {
+        console.error(err);
+      });
+    } 
+  }
+
+  const onSubmitBooking = async (values) => {
     console.log(values);
-    //1. send to axios create order and bill 
-    //2. Redirect to payment page omise
-    //3. if no payment redirect to booking verify with message create order with status รอชำระ 
-    //4. if yes update status on db before redirect to message peyment success
+    setFormData(values);
+    if (selectPayment === 1) {
+      creditCardConfigure();
+      await omiseCardHandler();
+    } else {
+      internetBankingConfigure();
+      await omiseInternetBankingHandler();
+    }
+    const createBooking = await createOrderAndBill(resOmise.status);
+    console.log(createBooking);
+    const params = `?booking_no=${resBooking.booking_no}&booking_status=${resBooking.booking_status}&bill_status=${resBooking.bill_status}`;
+    history.push(`/search-car-verify${params}`);
+  };
+
+  const handleLoadScript = () => {
+    OmiseCard = window.OmiseCard;
+    OmiseCard.configure({
+      publicKey: process.env.publicKey,
+      currency: "THB",
+      frameLabel: "Car easy life",
+      submitLabel: "ชำระเงิน",
+      buttonLabel: "Pay with Omise",
+    });
+  };
+
+  const creditCardConfigure = () => {
+    OmiseCard.configure({
+      defaultPaymentMethod: "credit_card",
+      otherPaymentMethods: [],
+    });
+    OmiseCard.configureButton("#credit-card");
+    OmiseCard.attach();
+  };
+
+  const omiseCardHandler = () => {
+    OmiseCard.open({
+      amount: bookingItem.total_price,
+      onCreateTokenSuccess: async (token) => {
+        const data = {
+          email: formData.email,
+          name: formData.first_name,
+          amount: bookingItem.total_price,
+          token: token,
+        };
+        await paymentService
+          .omiseCheckoutCreditCard(data)
+          .then((res) => {
+            console.log(res.data);
+            setResOmise(res.data);
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      },
+      onFormClosed: () => {
+        console.log("close omise form credit-card");
+        // window.location.reload(true);
+      },
+    });
+  };
+
+  const internetBankingConfigure = () => {
+    OmiseCard.configure({
+      defaultPaymentMethod: "internet_banking",
+      otherPaymentMethods: [],
+    });
+    OmiseCard.configureButton("#internet-banking");
+    OmiseCard.attach();
+  }
+
+  const omiseInternetBankingHandler = () => {
+    OmiseCard.open({
+      frameDescription: "Invoice #3847",
+      onCreateTokenSuccess: async (token) => {
+        const data = {
+          email: formData.email,
+          name: formData.first_name,
+          amount: bookingItem.total_price,
+          token: token,
+        };
+        await paymentService
+          .omiseCheckoutInternetBanking(data)
+          .then((res) => {
+            console.log(res.data);
+            setResOmise(res.data);
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      },
+      onFormClosed: () => {
+        console.log("close omise form internet-banking");
+        // window.location.reload(true);
+      },
+    });
   };
 
   return (
@@ -56,7 +195,10 @@ const BookingReserving = () => {
                 },
               ]}
             >
-              <Input placeholder={userInfo.first_name || "ชื่อ"} value={userInfo.first_name} />
+              <Input
+                placeholder={userInfo.first_name || "ชื่อ"}
+                value={userInfo.first_name}
+              />
             </Item>
           </div>
           <div className="form-group">
@@ -70,7 +212,10 @@ const BookingReserving = () => {
                 },
               ]}
             >
-              <Input placeholder={userInfo.last_name || "นามสกุล"} value={userInfo.last_name} />
+              <Input
+                placeholder={userInfo.last_name || "นามสกุล"}
+                value={userInfo.last_name}
+              />
             </Item>
           </div>
           <div className="form-group">
@@ -88,7 +233,10 @@ const BookingReserving = () => {
                 },
               ]}
             >
-              <Input placeholder={userInfo.email || "E-mail"} value={userInfo.email}/>
+              <Input
+                placeholder={userInfo.email || "E-mail"}
+                value={userInfo.email}
+              />
             </Item>
           </div>
           <div className="form-group">
@@ -107,17 +255,24 @@ const BookingReserving = () => {
               ]}
               hasFeedback
             >
-              <Input placeholder={userInfo.phone_number || "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก"}  value={userInfo.phone_number} />
+              <Input
+                placeholder={
+                  userInfo.phone_number ||
+                  "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก"
+                }
+                value={userInfo.phone_number}
+              />
             </Item>
           </div>
           <div className="radio-form">
-            <Item name="radio-group"
-                 rules={[
-                  {
-                    required: true,
-                    message: 'กรุณาเลือกวิธีชำระเงิน',
-                  },
-                ]}
+            <Item
+              name="radio-group"
+              rules={[
+                {
+                  required: true,
+                  message: "กรุณาเลือกวิธีชำระเงิน",
+                },
+              ]}
             >
               <Radio.Group onChange={onChangePayment} value={selectPayment}>
                 <Radio value={1}>
@@ -133,11 +288,17 @@ const BookingReserving = () => {
           </div>
           <div className="submit_button_wrapper_reserve">
             <div className="button_box_reserve">
-              <Link to="/search-car-verify">
-                <Button type="primary" htmlType="submit" size={700}>
-                  ทำการจองรถ
-                </Button>
-              </Link>
+              <Item>
+                <Script
+                  url="https://cdn.omise.co/omise.js"
+                  onLoad={handleLoadScript}
+                />
+                <Link to="/search-car-verify">
+                  <Button type="primary" htmlType="submit" size={700}>
+                    ทำการจองรถ
+                  </Button>
+                </Link>
+              </Item>
               <Link to="/search-car-book">
                 <Button size={500}>ย้อนกลับ</Button>
               </Link>

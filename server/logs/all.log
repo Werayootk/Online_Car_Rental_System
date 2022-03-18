@@ -5412,3 +5412,17 @@
 [35m[39m
 2022-03-18 10:07:09:79 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 893.149 ms[39m
 [35m[39m
+2022-03-18 10:51:34:5134 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 10.218 ms[39m
+[35m[39m
+2022-03-18 10:51:35:5135 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 828.020 ms[39m
+[35m[39m
+2022-03-18 10:51:51:5151 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/4 200 523 - 424.916 ms[39m
+[35m[39m
+2022-03-18 11:51:59:5159 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 7.066 ms[39m
+[35m[39m
+2022-03-18 11:52:00:520 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 681.323 ms[39m
+[35m[39m
+2022-03-18 12:55:43:5543 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 27.604 ms[39m
+[35m[39m
+2022-03-18 12:55:43:5543 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 193.952 ms[39m
+[35m[39m

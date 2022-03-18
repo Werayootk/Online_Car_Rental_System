@@ -7,13 +7,6 @@ const omise = require("omise")({
 
  exports.updateBillStatusByUser = async (req, res, next) => {
     try {
-      /**
-       * 1. Query data from booking_no and ? order_no and bill_id booking_status='status' bill_status='status'
-       * 2. get data from 2 database order and bill
-       * 3. update value status both of db
-       * 4. save()
-       * 5. return res
-       */
       const { booking_no } = req.params;
       const { booking_status, bill_status } = req.query;
       const getBooking = await db.Order.findOne({
@@ -64,9 +57,10 @@ exports.omiseCheckoutCreditCard = async (req, res, next) => {
     });
 
     res.status(200).json({
+      authorizeUri: charge.authorize_uri,
       amount: charge.amount,
       status: charge.status, //successful failed
-      return_uri: "http://localhost:3000/search-car-verify/payment-message"
+      message: "ชำระเงินเรียบร้อย"
     });
 
   } catch (err) {
@@ -82,13 +76,13 @@ exports.omiseCheckoutInternetBanking = async (req, res, next) => {
       amount,
       source: token,
       currency: "thb",
-      return_uri: "http://localhost:3000/search-car-verify/payment-message"
     });
 
     res.status(200).json({
+      authorizeUri: charge.authorize_uri,
       amount: charge.amount,
       status: charge.status, //successful failed
-      return_uri: "http://localhost:3000/search-car-verify/payment-message"
+      message: "ชำระเงินเรียบร้อย"
     })
 
   } catch (err) {
