@@ -1,15 +1,15 @@
 import React from "react";
-import "./Success.scss";
+import "./PaymentMessage.scss";
 import { CheckCircleTwoTone } from '@ant-design/icons';
 
-const Success = (props) => {
+const PaymentMessage = (props) => {
   return (
-    <div className="body_success">
+    <div className="body_payment">
       <div className="card">
         <CheckCircleTwoTone size={400}/>
-        <h1>Create Booking Success</h1>
+        <h1>Payment Success</h1>
         <p>
-          การจองของคุณได้ถูกสร้างขึ้นสำเร็จแล้ว;
+           ได้รับการชำระเงินแล้ว;
           <br /> หมายเลขการจอง XXX!
         </p>
       </div>
@@ -17,4 +17,4 @@ const Success = (props) => {
   );
 };
 
-export default Success;
+export default PaymentMessage;

@@ -13,10 +13,10 @@ const ProgressBar = (props) => {
   const pathname = location.pathname.match(/[/][a-z-A-z]*/)?.toString();
 
   useEffect(() => {
-    if (pathname == pathNameCheck[0]) { return setCurrent(0) };
-    if (pathname == pathNameCheck[1]) { return setCurrent(1) };
-    if (pathname == pathNameCheck[2]) { return setCurrent(2) };
-    if (pathname == pathNameCheck[3]) { return setCurrent(3) };
+    if (pathname === pathNameCheck[0]) { return setCurrent(0) };
+    if (pathname === pathNameCheck[1]) { return setCurrent(1) };
+    if (pathname === pathNameCheck[2]) { return setCurrent(2) };
+    if (pathname.includes(pathNameCheck[3])) { return setCurrent(3) };
   },[pathname])
 
   return (

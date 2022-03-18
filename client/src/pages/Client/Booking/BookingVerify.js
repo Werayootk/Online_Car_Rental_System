@@ -115,10 +115,16 @@ const BookingVerify = (props) => {
             <div class="pair__full center">
               <span style={{cursor:"pointer"}}>
                 <small
-                  // style={{font-size: 14px; text-decoration: underline; color: rgb(48, 55, 75);}}
                   style={{ fontSize: "14px", textDecoration:"underline",color:"red"}}
                 >
                   ยกเลิกการจอง
+                </small>
+              </span>
+              <span style={{cursor:"pointer"}}>
+                <small
+                  style={{ fontSize: "14px", textDecoration:"underline",color:"red"}}
+                >
+                  กำหนดการชำระเงิน
                 </small>
               </span>
             </div>

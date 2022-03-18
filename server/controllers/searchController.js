@@ -1,8 +1,5 @@
 const { Op } = require("sequelize");
 const db = require("../models");
-const JWT = require("jsonwebtoken");
-const { use } = require("passport");
-const { token } = require("morgan");
 
 const getCarListFilterAndSort = async (paginate, filterCarList, sortPrice) => {
   const withFilterCarList = filterCarList.map((elem) => {

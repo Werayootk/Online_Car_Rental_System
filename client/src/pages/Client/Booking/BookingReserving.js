@@ -17,25 +17,27 @@ const { Item } = Form;
 const { getUserInfo } = localStorageServices;
 /* TODO 10
   3. Add Omise payment client and server 
-  4. axios create order and bill and payment 
-  4. component fetchData order and bill store to redux for use in mybooking
-  5. redirect to finish page success (create page )step by booking NO
+  5. redirect to finish page success (create page)step by booking NO
 */
 
 const BookingReserving = () => {
   const [userInfo, setuserInfo] = useState(getUserInfo());
   const bookingItems = useSelector((state) => state.booking.bookingList);
   const bookingItem = bookingItems[bookingItems.length - 1];
-  const [value, setValue] = useState(1);
+  const [selectPayment, setSelectPayment] = useState(1);
   const [loading, setLoading] = useState(true);
 
   const onChangePayment = (e) => {
     console.log("radio checked", e.target.value);
-    setValue(e.target.value);
+    setSelectPayment(e.target.value); //1 credit, 2 internet bank
   };
 
   const onSubmitBooking = (values) => {
     console.log(values);
+    //1. send to axios create order and bill 
+    //2. Redirect to payment page omise
+    //3. if no payment redirect to booking verify with message create order with status รอชำระ 
+    //4. if yes update status on db before redirect to message peyment success
   };
 
   return (
@@ -117,7 +119,7 @@ const BookingReserving = () => {
                   },
                 ]}
             >
-              <Radio.Group onChange={onChangePayment} value={value}>
+              <Radio.Group onChange={onChangePayment} value={selectPayment}>
                 <Radio value={1}>
                   <CreditCardOutlined style={{ fontSize: "150%" }} />{" "}
                   ชำระผ่านบัตรเครดิต

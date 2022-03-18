@@ -1,5 +1,9 @@
 const { Op } = require("sequelize");
 const db = require("../models");
+const omise = require("omise")({
+  publicKey: process.env.OMISE_PUBLIC_KEY,
+  secretKey: process.env.OMISE_SECRET_KEY
+})
 
  exports.updateBillStatusByUser = async (req, res, next) => {
     try {
@@ -42,4 +46,52 @@ const db = require("../models");
     } catch (err) {
       next(err);
     }
+};
+
+exports.omiseCheckoutCreditCard = async (req, res, next) => {
+  try {
+    const { email, name, amount, token } = req.body;
+    const customer = await omise.customers.create({
+      email,
+      description: name,
+      card: token
+    });
+
+    const charge = await omise.charges.create({
+      amount: amount,
+      currency: "thb",
+      customer: customer.id
+    });
+
+    res.status(200).json({
+      amount: charge.amount,
+      status: charge.status, //successful failed
+      return_uri: "http://localhost:3000/search-car-verify/payment-message"
+    });
+
+  } catch (err) {
+    next(err);
+  }
+};
+
+exports.omiseCheckoutInternetBanking = async (req, res, next) => {
+  try {
+    const { email, name, amount, token } = req.body;
+    
+    const charge = await omise.charges.create({
+      amount,
+      source: token,
+      currency: "thb",
+      return_uri: "http://localhost:3000/search-car-verify/payment-message"
+    });
+
+    res.status(200).json({
+      amount: charge.amount,
+      status: charge.status, //successful failed
+      return_uri: "http://localhost:3000/search-car-verify/payment-message"
+    })
+
+  } catch (err) {
+    next(err);
+  }
 };

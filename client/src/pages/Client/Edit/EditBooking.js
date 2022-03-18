@@ -5,7 +5,7 @@ import CardCarBooking from '../../../components/CardCarBooking/CardCarBooking';
 import { Select } from "antd";
 
 /** TODO 7
- * 0. mockup data on DB
+ * 0. component fetchData order and bill store to redux for use in mybooking
  * 1. useEffect and dependency with state Option call axios ? status
  * 2. send data after axios to card
  * 3. Card implement Paginate useEffect change By select
