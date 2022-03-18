@@ -52,6 +52,8 @@ const BookingReserving = () => {
       };
       await searchCarServices.createCarOrder(data_success).then(res => {
         setResBooking(res.data);
+        const params = `?booking_no=${resBooking.booking_no}&booking_status=${resBooking.booking_status}&bill_status=${resBooking.bill_status}`;
+        history.push(`/search-car-verify${params}`);
         notification.success({
           message: res.data.message,
         });
@@ -71,6 +73,8 @@ const BookingReserving = () => {
       };
       await searchCarServices.createCarOrder(data_unsuccess).then(res => {
         setResBooking(res.data);
+        const params = `?booking_no=${resBooking.booking_no}&booking_status=${resBooking.booking_status}&bill_status=${resBooking.bill_status}`;
+        history.push(`/search-car-verify${params}`);
         notification.success({
           message: res.data.message,
         });
@@ -92,8 +96,6 @@ const BookingReserving = () => {
     }
     const createBooking = await createOrderAndBill(resOmise.status);
     console.log(createBooking);
-    const params = `?booking_no=${resBooking.booking_no}&booking_status=${resBooking.booking_status}&bill_status=${resBooking.bill_status}`;
-    history.push(`/search-car-verify${params}`);
   };
 
   const handleLoadScript = () => {
