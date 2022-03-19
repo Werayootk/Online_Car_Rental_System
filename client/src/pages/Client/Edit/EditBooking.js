@@ -20,7 +20,7 @@ const EditBooking = () => {
 
   const getBookingList = async (value) => {
     setSelectOption(value);
-    const params = `?booking_status=${value}&offset=${currentPage*pageSize}`;
+    const params = `?booking_status=${value}&offset=${(currentPage-1)*pageSize}`;
     setLoading(true);
     setNoBooking(false);
     await myBookingService
