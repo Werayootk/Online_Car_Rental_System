@@ -40,13 +40,17 @@ const getBookingStatusFilter = async (paginate, filterBookingStatus, userId) => 
       }, include: [
         {
           model: db.Car,
-          as: 'Car',
+          as: 'Car', include: [
+            {model: db.Image_car}
+          ]
         }, {
           model: db.User,
           as: 'User',
           attributes:['email','first_name','last_name','phone_number']
         }
-      ]
+      ],
+      offset: paginate.offset,
+      limit: paginate.limit,
     });
     return {
       data: BookingStatusFilter,
@@ -77,13 +81,17 @@ const getBookingStatusFilter = async (paginate, filterBookingStatus, userId) => 
       }, include: [
         {
           model: db.Car,
-          as: 'Car',
+          as: 'Car', include: [
+            {model: db.Image_car}
+          ]
         }, {
           model: db.User,
           as: 'User',
           attributes:['email','first_name','last_name','phone_number']
         }
-      ]
+      ],
+      offset: paginate.offset,
+      limit: paginate.limit,
     });
     return {
       data: Booking,

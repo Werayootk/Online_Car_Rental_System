@@ -1,49 +1,119 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./EditBooking.scss";
 import { ReactComponent as Empty_Book } from "../../../assets/images/empty-booking.svg";
-import CardCarBooking from '../../../components/CardCarBooking/CardCarBooking';
-import { Select } from "antd";
-import { Pagination } from 'antd';
-
-/** TODO 7
- * 0. component fetchData order and bill store to redux for use in mybooking
- * 1. useEffect and dependency with state Option call axios ? status
- * 2. send data after axios to card
- * 3. Card implement Paginate useEffect change By select
- * 4. Select Card Redirect to BookingVerify ?booking_no 
- */
+import CardCarBooking from "../../../components/CardCarBooking/CardCarBooking";
+import { Select, Pagination, Spin } from "antd";
+import myBookingService from "../../../services/myBookingServices";
+import mappingBookingStatus from "../../../util/mappingBookingStatus";
 
 const { Option } = Select;
 
 const EditBooking = () => {
-  const handleChange = (value) => {
-    console.log(`selected ${value}`);
+  const [selectOption, setSelectOption] = useState("ชำระเงินแล้ว");
+  const [bookingList, setBookingList] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [noBooking, setNoBooking] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(3);
+
+  const getBookingList = async (value) => {
+    setSelectOption(value);
+    const params = `?booking_status=${value}&offset=${currentPage*pageSize}`;
+    setLoading(true);
+    setNoBooking(false);
+    await myBookingService
+      .getBookingList(params)
+      .then((res) => {
+        console.log(res.data);
+        console.log(res.data.data);
+        setBookingList(res.data.data);
+        setTotal(res.data.total);
+        const { total } = res.data;
+        console.log(total);
+        if (total === 0) {
+          setNoBooking(true);
+        }
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
+
+  const getMoreBookingList = async () => {
+    const pageCurrent = Number(currentPage - 1);
+    const params = `?booking_status=${selectOption}&offset=${pageCurrent*pageSize}`;
+    setLoading(true);
+    setNoBooking(false);
+    await myBookingService
+      .getBookingList(params)
+      .then((res) => {
+        console.log(res.data);
+        console.log(res.data.data);
+        setBookingList(res.data.data);
+        setTotal(res.data.total);
+        const { total } = res.data;
+        console.log(total);
+        if (total === 0) {
+          setNoBooking(true);
+        }
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    getMoreBookingList();
+  },[currentPage])
+
+  useEffect(() => {
+    getBookingList(selectOption);
+  }, [selectOption]);
 
   return (
     <div className="editbook">
       <div className="booking">
         <h2>การเช่ารถของฉัน</h2>
         <Select
-          defaultValue="pending_verify"
+          defaultValue={"ชำระเงินแล้ว"}
           style={{ width: 360 }}
-          onChange={handleChange}
+          onChange={getBookingList}
         >
-          <Option value={1}>รอตรวจสอบ</Option>
-          <Option value={2}>รอรับรถ</Option>
-          <Option value={3}>การเช่าเสร็จสิ้น</Option>
-          <Option value={4}>ยกเลิกแล้ว</Option>
-              </Select>
-              <div className="booking__list">
-                  {/* <div className="booking-empty font-weight-bold">
-                    <Empty_Book />
-                  คุณยังไม่มีการเช่าที่รอรอตรวจสอบ
-                  </div> */}
-                <CardCarBooking items={null} />
-              </div>
+          <Option value={"ชำระเงินแล้ว"}>รอตรวจสอบ</Option>
+          <Option value={"ตรวจสอบแล้ว"}>รอรับรถ</Option>
+          <Option value={"คืนรถแล้ว"}>การเช่าเสร็จสิ้น</Option>
+          <Option value={"ยกเลิก"}>ยกเลิกแล้ว</Option>
+        </Select>
+        <div className="booking__list">
+          {noBooking && (
+            <div className="booking-empty font-weight-bold">
+              <Empty_Book />
+              คุณยังไม่มีการเช่าที่{mappingBookingStatus(selectOption)}
+            </div>
+          )}
+          <CardCarBooking booking={bookingList} />
+          {/* {!noBooking && <CardCarBooking booking={bookingList} />} */}
+          {/* {loading && <Spin size="large"/>} */}
+        </div>
       </div>
       <div className="editbook_paginate">
-      <Pagination defaultCurrent={1} total={50} />
+        <Pagination
+          current={currentPage}
+          total={total}
+          pageSize={pageSize}
+          totalPage={total / pageSize}
+          onChange={setCurrentPage}
+        />
       </div>
     </div>
   );
