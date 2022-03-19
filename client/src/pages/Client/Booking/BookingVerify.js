@@ -18,6 +18,8 @@ import { useLocation } from "react-router-dom";
 import mappingImgUrl from "../../../util/mappingImgUrl";
 import formatBATH from "../../../util/formatBATH";
 import mappingCarType from "../../../util/mappingCarType";
+import formatDatetime from '../../../util/formatDatetime';
+import Moment from 'react-moment';
 
 const BookingVerify = (props) => {
   const query = useQuery();
@@ -67,7 +69,7 @@ const BookingVerify = (props) => {
               <small>สถานะการจอง</small>
             </div>
           </div>
-          <StepProgressVerify />
+          <StepProgressVerify booking_status={bookingData?.booking_status} />
         </div>
         <div className="customer-detail">
           <p>ข้อมูลผู้เช่ารถ</p>
@@ -117,13 +119,13 @@ const BookingVerify = (props) => {
             <div className="pickup__return border__bottom">
               <div>
                 <h4>วันที่รับรถ</h4>
-                <p>25 ธ.ค. 2021</p>
-                <p>20:00 น.</p>
+                <p><Moment format="DD-MM-YYYY" date={bookingData?.start_datetime} /></p>
+                <p><Moment format="hh:mm:ss" date={bookingData?.start_datetime} /></p>
               </div>
               <div className="border__left">
                 <h4>วันที่คืนรถ</h4>
-                <p>27 ธ.ค. 2021</p>
-                <p>20:00 น.</p>
+                <p><Moment format="DD-MM-YYYY" date={bookingData?.end_datetime} /></p>
+                <p><Moment format="hh:mm:ss" date={bookingData?.end_datetime} /></p>
               </div>
             </div>
             <div>
