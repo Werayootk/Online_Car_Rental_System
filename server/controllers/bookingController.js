@@ -131,20 +131,23 @@ exports.getBookingByStatus = async (req, res, next) => {
        */
       const { booking_no } = req.params;
       const userId = req.user.id;
-      const getBookingDetail = await db.Order.findAll({
-        where: { booking_no: booking_no },
+      console.log(req.params);
+      console.log(userId);
+      const getBookingDetail = await db.Order.findOne({
+        where: [{ booking_no: booking_no }, { user_id: userId }],
         include: [
           {
             model: db.Car,
-            as: 'Car',
+            include: [
+              {
+                model: db.Image_car
+              }
+            ]
           }, {
             model: db.User,
-            as: 'User',
-            where: { id: userId },
-            attributes:['email','first_name','last_name','phone_number']
+            attributes: ['email', 'first_name', 'last_name', 'phone_number'],
           },{
             model: db.Billing,
-            as: 'Billing'
           }
         ]
       });
@@ -186,10 +189,10 @@ exports.cancelBookingById = async (req, res, next) => {
         });
       }
 
-      getBookingData.booking_status = 'cancel';
+      getBookingData.booking_status = 'ยกเลิก';
       await getBookingData.save();
       res.status(201).json({
-        message: 'cancel this booking'
+        message: 'ยกเลิกหมายเลิกการจองรถนี้'
       });
     } catch (err) {
       next(err);

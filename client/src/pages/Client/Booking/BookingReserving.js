@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./BookingReserving.scss";
-import { Radio, Button, Form, Input, notification } from "antd";
+import { Radio, Button, Form, Input, notification, Spin } from "antd";
 import {
   BankOutlined,
   CreditCardOutlined,
@@ -33,38 +33,6 @@ const BookingReserving = () => {
   const onChangePayment = (e) => {
     setSelectPayment(e.target.value); //1 credit, 2 internet-bank
   };
-
-  const createOrderAndBill = async (status) => {
-   /**
-     * 1. Check status resOmise if success => create Order and Bill with status "ชำระเงินแล้ว" => redirect to verify
-     * 2. else => create Order and Bill with status "รอชำระเงิน" => redirect to verify
-    */
-    if (status === "successful") {
-  
-
-    } else {
-      console.log('unsucess');
-      const data_unsuccess = {
-        car: bookingItem.carId,
-        location: bookingItem.location,
-        pickup_datetime: bookingItem.pickup_date,
-        return_datetime: bookingItem.return_date,
-        price_per_day: bookingItem.car_price,
-        total_price: bookingItem.total_price,
-        payment_status:"รอชำระเงิน"
-      };
-      await searchCarServices.createCarOrder(data_unsuccess).then(res => {
-        setResBooking(res.data);
-        const params = `?booking_no=${resBooking.booking_no}&booking_status=${resBooking.booking_status}&bill_status=${resBooking.bill_status}`;
-        //history.push(`/search-car-verify${params}`);
-        notification.success({
-          message: res.data.message,
-        });
-      }).catch(err => {
-        console.error(err);
-      });
-    } 
-  }
 
   const onSubmitBooking = async (values) => {
     console.log('on submit');
@@ -132,11 +100,13 @@ const BookingReserving = () => {
                 total_price: bookingItem.total_price,
                 payment_status:"ชำระเงินแล้ว"
               };
+              setLoading(true);
               setTimeout(() => {
                 searchCarServices.createCarOrder(data_success).then(res => {
                   setResBooking(res.data);
                   const { booking_no, booking_status, bill_status } = res.data
                   const params = `?booking_no=${booking_no}&booking_status=${booking_status}&bill_status=${bill_status}`;
+                  setLoading(false);
                   notification.success({
                     message: res.data.message,
                   });
@@ -205,7 +175,7 @@ const BookingReserving = () => {
   };
 
   return (
-    <div className="center-form-Book">
+    <div className="center-form-Book">    
       <div className="contact_form_wrapper">
         <p className="form_title">รายละเอียดของผู้ขับรถ</p>
         <Form name="submitBooking" onFinish={onSubmitBooking}>

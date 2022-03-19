@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./BookingVerify.scss";
 import StepProgressVerify from "../../../components/StepProgressVerify/StepProgressVerify";
 import {
@@ -9,19 +9,52 @@ import {
   CarOutlined,
   TeamOutlined,
 } from "@ant-design/icons";
+import { Spin, notification, Button } from "antd";
 import { ReactComponent as Gear } from "../../../assets/images/gear.svg";
 import ImageGallery from "react-image-gallery";
+import myBookingService from "../../../services/myBookingServices";
+import useQuery from '../../../hooks/useQuery';
+import { useLocation } from "react-router-dom";
+import mappingImgUrl from "../../../util/mappingImgUrl";
+import formatBATH from "../../../util/formatBATH";
+import mappingCarType from "../../../util/mappingCarType";
 
-import { imagesTest, carData } from "../../../mockup/car_data";
-
-/** TODO 11
- * 1. axios booking no
- * 2. axios cancel
- * 3. add Omise re payment condition
- * 
- */
 const BookingVerify = (props) => {
-  const [imgcar, setImgcar] = useState(imagesTest);
+  const query = useQuery();
+  const location = useLocation();
+  const [loading, setLoading] = useState(true);
+  const [bookingData, setBookingData] = useState();
+  const [bookingNo, setBookingNo] = useState();
+  const [imgUrlCar, setImgUrlCar] = useState([]);
+
+  const onClickCancelBooking = async () => {
+    const booking_no = query.get("booking_no");
+    await myBookingService.cancelBookingById(booking_no).then(res => {
+      notification.success({
+        message: res.data.message
+      });
+    }).catch(err => {
+      console.error(err);
+    });
+  }
+
+  const fetchBookingData = async (booking_no) => {
+    setLoading(false);
+    await myBookingService.getBookingByStatus(booking_no).then(res => {
+      setBookingData(res.data.data);
+      setImgUrlCar([...res.data.data.Car.Image_cars]);
+    }).catch(err => {
+      console.error(err);
+    }).finally(() => {
+      setLoading(true);
+    })
+  }
+
+  useEffect(() => {
+    const bookingNumber = query.get("booking_no"); 
+    setBookingNo(bookingNumber);
+    fetchBookingData(bookingNumber);
+  }, []);
 
   return (
     <div className="container merged_container">
@@ -30,7 +63,7 @@ const BookingVerify = (props) => {
           <div className="status-header">
             <div>
               <small>หมายเลขการจอง</small>
-              <p>637467</p>
+              <p>{bookingData?.booking_no}</p>
               <small>สถานะการจอง</small>
             </div>
           </div>
@@ -40,13 +73,13 @@ const BookingVerify = (props) => {
           <p>ข้อมูลผู้เช่ารถ</p>
           <div className="detail-items">
             <div className="item">
-              <UserOutlined /> <span>วีรยุทธ กันภัย</span>
+              <UserOutlined /> <span>{bookingData?.User.first_name}{ " " }{bookingData?.User.last_name}</span> 
             </div>
             <div className="item">
-              <PhoneOutlined /> <span>+66947978993</span>
+              <PhoneOutlined /> <span>{bookingData?.User.phone_number}</span>
             </div>
             <div className="item">
-              <MailOutlined /> <span>werayoot5800@gmail.com</span>
+              <MailOutlined /> <span>{bookingData?.User.email}</span>
             </div>
           </div>
         </div>
@@ -56,22 +89,22 @@ const BookingVerify = (props) => {
           <h3>ข้อมูลรถเช่า</h3>
           <div className="gallery_wrapper_verify pb-2">
             <div className="gallery">
-              <ImageGallery items={imagesTest} />
+            {<ImageGallery items={mappingImgUrl(imgUrlCar)} />}
             </div>
-            <p className="title">Suzuki Swift 2015</p>
+            <p className="title">{bookingData?.Car.car_brand}</p>
             <h4>ข้อมูลรถ</h4>
             <div className="detail">
               <div className="pair">
-                <CarOutlined /> รถกระบะ{" "}
+                <CarOutlined /> {mappingCarType(bookingData?.Car.car_type)}{" "}
               </div>
               <div className="pair">
-                <Gear fontSize={"14px"} /> ออโต้{" "}
+                <Gear fontSize={"14px"} /> {bookingData?.Car.car_transmission}{" "}
               </div>
               <div className="pair">
-                <TeamOutlined /> 4 ที่นั่ง
+                <TeamOutlined /> {bookingData?.Car.car_seat} ที่นั่ง
               </div>
               <div className="pair">
-                <TrademarkCircleOutlined /> จดทะเบียน 2016{" "}
+                <TrademarkCircleOutlined /> จดทะเบียน {bookingData?.Car.car_register}{" "}
               </div>
             </div>
           </div>
@@ -80,7 +113,7 @@ const BookingVerify = (props) => {
           <div className="padding__inner">
             <h3>ข้อมูลการเช่ารถ</h3>
             <h4>สถานที่รับรถ/คืนรถ</h4>
-            <p className="border__bottom">แยกติวานนท์ (นนทบุรี)</p>
+            <p className="border__bottom">{bookingData?.pickup_location}</p>
             <div className="pickup__return border__bottom">
               <div>
                 <h4>วันที่รับรถ</h4>
@@ -96,12 +129,12 @@ const BookingVerify = (props) => {
             <div>
               <h4>ค่าเช่า</h4>
               <div className="pair__full">
-                <p>ค่าเช่าสำหรับ 2 วัน</p>
-                <p>฿2,800</p>
+                <p>ค่าเช่ารถต่อวัน</p>
+                <p>{formatBATH(bookingData?.Car.car_price)}</p>
               </div>
               <div className="pair__full">
                 <p>ค่าบริการรับ-ส่งรถ</p>
-                <p>฿600</p>
+                <p>ฟรี</p>
               </div>
             </div>
           </div>
@@ -109,17 +142,17 @@ const BookingVerify = (props) => {
             <div>
               <p>ราคารวม</p>
             </div>
-            <p className="total">฿3,400</p>
+            <p className="total">{formatBATH(bookingData?.Billing.total_amount)}</p>
           </div>
-          <div class="padding__inner">
-            <div class="pair__full center">
-              <span style={{cursor:"pointer"}}>
+          <div className="padding__inner">
+            <div className="pair__full center">
+              <Button size="small" onClick={onClickCancelBooking.bind(this)}>
                 <small
-                  style={{ fontSize: "14px", textDecoration:"underline",color:"red"}}
+                  style={{ fontSize: "14px", textDecoration:"underline",color:"red", cursor:"pointer"}}
                 >
                   ยกเลิกการจอง
                 </small>
-              </span>
+              </Button>
             </div>
           </div>
         </div>

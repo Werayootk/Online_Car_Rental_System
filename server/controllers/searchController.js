@@ -195,7 +195,7 @@ exports.createCarOrder = async (req, res, next) => {
     await newBill.save();
 
     return res.status(201).json({
-      message: "Order and Bill is created.",
+      message: "หมายเลขการจองรถได้ถูกสร้างขึ้นแล้ว",
       booking_no: newOrder.booking_no,
       booking_status: newOrder.booking_status,
       bill_status: newBill.bill_status

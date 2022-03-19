@@ -1,6 +1,5 @@
 import React from "react";
 import "./CardCarBooking.scss";
-import { Pagination } from 'antd';
 
 const CardCarBooking = (props) => {
   return (
@@ -40,8 +39,7 @@ const CardCarBooking = (props) => {
         </div>
       </div>
       <div className="booking-pagination">
-      <Pagination defaultCurrent={1} total={50} />
-    </div>    
+      </div>       
     </>
   );
 };
