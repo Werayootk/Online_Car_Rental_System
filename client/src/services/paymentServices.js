@@ -4,7 +4,7 @@ export class paymentService {
     API_PAYMENT_PATH = '/payment';
     headers = {
         headers: {
-            "Content-Type": "multipart/form-data"
+            "Content-Type": "application/json"
         }
     };
 

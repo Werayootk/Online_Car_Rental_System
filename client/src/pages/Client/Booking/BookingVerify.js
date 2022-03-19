@@ -120,13 +120,6 @@ const BookingVerify = (props) => {
                   ยกเลิกการจอง
                 </small>
               </span>
-              <span style={{cursor:"pointer"}}>
-                <small
-                  style={{ fontSize: "14px", textDecoration:"underline",color:"red"}}
-                >
-                  ดำเนินการชำระเงิน
-                </small>
-              </span>
             </div>
           </div>
         </div>

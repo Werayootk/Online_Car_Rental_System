@@ -6,11 +6,11 @@ const PaymentMessage = (props) => {
   return (
     <div className="body_payment">
       <div className="card">
-        <CheckCircleTwoTone size={400}/>
+        <CheckCircleTwoTone style={{ fontSize: '50px', color: '#08c' }} />
         <h1>Payment Success</h1>
         <p>
            ได้รับการชำระเงินแล้ว;
-          <br /> หมายเลขการจอง XXX!
+          <br /> ขอบคุณที่ใช้บริการ
         </p>
       </div>
     </div>

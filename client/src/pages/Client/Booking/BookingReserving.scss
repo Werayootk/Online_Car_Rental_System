@@ -1,7 +1,7 @@
 .center-form-Book {
   position: relative;
   left: 50%;
-  width: 50%;
+  width: 30%;
   // top: 50%;
   margin-top: 20%;
   transform: translate(-50%, -50%);
@@ -78,7 +78,8 @@
 
   .button_box_reserve {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 115px;
   }
 
   .submit_button_wrapper_reserve a {

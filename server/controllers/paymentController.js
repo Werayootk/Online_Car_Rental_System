@@ -1,8 +1,8 @@
 const { Op } = require("sequelize");
 const db = require("../models");
 const omise = require("omise")({
-  publicKey: process.env.OMISE_PUBLIC_KEY,
-  secretKey: process.env.OMISE_SECRET_KEY
+  publicKey: process.env.OMISE_PUBLIC_KEY || "pkey_test_5r20sb3568n09tz0gj6",
+  secretKey: process.env.OMISE_SECRET_KEY || "skey_test_5r20sb35fpo58ac6370"
 })
 
  exports.updateBillStatusByUser = async (req, res, next) => {
@@ -44,6 +44,7 @@ const omise = require("omise")({
 exports.omiseCheckoutCreditCard = async (req, res, next) => {
   try {
     const { email, name, amount, token } = req.body;
+    console.log(req.body);
     const customer = await omise.customers.create({
       email,
       description: name,
@@ -57,7 +58,6 @@ exports.omiseCheckoutCreditCard = async (req, res, next) => {
     });
 
     res.status(200).json({
-      authorizeUri: charge.authorize_uri,
       amount: charge.amount,
       status: charge.status, //successful failed
       message: "ชำระเงินเรียบร้อย"
@@ -71,12 +71,15 @@ exports.omiseCheckoutCreditCard = async (req, res, next) => {
 exports.omiseCheckoutInternetBanking = async (req, res, next) => {
   try {
     const { email, name, amount, token } = req.body;
-    
+    console.log(req.body);
     const charge = await omise.charges.create({
       amount,
-      source: token,
+      source: {
+        type: "internet_banking_scb"
+      },
       currency: "thb",
-    });
+      return_uri: "http://localhost:3000/payment-success"
+    })
 
     res.status(200).json({
       authorizeUri: charge.authorize_uri,
@@ -84,7 +87,6 @@ exports.omiseCheckoutInternetBanking = async (req, res, next) => {
       status: charge.status, //successful failed
       message: "ชำระเงินเรียบร้อย"
     })
-
   } catch (err) {
     next(err);
   }

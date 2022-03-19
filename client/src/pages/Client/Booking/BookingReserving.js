@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { bookingActions } from "../../../storage/reducers/bookingSlice";
 import searchCarServices from "../../../services/searchCarServices";
 import paymentService from "../../../services/paymentServices";
-import { HashRouter as Router, Link, NavLink } from "react-router-dom";
+import { HashRouter as Router, Link, NavLink, Redirect } from "react-router-dom";
 import localStorageServices from "../../../services/localStorageUserServices";
 import Script from "react-load-script";
 import { useHistory, useLocation } from 'react-router-dom';
@@ -25,8 +25,7 @@ const BookingReserving = () => {
   const bookingItems = useSelector((state) => state.booking.bookingList);
   const bookingItem = bookingItems[bookingItems.length - 1];
   const [selectPayment, setSelectPayment] = useState(1);
-  const [loading, setLoading] = useState(true);
-  const [formData, setFormData] = useState();
+  const [loading, setLoading] = useState(false);
   const [resOmise, setResOmise] = useState();
   const [resBooking, setResBooking] = useState();
   const history = useHistory();
@@ -41,27 +40,10 @@ const BookingReserving = () => {
      * 2. else => create Order and Bill with status "รอชำระเงิน" => redirect to verify
     */
     if (status === "successful") {
-      const data_success = {
-        car: bookingItem.carId,
-        location: bookingItem.location,
-        pickup_datetime: bookingItem.pickup_date,
-        return_datetime: bookingItem.return_date,
-        price_per_day: bookingItem.car_price,
-        total_price: bookingItem.total_price,
-        payment_status:"ชำระเงินแล้ว"
-      };
-      await searchCarServices.createCarOrder(data_success).then(res => {
-        setResBooking(res.data);
-        const params = `?booking_no=${resBooking.booking_no}&booking_status=${resBooking.booking_status}&bill_status=${resBooking.bill_status}`;
-        history.push(`/search-car-verify${params}`);
-        notification.success({
-          message: res.data.message,
-        });
-      }).catch(err => {
-        console.error(err);
-      });
+  
 
     } else {
+      console.log('unsucess');
       const data_unsuccess = {
         car: bookingItem.carId,
         location: bookingItem.location,
@@ -74,7 +56,7 @@ const BookingReserving = () => {
       await searchCarServices.createCarOrder(data_unsuccess).then(res => {
         setResBooking(res.data);
         const params = `?booking_no=${resBooking.booking_no}&booking_status=${resBooking.booking_status}&bill_status=${resBooking.bill_status}`;
-        history.push(`/search-car-verify${params}`);
+        //history.push(`/search-car-verify${params}`);
         notification.success({
           message: res.data.message,
         });
@@ -85,24 +67,23 @@ const BookingReserving = () => {
   }
 
   const onSubmitBooking = async (values) => {
+    console.log('on submit');
     console.log(values);
-    setFormData(values);
     if (selectPayment === 1) {
-      creditCardConfigure();
-      await omiseCardHandler();
+      await creditCardConfigure();
+      await omiseCardHandler(values);
     } else {
-      internetBankingConfigure();
-      await omiseInternetBankingHandler();
+      await internetBankingConfigure();
+      await omiseInternetBankingHandler(values);
     }
-    const createBooking = await createOrderAndBill(resOmise.status);
-    console.log(createBooking);
   };
 
   const handleLoadScript = () => {
+    console.log('handleLoadScript');
     OmiseCard = window.OmiseCard;
     OmiseCard.configure({
-      publicKey: process.env.publicKey,
-      currency: "THB",
+      publicKey: process.env.publicKey || "pkey_test_5r20sb3568n09tz0gj6",
+      currency: "thb",
       frameLabel: "Car easy life",
       submitLabel: "ชำระเงิน",
       buttonLabel: "Pay with Omise",
@@ -110,6 +91,7 @@ const BookingReserving = () => {
   };
 
   const creditCardConfigure = () => {
+    console.log('credit-crad-config');
     OmiseCard.configure({
       defaultPaymentMethod: "credit_card",
       otherPaymentMethods: [],
@@ -118,14 +100,16 @@ const BookingReserving = () => {
     OmiseCard.attach();
   };
 
-  const omiseCardHandler = () => {
+  const omiseCardHandler = (values) => {
+    const amount = Number(bookingItem.total_price)*100;
     OmiseCard.open({
-      amount: bookingItem.total_price,
+      amount: amount,
       onCreateTokenSuccess: async (token) => {
+        console.log(token);
         const data = {
-          email: formData.email,
-          name: formData.first_name,
-          amount: bookingItem.total_price,
+          email: values.email,
+          name: values.first_name,
+          amount: amount,
           token: token,
         };
         await paymentService
@@ -133,6 +117,37 @@ const BookingReserving = () => {
           .then((res) => {
             console.log(res.data);
             setResOmise(res.data);
+            const {status} = res.data
+            return { data: status };
+          }).then((res) => {
+            console.log("data should be status: " + res.data);
+            const status = res.data
+            if (status === "successful") {
+              const data_success = {
+                car: bookingItem.carId,
+                location: bookingItem.location,
+                pickup_datetime: bookingItem.pickup_date,
+                return_datetime: bookingItem.return_date,
+                price_per_day: bookingItem.car_price,
+                total_price: bookingItem.total_price,
+                payment_status:"ชำระเงินแล้ว"
+              };
+              setTimeout(() => {
+                searchCarServices.createCarOrder(data_success).then(res => {
+                  setResBooking(res.data);
+                  const { booking_no, booking_status, bill_status } = res.data
+                  const params = `?booking_no=${booking_no}&booking_status=${booking_status}&bill_status=${bill_status}`;
+                  notification.success({
+                    message: res.data.message,
+                  });
+                  history.push(`/search-car-verify${params}`);
+                })
+            }, 3000);
+            } else {
+              notification.error({
+                message: "ชำระเงินไม่สำเร็จกรุณาลองใหม่อีกครั้ง",
+              });
+            }
           })
           .catch((err) => {
             console.error(err);
@@ -140,28 +155,31 @@ const BookingReserving = () => {
       },
       onFormClosed: () => {
         console.log("close omise form credit-card");
-        // window.location.reload(true);
+        //window.location.reload(true);
       },
     });
   };
 
   const internetBankingConfigure = () => {
     OmiseCard.configure({
-      defaultPaymentMethod: "internet_banking",
+      defaultPaymentMethod: "internet_banking_scb",
       otherPaymentMethods: [],
     });
     OmiseCard.configureButton("#internet-banking");
     OmiseCard.attach();
   }
 
-  const omiseInternetBankingHandler = () => {
+  const omiseInternetBankingHandler = (values) => {
+    console.log('internet banking');
+    const amount = Number(bookingItem.total_price) * 100;
     OmiseCard.open({
       frameDescription: "Invoice #3847",
       onCreateTokenSuccess: async (token) => {
+        console.log(token);
         const data = {
-          email: formData.email,
-          name: formData.first_name,
-          amount: bookingItem.total_price,
+          email: values.email,
+          name: values.first_name,
+          amount: amount,
           token: token,
         };
         await paymentService
@@ -169,6 +187,11 @@ const BookingReserving = () => {
           .then((res) => {
             console.log(res.data);
             setResOmise(res.data);
+            const { authorizeUri } = res.data;
+            if (authorizeUri) {
+              window.location.href = authorizeUri;
+            }
+            //To D0 WebHooks get status store DB
           })
           .catch((err) => {
             console.error(err);
@@ -198,8 +221,7 @@ const BookingReserving = () => {
               ]}
             >
               <Input
-                placeholder={userInfo.first_name || "ชื่อ"}
-                value={userInfo.first_name}
+                placeholder={"ชื่อ"}
               />
             </Item>
           </div>
@@ -215,8 +237,7 @@ const BookingReserving = () => {
               ]}
             >
               <Input
-                placeholder={userInfo.last_name || "นามสกุล"}
-                value={userInfo.last_name}
+                placeholder={"นามสกุล"}
               />
             </Item>
           </div>
@@ -236,8 +257,7 @@ const BookingReserving = () => {
               ]}
             >
               <Input
-                placeholder={userInfo.email || "E-mail"}
-                value={userInfo.email}
+                placeholder={"E-mail"}
               />
             </Item>
           </div>
@@ -259,10 +279,8 @@ const BookingReserving = () => {
             >
               <Input
                 placeholder={
-                  userInfo.phone_number ||
                   "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก"
                 }
-                value={userInfo.phone_number}
               />
             </Item>
           </div>
@@ -295,11 +313,9 @@ const BookingReserving = () => {
                   url="https://cdn.omise.co/omise.js"
                   onLoad={handleLoadScript}
                 />
-                <Link to="/search-car-verify">
-                  <Button type="primary" htmlType="submit" size={700}>
+                  <Button type="primary" htmlType="submit" size={700} id={selectPayment === 1 ? "credit-card" : "internet-banking"}>
                     ทำการจองรถ
                   </Button>
-                </Link>
               </Item>
               <Link to="/search-car-book">
                 <Button size={500}>ย้อนกลับ</Button>
