@@ -1,3 +1,4 @@
+const { data } = require("cheerio/lib/api/attributes");
 const { Op } = require("sequelize");
 const db = require("../models");
 class FilterLocation {
@@ -138,7 +139,7 @@ exports.addLocation = async (req, res, next) => {
 exports.updateLocationById = async (req, res, next) => {
   try {
     const { locationId } = req.params;
-
+    const { location, province } = req.body;
     const dataLocation = await db.Location.findOne({
       where: {
         id: {
@@ -148,18 +149,22 @@ exports.updateLocationById = async (req, res, next) => {
     });
 
     if (!dataLocation) {
-      return res.status(400).json({ message: "this customer not found" });
+      return res.status(400).json({ message: "ไม่สามารถแก้ไขสถานที่ได้" });
     }
 
-    if (req.query["province"]) {
-      dataLocation.province = req.query["province"];
-    }
-    if (req.query["location"]) {
-      dataLocation.location = req.query["location"];
-    }
+    await dataLocation.update({
+      location: location,
+      province: province
+    });
 
-    await dataLocation.save();
-    res.status(200).json({ message: "location was updated." });
+    // if (req.query["province"]) {
+    //   dataLocation.province = req.query["province"];
+    // }
+    // if (req.query["location"]) {
+    //   dataLocation.location = req.query["location"];
+    // }
+    // await dataLocation.save();
+    res.status(200).json({ message: "อัพเดตข้อมูลสถานที่เรียบร้อยแล้ว" });
   } catch (err) {
     next(err);
   }

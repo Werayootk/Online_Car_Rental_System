@@ -43,14 +43,12 @@ export class adminService {
 
     }
 
-    updateLocationById(id, params) {
-        return axios.patch(`${this.API_ADMIN_PATH}/location/${id}${params}`);
-
+    updateLocationById(id, body) {
+        return axios.put(`${this.API_ADMIN_PATH}/location/${id}`, body, this.headers_JSON);
     }
 
     deleteLocationById(id) {
         return axios.delete(`${this.API_ADMIN_PATH}/location/${id}`);
-
     }
 
     addCar(formData) {

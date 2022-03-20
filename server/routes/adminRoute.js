@@ -18,7 +18,7 @@ router.delete("/customer/:customerId", authWithAdmin, customerController.deleteC
 router.post("/location", authWithAdmin, locationController.addLocation); //tested
 router.get("/location", authWithAdmin, locationController.getLocationAll); //tested
 router.get("/location/:locationId", authWithAdmin, locationController.getLocationById); //tested
-router.patch("/location/:locationId", authWithAdmin, locationController.updateLocationById); //tested
+router.put("/location/:locationId", authWithAdmin, locationController.updateLocationById); //tested
 router.delete("/location/:locationId", authWithAdmin, locationController.deleteLocationById); //tested
 
 router.post("/car", authWithAdmin, upload.array('image', 5), carController.addCar); //tested
