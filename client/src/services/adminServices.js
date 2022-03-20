@@ -40,7 +40,6 @@ export class adminService {
 
     getLocationById(id) {
         return axios.get(`${this.API_ADMIN_PATH}/location/${id}`);
-
     }
 
     updateLocationById(id, body) {
@@ -57,7 +56,6 @@ export class adminService {
 
     getCarAll(params) {
         return axios.get(`${this.API_ADMIN_PATH}/car${params}`);
-
     }
 
     getCarById(id) {
@@ -83,8 +81,8 @@ export class adminService {
 
     }
 
-    updateOrderById(id,params) {
-        return axios.patch(`${this.API_ADMIN_PATH}/order/${id}${params}`);
+    updateOrderById(id,body) {
+        return axios.put(`${this.API_ADMIN_PATH}/order/${id}`, body, this.headers_JSON);
 
     }
 

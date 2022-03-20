@@ -1,71 +1,286 @@
-import React from "react";
-import './Order.scss';
-import { Col, Row } from 'antd';
-import { FileTextOutlined } from '@ant-design/icons';
+import React, { useState, useEffect } from "react";
+import "./Order.scss";
+import { Col, Row, Modal, Button, Form, Input, notification } from "antd";
+import { FileTextOutlined } from "@ant-design/icons";
 
-import SearchFilterOrder from './SearchFilterOrder';
+import SearchFilterOrder from "./SearchFilterOrder";
 import Table from "../../../components/Table/Table";
-
-import { TablePaginationConfig } from 'antd/es/table';
-import { ColumnType } from 'antd/es/table';
-import { ORDER_FILTER_OPTIONS } from '../../../config/filter';
+import { ORDER_FILTER_OPTIONS } from "../../../config/filter";
+import adminService from "../../../services/adminServices";
+import Moment from "react-moment";
+import moment from "moment";
 
 const { Column } = Table;
+const { Item } = Form;
 
 const ResponsibilityOrderElement = (props) => {
-    const handleFilterOptionChange = (value) => {
-        console.log(value);
+  const [form] = Form.useForm();
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [pageSize, setPageSize] = useState(10);
+  const [filterOption, setFilterOption] = useState();
+  const [searchInput, setSearchInput] = useState();
+  const [tableLoading, setTableLoading] = useState(false);
+  const [dataSource, setDataSource] = useState();
+  const [dataModal, setDataModal] = useState();
+
+  const filterOptions = [...ORDER_FILTER_OPTIONS];
+  const isModalVisible = !!dataModal;
+
+  const onClickEditOrder = (data, index) => {
+    setDataModal(data);
+  };
+
+  const fetchDataOrder = async () => {
+    setTableLoading(true);
+    let param = `?offset=${(currentPage - 1) * pageSize}`;
+    if (filterOption && searchInput) {
+      param += `&${filterOption}=${searchInput}`;
     }
+    console.log(param);
+    await adminService
+      .getOrderAll(param)
+      .then((res) => {
+        setDataSource(
+          res.data.data.map((item, index) => {
+            return {
+              ...item,
+              key: index,
+              return_location: item.return_location,
+              pickup_location: item.pickup_location,
+              start_datetime: item.start_datetime,
+              end_datetime: item.end_datetime,
+              booking_no: item.booking_no,
+              refund: item.refund,
+              id: item.id,
+            };
+          })
+        );
+        setTotal(res.data.total);
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+      .finally(() => {
+        setTableLoading(false);
+      });
+  };
 
-    const handleSearchChange = (value) => {
-        console.log(value);
-    }
+  const handleCancel = () => {
+    setDataModal(null);
+  };
 
-    const filterOptions = [{text: 'ทั้งหมด', value: 'ALL'}, ...ORDER_FILTER_OPTIONS];
+  const onFinish = async (values) => {
+    setLoading(true);
+    //console.log(values, dataModal);
+    const modifyOrder = {
+      return_location: values.return_location,
+      refund: values.refund,
+      booking_status: values.booking_status,
+      pickup_location: values.pickup_location,
+      booking_no: values.booking_no,
+      start_datetime: values.start_datetime,
+      end_datetime: values.end_datetime,
+    };
+    await adminService
+      .updateOrderById(dataModal.id, modifyOrder)
+      .then((res) => {
+        notification.success({
+          message: res.data.message,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+      .finally(() => {
+        setLoading(false);
+        setDataModal(null);
+      });
+  };
 
-    return (
-        <Row>
+  useEffect(() => {
+    fetchDataOrder();
+  }, [filterOption, searchInput, currentPage]);
+
+  return (
+    <>
+      <Row>
         <Col span={24}>
           <SearchFilterOrder
-            filters={{ options: filterOptions, defaultValue: 'ALL' }}
-            onFilterChange={handleFilterOptionChange}
+            filters={{ options: filterOptions, defaultValue: "หมายเลขออเดอร์" }}
+            onFilterChange={setFilterOption}
+            onSearch={setSearchInput}
           />
         </Col>
         <Col className="order-table-container" span={24}>
           <Table
-            pagination={props.pagination}
-            loading={props.loading}
+            pagination={{
+              current: currentPage,
+              total: total,
+              pageSize: pageSize,
+              totalPage: total / pageSize,
+              onChange: setCurrentPage,
+            }}
+            loading={tableLoading}
+            dataSource={dataSource}
           >
-            <Column key="No." title="No." />
+            {/* <Column key="No." title="No." /> */}
+            <Column key="id" dataIndex="id" title="ID" />
             <Column
-              key="firstname"
-              title="First Name"
+              key="booking_no"
+              dataIndex="booking_no"
+              title="หมายเลขออเดอร์"
             />
             <Column
-              key="lastname"
-              title="Last Name"
+              key="pickup_location"
+              dataIndex="pickup_location"
+              title="สถานที่รับรถ"
             />
             <Column
-              key="order"
-              title="Orders No."
+              key="start_datetime"
+              dataIndex="start_datetime"
+              title="เวลารับรถ"
+              render={(start_datetime) => {
+                return (
+                  <p>{moment(start_datetime).format("DD-MM-YYYY hh:mm:ss")}</p>
+                );
+              }}
             />
-           <Column
-              key="status"
-              title="Status"
+            <Column
+              key="return_location"
+              dataIndex="return_location"
+              title="สถานที่คืนรถ"
+            />
+            <Column
+              key="end_datetime"
+              dataIndex="end_datetime"
+              title="เวลาคืนรถ"
+              render={(end_datetime) => {
+                return (
+                  <p>{moment(end_datetime).format("DD-MM-YYYY hh:mm:ss")}</p>
+                );
+              }}
+            />
+            <Column key="refund" dataIndex="refund" title="การคืนเงิน" />
+            <Column
+              key="booking_status"
+              dataIndex="booking_status"
+              title="สถานะการจอง"
             />
             <Column
               key="action"
               title="ดูรายละเอียด"
-              render={() => (
-                <span className="order-table-action-icon">
-                    <FileTextOutlined className="clickable" />
+              render={(dataSource, index) => (
+                <span
+                  className="order-table-action-icon"
+                  onClick={onClickEditOrder.bind(this, dataSource, index)}
+                >
+                  <FileTextOutlined className="clickable" />
                 </span>
               )}
             />
           </Table>
         </Col>
       </Row>
-    );
+      <Modal
+        className="car-modal-title"
+        title="รายละเอียดรถ"
+        visible={isModalVisible}
+        onCancel={handleCancel}
+        footer={[
+          <Button key="back" onClick={handleCancel}>
+            Cancel
+          </Button>,
+          <Button
+            type="primary"
+            key="submit"
+            loading={loading}
+            onClick={form.submit}
+          >
+            Edit
+          </Button>,
+        ]}
+        destroyOnClose={true}
+      >
+        <Form
+          labelCol={{ xs: { span: 6 } }}
+          wrapperCol={{ xs: { span: 12 } }}
+          form={form}
+          onFinish={onFinish}
+        >
+          <Form.Item
+            name="booking_no"
+            label="หมายเลขออเดอร์"
+            rules={[
+              { required: true, message: "Please input your booking no!" },
+            ]}
+          >
+            <Input placeholder={"หมายเลขออเดอร์"} />
+          </Form.Item>
+
+          <Form.Item
+            name="pickup_location"
+            label="สถานที่รับรถ"
+            rules={[
+              { required: true, message: "Please input your pickup location!" },
+            ]}
+          >
+            <Input placeholder={"สถานที่รับรถ"} />
+          </Form.Item>
+
+          <Form.Item
+            name="start_datetime"
+            label="เวลารับรถ"
+            rules={[{ required: true, message: "Please input your start datetime!" }]}
+          >
+            <Input placeholder={"เวลารับรถ"} />
+          </Form.Item>
+
+          <Form.Item
+            name="return_location"
+            label="สถานที่คืนรถ"
+            rules={[
+              {
+                required: true,
+                message: "Please input your return location!",
+              },
+            ]}
+          >
+            <Input placeholder={"สถานที่คืนรถ"} />
+          </Form.Item>
+
+          <Form.Item
+            name="end_datetime"
+            label="เวลาคืนรถ"
+            rules={[{ required: true, message: "Please input your end datetime!" }]}
+          >
+            <Input placeholder={"เวลาคืนรถ"} />
+          </Form.Item>
+
+          <Form.Item
+            name="refund"
+            label="การคืนเงิน"
+            rules={[
+              { required: true, message: "Please input your refund!" },
+            ]}
+          >
+            <Input placeholder={"การคืนเงิน"} />
+          </Form.Item>
+
+          <Form.Item
+            name="booking_status"
+            label="สถานะการจอง"
+            rules={[
+              { required: true, message: "Please input your booking status!" },
+            ]}
+          >
+            <Input placeholder={"สถานะการจอง"} />
+          </Form.Item>
+        </Form>
+      </Modal>
+    </>
+  );
 };
 
 export default ResponsibilityOrderElement;

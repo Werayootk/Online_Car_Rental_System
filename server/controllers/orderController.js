@@ -158,6 +158,15 @@ exports.getOrderById = async (req, res, next) => {
 exports.updateOrderById = async (req, res, next) => {
     try {
       const { orderId } = req.params;
+      const {
+        return_location,
+        refund,
+        booking_status,
+        pickup_location,
+        booking_no,
+        start_datetime,
+        end_datetime
+      } = req.body;
 
       const dataOrder = await db.Order.findOne({
         where: {
@@ -168,33 +177,42 @@ exports.updateOrderById = async (req, res, next) => {
       });
       if (!dataOrder) {
         return res.status(400).json({
-          message: "this order not found"
+          message: "ไม่สามารถอัพเดตหมายเลขออเดอร์นี้ได้"
         })
       }
 
-      if (req.query["return_location"]) {
-        dataOrder.return_location = req.query["return_location"];
-      }
-      if (req.query["refund"]) {
-        dataOrder.refund = req.query["refund"];
-      }
-      if (req.query["booking_status"]) {
-        dataOrder.booking_status = req.query["booking_status"];
-      }
-      if (req.query["pickup_location"]) {
-        dataOrder.pickup_location = req.query["pickup_location"];
-      }
-      if (req.query["booking_no"]) {
-        dataOrder.booking_no = req.query["booking_no"];
-      }
-      if (req.query["start_datetime"]) {
-        dataOrder.start_datetime = Date.parse(req.query["start_datetime"]);
-      }
-      if (req.query["end_datetime"]) {
-        dataOrder.end_datetime = Date.parse(req.query["end_datetime"]);
-      }
-      await dataOrder.save();
-      return res.status(200).json({ message: "this order was updated" });
+      await dataOrder.update({
+        return_location,
+        refund,
+        booking_status,
+        pickup_location,
+        booking_no,
+        start_datetime,
+        end_datetime
+      });
+      // if (req.query["return_location"]) {
+      //   dataOrder.return_location = req.query["return_location"];
+      // }
+      // if (req.query["refund"]) {
+      //   dataOrder.refund = req.query["refund"];
+      // }
+      // if (req.query["booking_status"]) {
+      //   dataOrder.booking_status = req.query["booking_status"];
+      // }
+      // if (req.query["pickup_location"]) {
+      //   dataOrder.pickup_location = req.query["pickup_location"];
+      // }
+      // if (req.query["booking_no"]) {
+      //   dataOrder.booking_no = req.query["booking_no"];
+      // }
+      // if (req.query["start_datetime"]) {
+      //   dataOrder.start_datetime = Date.parse(req.query["start_datetime"]);
+      // }
+      // if (req.query["end_datetime"]) {
+      //   dataOrder.end_datetime = Date.parse(req.query["end_datetime"]);
+      // }
+      // await dataOrder.save();
+      return res.status(200).json({ message: "อัพเดตหมายเลขออเดอร์เรียบร้อยแล้ว" });
     } catch (err) {
       next(err);
     }

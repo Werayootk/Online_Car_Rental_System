@@ -51,19 +51,19 @@ export const CANCEL_FILTER_OPTIONS = [
 ];
 
 export const OrderOptions = {
-  FIRST_NAME: -1,
-  LAST_NAME: 0,
-  ORDER_NO: 1,
+  REFUND: "refund",
+  STATUS: "booking_status",
+  ORDER_NO: "booking_no",
 };
 
 export const ORDER_FILTER_OPTIONS = [
   {
-    text: "ชื่อ",
-    value: OrderOptions.FIRST_NAME,
+    text: "การคืนเงิน",
+    value: OrderOptions.REFUND,
   },
   {
-    text: "นามสกุล",
-    value: OrderOptions.LAST_NAME,
+    text: "สถานะการจอง",
+    value: OrderOptions.STATUS,
   },
   {
     text: "หมายเลขออเดอร์",

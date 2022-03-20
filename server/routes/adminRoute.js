@@ -29,7 +29,7 @@ router.delete("/car/:carId", authWithAdmin, carController.deleteCarById); //test
 
 router.get("/order", authWithAdmin, orderController.getOrderAll); //tested
 router.get("/order/:orderId", authWithAdmin, orderController.getOrderById); //tested
-router.patch("/order/:orderId", authWithAdmin, orderController.updateOrderById); //tested
+router.put("/order/:orderId", authWithAdmin, orderController.updateOrderById); //tested
 
 router.get("/bill", authWithAdmin, billController.getBillAll); //tested
 router.get("/bill/:billID", authWithAdmin, billController.getBillById); //tested
