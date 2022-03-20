@@ -1,9 +1,9 @@
 export const CustomerOptions = {
-  FIRST_NAME: -1,
-  LAST_NAME: 0,
-  PHONE_NUMBER: 1,
-  EMAIL: 2,
-  ID: 3,
+  FIRST_NAME: "first_name",
+  LAST_NAME: "last_name",
+  PHONE_NUMBER: "phone_number",
+  EMAIL: "email",
+  ID: 'id',
 };
 
 export const CUSTOMER_FILTER_OPTIONS = [

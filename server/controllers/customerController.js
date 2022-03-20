@@ -52,7 +52,7 @@ const getCustomerList = async (paginate, filterCustomer) => {
   }
   const totalResult = await db.User.count({
     where: {
-      status: {
+      role: {
         [Op.eq]: "user",
       },
     },
@@ -91,7 +91,7 @@ exports.getCustomerAll = async (req, res, next) => {
   try {
     const countCustomer = await db.User.count({
       where: {
-        status: {
+        role: {
           [Op.eq]: "user",
         },
       },
@@ -166,8 +166,8 @@ exports.updateCustomerById = async (req, res, next) => {
     if (req.query["phone_number"]) {
       dataCustomer.phone_number = req.query["phone_number"];
     }
-    if (req.query["status"]) {
-      dataCustomer.status = req.query["status"];
+    if (req.query["role"]) {
+      dataCustomer.role = req.query["role"];
     }
 
     await dataCustomer.save();
