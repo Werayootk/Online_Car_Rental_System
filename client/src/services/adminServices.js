@@ -2,9 +2,14 @@ import axios from "../config/axios";
 
 export class adminService {
     API_ADMIN_PATH = '/admin'
-    headers = {
+    headers_form = {
         headers: {
             "Content-Type": "multipart/form-data"
+        }
+    };
+    headers_JSON = {
+        headers: {
+            "Content-Type": "application/json"
         }
     };
 
@@ -16,8 +21,8 @@ export class adminService {
         return axios.get(`${this.API_ADMIN_PATH}/customer/${id}`);
     }
 
-    updateCustomerById(id,params) {
-        return axios.patch(`${this.API_ADMIN_PATH}/customer/${id}${params}`);
+    updateCustomerById(id,body) {
+        return axios.put(`${this.API_ADMIN_PATH}/customer/${id}`,body, this.headers_JSON);
     }
 
     deleteCustomerById(id) {

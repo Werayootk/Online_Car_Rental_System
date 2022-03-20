@@ -141,7 +141,7 @@ exports.getCustomerById = async (req, res, next) => {
 exports.updateCustomerById = async (req, res, next) => {
   try {
     const { customerId } = req.params;
-
+    const { first_name, last_name, phone_number, email } = req.body;
     const dataCustomer = await db.User.findOne({
       where: {
         id: {
@@ -151,27 +151,32 @@ exports.updateCustomerById = async (req, res, next) => {
     });
 
     if (!dataCustomer) {
-      return res.status(400).json({ message: "this customer not found" });
+      return res.status(400).json({ message: "ไม่สามารถแก้ไขข้อมูลลูกค้าได้" });
     }
 
-    if (req.query["email"]) {
-      dataCustomer.email = req.query["email"];
-    }
-    if (req.query["first_name"]) {
-      dataCustomer.first_name = req.query["first_name"];
-    }
-    if (req.query["last_name"]) {
-      dataCustomer.last_name = req.query["last_name"];
-    }
-    if (req.query["phone_number"]) {
-      dataCustomer.phone_number = req.query["phone_number"];
-    }
-    if (req.query["role"]) {
-      dataCustomer.role = req.query["role"];
-    }
-
-    await dataCustomer.save();
-    res.status(200).json({ message: "customer was updated." });
+    await dataCustomer.update({
+      email: email,
+      first_name: first_name,
+      last_name: last_name,
+      phone_number: phone_number
+    })
+    // if (req.query["email"]) {
+    //   dataCustomer.email = req.query["email"];
+    // }
+    // if (req.query["first_name"]) {
+    //   dataCustomer.first_name = req.query["first_name"];
+    // }
+    // if (req.query["last_name"]) {
+    //   dataCustomer.last_name = req.query["last_name"];
+    // }
+    // if (req.query["phone_number"]) {
+    //   dataCustomer.phone_number = req.query["phone_number"];
+    // }
+    // if (req.query["role"]) {
+    //   dataCustomer.role = req.query["role"];
+    // }
+    //await dataCustomer.save();
+    res.status(200).json({ message: "อัพเดตข้อมูลลูกค้าเรียบร้อย" });
   } catch (err) {
     next(err);
   }

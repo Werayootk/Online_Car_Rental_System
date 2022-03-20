@@ -12,7 +12,7 @@ const upload = require('../middlewares/upload');
 const router = express.Router();
 router.get("/customer", authWithAdmin, customerController.getCustomerAll); //tested
 router.get("/customer/:customerId", authWithAdmin, customerController.getCustomerById); //tested
-router.patch("/customer/:customerId", authWithAdmin, customerController.updateCustomerById); //tested
+router.put("/customer/:customerId", authWithAdmin, customerController.updateCustomerById); //tested
 router.delete("/customer/:customerId", authWithAdmin, customerController.deleteCustomerById); //tested
 
 router.post("/location", authWithAdmin, locationController.addLocation); //tested
