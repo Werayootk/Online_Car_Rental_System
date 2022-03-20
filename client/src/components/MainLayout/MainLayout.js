@@ -27,7 +27,7 @@ const MainLayoutRoute = ({ component: Component , ...rest }) => {
     const [role, setRole] = useState(getRole());
     
     if (role === 'admin') {
-        return <Redirect to="/dashboard" /> 
+        return <Redirect to="/customer" /> 
     }
         return (
             <Route

@@ -145,7 +145,7 @@ const ResponsibilityElement = () => {
       </Row>
       <Modal
         className="customer-modal-title"
-        title="รายชื่อลูกค้า"
+        title="รายละเอียดลูกค้า"
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={[

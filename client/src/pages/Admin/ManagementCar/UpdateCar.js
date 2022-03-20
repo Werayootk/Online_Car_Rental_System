@@ -8,7 +8,6 @@ import { Avatar, Row, Col, Input, Button } from "antd";
 
 const { TextArea } = Input;
 
-
 const UpdateCar = (props) => {
     const carInfo = {
         brand: "",
@@ -142,7 +141,7 @@ const UpdateCar = (props) => {
           </Col>
           <Col sm={{ span: 24 }} lg={{ span: 8 }}>
           <Button id="btn-del" onClick={onSubmitDelete}>
-              ลบข้อมูลรถ
+              แก้ไขข้อมูลรถ
           </Button>
           </Col>
         </Row>

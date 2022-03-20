@@ -160,16 +160,16 @@ function App() {
         exact
         path="/admin"
         render={() => {
-          return <Redirect to="/dashboard" />;
+          return <Redirect to="/customer" />;
         }}
       />
-      <DashboardLayoutRoute
+      {/* <DashboardLayoutRoute
         exact
         path="/dashboard"
         component={Dashboard}
         role={role}
         setRole={setRole}
-      />
+      /> */}
       <DashboardLayoutRoute
         exact
         path="/customer"
@@ -193,7 +193,7 @@ function App() {
       />
       <DashboardLayoutRoute
         exact
-        path="/management/:del"
+        path="/management/:edit_car"
         component={ManagementCar}
         role={role}
         setRole={setRole}
@@ -214,7 +214,7 @@ function App() {
       />
       {role === "user" && <Route render={() => <Redirect to="/" />} />}
       {role === "admin" && (
-        <Route render={() => <Redirect to="/dashboard" />} />
+        <Route render={() => <Redirect to="/customer" />} />
       )}
     </Switch>
   );

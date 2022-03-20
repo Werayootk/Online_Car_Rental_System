@@ -172,7 +172,13 @@ exports.getCarById = async (req, res, next) => {
 exports.updateCarById = async (req, res, next) => {
   try {
     const { carId } = req.params;
-
+    const { car_brand,
+      car_register,
+      car_type,
+      car_transmission,
+      car_seat,
+      car_status,
+      car_price } = req.body;
     const dataCar = await db.Car.findOne({
       where: {
         id: {
@@ -182,33 +188,42 @@ exports.updateCarById = async (req, res, next) => {
     });
     if (!dataCar) {
       return res.status(400).json({
-        message: "this car not found",
+        message: "ไม่สามารถอัพเดตข้อมูลรถได้",
       });
     }
 
-    if (req.query["car_brand"]) {
-      dataCar.car_brand = req.query["car_brand"];
-    }
-    if (req.query["car_register"]) {
-      dataCar.car_register = req.query["car_register"];
-    }
-    if (req.query["car_type"]) {
-      dataCar.car_type = req.query["car_type"];
-    }
-    if (req.query["car_transmission"]) {
-      dataCar.car_transmission = req.query["car_transmission"];
-    }
-    if (req.query["car_seat"]) {
-      dataCar.car_seat = req.query["car_seat"];
-    }
-    if (req.query["car_status"]) {
-      dataCar.car_status = req.query["car_status"];
-    }
-    if (req.query["car_price"]) {
-      dataCar.car_price = req.query["car_price"];
-    }
-    await dataCar.save();
-    res.status(200).json({ message: "Car was updated." });
+    await dataCar.update({
+      car_brand: car_brand,
+      car_register: car_register,
+      car_type: car_type,
+      car_transmission: car_transmission,
+      car_seat: car_seat,
+      car_status: car_status,
+      car_price: car_price,
+    });
+    // if (req.query["car_brand"]) {
+    //   dataCar.car_brand = req.query["car_brand"];
+    // }
+    // if (req.query["car_register"]) {
+    //   dataCar.car_register = req.query["car_register"];
+    // }
+    // if (req.query["car_type"]) {
+    //   dataCar.car_type = req.query["car_type"];
+    // }
+    // if (req.query["car_transmission"]) {
+    //   dataCar.car_transmission = req.query["car_transmission"];
+    // }
+    // if (req.query["car_seat"]) {
+    //   dataCar.car_seat = req.query["car_seat"];
+    // }
+    // if (req.query["car_status"]) {
+    //   dataCar.car_status = req.query["car_status"];
+    // }
+    // if (req.query["car_price"]) {
+    //   dataCar.car_price = req.query["car_price"];
+    // }
+    // await dataCar.save();
+    res.status(200).json({ message: "ข้อมูลรถอัพเดตเรียบร้อยแล้ว" });
   } catch (err) {
     next(err);
   }

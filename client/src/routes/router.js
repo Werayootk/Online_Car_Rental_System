@@ -12,13 +12,13 @@ import {
 import MapIcon from '@mui/icons-material/Map';
 
 export const MenuList = [
-  {
-    id: 1,
-    nameEN: "Dashboard",
-    nameTH: "หน้ารวมสรุปผล",
-    path: "/dashboard",
-    icon: <AppstoreOutlined />,
-  },
+  // {
+  //   id: 1,
+  //   nameEN: "Dashboard",
+  //   nameTH: "หน้ารวมสรุปผล",
+  //   path: "/dashboard",
+  //   icon: <AppstoreOutlined />,
+  // },
   {
     id: 2,
     nameEN: "Customer",

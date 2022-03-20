@@ -143,7 +143,7 @@ const ResponsibilityLocationElement = (props) => {
       </Row>
       <Modal
         className="location-modal-title"
-        title="รายชื่อลูกค้า"
+        title="รายละเอียดสถานที่"
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={[

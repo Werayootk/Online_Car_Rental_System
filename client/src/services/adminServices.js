@@ -65,8 +65,8 @@ export class adminService {
 
     }
 
-    updateCarById(id,params) {
-        return axios.patch(`${this.API_ADMIN_PATH}/car/${id}${params}`);
+    updateCarById(id,body) {
+        return axios.put(`${this.API_ADMIN_PATH}/car/${id}`, body, this.headers_JSON);
 
     }
 

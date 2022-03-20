@@ -1,11 +1,7 @@
 import React from "react";
 import { Route, Switch, useRouteMatch, withRouter } from "react-router-dom";
 import UploadCar from "./UpdateCar";
-import DeleteCar from "./DeleteCar";
-/** TODO 15
- * 1. image upload and axios addCar formdata
- * 2. DelCar must Only update status Can't use send params
- */
+import EditCar from "./EditCar";
 
 const ManagementCar = (props) => {
   let match = useRouteMatch();
@@ -16,15 +12,13 @@ const ManagementCar = (props) => {
         exact
         path="/management"
         render={() => {
-          console.log("upload success");
           return <UploadCar />;
         }}
       />
       <Route
-        path="/management/:del"
+        path="/management/:edit_car"
         render={() => {
-          console.log("del success");
-          return <DeleteCar />;
+          return <EditCar />;
         }}
       />
     </Switch>

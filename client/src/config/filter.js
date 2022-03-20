@@ -72,12 +72,12 @@ export const ORDER_FILTER_OPTIONS = [
 ];
 
 export const CarOptions = {
-  ID: -1,
-  BRAND: 0,
-  SEAT: 1,
-  CAR_TYPE: 2,
-  GEAR_TYPE: 3,
-  REGISTRATE_YEAR:4
+  ID: "id",
+  BRAND: "car_brand",
+  SEAT: "car_seat",
+  CAR_TYPE: "car_type",
+  GEAR_TYPE: "car_transmission",
+  REGISTRATE_YEAR:"car_register"
 };
 
 export const CAR_FILTER_OPTIONS = [
@@ -86,23 +86,23 @@ export const CAR_FILTER_OPTIONS = [
     value: CarOptions.ID,
   },
   {
-    text: "CAR Brand",
+    text: "ยี่ห้อรถ",
     value: CarOptions.BRAND,
   },
   {
-    text: "Seat",
+    text: "จำนวนที่นั่ง",
     value: CarOptions.SEAT,
   },
   {
-    text: "CAR Type",
+    text: "ประเภทรถ",
     value: CarOptions.CAR_TYPE,
   },
   {
-    text: "Gear",
+    text: "ประเภทเกียร์",
     value: CarOptions.GEAR_TYPE,
   },
   {
-    text: "Year",
+    text: "ปีที่จดทะเบียน",
     value: CarOptions.REGISTRATE_YEAR,
   },
 ];
