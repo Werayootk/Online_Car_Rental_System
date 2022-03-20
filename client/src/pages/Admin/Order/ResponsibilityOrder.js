@@ -103,6 +103,19 @@ const ResponsibilityOrderElement = (props) => {
     fetchDataOrder();
   }, [filterOption, searchInput, currentPage]);
 
+  //Redux dispacth
+  // useEffect(() => {
+  //   form.setFieldsValue({
+  //      //   booking_no: dataSource.booking_no,
+          //   pickup_location: dataSource.pickup_location,
+          //   start_datetime: dataSource.start_datetime,
+          //   return_location: dataSource.return_location,
+          //   end_datetime: dataSource.end_datetime,
+          //   refund: dataSource.refund,
+          //   booking_status: dataSource.booking_status
+  //   });
+  // }, []);
+
   return (
     <>
       <Row>
@@ -207,15 +220,6 @@ const ResponsibilityOrderElement = (props) => {
           labelCol={{ xs: { span: 6 } }}
           wrapperCol={{ xs: { span: 12 } }}
           form={form}
-          initialValues={{
-            booking_no: dataSource.booking_no,
-            pickup_location: dataSource.pickup_location,
-            start_datetime: dataSource.start_datetime,
-            return_location: dataSource.return_location,
-            end_datetime: dataSource.end_datetime,
-            refund: dataSource.refund,
-            booking_status: dataSource.booking_status
-          }}
           onFinish={onFinish}
         >
           <Form.Item
