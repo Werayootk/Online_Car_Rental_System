@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { Col, Row, Input, Space, Select } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
+import _debounce from 'lodash/debounce';
 
 const SearchFilterLayout = styled(Row)`
   height: 80px;
@@ -40,15 +41,20 @@ const SelectFilter = styled(Select)`
 `
 
 const SearchFilterLocation = (props) => {
-    const { filters, onFilterChange } = props;
+    const { filters, onFilterChange, onSearch } = props;
 
     const handleFilterChange = (value) => {
-        console.log(value);
+      onFilterChange(value);
     };
     
     const handleSearchChange = (e) => {
-      props.onSearch?.(e.target.value);
+      onSearch(e.target.value);
     };
+  
+    const debounceHandleSearchChange = _debounce(handleSearchChange, 1000, {
+      maxWait: 3000,
+      trailing: true
+    })
 
     return (
     <SearchFilterLayout>
@@ -65,7 +71,7 @@ const SearchFilterLocation = (props) => {
             <SearchInput
               placeholder="กรอกคำค้นหา"
               prefix={<SearchIcon />}
-              onChange={handleSearchChange}
+              onChange={debounceHandleSearchChange}
             />
           </Col>
           <Col span={7}>

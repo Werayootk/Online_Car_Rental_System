@@ -47,7 +47,8 @@ const InputLocation = (props) => {
                   0
                 }
                 size="large"
-              >
+                >
+                <Option value="" selected>--------- เลือกจังหวัด ---------</Option>
                 <Option value="กรุงเทพมหานคร">กรุงเทพมหานคร</Option>
                 <Option value="กระบี่">กระบี่ </Option>
                 <Option value="กาญจนบุรี">กาญจนบุรี </Option>

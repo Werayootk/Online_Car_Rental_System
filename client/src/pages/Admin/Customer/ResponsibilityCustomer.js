@@ -89,7 +89,6 @@ const ResponsibilityElement = () => {
   };
 
   useEffect(() => {
-    console.log(filterOption, searchInput, currentPage);
     fetchDataCustomer();
   }, [filterOption, searchInput, currentPage]);
 

@@ -108,9 +108,9 @@ export const CAR_FILTER_OPTIONS = [
 ];
 
 export const LocationOptions = {
-  ID: -1,
-  PROVINCE: 0,
-  LOCATION: 1
+  ID: "id",
+  PROVINCE: "province",
+  LOCATION: "location"
 };
 
 export const LOCATION_FILTER_OPTIONS = [
