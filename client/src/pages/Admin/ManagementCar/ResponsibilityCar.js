@@ -194,7 +194,7 @@ const ResponsibilityCarElement = (props) => {
             label="ประเภทรถ"
             rules={[{ required: true, message: "Please input your car type!" }]}
           >
-            <Input placeholder={"ปีที่จดทะเบียนรถ"}/>
+            <Input placeholder={"ประเภทรถ"}/>
           </Form.Item>
 
           <Form.Item
@@ -202,7 +202,7 @@ const ResponsibilityCarElement = (props) => {
             label="ประเภทเกียร์"
             rules={[{ required: true, message: "Please input your car transmission!" }]}
           >
-            <Input placeholder={"ปีที่จดทะเบียนรถ"}/>
+            <Input placeholder={"ประเภทเกียร์"}/>
           </Form.Item>
 
           <Form.Item
@@ -210,7 +210,7 @@ const ResponsibilityCarElement = (props) => {
             label="จำนวนที่นั่ง"
             rules={[{ required: true, message: "Please input your car seat!" }]}
           >
-            <Input placeholder={"ปีที่จดทะเบียนรถ"}/>
+            <Input placeholder={"จำนวนที่นั่ง"}/>
           </Form.Item>
 
           <Form.Item
@@ -218,7 +218,7 @@ const ResponsibilityCarElement = (props) => {
             label="สถานะรถ"
             rules={[{ required: true, message: "Please input your car status!" }]}
           >
-            <Input placeholder={"ปีที่จดทะเบียนรถ"}/>
+            <Input placeholder={"สถานะรถ"}/>
           </Form.Item>
 
           <Form.Item
@@ -226,7 +226,7 @@ const ResponsibilityCarElement = (props) => {
             label="ราคาเช่าต่อวัน"
             rules={[{ required: true, message: "Please input your car price!" }]}
           >
-            <Input placeholder={"ปีที่จดทะเบียนรถ"}/>
+            <Input placeholder={"ราคาเช่าต่อวัน"}/>
           </Form.Item>
         </Form>
       </Modal>

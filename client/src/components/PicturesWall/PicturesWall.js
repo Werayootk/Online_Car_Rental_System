@@ -3,7 +3,7 @@ import { Upload, Modal } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 
 const PicturesWall = (props) => {
-  const { previewVisible, previewImage, fileList, previewTitle } = props.items;
+  const { previewVisible, previewImage, fileList, previewTitle } = props.filesImg;
   
   function getBase64(file) {
     return new Promise((resolve, reject) => {
