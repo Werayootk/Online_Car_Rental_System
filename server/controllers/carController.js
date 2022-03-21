@@ -239,6 +239,9 @@ exports.addCar = async (req, res, next) => {
       car_seat,
       car_price,
     } = req.body;
+
+    console.log(req.body);
+    console.log(req.files);
     
     const carPrice = parseInt(car_price);
 
