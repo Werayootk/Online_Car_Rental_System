@@ -7,14 +7,17 @@ import SearchFilterOrder from "./SearchFilterOrder";
 import Table from "../../../components/Table/Table";
 import { ORDER_FILTER_OPTIONS } from "../../../config/filter";
 import adminService from "../../../services/adminServices";
-import Moment from "react-moment";
 import moment from "moment";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchOrderData } from "../../../storage/reducers/orderActions";
 
 const { Column } = Table;
 const { Item } = Form;
 
 const ResponsibilityOrderElement = (props) => {
   const [form] = Form.useForm();
+  const dispatch = useDispatch();
+  const order = useSelector((state) => state.order.orderList);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [total, setTotal] = useState(0);
@@ -29,6 +32,16 @@ const ResponsibilityOrderElement = (props) => {
   const isModalVisible = !!dataModal;
 
   const onClickEditOrder = (data, index) => {
+    const orderThis = order.filter(item => item.id === data.id);
+    form.setFieldsValue({
+      booking_no: orderThis.booking_no,
+      pickup_location: orderThis.pickup_location,
+      start_datetime: orderThis.start_datetime,
+      return_location: orderThis.return_location,
+      end_datetime: orderThis.end_datetime,
+      refund: orderThis.refund,
+      booking_status: orderThis.booking_status,
+    });
     setDataModal(data);
   };
 
@@ -53,6 +66,7 @@ const ResponsibilityOrderElement = (props) => {
               end_datetime: item.end_datetime,
               booking_no: item.booking_no,
               refund: item.refund,
+              booking_status: item.booking_status,
               id: item.id,
             };
           })
@@ -103,18 +117,9 @@ const ResponsibilityOrderElement = (props) => {
     fetchDataOrder();
   }, [filterOption, searchInput, currentPage]);
 
-  //Redux dispacth
-  // useEffect(() => {
-  //   form.setFieldsValue({
-  //      //   booking_no: dataSource.booking_no,
-          //   pickup_location: dataSource.pickup_location,
-          //   start_datetime: dataSource.start_datetime,
-          //   return_location: dataSource.return_location,
-          //   end_datetime: dataSource.end_datetime,
-          //   refund: dataSource.refund,
-          //   booking_status: dataSource.booking_status
-  //   });
-  // }, []);
+  useEffect(() => {
+    dispatch(fetchOrderData(currentPage, pageSize));
+  }, [currentPage, pageSize, dispatch]);
 
   return (
     <>
@@ -245,7 +250,9 @@ const ResponsibilityOrderElement = (props) => {
           <Form.Item
             name="start_datetime"
             label="เวลารับรถ"
-            rules={[{ required: true, message: "Please input your start datetime!" }]}
+            rules={[
+              { required: true, message: "Please input your start datetime!" },
+            ]}
           >
             <Input placeholder={"เวลารับรถ"} />
           </Form.Item>
@@ -266,7 +273,9 @@ const ResponsibilityOrderElement = (props) => {
           <Form.Item
             name="end_datetime"
             label="เวลาคืนรถ"
-            rules={[{ required: true, message: "Please input your end datetime!" }]}
+            rules={[
+              { required: true, message: "Please input your end datetime!" },
+            ]}
           >
             <Input placeholder={"เวลาคืนรถ"} />
           </Form.Item>
@@ -274,9 +283,7 @@ const ResponsibilityOrderElement = (props) => {
           <Form.Item
             name="refund"
             label="การคืนเงิน"
-            rules={[
-              { required: true, message: "Please input your refund!" },
-            ]}
+            rules={[{ required: true, message: "Please input your refund!" }]}
           >
             <Input placeholder={"การคืนเงิน"} />
           </Form.Item>

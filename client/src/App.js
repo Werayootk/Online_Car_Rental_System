@@ -36,6 +36,7 @@ import localStorageServices from "./services/localStorageUserServices";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import { bookingActions } from "./storage/reducers/bookingSlice";
+import { orderActions } from "./storage/reducers/orderSlice";
 
 function App() {
   const [role, setRole] = useState(localStorageServices.getRole());
@@ -57,6 +58,7 @@ function App() {
         localStorageServices.removeToken();
         setRole(localStorageServices.getRole());
         dispatch(bookingActions.clearBookingState());
+        dispatch(orderActions.clearOrderState());
         return <Redirect to="/" />;
       }}
     />
