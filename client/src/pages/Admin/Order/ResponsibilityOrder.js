@@ -17,7 +17,6 @@ const { Item } = Form;
 const ResponsibilityOrderElement = (props) => {
   const [form] = Form.useForm();
   const dispatch = useDispatch();
-  const order = useSelector((state) => state.order.orderList);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [total, setTotal] = useState(0);
@@ -27,22 +26,15 @@ const ResponsibilityOrderElement = (props) => {
   const [tableLoading, setTableLoading] = useState(false);
   const [dataSource, setDataSource] = useState();
   const [dataModal, setDataModal] = useState();
-
+  const order = useSelector((state) => state.order.orderList);
+  const [orderForm, setOrderForm] = useState();
+  
   const filterOptions = [...ORDER_FILTER_OPTIONS];
   const isModalVisible = !!dataModal;
 
   const onClickEditOrder = (data, index) => {
-    const orderThis = order.filter(item => item.id === data.id);
-    form.setFieldsValue({
-      booking_no: orderThis.booking_no,
-      pickup_location: orderThis.pickup_location,
-      start_datetime: orderThis.start_datetime,
-      return_location: orderThis.return_location,
-      end_datetime: orderThis.end_datetime,
-      refund: orderThis.refund,
-      booking_status: orderThis.booking_status,
-    });
     setDataModal(data);
+    initFormField(data);
   };
 
   const fetchDataOrder = async () => {
@@ -111,6 +103,22 @@ const ResponsibilityOrderElement = (props) => {
         setLoading(false);
         setDataModal(null);
       });
+  };
+
+  const initFormField = (data) => {
+    const orderThis = order.orderList.filter(item => item.id === data.id);
+    console.log(orderThis);
+    setOrderForm([
+      { name: ['booking_no'], value: orderThis[0].booking_no },
+      { name: ['pickup_location'], value: orderThis[0].pickup_location },
+      { name: ['start_datetime'], value: orderThis[0].start_datetime },
+      // { name: ['start_datetime'], value: moment(orderThis[0].start_datetime).format("DD-MM-YYYY hh:mm:ss") },
+      { name: ['return_location'], value: orderThis[0].return_location },
+      { name: ['end_datetime'], value: orderThis[0].end_datetime },
+      // { name: ['end_datetime'], value: moment(orderThis[0].end_datetime).format("DD-MM-YYYY hh:mm:ss") },
+      { name: ['refund'], value: orderThis[0].refund },
+      { name: ['booking_status'], value: orderThis[0].booking_status },
+    ]);
   };
 
   useEffect(() => {
@@ -225,6 +233,8 @@ const ResponsibilityOrderElement = (props) => {
           labelCol={{ xs: { span: 6 } }}
           wrapperCol={{ xs: { span: 12 } }}
           form={form}
+          fields={orderForm}
+          onFieldsChange={orderForm}
           onFinish={onFinish}
         >
           <Form.Item

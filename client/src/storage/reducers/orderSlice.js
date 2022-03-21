@@ -45,7 +45,7 @@ const orderSlice = createSlice({
             state.orderList = [];
         },
         replaceOrderState(state, action) {
-          state.orderList = action.payload.orderList;
+          state.orderList = action.payload;
         }
     }
 });
