@@ -4,9 +4,10 @@ import { Route, Switch, useRouteMatch, withRouter } from 'react-router-dom';
 
 import PicturesWall from "../../../components/PicturesWall/PicturesWall";
 import "./ManagementCar.scss";
-import { Avatar, Row, Col, Input, Button } from "antd";
+import { Row, Col, Input, Button, Form, Upload } from "antd";
 
 const { TextArea } = Input;
+const { Item } = Form;
 
 const UpdateCar = (props) => {
     const carInfo = {
@@ -71,10 +72,10 @@ const UpdateCar = (props) => {
         console.log("import car");
       };
     
-      const onSubmitDelete = () => {
-        console.log("del car");
-        props.history.push(`/management/delete-car`);
-      };
+      const onSubmitedit = () => {
+        props.history.push(`/management/edit-car`);
+  };
+  
     return (
         <div className="car">
         <Row>
@@ -140,7 +141,7 @@ const UpdateCar = (props) => {
             <Button onClick={onSubmitImport}>นำเข้าข้อมูลรถ</Button>
           </Col>
           <Col sm={{ span: 24 }} lg={{ span: 8 }}>
-          <Button id="btn-del" onClick={onSubmitDelete}>
+          <Button id="btn-del" onClick={onSubmitedit}>
               แก้ไขข้อมูลรถ
           </Button>
           </Col>
