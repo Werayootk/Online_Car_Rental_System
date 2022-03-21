@@ -237,7 +237,6 @@ exports.addCar = async (req, res, next) => {
       car_type,
       car_transmission,
       car_seat,
-      car_status,
       car_price,
     } = req.body;
     
@@ -253,7 +252,7 @@ exports.addCar = async (req, res, next) => {
 
     if (existCar) {
       return res.status(400).json({
-        message: "this car is already exist."
+        message: "มีรถนี้อยู่ในระบบอยู่แล้ว"
       })
     }
 
@@ -263,7 +262,7 @@ exports.addCar = async (req, res, next) => {
       car_type,
       car_transmission,
       car_seat,
-      car_status,
+      car_status: "available",
       car_price: carPrice,
     });
 
@@ -285,7 +284,7 @@ exports.addCar = async (req, res, next) => {
       });
     }
 
-    res.status(201).json({ message: "car created" });
+    res.status(201).json({ message: "เพิ่มรถใหม่เข้าระบบเรียบร้อบแล้ว" });
   } catch (err) {
     next(err);
   }

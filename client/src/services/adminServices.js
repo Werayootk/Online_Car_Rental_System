@@ -51,7 +51,7 @@ export class adminService {
     }
 
     addCar(formData) {
-        return axios.post(`${this.API_ADMIN_PATH}/car`,formData, this.headers);
+        return axios.post(`${this.API_ADMIN_PATH}/car`,formData, this.headers_form);
     }
 
     getCarAll(params) {
