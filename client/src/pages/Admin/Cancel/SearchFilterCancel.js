@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Col, Row, Input, Space, Select } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import CheckBox from "../../../components/CheckBox/CheckBox";
-import { CANCEL_STATUS } from "../../../config/checkbox";
+import _debounce from 'lodash/debounce';
 
 const SearchFilterLayout = styled(Row)`
   height: 80px;
@@ -42,40 +41,40 @@ const SelectFilter = styled(Select)`
 `;
 
 const SearchFilterCancel = (props) => {
-  const { filters, onFilterChange } = props;
+  const { filters, onFilterChange, onSearch } = props;
 
   const handleFilterChange = (value) => {
-    console.log(value);
+    onFilterChange(value);
   };
 
   const handleSearchChange = (e) => {
-    props.onSearch?.(e.target.value);
+    onSearch(e.target.value);
   };
 
-  const onChangeCheckBox = (checkedValues) => {
-    console.log("checked = ", checkedValues);
-  };
+  const debounceHandleSearchChange = _debounce(handleSearchChange, 1000, {
+    maxWait: 3000,
+    trailing: true
+  });
 
   return (
     <SearchFilterLayout>
       <Col span={24}>
         <Row align="middle">
-          <Col span={2}>
+          <Col span={6}>
             <Space />
           </Col>
-          <Col span={13}>ค้นหา</Col>
+          <Col span={14}>ค้นหา</Col>
           <Col span={4}>ฟิลเตอร์</Col>
-          <Col spam={5}>Status</Col>
         </Row>
         <Row align="middle">
-          <Col span={14} style={{ paddingRight: 16 }}>
+          <Col span={17} style={{ paddingRight: 22 }}>
             <SearchInput
               placeholder="กรอกคำค้นหา"
               prefix={<SearchIcon />}
-              onChange={handleSearchChange}
+              onChange={debounceHandleSearchChange}
             />
           </Col>
-          <Col span={4}>
+          <Col span={7}>
             <SelectFilter
               defaultValue={filters?.defaultValue}
               onChange={handleFilterChange}
@@ -90,9 +89,6 @@ const SearchFilterCancel = (props) => {
                 </SelectFilter.Option>
               ))}
             </SelectFilter>
-          </Col>
-          <Col span={6} style={{ paddingLeft: 12 }}>
-            <CheckBox options={CANCEL_STATUS} onChange={onChangeCheckBox} />
           </Col>
         </Row>
       </Col>

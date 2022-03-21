@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './Cancel.scss';
-import { Col, Row } from 'antd';
+import { Col, Row, Modal, Button, Form, Input, notification  } from 'antd';
 import { FileTextOutlined } from '@ant-design/icons';
 
 import SearchFilterCancel from './SearchFilterCancel';
 import Table from "../../../components/Table/Table";
-
-import { TablePaginationConfig } from 'antd/es/table';
-import { ColumnType } from 'antd/es/table';
 import { CANCEL_FILTER_OPTIONS } from '../../../config/filter';
 
 const { Column } = Table;

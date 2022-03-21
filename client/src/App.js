@@ -205,13 +205,13 @@ function App() {
         role={role}
         setRole={setRole}
       />
-      <DashboardLayoutRoute
+      {/* <DashboardLayoutRoute
         exact
         path="/cancel"
         component={Cancel}
         role={role}
         setRole={setRole}
-      />
+      /> */}
       {role === "user" && <Route render={() => <Redirect to="/" />} />}
       {role === "admin" && (
         <Route render={() => <Redirect to="/customer" />} />

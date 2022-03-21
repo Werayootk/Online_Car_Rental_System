@@ -47,13 +47,13 @@ export const MenuList = [
     path: "/location",
     icon: <MapIcon />,
   },
-  {
-    id: 6,
-    nameEN: "Cancel order",
-    nameTH: "รายการยกเลิกการจอง",
-    path: "/cancel",
-    icon: <CloseCircleOutlined />,
-  },
+  // {
+  //   id: 6,
+  //   nameEN: "Cancel order",
+  //   nameTH: "รายการยกเลิกการจอง",
+  //   path: "/cancel",
+  //   icon: <CloseCircleOutlined />,
+  // },
   {
     id: 7,
     nameEN: "Logout",

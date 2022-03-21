@@ -60,7 +60,6 @@ export class adminService {
 
     getCarById(id) {
         return axios.get(`${this.API_ADMIN_PATH}/car/${id}`);
-
     }
 
     updateCarById(id,body) {
