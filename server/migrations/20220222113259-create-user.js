@@ -33,6 +33,9 @@ module.exports = {
       },
       resetPasswordExpires: {
         type: Sequelize.DATE,
+      },
+      social_id: {
+        type: Sequelize.STRING,
       }
     });
   },

@@ -30,6 +30,10 @@ export class userService {
     editUserPassword(body) {
         return axios.put(`${this.API_USER_PATH}/edit-password`, body);
     }
+
+    login_google_success() {
+        return axios.get(`${this.API_USER_PATH}/google/login/success`);
+    }
 }
 
 export default new userService()

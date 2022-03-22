@@ -16,9 +16,8 @@ exports.getSocialUserLogin = (req, res, next) => {
   if (req.user) {
     res.status(200).json({
       success: true,
-      message: "successful logged in",
+      message: "เข้าสู่ระบบสำเร็จ",
       user: req.user,
-      cookies: req.cookies
     });
   }
 };
@@ -26,7 +25,7 @@ exports.getSocialUserLogin = (req, res, next) => {
 exports.getSocialUserFail = (req, res, next) => {
   res.status(401).json({
     success: false,
-    message: "failure log in",
+    message: "เข้าสู่ระบบไม่สำเร็จ",
   });
 };
 

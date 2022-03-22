@@ -1,4 +1,5 @@
 require("dotenv").config();
+const { Op } = require("sequelize");
 
 const passport = require('passport');
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
@@ -7,6 +8,9 @@ const JwtStrategy = require('passport-jwt').Strategy;
 const { ExtractJwt } = require('passport-jwt');
 const db = require("../models");
 const { User } = require('../models');
+const bcrypt = require('bcryptjs');
+const crypto = require('crypto');
+const jwt = require('jsonwebtoken');
 
 const options = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
@@ -32,23 +36,39 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com" ,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "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",
-      callbackURL: `user/google/callback`,
+      callbackURL: `http://localhost:8000/user/google/callback`,
     },
     async function (accessToken, refreshToken, profile, done) {
       try {
-        const emailUser = profile.emails[0].value;
+        console.log("user profile is: ", profile)      
+        let token = {
+          access_token: accessToken,
+          refresh_token: refreshToken,
+        }
+        console.log("token is: ", token)      
+        const email = profile._json.email;
         const existUser = await User.findOne({
-          where: emailUser
-        });
+          where: {
+            email: {
+              [Op.eq]: email,
+            },
+          },
+         });
         if (existUser) {
-          done(null, profile);
+         done(null, profile);
         } else {
+          console.log('not found email');
+          const hashedPassword = await bcrypt.hash(profile.id, 10);
           await User.create({
-            email: emailUser,
-            first_name: profile.name,
+            social_id: profile.id,
+            email: email,
+            first_name: profile.name.givenName,
+            last_name: profile.name.familyName,
+            password: hashedPassword,
             role:"user"
           });
-        }
+         done(null, profile);
+         }
       } catch (err) {
         done(err, false);
       }
@@ -73,8 +93,12 @@ passport.use(
         if (existUser) {
           done(null, profile);
         } else {
+
           await User.create({
             email: emailUser,
+            first_name: profile.name,
+            first_name: profile.name,
+            first_name: profile.name,
             first_name: profile.name,
             role:"user"
           });

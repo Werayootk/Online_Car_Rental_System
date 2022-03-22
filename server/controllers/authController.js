@@ -93,11 +93,7 @@ exports.login = async (req, res, next) => {
     next(err);
   }
 };
-/* forgot reset flow
-  1. user input email forgot password (Client) => call backend '/forgot-password' gen token store db and send email link
-  2. user login email and click link with token => call backend '/reset-password' check correct user
-  3. if ok frontend redirect to update password => call backend '/update-password' store to db
-*/
+
 exports.forgotPassword = async (req, res, next) => { 
   try {
     const { email } = req.body;

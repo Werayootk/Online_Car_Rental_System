@@ -42,6 +42,8 @@ const getUserInfo = () => {
         userInfo.email = jwt_decode(token).email;
         userInfo.phone_number = jwt_decode(token).phone_number;
         return userInfo;
+    } else {
+        
     }
 }
 

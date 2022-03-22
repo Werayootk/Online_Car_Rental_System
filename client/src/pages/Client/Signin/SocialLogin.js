@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useSate, useEffect } from "react";
 import './SocialLogin.scss';
 import { HashRouter as Router, Link, NavLink } from 'react-router-dom';
 import {ReactComponent as Facebook_Logo} from '../../../assets/images/facebook-icon.svg';
 import {ReactComponent as Google_Logo} from '../../../assets/images/google-icon.svg';
+import userService from "../../../services/userServices";
 
 const SocialLogin = () => {
-    const google = () => {
+    const google = async () => {
         window.open("http://localhost:8000/user/google", "_self");
-      };
+    }
     
       const facebook = () => {
         window.open("http://localhost:8000/user/facebook", "_self");
