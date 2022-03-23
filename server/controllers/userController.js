@@ -15,35 +15,26 @@ exports.getMe = (req, res, next) => {
 exports.getSocialUserLogin = async (req, res, next) => {
   if (req.user) {
     let existUser;
-    const oauthUser = {
+    existUser = await User.findOne({ where: {email: req.user.emails[0].value}})
+    const payload = {
+      id: existUser.id,
       social_id: req.user.id,
       first_name: req.user.name.givenName,
       last_name: req.user.name.familyName,
       email: req.user.emails[0].value,
       role: "user"
-    }
-    console.log(oauthUser);
-   // existUser = await User.findOne({ where: {email: req._json.email}})
-    //const payload = {
-     // id: existUser.id,
-    //   social_id: req.user.id,
-    //   first_name: req.user.name.givenName,
-    //   last_name: req.user.name.familyName,
-    //   email: req._json.email,
-    //   role: "user"
-    // };
-    // const token = jwt.sign(payload, process.env.JWT_SECRET_KEY, {
-    //   expiresIn: 60 * 60 * 24 * 30
-    // });
-   // const { id, first_name, last_name, phone_number, role } = existUser;
+    };
+    const token = jwt.sign(payload, process.env.JWT_SECRET_KEY, {
+      expiresIn: 60 * 60 * 24 * 30
+    });
+   const { id, first_name, last_name, phone_number, role } = existUser;
 
     res.status(200).json({
       success: true,
       message: "เข้าสู่ระบบสำเร็จ",
-      //existUser: { id, first_name, last_name, phone_number, role },
-      //token,
+      existUser: { id, first_name, last_name, phone_number, role },
+      token,
       user: req.user,
-
     });
   }
 };
