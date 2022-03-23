@@ -11046,3 +11046,93 @@
 [35m[39m
 2022-03-23 07:47:51:4751 [35mhttp[39m: [35m::1 - - GET /user/google/login/success 304 - - 2.156 ms[39m
 [35m[39m
+2022-03-23 08:35:58:3558 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 192.361 ms[39m
+[35m[39m
+2022-03-23 08:36:02:362 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 15.349 ms[39m
+[35m[39m
+2022-03-23 08:36:09:369 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWgIZ9Y5l5ULiXzSX075Mp_xE7QA3NAxPHw4cVRM7ojGlW0yPtXJowijkjou-6OtTg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 96 - 872.349 ms[39m
+[35m[39m
+2022-03-23 08:36:09:369 [35mhttp[39m: [35m::1 - - GET /user/google/login/success 200 1474 - 9.365 ms[39m
+[35m[39m
+2022-03-23 08:57:52:5752 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 253.259 ms[39m
+[35m[39m
+2022-03-23 08:58:46:5846 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 31.898 ms[39m
+[35m[39m
+2022-03-23 08:58:52:5852 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWjPsQMIuHpe1lywC7jF5B2yU_BHomWz7Y50I0h4Vv4TnQXe7lLk27UnlIp8BdUi3Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 96 - 655.340 ms[39m
+[35m[39m
+2022-03-23 08:58:52:5852 [35mhttp[39m: [35m::1 - - GET /user/google/login/success 200 1474 - 7.143 ms[39m
+[35m[39m
+2022-03-23 11:43:50:4350 [35mhttp[39m: [35m::1 - - GET /user/google/ 302 0 - 5.583 ms[39m
+[35m[39m
+2022-03-23 11:43:59:4359 [35mhttp[39m: [35m::1 - - GET /user/google/ 302 0 - 1.596 ms[39m
+[35m[39m
+2022-03-23 20:41:48:4148 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 57.014 ms[39m
+[35m[39m
+2022-03-23 20:41:58:4158 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWgJN6fvaTvS1oI49HuS70U8Mau-fr0ayiemhn_99ZGmj7c2HQD0E3CGJ7VA634S-Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 500 42 - 886.593 ms[39m
+[35m[39m
+2022-03-23 20:43:39:4339 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 103.616 ms[39m
+[35m[39m
+2022-03-23 20:44:14:4414 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 11.101 ms[39m
+[35m[39m
+2022-03-23 20:45:28:4528 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 12.899 ms[39m
+[35m[39m
+2022-03-23 20:55:42:5542 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 11.894 ms[39m
+[35m[39m
+2022-03-23 20:55:48:5548 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWgyIFsGy9BgbtMokRAvvFvIEhiO0s7WQfDjxtp-MJFYFknNYXGaZt-e2Gkrg5EGtA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 86 - 784.208 ms[39m
+[35m[39m
+2022-03-23 20:55:51:5551 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 9.476 ms[39m
+[35m[39m
+2022-03-23 20:57:53:5753 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 13.054 ms[39m
+[35m[39m
+2022-03-23 20:57:59:5759 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWjXfKbSjsnofEEZ6S2mzEPuqX-l5mrOK4HVTiQ5gQDpv6UfF8piokuUZsUj89qQOQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 200 1474 - 1161.944 ms[39m
+[35m[39m
+2022-03-23 21:05:58:558 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 16.104 ms[39m
+[35m[39m
+2022-03-23 21:06:05:65 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWi_z1HKhTX-siHor-L47viUB0a3IdivqIJvhLZhir13OkCQAZB1IWQ-Hds15mHW8w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 86 - 1140.785 ms[39m
+[35m[39m
+2022-03-23 21:06:07:67 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 5.275 ms[39m
+[35m[39m
+2022-03-23 21:09:36:936 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 8.088 ms[39m
+[35m[39m
+2022-03-23 21:09:42:942 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWg1ralQYTfw0qtG8Q0ecU3NIQ8zYPTrJrpIoyzwAjxG87hYb5K5kvdNw29ROWwxWQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 86 - 769.200 ms[39m
+[35m[39m
+2022-03-23 21:09:44:944 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 14.351 ms[39m
+[35m[39m
+2022-03-23 21:17:29:1729 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 14.568 ms[39m
+[35m[39m
+2022-03-23 21:17:36:1736 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWiYDwJTvwHvhQtQ8kFAXeqLPrZNhYytIEAzMVUqCW69_LqecYAZAJcwTXMiECShrQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 768.692 ms[39m
+[35m[39m
+2022-03-23 21:17:39:1739 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 8.933 ms[39m
+[35m[39m
+2022-03-23 21:19:34:1934 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 11.456 ms[39m
+[35m[39m
+2022-03-23 21:22:22:2222 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 13.413 ms[39m
+[35m[39m
+2022-03-23 21:22:29:2229 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWg_wjKO6GMrASqK_VSSgVT2hbqAZAAaQBwhKGGMhhyNXl5tKOxLorGyCch2kZi0Dw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 859.500 ms[39m
+[35m[39m
+2022-03-23 21:22:31:2231 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 8.540 ms[39m
+[35m[39m
+2022-03-23 21:23:59:2359 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 12.259 ms[39m
+[35m[39m
+2022-03-23 21:24:05:245 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWi-WAw2CMuuMYz5GBoOWZCHMeOw20uhTuaVaMGah_yXL2-_v0DVzlLJAlEUDCe6TA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 640.612 ms[39m
+[35m[39m
+2022-03-23 21:24:07:247 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 33.011 ms[39m
+[35m[39m
+2022-03-23 21:26:55:2655 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 8.015 ms[39m
+[35m[39m
+2022-03-23 21:27:02:272 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWhKdxs21FW_tlXFxGmN6Fq6MKMQ062-uV1lxYH94u5dcN6T0w8NqQYOPpDsZUr3Sg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 760.702 ms[39m
+[35m[39m
+2022-03-23 21:27:04:274 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 17.881 ms[39m
+[35m[39m
+2022-03-23 21:29:34:2934 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 54.962 ms[39m
+[35m[39m
+2022-03-23 21:30:05:305 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 24.230 ms[39m
+[35m[39m
+2022-03-23 21:31:47:3147 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 7.825 ms[39m
+[35m[39m
+2022-03-23 21:31:53:3153 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWhb43p8q1lSKCRhiU4_mGpruT7Qu-R1WopAbjG5nKHBIAOm4r-XjVRghSFN7V8hIw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 759.131 ms[39m
+[35m[39m
+2022-03-23 21:31:56:3156 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 21.972 ms[39m
+[35m[39m
+2022-03-23 21:32:00:320 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 5.117 ms[39m
+[35m[39m

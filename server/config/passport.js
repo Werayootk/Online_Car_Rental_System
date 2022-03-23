@@ -37,8 +37,9 @@ passport.use(
       clientID: process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com" ,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "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",
       callbackURL: `http://localhost:8000/user/google/callback`,
+      passReqToCallback: true,
     },
-    async function (accessToken, refreshToken, otherTokenDetails ,profile, done) {
+    async function (req, accessToken, refreshToken, otherTokenDetails ,profile, done) {
       try {
         console.log("user profile is: ", profile)      
         let token = {

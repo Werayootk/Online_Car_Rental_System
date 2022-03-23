@@ -7,6 +7,7 @@ const authenticateMiddleware = (req, res, next) => {
         const isLoggedIn = req.isAuthenticated() && req.user;
         if (isLoggedIn) {
             console.log('Social middleware');
+            
             next();
         } else {
             console.log('JWT middleware');

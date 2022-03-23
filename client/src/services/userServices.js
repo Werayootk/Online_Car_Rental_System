@@ -32,7 +32,7 @@ export class userService {
     }
 
     login_google_success() {
-        return axios.get(`${this.API_USER_PATH}/google/login/success`);
+        return axios.get(`${this.API_USER_PATH}/google/`); 
     }
 }
 

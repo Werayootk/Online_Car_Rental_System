@@ -11,7 +11,7 @@ exports.register = async (req, res, next) => {
   try {
     const {
       email,
-      password,
+      password, 
       first_name,
       last_name,
     } = req.body;

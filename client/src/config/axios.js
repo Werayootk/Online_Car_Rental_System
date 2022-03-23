@@ -7,7 +7,7 @@ axios.defaults.baseURL = "http://localhost:8000"
 
 axios.interceptors.request.use(
     (req) => {
-        if (req.url.includes('/login') || req.url.includes('/register')) {
+        if (req.url.includes('/login') || req.url.includes('/register') || req.url.includes('/google')) {
             return req;
         }
         const token = getToken();
