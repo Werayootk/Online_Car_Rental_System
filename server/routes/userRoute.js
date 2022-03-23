@@ -29,7 +29,7 @@ router.put("/edit-password", authenticateMiddleware, userController.editUserPass
 router.get('/google/callback', 
   passport.authenticate('google', {
     failureRedirect: 'user/login/failed',
-    successRedirect: CLIENT_URL,
+    successRedirect: '/user/google/login/success',
     session: true,
   })
 );
