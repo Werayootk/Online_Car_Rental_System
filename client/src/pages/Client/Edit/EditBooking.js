@@ -18,33 +18,6 @@ const EditBooking = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(3);
 
-  const getBookingList = async (value) => {
-    setSelectOption(value);
-    const params = `?booking_status=${value}&offset=${(currentPage-1)*pageSize}`;
-    setLoading(true);
-    setNoBooking(false);
-    await myBookingService
-      .getBookingList(params)
-      .then((res) => {
-        console.log(res.data);
-        console.log(res.data.data);
-        setBookingList(res.data.data);
-        setTotal(res.data.total);
-        const { total } = res.data;
-        console.log(total);
-        if (total === 0) {
-          setNoBooking(true);
-        }
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error(err);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  };
-
   const getMoreBookingList = async () => {
     const pageCurrent = Number(currentPage - 1);
     const params = `?booking_status=${selectOption}&offset=${pageCurrent*pageSize}`;
@@ -74,11 +47,7 @@ const EditBooking = () => {
 
   useEffect(() => {
     getMoreBookingList();
-  },[currentPage])
-
-  useEffect(() => {
-    getBookingList(selectOption);
-  }, [selectOption]);
+  },[currentPage, selectOption])
 
   return (
     <div className="editbook">
@@ -87,7 +56,7 @@ const EditBooking = () => {
         <Select
           defaultValue={"ชำระเงินแล้ว"}
           style={{ width: 360 }}
-          onChange={getBookingList}
+          onChange={setSelectOption}
         >
           <Option value={"ชำระเงินแล้ว"}>รอตรวจสอบ</Option>
           <Option value={"ตรวจสอบแล้ว"}>รอรับรถ</Option>

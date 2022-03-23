@@ -52,17 +52,11 @@ function App() {
         }}
       />
       <Route
-        exact
-        path="/"
-        render={() => {
-          return <Redirect to="/home" />;
-        }}
-      />
-      <Route
       exact
       path="/logout"
       render={() => {
         localStorageServices.removeToken();
+        localStorageServices.removeCookieToken();
         setRole(localStorageServices.getRole());
         dispatch(bookingActions.clearBookingState());
         dispatch(orderActions.clearOrderState());

@@ -11136,3 +11136,1167 @@
 [35m[39m
 2022-03-23 21:32:00:320 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 5.117 ms[39m
 [35m[39m
+2022-03-23 21:41:34:4134 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 101.716 ms[39m
+[35m[39m
+2022-03-23 21:48:47:4847 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 53.230 ms[39m
+[35m[39m
+2022-03-23 21:50:16:5016 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 40.552 ms[39m
+[35m[39m
+2022-03-23 21:51:16:5116 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 188.864 ms[39m
+[35m[39m
+2022-03-23 21:52:55:5255 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 23.860 ms[39m
+[35m[39m
+2022-03-23 21:53:45:5345 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 31.345 ms[39m
+[35m[39m
+2022-03-23 21:55:08:558 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 20.437 ms[39m
+[35m[39m
+2022-03-23 21:55:33:5533 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 30.723 ms[39m
+[35m[39m
+2022-03-23 21:56:22:5622 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 27.743 ms[39m
+[35m[39m
+2022-03-23 22:01:00:10 [35mhttp[39m: [35m::1 - - GET /search-car/location 200 22153 - 154.669 ms[39m
+[35m[39m
+2022-03-23 22:01:11:111 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 61.828 ms[39m
+[35m[39m
+2022-03-23 22:01:19:119 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWgAHOaVk1IUkRIK4IowF6SpX7Lt3rgdrJR-RTbwftq7Dl39fL4njXP0aBpexD6WXQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 1588.987 ms[39m
+[35m[39m
+2022-03-23 22:01:21:121 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 22.398 ms[39m
+[35m[39m
+2022-03-23 22:07:59:759 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 22.645 ms[39m
+[35m[39m
+2022-03-23 22:08:00:80 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 26 - 71.836 ms[39m
+[35m[39m
+2022-03-23 22:08:01:81 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.840 ms[39m
+[35m[39m
+2022-03-23 22:08:01:81 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.065 ms[39m
+[35m[39m
+2022-03-23 22:08:02:82 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.856 ms[39m
+[35m[39m
+2022-03-23 22:08:02:82 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 10.129 ms[39m
+[35m[39m
+2022-03-23 22:08:03:83 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.110 ms[39m
+[35m[39m
+2022-03-23 22:08:03:83 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.058 ms[39m
+[35m[39m
+2022-03-23 22:08:04:84 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 6.172 ms[39m
+[35m[39m
+2022-03-23 22:08:04:84 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 6.418 ms[39m
+[35m[39m
+2022-03-23 22:08:05:85 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.948 ms[39m
+[35m[39m
+2022-03-23 22:08:05:85 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.421 ms[39m
+[35m[39m
+2022-03-23 22:08:06:86 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.615 ms[39m
+[35m[39m
+2022-03-23 22:08:06:86 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.276 ms[39m
+[35m[39m
+2022-03-23 22:08:07:87 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.753 ms[39m
+[35m[39m
+2022-03-23 22:08:07:87 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.830 ms[39m
+[35m[39m
+2022-03-23 22:08:07:87 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.086 ms[39m
+[35m[39m
+2022-03-23 22:08:07:87 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.796 ms[39m
+[35m[39m
+2022-03-23 22:08:08:88 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.154 ms[39m
+[35m[39m
+2022-03-23 22:08:08:88 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.058 ms[39m
+[35m[39m
+2022-03-23 22:08:09:89 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.075 ms[39m
+[35m[39m
+2022-03-23 22:08:09:89 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.976 ms[39m
+[35m[39m
+2022-03-23 22:08:10:810 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.412 ms[39m
+[35m[39m
+2022-03-23 22:08:10:810 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.854 ms[39m
+[35m[39m
+2022-03-23 22:08:11:811 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.198 ms[39m
+[35m[39m
+2022-03-23 22:08:11:811 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.816 ms[39m
+[35m[39m
+2022-03-23 22:08:11:811 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.381 ms[39m
+[35m[39m
+2022-03-23 22:08:11:811 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.619 ms[39m
+[35m[39m
+2022-03-23 22:08:12:812 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.793 ms[39m
+[35m[39m
+2022-03-23 22:08:12:812 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.852 ms[39m
+[35m[39m
+2022-03-23 22:08:13:813 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.129 ms[39m
+[35m[39m
+2022-03-23 22:08:13:813 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 6.753 ms[39m
+[35m[39m
+2022-03-23 22:08:14:814 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.121 ms[39m
+[35m[39m
+2022-03-23 22:08:14:814 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.140 ms[39m
+[35m[39m
+2022-03-23 22:08:14:814 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.290 ms[39m
+[35m[39m
+2022-03-23 22:08:14:814 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.809 ms[39m
+[35m[39m
+2022-03-23 22:08:15:815 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.765 ms[39m
+[35m[39m
+2022-03-23 22:08:15:815 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 8.429 ms[39m
+[35m[39m
+2022-03-23 22:08:16:816 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.672 ms[39m
+[35m[39m
+2022-03-23 22:08:16:816 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.743 ms[39m
+[35m[39m
+2022-03-23 22:08:17:817 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.300 ms[39m
+[35m[39m
+2022-03-23 22:08:17:817 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.854 ms[39m
+[35m[39m
+2022-03-23 22:08:17:817 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.726 ms[39m
+[35m[39m
+2022-03-23 22:08:18:818 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.507 ms[39m
+[35m[39m
+2022-03-23 22:08:19:819 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.806 ms[39m
+[35m[39m
+2022-03-23 22:08:19:819 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.787 ms[39m
+[35m[39m
+2022-03-23 22:08:20:820 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 9.211 ms[39m
+[35m[39m
+2022-03-23 22:08:20:820 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 6.389 ms[39m
+[35m[39m
+2022-03-23 22:08:21:821 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 12.309 ms[39m
+[35m[39m
+2022-03-23 22:08:21:821 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 7.971 ms[39m
+[35m[39m
+2022-03-23 22:08:22:822 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.809 ms[39m
+[35m[39m
+2022-03-23 22:08:22:822 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.679 ms[39m
+[35m[39m
+2022-03-23 22:08:23:823 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.570 ms[39m
+[35m[39m
+2022-03-23 22:08:23:823 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.758 ms[39m
+[35m[39m
+2022-03-23 22:08:24:824 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.730 ms[39m
+[35m[39m
+2022-03-23 22:08:24:824 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.629 ms[39m
+[35m[39m
+2022-03-23 22:08:24:824 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.612 ms[39m
+[35m[39m
+2022-03-23 22:08:24:824 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.653 ms[39m
+[35m[39m
+2022-03-23 22:08:25:825 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.846 ms[39m
+[35m[39m
+2022-03-23 22:08:25:825 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.959 ms[39m
+[35m[39m
+2022-03-23 22:08:26:826 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 7.129 ms[39m
+[35m[39m
+2022-03-23 22:08:26:826 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.891 ms[39m
+[35m[39m
+2022-03-23 22:08:27:827 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.156 ms[39m
+[35m[39m
+2022-03-23 22:08:27:827 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.831 ms[39m
+[35m[39m
+2022-03-23 22:08:28:828 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.931 ms[39m
+[35m[39m
+2022-03-23 22:08:28:828 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.790 ms[39m
+[35m[39m
+2022-03-23 22:08:28:828 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.290 ms[39m
+[35m[39m
+2022-03-23 22:08:28:828 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.009 ms[39m
+[35m[39m
+2022-03-23 22:08:29:829 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.939 ms[39m
+[35m[39m
+2022-03-23 22:08:29:829 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.433 ms[39m
+[35m[39m
+2022-03-23 22:08:30:830 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.777 ms[39m
+[35m[39m
+2022-03-23 22:08:30:830 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.810 ms[39m
+[35m[39m
+2022-03-23 22:08:31:831 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.801 ms[39m
+[35m[39m
+2022-03-23 22:08:31:831 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.764 ms[39m
+[35m[39m
+2022-03-23 22:08:33:833 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.153 ms[39m
+[35m[39m
+2022-03-23 22:08:33:833 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.035 ms[39m
+[35m[39m
+2022-03-23 22:08:34:834 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.677 ms[39m
+[35m[39m
+2022-03-23 22:08:34:834 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.985 ms[39m
+[35m[39m
+2022-03-23 22:08:35:835 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 15.173 ms[39m
+[35m[39m
+2022-03-23 22:08:35:835 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 8.190 ms[39m
+[35m[39m
+2022-03-23 22:08:36:836 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.089 ms[39m
+[35m[39m
+2022-03-23 22:08:36:836 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.926 ms[39m
+[35m[39m
+2022-03-23 22:08:36:836 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.201 ms[39m
+[35m[39m
+2022-03-23 22:08:36:836 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.147 ms[39m
+[35m[39m
+2022-03-23 22:08:37:837 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.027 ms[39m
+[35m[39m
+2022-03-23 22:08:37:837 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.089 ms[39m
+[35m[39m
+2022-03-23 22:08:38:838 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.670 ms[39m
+[35m[39m
+2022-03-23 22:08:38:838 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.640 ms[39m
+[35m[39m
+2022-03-23 22:08:42:842 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.025 ms[39m
+[35m[39m
+2022-03-23 22:08:42:842 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.740 ms[39m
+[35m[39m
+2022-03-23 22:08:43:843 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.801 ms[39m
+[35m[39m
+2022-03-23 22:08:43:843 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.315 ms[39m
+[35m[39m
+2022-03-23 22:08:43:843 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 8.124 ms[39m
+[35m[39m
+2022-03-23 22:08:44:844 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.993 ms[39m
+[35m[39m
+2022-03-23 22:08:44:844 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.745 ms[39m
+[35m[39m
+2022-03-23 22:08:44:844 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.729 ms[39m
+[35m[39m
+2022-03-23 22:08:45:845 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.276 ms[39m
+[35m[39m
+2022-03-23 22:08:45:845 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.871 ms[39m
+[35m[39m
+2022-03-23 22:08:46:846 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.713 ms[39m
+[35m[39m
+2022-03-23 22:08:46:846 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.728 ms[39m
+[35m[39m
+2022-03-23 22:08:47:847 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.884 ms[39m
+[35m[39m
+2022-03-23 22:08:47:847 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.823 ms[39m
+[35m[39m
+2022-03-23 22:08:54:854 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 195.079 ms[39m
+[35m[39m
+2022-03-23 22:08:59:859 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 14.044 ms[39m
+[35m[39m
+2022-03-23 22:09:06:96 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 6.392 ms[39m
+[35m[39m
+2022-03-23 22:09:12:912 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWiFhiXtP90b4LG3pllmIpdz22X4g2ExatHk5W-UdO3-hpNksqjlVkxHustciVcNMA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 833.085 ms[39m
+[35m[39m
+2022-03-23 22:09:14:914 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 15.086 ms[39m
+[35m[39m
+2022-03-23 22:09:23:923 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 11.361 ms[39m
+[35m[39m
+2022-03-23 22:09:30:930 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 1.144 ms[39m
+[35m[39m
+2022-03-23 22:09:36:936 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWh1gfZC5kFcXIJJ9uNorIX_KWszhsd1O9hX9XTiDre5uW773wkWC9QG1J_Z-t8vvw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 302 88 - 664.843 ms[39m
+[35m[39m
+2022-03-23 22:09:37:937 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 9.716 ms[39m
+[35m[39m
+2022-03-23 22:10:08:108 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.666 ms[39m
+[35m[39m
+2022-03-23 22:10:08:108 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.742 ms[39m
+[35m[39m
+2022-03-23 22:10:09:109 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.838 ms[39m
+[35m[39m
+2022-03-23 22:10:10:1010 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.718 ms[39m
+[35m[39m
+2022-03-23 22:10:11:1011 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.037 ms[39m
+[35m[39m
+2022-03-23 22:10:11:1011 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.343 ms[39m
+[35m[39m
+2022-03-23 22:10:11:1011 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.117 ms[39m
+[35m[39m
+2022-03-23 22:10:11:1011 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.815 ms[39m
+[35m[39m
+2022-03-23 22:10:12:1012 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.876 ms[39m
+[35m[39m
+2022-03-23 22:10:12:1012 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.102 ms[39m
+[35m[39m
+2022-03-23 22:10:14:1014 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.211 ms[39m
+[35m[39m
+2022-03-23 22:10:14:1014 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.755 ms[39m
+[35m[39m
+2022-03-23 22:10:15:1015 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.472 ms[39m
+[35m[39m
+2022-03-23 22:10:15:1015 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.676 ms[39m
+[35m[39m
+2022-03-23 22:10:15:1015 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.644 ms[39m
+[35m[39m
+2022-03-23 22:10:15:1015 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.010 ms[39m
+[35m[39m
+2022-03-23 22:10:16:1016 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.612 ms[39m
+[35m[39m
+2022-03-23 22:10:16:1016 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.761 ms[39m
+[35m[39m
+2022-03-23 22:10:17:1017 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.025 ms[39m
+[35m[39m
+2022-03-23 22:10:17:1017 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.653 ms[39m
+[35m[39m
+2022-03-23 22:10:17:1017 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.994 ms[39m
+[35m[39m
+2022-03-23 22:10:18:1018 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.790 ms[39m
+[35m[39m
+2022-03-23 22:10:19:1019 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.904 ms[39m
+[35m[39m
+2022-03-23 22:10:21:1021 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.581 ms[39m
+[35m[39m
+2022-03-23 22:10:21:1021 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.209 ms[39m
+[35m[39m
+2022-03-23 22:10:23:1023 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.754 ms[39m
+[35m[39m
+2022-03-23 22:10:24:1024 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.906 ms[39m
+[35m[39m
+2022-03-23 22:10:26:1026 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.792 ms[39m
+[35m[39m
+2022-03-23 22:10:26:1026 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 - - - - ms[39m
+[35m[39m
+2022-03-23 22:10:27:1027 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.720 ms[39m
+[35m[39m
+2022-03-23 22:10:28:1028 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.613 ms[39m
+[35m[39m
+2022-03-23 22:10:29:1029 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.891 ms[39m
+[35m[39m
+2022-03-23 22:10:29:1029 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 3.383 ms[39m
+[35m[39m
+2022-03-23 22:10:30:1030 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.033 ms[39m
+[35m[39m
+2022-03-23 22:10:30:1030 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.254 ms[39m
+[35m[39m
+2022-03-23 22:10:32:1032 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.753 ms[39m
+[35m[39m
+2022-03-23 22:10:32:1032 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.156 ms[39m
+[35m[39m
+2022-03-23 22:10:33:1033 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.788 ms[39m
+[35m[39m
+2022-03-23 22:10:34:1034 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.635 ms[39m
+[35m[39m
+2022-03-23 22:10:35:1035 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.949 ms[39m
+[35m[39m
+2022-03-23 22:10:35:1035 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.703 ms[39m
+[35m[39m
+2022-03-23 22:10:37:1037 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.631 ms[39m
+[35m[39m
+2022-03-23 22:10:37:1037 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.810 ms[39m
+[35m[39m
+2022-03-23 22:10:38:1038 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.830 ms[39m
+[35m[39m
+2022-03-23 22:10:38:1038 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.835 ms[39m
+[35m[39m
+2022-03-23 22:10:40:1040 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.755 ms[39m
+[35m[39m
+2022-03-23 22:10:40:1040 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.993 ms[39m
+[35m[39m
+2022-03-23 22:10:43:1043 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.979 ms[39m
+[35m[39m
+2022-03-23 22:10:44:1044 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.792 ms[39m
+[35m[39m
+2022-03-23 22:10:46:1046 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.770 ms[39m
+[35m[39m
+2022-03-23 22:10:46:1046 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.873 ms[39m
+[35m[39m
+2022-03-23 22:10:48:1048 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.709 ms[39m
+[35m[39m
+2022-03-23 22:10:48:1048 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.595 ms[39m
+[35m[39m
+2022-03-23 22:10:50:1050 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.890 ms[39m
+[35m[39m
+2022-03-23 22:10:50:1050 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.897 ms[39m
+[35m[39m
+2022-03-23 22:10:53:1053 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 5.119 ms[39m
+[35m[39m
+2022-03-23 22:10:53:1053 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.131 ms[39m
+[35m[39m
+2022-03-23 22:10:56:1056 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.181 ms[39m
+[35m[39m
+2022-03-23 22:10:56:1056 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.903 ms[39m
+[35m[39m
+2022-03-23 22:10:58:1058 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 3.808 ms[39m
+[35m[39m
+2022-03-23 22:10:58:1058 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.042 ms[39m
+[35m[39m
+2022-03-23 22:11:00:110 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.712 ms[39m
+[35m[39m
+2022-03-23 22:11:00:110 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.073 ms[39m
+[35m[39m
+2022-03-23 22:11:02:112 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.446 ms[39m
+[35m[39m
+2022-03-23 22:11:03:113 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.841 ms[39m
+[35m[39m
+2022-03-23 22:11:06:116 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.788 ms[39m
+[35m[39m
+2022-03-23 22:11:06:116 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.157 ms[39m
+[35m[39m
+2022-03-23 22:11:07:117 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.250 ms[39m
+[35m[39m
+2022-03-23 22:11:08:118 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.498 ms[39m
+[35m[39m
+2022-03-23 22:11:09:119 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 4.909 ms[39m
+[35m[39m
+2022-03-23 22:11:09:119 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 4.907 ms[39m
+[35m[39m
+2022-03-23 22:11:11:1111 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.683 ms[39m
+[35m[39m
+2022-03-23 22:11:11:1111 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.761 ms[39m
+[35m[39m
+2022-03-23 22:11:12:1112 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 3.977 ms[39m
+[35m[39m
+2022-03-23 22:11:12:1112 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.844 ms[39m
+[35m[39m
+2022-03-23 22:11:14:1114 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.066 ms[39m
+[35m[39m
+2022-03-23 22:11:14:1114 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.085 ms[39m
+[35m[39m
+2022-03-23 22:11:15:1115 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.910 ms[39m
+[35m[39m
+2022-03-23 22:11:16:1116 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.735 ms[39m
+[35m[39m
+2022-03-23 22:11:17:1117 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.233 ms[39m
+[35m[39m
+2022-03-23 22:11:17:1117 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.957 ms[39m
+[35m[39m
+2022-03-23 22:11:19:1119 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.834 ms[39m
+[35m[39m
+2022-03-23 22:11:19:1119 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.089 ms[39m
+[35m[39m
+2022-03-23 22:11:21:1121 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.013 ms[39m
+[35m[39m
+2022-03-23 22:11:21:1121 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.226 ms[39m
+[35m[39m
+2022-03-23 22:11:23:1123 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.658 ms[39m
+[35m[39m
+2022-03-23 22:11:23:1123 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 7.986 ms[39m
+[35m[39m
+2022-03-23 22:11:25:1125 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.459 ms[39m
+[35m[39m
+2022-03-23 22:11:25:1125 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.260 ms[39m
+[35m[39m
+2022-03-23 22:11:27:1127 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.412 ms[39m
+[35m[39m
+2022-03-23 22:11:27:1127 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.486 ms[39m
+[35m[39m
+2022-03-23 22:12:11:1211 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.856 ms[39m
+[35m[39m
+2022-03-23 22:12:11:1211 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.022 ms[39m
+[35m[39m
+2022-03-23 22:12:12:1212 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.903 ms[39m
+[35m[39m
+2022-03-23 22:12:12:1212 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.783 ms[39m
+[35m[39m
+2022-03-23 22:12:13:1213 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.902 ms[39m
+[35m[39m
+2022-03-23 22:12:13:1213 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.702 ms[39m
+[35m[39m
+2022-03-23 22:12:14:1214 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 4.295 ms[39m
+[35m[39m
+2022-03-23 22:12:14:1214 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.221 ms[39m
+[35m[39m
+2022-03-23 22:12:15:1215 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.667 ms[39m
+[35m[39m
+2022-03-23 22:12:15:1215 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.612 ms[39m
+[35m[39m
+2022-03-23 22:12:15:1215 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.889 ms[39m
+[35m[39m
+2022-03-23 22:12:16:1216 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.645 ms[39m
+[35m[39m
+2022-03-23 22:12:16:1216 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.383 ms[39m
+[35m[39m
+2022-03-23 22:12:16:1216 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 1.946 ms[39m
+[35m[39m
+2022-03-23 22:12:17:1217 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.599 ms[39m
+[35m[39m
+2022-03-23 22:12:17:1217 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.697 ms[39m
+[35m[39m
+2022-03-23 22:12:18:1218 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.835 ms[39m
+[35m[39m
+2022-03-23 22:12:18:1218 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 23.909 ms[39m
+[35m[39m
+2022-03-23 22:12:18:1218 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 0.717 ms[39m
+[35m[39m
+2022-03-23 22:12:19:1219 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 401 26 - 2.088 ms[39m
+[35m[39m
+2022-03-23 22:12:20:1220 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 27.169 ms[39m
+[35m[39m
+2022-03-23 22:12:22:1222 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 39.335 ms[39m
+[35m[39m
+2022-03-23 22:13:04:134 [35mhttp[39m: [35m::1 - - OPTIONS /user/register 204 0 - 0.849 ms[39m
+[35m[39m
+2022-03-23 22:13:04:134 [35mhttp[39m: [35m::1 - - POST /user/register 201 65 - 207.136 ms[39m
+[35m[39m
+2022-03-23 22:13:29:1329 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 0.120 ms[39m
+[35m[39m
+2022-03-23 22:13:29:1329 [35mhttp[39m: [35m::1 - - POST /user/login 200 445 - 101.027 ms[39m
+[35m[39m
+2022-03-23 22:13:29:1329 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.114 ms[39m
+[35m[39m
+2022-03-23 22:13:29:1329 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 23.168 ms[39m
+[35m[39m
+2022-03-23 22:13:45:1345 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 0.129 ms[39m
+[35m[39m
+2022-03-23 22:13:45:1345 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 200 2159 - 212.837 ms[39m
+[35m[39m
+2022-03-23 22:13:45:1345 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 183.536 ms[39m
+[35m[39m
+2022-03-23 22:13:48:1348 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=4 204 0 - 0.141 ms[39m
+[35m[39m
+2022-03-23 22:13:48:1348 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=4 304 - - 43.859 ms[39m
+[35m[39m
+2022-03-23 22:13:52:1352 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=8 204 0 - 0.800 ms[39m
+[35m[39m
+2022-03-23 22:13:52:1352 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=8 304 - - 38.736 ms[39m
+[35m[39m
+2022-03-23 22:13:54:1354 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=12 204 0 - 0.263 ms[39m
+[35m[39m
+2022-03-23 22:13:54:1354 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=12 200 2758 - 17.491 ms[39m
+[35m[39m
+2022-03-23 22:14:01:141 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=16 204 0 - 0.126 ms[39m
+[35m[39m
+2022-03-23 22:14:01:141 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=16 200 2634 - 42.870 ms[39m
+[35m[39m
+2022-03-23 22:14:02:142 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=20 204 0 - 0.162 ms[39m
+[35m[39m
+2022-03-23 22:14:02:142 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=20 200 2883 - 24.536 ms[39m
+[35m[39m
+2022-03-23 22:14:04:144 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=desc&offset=0 204 0 - 0.226 ms[39m
+[35m[39m
+2022-03-23 22:14:04:144 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=desc&offset=0 200 3119 - 29.324 ms[39m
+[35m[39m
+2022-03-23 22:14:08:148 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=desc&offset=4 204 0 - 0.122 ms[39m
+[35m[39m
+2022-03-23 22:14:09:149 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=desc&offset=4 200 3108 - 20.543 ms[39m
+[35m[39m
+2022-03-23 22:14:14:1414 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small&sort_price=desc&offset=0 204 0 - 0.120 ms[39m
+[35m[39m
+2022-03-23 22:14:14:1414 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small&sort_price=desc&offset=0 200 2757 - 43.669 ms[39m
+[35m[39m
+2022-03-23 22:14:16:1416 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small&sort_price=desc&offset=4 204 0 - 0.120 ms[39m
+[35m[39m
+2022-03-23 22:14:16:1416 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small&sort_price=desc&offset=4 200 691 - 11.700 ms[39m
+[35m[39m
+2022-03-23 22:14:18:1418 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,medium&sort_price=desc&offset=0 204 0 - 0.109 ms[39m
+[35m[39m
+2022-03-23 22:14:18:1418 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,medium&sort_price=desc&offset=0 200 2407 - 66.486 ms[39m
+[35m[39m
+2022-03-23 22:14:20:1420 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,medium&sort_price=desc&offset=4 204 0 - 0.173 ms[39m
+[35m[39m
+2022-03-23 22:14:20:1420 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,medium&sort_price=desc&offset=4 200 3108 - 34.560 ms[39m
+[35m[39m
+2022-03-23 22:14:21:1421 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,medium&sort_price=desc&offset=8 204 0 - 0.119 ms[39m
+[35m[39m
+2022-03-23 22:14:21:1421 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,medium&sort_price=desc&offset=8 200 2639 - 37.765 ms[39m
+[35m[39m
+2022-03-23 22:14:24:1424 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium&sort_price=desc&offset=0 204 0 - 0.195 ms[39m
+[35m[39m
+2022-03-23 22:14:24:1424 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=desc&offset=0 200 2406 - 54.191 ms[39m
+[35m[39m
+2022-03-23 22:14:24:1424 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=desc&offset=0 204 0 - 0.101 ms[39m
+[35m[39m
+2022-03-23 22:14:25:1425 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=desc&offset=0 304 - - 38.025 ms[39m
+[35m[39m
+2022-03-23 22:14:29:1429 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small&sort_price=desc&offset=0 204 0 - 0.241 ms[39m
+[35m[39m
+2022-03-23 22:14:29:1429 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small&sort_price=desc&offset=0 304 - - 44.896 ms[39m
+[35m[39m
+2022-03-23 22:14:30:1430 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,hybrid&sort_price=desc&offset=0 204 0 - 0.097 ms[39m
+[35m[39m
+2022-03-23 22:14:30:1430 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,hybrid&sort_price=desc&offset=0 200 2877 - 46.208 ms[39m
+[35m[39m
+2022-03-23 22:14:31:1431 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=desc&offset=0 204 0 - 0.108 ms[39m
+[35m[39m
+2022-03-23 22:14:31:1431 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=desc&offset=0 304 - - 10.877 ms[39m
+[35m[39m
+2022-03-23 22:14:37:1437 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-detail/16 204 0 - 0.140 ms[39m
+[35m[39m
+2022-03-23 22:14:38:1438 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/16 200 766 - 67.820 ms[39m
+[35m[39m
+2022-03-23 22:15:54:1554 [35mhttp[39m: [35m::1 - - OPTIONS /payment/checkout-creditCard 204 0 - 1.381 ms[39m
+[35m[39m
+2022-03-23 22:15:56:1556 [35mhttp[39m: [35m::1 - - POST /payment/checkout-creditCard 500 79 - 1885.934 ms[39m
+[35m[39m
+2022-03-23 22:16:26:1626 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-detail/null 204 0 - 0.117 ms[39m
+[35m[39m
+2022-03-23 22:16:26:1626 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/null 500 52 - 128.853 ms[39m
+[35m[39m
+2022-03-23 22:16:58:1658 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.610 ms[39m
+[35m[39m
+2022-03-23 22:16:58:1658 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 19.210 ms[39m
+[35m[39m
+2022-03-23 22:17:12:1712 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 6.444 ms[39m
+[35m[39m
+2022-03-23 22:17:12:1712 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 101.775 ms[39m
+[35m[39m
+2022-03-23 22:17:12:1712 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 59.833 ms[39m
+[35m[39m
+2022-03-23 22:17:16:1716 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-detail/2 204 0 - 0.409 ms[39m
+[35m[39m
+2022-03-23 22:17:16:1716 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/2 304 - - 69.371 ms[39m
+[35m[39m
+2022-03-23 22:17:56:1756 [35mhttp[39m: [35m::1 - - OPTIONS /payment/checkout-creditCard 204 0 - 0.118 ms[39m
+[35m[39m
+2022-03-23 22:17:58:1758 [35mhttp[39m: [35m::1 - - POST /payment/checkout-creditCard 200 103 - 2200.181 ms[39m
+[35m[39m
+2022-03-23 22:18:01:181 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/create-booking 204 0 - 0.133 ms[39m
+[35m[39m
+2022-03-23 22:18:02:182 [35mhttp[39m: [35m::1 - - POST /search-car/create-booking 201 256 - 144.011 ms[39m
+[35m[39m
+2022-03-23 22:18:02:182 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/321648048681945 204 0 - 1.051 ms[39m
+[35m[39m
+2022-03-23 22:18:02:182 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/321648048681945 200 962 - 19.101 ms[39m
+[35m[39m
+2022-03-23 22:18:30:1830 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.112 ms[39m
+[35m[39m
+2022-03-23 22:18:30:1830 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 200 808 - 40.544 ms[39m
+[35m[39m
+2022-03-23 22:18:30:1830 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 23.621 ms[39m
+[35m[39m
+2022-03-23 22:18:32:1832 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.102 ms[39m
+[35m[39m
+2022-03-23 22:18:32:1832 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 45.459 ms[39m
+[35m[39m
+2022-03-23 22:18:32:1832 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 21.421 ms[39m
+[35m[39m
+2022-03-23 22:18:35:1835 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.101 ms[39m
+[35m[39m
+2022-03-23 22:18:35:1835 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 6.522 ms[39m
+[35m[39m
+2022-03-23 22:18:35:1835 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 12.610 ms[39m
+[35m[39m
+2022-03-23 22:18:37:1837 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81&offset=0 204 0 - 0.124 ms[39m
+[35m[39m
+2022-03-23 22:18:37:1837 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81&offset=0 500 32 - 8.700 ms[39m
+[35m[39m
+2022-03-23 22:18:37:1837 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81&offset=0 500 32 - 15.882 ms[39m
+[35m[39m
+2022-03-23 22:18:41:1841 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.112 ms[39m
+[35m[39m
+2022-03-23 22:18:41:1841 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 32.169 ms[39m
+[35m[39m
+2022-03-23 22:18:41:1841 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 9.738 ms[39m
+[35m[39m
+2022-03-23 22:18:44:1844 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.104 ms[39m
+[35m[39m
+2022-03-23 22:18:44:1844 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 67.755 ms[39m
+[35m[39m
+2022-03-23 22:18:44:1844 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 47.368 ms[39m
+[35m[39m
+2022-03-23 22:18:46:1846 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/321648048681945 204 0 - 0.092 ms[39m
+[35m[39m
+2022-03-23 22:18:46:1846 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/321648048681945 304 - - 10.852 ms[39m
+[35m[39m
+2022-03-23 22:18:51:1851 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.089 ms[39m
+[35m[39m
+2022-03-23 22:18:51:1851 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.080 ms[39m
+[35m[39m
+2022-03-23 22:18:51:1851 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 29.110 ms[39m
+[35m[39m
+2022-03-23 22:18:51:1851 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 8.242 ms[39m
+[35m[39m
+2022-03-23 22:18:59:1859 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.100 ms[39m
+[35m[39m
+2022-03-23 22:18:59:1859 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 10.658 ms[39m
+[35m[39m
+2022-03-23 22:18:59:1859 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 5.168 ms[39m
+[35m[39m
+2022-03-23 22:19:02:192 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.107 ms[39m
+[35m[39m
+2022-03-23 22:19:02:192 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 17.677 ms[39m
+[35m[39m
+2022-03-23 22:19:02:192 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 9.920 ms[39m
+[35m[39m
+2022-03-23 22:19:12:1912 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.095 ms[39m
+[35m[39m
+2022-03-23 22:19:12:1912 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 40.909 ms[39m
+[35m[39m
+2022-03-23 22:19:12:1912 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 99.896 ms[39m
+[35m[39m
+2022-03-23 22:19:16:1916 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.105 ms[39m
+[35m[39m
+2022-03-23 22:19:16:1916 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 16.796 ms[39m
+[35m[39m
+2022-03-23 22:19:16:1916 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 131.688 ms[39m
+[35m[39m
+2022-03-23 22:19:48:1948 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 17.445 ms[39m
+[35m[39m
+2022-03-23 22:19:54:1954 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 1.647 ms[39m
+[35m[39m
+2022-03-23 22:21:27:2127 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWhZ8MMZ8IYo8lUakIBmZj9v7UPJQonTLTQNwtk25gO3yySzt2Ug1FnKVqynz6NpQQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent 302 88 - 655.262 ms[39m
+[35m[39m
+2022-03-23 22:21:29:2129 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 12.841 ms[39m
+[35m[39m
+2022-03-23 22:24:56:2456 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 12.281 ms[39m
+[35m[39m
+2022-03-23 22:24:58:2458 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.783 ms[39m
+[35m[39m
+2022-03-23 22:24:59:2459 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.338 ms[39m
+[35m[39m
+2022-03-23 22:25:00:250 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.239 ms[39m
+[35m[39m
+2022-03-23 22:25:00:250 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.979 ms[39m
+[35m[39m
+2022-03-23 22:25:01:251 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.165 ms[39m
+[35m[39m
+2022-03-23 22:25:02:252 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.822 ms[39m
+[35m[39m
+2022-03-23 22:25:03:253 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.926 ms[39m
+[35m[39m
+2022-03-23 22:25:04:254 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.113 ms[39m
+[35m[39m
+2022-03-23 22:25:05:255 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.133 ms[39m
+[35m[39m
+2022-03-23 22:25:05:255 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.978 ms[39m
+[35m[39m
+2022-03-23 22:25:06:256 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.716 ms[39m
+[35m[39m
+2022-03-23 22:25:07:257 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.319 ms[39m
+[35m[39m
+2022-03-23 22:25:08:258 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.658 ms[39m
+[35m[39m
+2022-03-23 22:25:11:2511 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.740 ms[39m
+[35m[39m
+2022-03-23 22:25:13:2513 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 6.075 ms[39m
+[35m[39m
+2022-03-23 22:25:15:2515 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.910 ms[39m
+[35m[39m
+2022-03-23 22:25:24:2524 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 36.973 ms[39m
+[35m[39m
+2022-03-23 22:25:29:2529 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.494 ms[39m
+[35m[39m
+2022-03-23 22:25:30:2530 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.688 ms[39m
+[35m[39m
+2022-03-23 22:25:32:2532 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.275 ms[39m
+[35m[39m
+2022-03-23 22:25:33:2533 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.377 ms[39m
+[35m[39m
+2022-03-23 22:25:35:2535 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.749 ms[39m
+[35m[39m
+2022-03-23 22:25:36:2536 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.742 ms[39m
+[35m[39m
+2022-03-23 22:25:38:2538 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.891 ms[39m
+[35m[39m
+2022-03-23 22:25:39:2539 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.766 ms[39m
+[35m[39m
+2022-03-23 22:25:40:2540 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 24.770 ms[39m
+[35m[39m
+2022-03-23 22:25:41:2541 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.417 ms[39m
+[35m[39m
+2022-03-23 22:25:43:2543 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.853 ms[39m
+[35m[39m
+2022-03-23 22:25:44:2544 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 9.742 ms[39m
+[35m[39m
+2022-03-23 22:25:46:2546 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.157 ms[39m
+[35m[39m
+2022-03-23 22:25:48:2548 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.741 ms[39m
+[35m[39m
+2022-03-23 22:25:49:2549 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.516 ms[39m
+[35m[39m
+2022-03-23 22:25:51:2551 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.011 ms[39m
+[35m[39m
+2022-03-23 22:26:00:260 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.794 ms[39m
+[35m[39m
+2022-03-23 22:26:02:262 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.399 ms[39m
+[35m[39m
+2022-03-23 22:26:04:264 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.353 ms[39m
+[35m[39m
+2022-03-23 22:26:05:265 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.708 ms[39m
+[35m[39m
+2022-03-23 22:26:07:267 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.324 ms[39m
+[35m[39m
+2022-03-23 22:26:09:269 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.990 ms[39m
+[35m[39m
+2022-03-23 22:26:11:2611 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.478 ms[39m
+[35m[39m
+2022-03-23 22:26:12:2612 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.312 ms[39m
+[35m[39m
+2022-03-23 22:26:13:2613 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.936 ms[39m
+[35m[39m
+2022-03-23 22:26:14:2614 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.459 ms[39m
+[35m[39m
+2022-03-23 22:26:15:2615 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.385 ms[39m
+[35m[39m
+2022-03-23 22:26:16:2616 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.624 ms[39m
+[35m[39m
+2022-03-23 22:26:18:2618 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.561 ms[39m
+[35m[39m
+2022-03-23 22:26:19:2619 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.767 ms[39m
+[35m[39m
+2022-03-23 22:26:20:2620 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.733 ms[39m
+[35m[39m
+2022-03-23 22:26:21:2621 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.719 ms[39m
+[35m[39m
+2022-03-23 22:26:22:2622 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.571 ms[39m
+[35m[39m
+2022-03-23 22:26:22:2622 [35mhttp[39m: [35m::1 - - GET /search-car/location - - - - ms[39m
+[35m[39m
+2022-03-23 22:26:23:2623 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.717 ms[39m
+[35m[39m
+2022-03-23 22:26:24:2624 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.007 ms[39m
+[35m[39m
+2022-03-23 22:26:25:2625 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.003 ms[39m
+[35m[39m
+2022-03-23 22:26:27:2627 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.753 ms[39m
+[35m[39m
+2022-03-23 22:26:29:2629 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.846 ms[39m
+[35m[39m
+2022-03-23 22:26:31:2631 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.974 ms[39m
+[35m[39m
+2022-03-23 22:26:32:2632 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.933 ms[39m
+[35m[39m
+2022-03-23 22:26:34:2634 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.983 ms[39m
+[35m[39m
+2022-03-23 22:26:35:2635 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.801 ms[39m
+[35m[39m
+2022-03-23 22:26:37:2637 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.044 ms[39m
+[35m[39m
+2022-03-23 22:26:39:2639 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.308 ms[39m
+[35m[39m
+2022-03-23 22:26:40:2640 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.158 ms[39m
+[35m[39m
+2022-03-23 22:26:41:2641 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.179 ms[39m
+[35m[39m
+2022-03-23 22:26:42:2642 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.732 ms[39m
+[35m[39m
+2022-03-23 22:26:43:2643 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.385 ms[39m
+[35m[39m
+2022-03-23 22:26:44:2644 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.471 ms[39m
+[35m[39m
+2022-03-23 22:26:46:2646 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.743 ms[39m
+[35m[39m
+2022-03-23 22:26:47:2647 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.563 ms[39m
+[35m[39m
+2022-03-23 22:26:48:2648 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.035 ms[39m
+[35m[39m
+2022-03-23 22:26:50:2650 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.341 ms[39m
+[35m[39m
+2022-03-23 22:26:50:2650 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.250 ms[39m
+[35m[39m
+2022-03-23 22:26:52:2652 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.825 ms[39m
+[35m[39m
+2022-03-23 22:26:53:2653 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.950 ms[39m
+[35m[39m
+2022-03-23 22:26:55:2655 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.131 ms[39m
+[35m[39m
+2022-03-23 22:26:56:2656 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 8.257 ms[39m
+[35m[39m
+2022-03-23 22:26:58:2658 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.001 ms[39m
+[35m[39m
+2022-03-23 22:27:00:270 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.548 ms[39m
+[35m[39m
+2022-03-23 22:27:01:271 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.956 ms[39m
+[35m[39m
+2022-03-23 22:27:04:274 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.758 ms[39m
+[35m[39m
+2022-03-23 22:27:05:275 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.783 ms[39m
+[35m[39m
+2022-03-23 22:27:06:276 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.819 ms[39m
+[35m[39m
+2022-03-23 22:27:07:277 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 7.902 ms[39m
+[35m[39m
+2022-03-23 22:27:08:278 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.058 ms[39m
+[35m[39m
+2022-03-23 22:27:09:279 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.473 ms[39m
+[35m[39m
+2022-03-23 22:27:09:279 [35mhttp[39m: [35m::1 - - GET /search-car/location 200 22153 - 28.602 ms[39m
+[35m[39m
+2022-03-23 22:29:05:295 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 8.912 ms[39m
+[35m[39m
+2022-03-23 22:29:07:297 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.897 ms[39m
+[35m[39m
+2022-03-23 22:29:08:298 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.243 ms[39m
+[35m[39m
+2022-03-23 22:29:09:299 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 10.173 ms[39m
+[35m[39m
+2022-03-23 22:29:10:2910 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.833 ms[39m
+[35m[39m
+2022-03-23 22:29:11:2911 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.795 ms[39m
+[35m[39m
+2022-03-23 22:29:11:2911 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.912 ms[39m
+[35m[39m
+2022-03-23 22:29:12:2912 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.533 ms[39m
+[35m[39m
+2022-03-23 22:29:13:2913 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.808 ms[39m
+[35m[39m
+2022-03-23 22:29:14:2914 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.732 ms[39m
+[35m[39m
+2022-03-23 22:29:14:2914 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.189 ms[39m
+[35m[39m
+2022-03-23 22:29:15:2915 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.938 ms[39m
+[35m[39m
+2022-03-23 22:29:16:2916 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.646 ms[39m
+[35m[39m
+2022-03-23 22:29:17:2917 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.700 ms[39m
+[35m[39m
+2022-03-23 22:29:18:2918 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.250 ms[39m
+[35m[39m
+2022-03-23 22:29:19:2919 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.722 ms[39m
+[35m[39m
+2022-03-23 22:29:20:2920 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.439 ms[39m
+[35m[39m
+2022-03-23 22:29:21:2921 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.996 ms[39m
+[35m[39m
+2022-03-23 22:29:21:2921 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.829 ms[39m
+[35m[39m
+2022-03-23 22:29:22:2922 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.083 ms[39m
+[35m[39m
+2022-03-23 22:29:23:2923 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 6.487 ms[39m
+[35m[39m
+2022-03-23 22:29:24:2924 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.161 ms[39m
+[35m[39m
+2022-03-23 22:29:25:2925 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.278 ms[39m
+[35m[39m
+2022-03-23 22:29:26:2926 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.990 ms[39m
+[35m[39m
+2022-03-23 22:29:26:2926 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.840 ms[39m
+[35m[39m
+2022-03-23 22:29:27:2927 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.853 ms[39m
+[35m[39m
+2022-03-23 22:29:28:2928 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 12.139 ms[39m
+[35m[39m
+2022-03-23 22:29:29:2929 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.491 ms[39m
+[35m[39m
+2022-03-23 22:29:29:2929 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.843 ms[39m
+[35m[39m
+2022-03-23 22:29:30:2930 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.408 ms[39m
+[35m[39m
+2022-03-23 22:29:31:2931 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.795 ms[39m
+[35m[39m
+2022-03-23 22:29:34:2934 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.975 ms[39m
+[35m[39m
+2022-03-23 22:29:36:2936 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.714 ms[39m
+[35m[39m
+2022-03-23 22:29:38:2938 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.475 ms[39m
+[35m[39m
+2022-03-23 22:29:38:2938 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 9.209 ms[39m
+[35m[39m
+2022-03-23 22:29:41:2941 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.900 ms[39m
+[35m[39m
+2022-03-23 22:29:43:2943 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.209 ms[39m
+[35m[39m
+2022-03-23 22:29:44:2944 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.861 ms[39m
+[35m[39m
+2022-03-23 22:29:45:2945 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.025 ms[39m
+[35m[39m
+2022-03-23 22:29:47:2947 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.797 ms[39m
+[35m[39m
+2022-03-23 22:29:48:2948 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.719 ms[39m
+[35m[39m
+2022-03-23 22:29:49:2949 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.508 ms[39m
+[35m[39m
+2022-03-23 22:29:49:2949 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.612 ms[39m
+[35m[39m
+2022-03-23 22:29:50:2950 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.796 ms[39m
+[35m[39m
+2022-03-23 22:29:51:2951 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.050 ms[39m
+[35m[39m
+2022-03-23 22:29:53:2953 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.992 ms[39m
+[35m[39m
+2022-03-23 22:29:54:2954 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.491 ms[39m
+[35m[39m
+2022-03-23 22:29:55:2955 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 6.820 ms[39m
+[35m[39m
+2022-03-23 22:29:55:2955 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.695 ms[39m
+[35m[39m
+2022-03-23 22:29:56:2956 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.849 ms[39m
+[35m[39m
+2022-03-23 22:29:57:2957 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.927 ms[39m
+[35m[39m
+2022-03-23 22:29:58:2958 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.771 ms[39m
+[35m[39m
+2022-03-23 22:29:58:2958 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.834 ms[39m
+[35m[39m
+2022-03-23 22:30:01:301 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.834 ms[39m
+[35m[39m
+2022-03-23 22:30:03:303 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.973 ms[39m
+[35m[39m
+2022-03-23 22:30:04:304 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.704 ms[39m
+[35m[39m
+2022-03-23 22:30:05:305 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.895 ms[39m
+[35m[39m
+2022-03-23 22:30:07:307 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.019 ms[39m
+[35m[39m
+2022-03-23 22:30:08:308 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.078 ms[39m
+[35m[39m
+2022-03-23 22:30:09:309 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 10.600 ms[39m
+[35m[39m
+2022-03-23 22:30:10:3010 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.073 ms[39m
+[35m[39m
+2022-03-23 22:30:11:3011 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.828 ms[39m
+[35m[39m
+2022-03-23 22:30:12:3012 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.928 ms[39m
+[35m[39m
+2022-03-23 22:30:13:3013 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.824 ms[39m
+[35m[39m
+2022-03-23 22:30:14:3014 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.417 ms[39m
+[35m[39m
+2022-03-23 22:30:15:3015 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.300 ms[39m
+[35m[39m
+2022-03-23 22:30:17:3017 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.172 ms[39m
+[35m[39m
+2022-03-23 22:30:18:3018 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.707 ms[39m
+[35m[39m
+2022-03-23 22:30:19:3019 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.777 ms[39m
+[35m[39m
+2022-03-23 22:30:22:3022 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 2.566 ms[39m
+[35m[39m
+2022-03-23 22:30:23:3023 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.077 ms[39m
+[35m[39m
+2022-03-23 22:30:24:3024 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.136 ms[39m
+[35m[39m
+2022-03-23 22:30:25:3025 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.958 ms[39m
+[35m[39m
+2022-03-23 22:30:26:3026 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.856 ms[39m
+[35m[39m
+2022-03-23 22:30:27:3027 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.616 ms[39m
+[35m[39m
+2022-03-23 22:30:28:3028 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 8.428 ms[39m
+[35m[39m
+2022-03-23 22:30:29:3029 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.336 ms[39m
+[35m[39m
+2022-03-23 22:30:31:3031 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.343 ms[39m
+[35m[39m
+2022-03-23 22:30:32:3032 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.676 ms[39m
+[35m[39m
+2022-03-23 22:30:34:3034 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.837 ms[39m
+[35m[39m
+2022-03-23 22:30:35:3035 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 3.188 ms[39m
+[35m[39m
+2022-03-23 22:30:37:3037 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.947 ms[39m
+[35m[39m
+2022-03-23 22:30:39:3039 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.816 ms[39m
+[35m[39m
+2022-03-23 22:30:44:3044 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.422 ms[39m
+[35m[39m
+2022-03-23 22:30:46:3046 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.545 ms[39m
+[35m[39m
+2022-03-23 22:30:48:3048 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.846 ms[39m
+[35m[39m
+2022-03-23 22:30:50:3050 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.066 ms[39m
+[35m[39m
+2022-03-23 22:30:52:3052 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.890 ms[39m
+[35m[39m
+2022-03-23 22:30:53:3053 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 8.789 ms[39m
+[35m[39m
+2022-03-23 22:30:55:3055 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.159 ms[39m
+[35m[39m
+2022-03-23 22:30:57:3057 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.234 ms[39m
+[35m[39m
+2022-03-23 22:30:58:3058 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.974 ms[39m
+[35m[39m
+2022-03-23 22:31:00:310 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.189 ms[39m
+[35m[39m
+2022-03-23 22:31:01:311 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 5.050 ms[39m
+[35m[39m
+2022-03-23 22:31:03:313 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.365 ms[39m
+[35m[39m
+2022-03-23 22:31:04:314 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.860 ms[39m
+[35m[39m
+2022-03-23 22:31:06:316 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 4.134 ms[39m
+[35m[39m
+2022-03-23 22:31:08:318 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.872 ms[39m
+[35m[39m
+2022-03-23 22:31:09:319 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.829 ms[39m
+[35m[39m
+2022-03-23 22:31:11:3111 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.138 ms[39m
+[35m[39m
+2022-03-23 22:31:13:3113 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.908 ms[39m
+[35m[39m
+2022-03-23 22:31:16:3116 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 1.407 ms[39m
+[35m[39m
+2022-03-23 22:31:18:3118 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.811 ms[39m
+[35m[39m
+2022-03-23 22:31:19:3119 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.908 ms[39m
+[35m[39m
+2022-03-23 22:31:21:3121 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.900 ms[39m
+[35m[39m
+2022-03-23 22:31:22:3122 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.865 ms[39m
+[35m[39m
+2022-03-23 22:31:24:3124 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 401 26 - 0.831 ms[39m
+[35m[39m
+2022-03-23 22:32:20:3220 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 45.077 ms[39m
+[35m[39m
+2022-03-23 22:32:39:3239 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 0.209 ms[39m
+[35m[39m
+2022-03-23 22:32:39:3239 [35mhttp[39m: [35m::1 - - POST /user/login 200 445 - 152.250 ms[39m
+[35m[39m
+2022-03-23 22:32:39:3239 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.143 ms[39m
+[35m[39m
+2022-03-23 22:32:39:3239 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 43.262 ms[39m
+[35m[39m
+2022-03-23 22:32:46:3246 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.103 ms[39m
+[35m[39m
+2022-03-23 22:32:46:3246 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 46.391 ms[39m
+[35m[39m
+2022-03-23 22:32:49:3249 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.284 ms[39m
+[35m[39m
+2022-03-23 22:32:49:3249 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 15.551 ms[39m
+[35m[39m
+2022-03-23 22:32:52:3252 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.095 ms[39m
+[35m[39m
+2022-03-23 22:32:52:3252 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 29.324 ms[39m
+[35m[39m
+2022-03-23 22:33:00:330 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 1.114 ms[39m
+[35m[39m
+2022-03-23 22:33:00:330 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 304 - - 23.461 ms[39m
+[35m[39m
+2022-03-23 22:33:03:333 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.107 ms[39m
+[35m[39m
+2022-03-23 22:33:03:333 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 11.170 ms[39m
+[35m[39m
+2022-03-23 22:33:24:3324 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/321648048681945 204 0 - 0.342 ms[39m
+[35m[39m
+2022-03-23 22:33:24:3324 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/321648048681945 304 - - 62.640 ms[39m
+[35m[39m
+2022-03-23 22:33:26:3326 [35mhttp[39m: [35m::1 - - OPTIONS /booking/cancel-booking/321648048681945 204 0 - 0.115 ms[39m
+[35m[39m
+2022-03-23 22:33:26:3326 [35mhttp[39m: [35m::1 - - PATCH /booking/cancel-booking/321648048681945 201 89 - 46.664 ms[39m
+[35m[39m
+2022-03-23 22:33:33:3333 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/321648048681945 204 0 - 0.140 ms[39m
+[35m[39m
+2022-03-23 22:33:34:3334 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/321648048681945 200 944 - 59.580 ms[39m
+[35m[39m
+2022-03-23 22:33:38:3338 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.111 ms[39m
+[35m[39m
+2022-03-23 22:33:38:3338 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 4.698 ms[39m
+[35m[39m
+2022-03-23 22:33:41:3341 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81&offset=0 204 0 - 0.092 ms[39m
+[35m[39m
+2022-03-23 22:33:41:3341 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81&offset=0 200 790 - 17.832 ms[39m
+[35m[39m
+2022-03-23 22:34:09:349 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.093 ms[39m
+[35m[39m
+2022-03-23 22:34:09:349 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 20.998 ms[39m
+[35m[39m
+2022-03-23 22:34:29:3429 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 78.420 ms[39m
+[35m[39m
+2022-03-23 22:39:02:392 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 145.862 ms[39m
+[35m[39m
+2022-03-23 22:39:12:3912 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 5.788 ms[39m
+[35m[39m
+2022-03-23 22:39:18:3918 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWg8xOPjYv11NRMTlb3XXabRJeDumtCpoalTvJKFwrDm-eQ9X9w9wfINYQti6_0ugQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent 302 88 - 641.116 ms[39m
+[35m[39m
+2022-03-23 22:39:20:3920 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.397 ms[39m
+[35m[39m
+2022-03-23 22:39:20:3920 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 10.660 ms[39m
+[35m[39m
+2022-03-23 22:39:24:3924 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.123 ms[39m
+[35m[39m
+2022-03-23 22:39:24:3924 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 35.767 ms[39m
+[35m[39m
+2022-03-23 22:39:41:3941 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.188 ms[39m
+[35m[39m
+2022-03-23 22:39:41:3941 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 27.660 ms[39m
+[35m[39m
+2022-03-23 22:40:02:402 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 0.232 ms[39m
+[35m[39m
+2022-03-23 22:40:02:402 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 88.001 ms[39m
+[35m[39m
+2022-03-23 22:40:02:402 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 89.070 ms[39m
+[35m[39m
+2022-03-23 22:40:10:4010 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-detail/3 204 0 - 0.602 ms[39m
+[35m[39m
+2022-03-23 22:40:10:4010 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/3 304 - - 133.168 ms[39m
+[35m[39m
+2022-03-23 22:40:55:4055 [35mhttp[39m: [35m::1 - - OPTIONS /payment/checkout-creditCard 204 0 - 0.134 ms[39m
+[35m[39m
+2022-03-23 22:40:57:4057 [35mhttp[39m: [35m::1 - - POST /payment/checkout-creditCard 200 103 - 2315.763 ms[39m
+[35m[39m
+2022-03-23 22:41:00:410 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/create-booking 204 0 - 0.135 ms[39m
+[35m[39m
+2022-03-23 22:41:00:410 [35mhttp[39m: [35m::1 - - POST /search-car/create-booking 201 256 - 50.776 ms[39m
+[35m[39m
+2022-03-23 22:41:00:410 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/431648050060657 204 0 - 0.424 ms[39m
+[35m[39m
+2022-03-23 22:41:00:410 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/431648050060657 200 1265 - 61.979 ms[39m
+[35m[39m
+2022-03-23 22:41:17:4117 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 43.713 ms[39m
+[35m[39m

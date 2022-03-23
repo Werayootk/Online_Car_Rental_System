@@ -73,10 +73,11 @@ router.get('/google/callback',
 router.get('/facebook/callback', 
   passport.authenticate('facebook', {
     failureRedirect: '/login/failed',
-    successRedirect: '/login/success',
+    //successRedirect: '/login/success',
     session: true,
   }), 
   (req, res) => {
+    
     console.log('Facebook called us back!');
   }
 );
