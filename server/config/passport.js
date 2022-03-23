@@ -38,12 +38,15 @@ passport.use(
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "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",
       callbackURL: `http://localhost:8000/user/google/callback`,
     },
-    async function (accessToken, refreshToken, profile, done) {
+    async function (accessToken, refreshToken, otherTokenDetails ,profile, done) {
       try {
         console.log("user profile is: ", profile)      
         let token = {
           access_token: accessToken,
           refresh_token: refreshToken,
+          scope: otherTokenDetails.scope,
+          token_type: otherTokenDetails.token_type,
+          expiry_date:otherTokenDetails.expires_in
         }
         console.log("token is: ", token)      
         const email = profile._json.email;
