@@ -12306,3 +12306,17 @@
 [35m[39m
 2022-03-24 09:29:16:2916 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 158.003 ms[39m
 [35m[39m
+2022-03-24 18:13:01:131 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 709.557 ms[39m
+[35m[39m
+2022-03-24 18:13:19:1319 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 0.684 ms[39m
+[35m[39m
+2022-03-24 18:13:19:1319 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 18.537 ms[39m
+[35m[39m
+2022-03-24 18:15:19:1519 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 386.559 ms[39m
+[35m[39m
+2022-03-24 18:15:20:1520 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQBpmUx9ljAKZecpqidUIqWmlIRUKtsbQsveDwo9jK5jQCoSWRYQ-S04BXQfR2yWA9B1rPmXRzsxwAckq7p4sPLmoiVEDuT4xNMUBNwAyCqaTKGcHGBqKrgAHdZ8W7-o1eknkO_koRlA-Y5_RfsT1Oix3BF1mVqUHDvhKZBtyiYem4Y3BJi2jxESCjJnPutU_3ufdL2GsLQIZyiQ-nIKm45Gv1J3HMfNfGuNQ1_pHktiAXduiep73ZgmRtAOKhhzBx3mePLTLyqdqnigEHpff5pfw0FRHqTDvI2a1Y3Ia02AkyY8gqvQFuOb16GHTjKuptki7z-l-0lFcRYWg24ZsBa-2y0jK9jpgX4sRmWvgXn2ZYYTjh_tuy_grPam7n6WXxo 500 145 - 727.577 ms[39m
+[35m[39m
+2022-03-24 18:22:49:2249 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 248.700 ms[39m
+[35m[39m
+2022-03-24 18:27:15:2715 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 107.166 ms[39m
+[35m[39m

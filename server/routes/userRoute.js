@@ -65,7 +65,7 @@ router.get('/google/callback',
       res.cookie('Authorization', token, {
         maxAge: 24 * 60 * 60 * 1000 // 24 hours, // Lifetime
       })
-      return res.redirect(CLIENT_URL);;
+      return res.redirect(CLIENT_URL);
     }
   }
 );
@@ -78,6 +78,7 @@ router.get('/facebook/callback',
   }), 
   async (req, res) => {
     console.log('User face -->', req.user);
+    return res.redirect(CLIENT_URL);
   }
 );
 

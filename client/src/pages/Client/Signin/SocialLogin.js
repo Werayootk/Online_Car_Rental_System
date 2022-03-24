@@ -72,6 +72,10 @@ const SocialLogin = () => {
         </a>
       </div>
       <div className="facebook-signup">
+      <a
+          style={{ color: "white", textDecoration: "none" , border: "none", cursor:"pointer"}}
+          href="http://localhost:8000/user/facebook"
+        >
         <Facebook_Logo />
         Facebook
         <FacebookLogin
@@ -80,6 +84,7 @@ const SocialLogin = () => {
           scope='public_profile, email'
           callback={signinWithFaceBook}
         />
+        </a>
       </div>
     </div>
   );
