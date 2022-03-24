@@ -56,34 +56,39 @@ const SocialLogin = () => {
   return (
     <div className="signup-buttons">
       <div className="google-signup" onClick={signinWithGoogle}>
-        <a
+      <a
           style={{ color: "white", textDecoration: "none" , border: "none", cursor:"pointer"}}
           href="http://localhost:8000/user/google"
         >
-          <Google_Logo />
           <GoogleLogin
             clientId={process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com"} 
-            buttonText="Google"
             onSuccess={signinWithGoogle}
             onFailure={signinWithGoogle}
             cookiePolicy={"single_host_origin"}
-            style={{ border: "none", cursor:"pointer"}}
-          />
+            className="btnGoogle"
+            icon={<Google_Logo style={{ marginLeft: 
+              '5px' }}/>}
+          >
+            <span>&nbsp;&nbsp;Google</span> 
+            </GoogleLogin>
         </a>
       </div>
-      <div className="facebook-signup">
+      <div className="facebook-signup" onClick={signinWithFaceBook}>
       <a
           style={{ color: "white", textDecoration: "none" , border: "none", cursor:"pointer"}}
           href="http://localhost:8000/user/facebook"
         >
-        <Facebook_Logo />
-        Facebook
         <FacebookLogin
           appId={process.env.FACEBOOK_APP_ID || "691743551857593"}
           fields='name,email'
           scope='public_profile, email'
           callback={signinWithFaceBook}
-        />
+          cssClass="btnFacebook"
+          icon={<Facebook_Logo style={{ marginLeft: 
+            '5px' }} />}
+          textButton = "&nbsp;&nbsp;Facebook"                                                                
+          />
+        
         </a>
       </div>
     </div>

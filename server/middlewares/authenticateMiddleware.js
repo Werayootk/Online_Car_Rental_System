@@ -7,6 +7,7 @@ const authenticateMiddleware = (req, res, next) => {
         const isLoggedIn = req.isAuthenticated() && req.user;
         if (isLoggedIn) {
             console.log('Social middleware');
+            
             passport.authenticate('jwt', { session: false, }, async (error, token) => {
                 if (error || !token) {
                     res.status(401).json({ message: 'Unauthorized' });
