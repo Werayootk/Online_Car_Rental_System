@@ -72,7 +72,7 @@ router.get('/google/callback',
 
 router.get('/facebook/callback', 
   passport.authenticate('facebook', {
-    failureRedirect: '/login/failed',
+    failureRedirect: CLIENT_URL,
     //successRedirect: '/login/success',
     session: true,
   }), 

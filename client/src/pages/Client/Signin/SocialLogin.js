@@ -62,7 +62,7 @@ const SocialLogin = () => {
         >
           <Google_Logo />
           <GoogleLogin
-            clientId={process.env.GOOGLE_CLIENT_ID} 
+            clientId={process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com"} 
             buttonText="Google"
             onSuccess={signinWithGoogle}
             onFailure={signinWithGoogle}
@@ -75,7 +75,7 @@ const SocialLogin = () => {
         <Facebook_Logo />
         Facebook
         <FacebookLogin
-          appId={process.env.FACEBOOK_APP_ID}
+          appId={process.env.FACEBOOK_APP_ID || "691743551857593"}
           fields='name,email'
           scope='public_profile, email'
           callback={signinWithFaceBook}

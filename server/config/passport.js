@@ -41,38 +41,10 @@ passport.use(
     },
     async function (req, accessToken, refreshToken, otherTokenDetails ,profile, done) {
       try {
-        console.log("user profile is: ", profile)      
-        let token = {
-          access_token: accessToken,
-          refresh_token: refreshToken,
-          scope: otherTokenDetails.scope,
-          token_type: otherTokenDetails.token_type,
-          expiry_date:otherTokenDetails.expires_in
-        }
-        console.log("token is: ", token)      
-        const email = profile._json.email;
-        const existUser = await User.findOne({
-          where: {
-            email: {
-              [Op.eq]: email,
-            },
-          },
-         });
-        if (existUser) {
+        console.log("user profile face book is: ", profile)      
+        
          done(null, profile);
-        } else {
-          console.log('not found email');
-          const hashedPassword = await bcrypt.hash(profile.id, 10);
-          await User.create({
-            social_id: profile.id,
-            email: email,
-            first_name: profile.name.givenName,
-            last_name: profile.name.familyName,
-            password: hashedPassword,
-            role:"user"
-          });
-         done(null, profile);
-         }
+       
       } catch (err) {
         done(err, false);
       }
@@ -86,9 +58,10 @@ passport.use(
       clientID: process.env.FACEBOOK_APP_ID,
       clientSecret: process.env.FACEBOOK_APP_SECRET,
       callbackURL: `user/facebook/callback`,
-      profileFields: ['id', 'displayName', 'email', 'first_name', 'middle_name', 'last_name']
+      profileFields: ['id', 'displayName', 'email', 'first_name', 'middle_name', 'last_name'],
+      passReqToCallback: true,
     },
-    async function (accessToken, refreshToken, profile, done) {
+    async function (req, accessToken, refreshToken, profile, done) {
       try {
         const emailUser = profile.emails[0].value;
         const existUser = await User.findOne({

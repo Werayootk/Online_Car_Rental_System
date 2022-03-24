@@ -106,13 +106,13 @@ const BookingReserving = () => {
                   setResBooking(res.data);
                   const { booking_no, booking_status, bill_status } = res.data
                   const params = `?booking_no=${booking_no}&booking_status=${booking_status}&bill_status=${bill_status}`;
-                  setLoading(false);
                   notification.success({
                     message: res.data.message,
                   });
                   history.push(`/search-car-verify${params}`);
                 })
-            }, 3000);
+              }, 3000);
+              setLoading(false);
             } else {
               notification.error({
                 message: "ชำระเงินไม่สำเร็จกรุณาลองใหม่อีกครั้ง",
@@ -176,124 +176,130 @@ const BookingReserving = () => {
 
   return (
     <div className="center-form-Book">    
-      <div className="contact_form_wrapper">
-        <p className="form_title">รายละเอียดของผู้ขับรถ</p>
-        <Form name="submitBooking" onFinish={onSubmitBooking}>
-          <div className="form-group">
-            <Item
-              name="first_name"
-              label="ชื่อจริง"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your First-Name!",
-                },
-              ]}
-            >
-              <Input
-                placeholder={"ชื่อ"}
-              />
-            </Item>
-          </div>
-          <div className="form-group">
-            <Item
-              name="last_name"
-              label="นามสกุล"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your Last-Name!",
-                },
-              ]}
-            >
-              <Input
-                placeholder={"นามสกุล"}
-              />
-            </Item>
-          </div>
-          <div className="form-group">
-            <Item
-              name="email"
-              label="อีเมล"
-              rules={[
-                {
-                  type: "email",
-                  message: "The input is not valid E-mail!",
-                },
-                {
-                  required: true,
-                  message: "Please input your Email!",
-                },
-              ]}
-            >
-              <Input
-                placeholder={"E-mail"}
-              />
-            </Item>
-          </div>
-          <div className="form-group">
-            <Item
-              name="phone_number"
-              label="หมายเลขโทรศัพทฺ์"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your phone number!",
-                },
-                {
-                  min: 10,
-                  message: "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก",
-                },
-              ]}
-              hasFeedback
-            >
-              <Input
-                placeholder={
-                  "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก"
-                }
-              />
-            </Item>
-          </div>
-          <div className="radio-form">
-            <Item
-              name="radio-group"
-              rules={[
-                {
-                  required: true,
-                  message: "กรุณาเลือกวิธีชำระเงิน",
-                },
-              ]}
-            >
-              <Radio.Group onChange={onChangePayment} value={selectPayment}>
-                <Radio value={1}>
-                  <CreditCardOutlined style={{ fontSize: "150%" }} />{" "}
-                  ชำระผ่านบัตรเครดิต
-                </Radio>
-                <Radio value={2}>
-                  <BankOutlined style={{ fontSize: "150%" }} />{" "}
-                  ชำระโอนผ่านธนาคาร
-                </Radio>
-              </Radio.Group>
-            </Item>
-          </div>
-          <div className="submit_button_wrapper_reserve">
-            <div className="button_box_reserve">
-              <Item>
-                <Script
-                  url="https://cdn.omise.co/omise.js"
-                  onLoad={handleLoadScript}
+      {loading ? (
+        <div className="car_spin">
+          <Spin size="large" />
+        </div>
+      ) : (
+        <div className="contact_form_wrapper">
+          <p className="form_title">รายละเอียดของผู้ขับรถ</p>
+          <Form name="submitBooking" onFinish={onSubmitBooking}>
+            <div className="form-group">
+              <Item
+                name="first_name"
+                label="ชื่อจริง"
+                rules={[
+                  {
+                    required: true,
+                    message: "Please input your First-Name!",
+                  },
+                ]}
+              >
+                <Input
+                  placeholder={"ชื่อ"}
                 />
+              </Item>
+            </div>
+            <div className="form-group">
+              <Item
+                name="last_name"
+                label="นามสกุล"
+                rules={[
+                  {
+                    required: true,
+                    message: "Please input your Last-Name!",
+                  },
+                ]}
+              >
+                <Input
+                  placeholder={"นามสกุล"}
+                />
+              </Item>
+            </div>
+            <div className="form-group">
+              <Item
+                name="email"
+                label="อีเมล"
+                rules={[
+                  {
+                    type: "email",
+                    message: "The input is not valid E-mail!",
+                  },
+                  {
+                    required: true,
+                    message: "Please input your Email!",
+                  },
+                ]}
+              >
+                <Input
+                  placeholder={"E-mail"}
+                />
+              </Item>
+            </div>
+            <div className="form-group">
+              <Item
+                name="phone_number"
+                label="หมายเลขโทรศัพทฺ์"
+                rules={[
+                  {
+                    required: true,
+                    message: "Please input your phone number!",
+                  },
+                  {
+                    min: 10,
+                    message: "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก",
+                  },
+                ]}
+                hasFeedback
+              >
+                <Input
+                  placeholder={
+                    "กรุณากรอกหมายเลขโทรศัพท์มือถือ 10 หลัก"
+                  }
+                />
+              </Item>
+            </div>
+            <div className="radio-form">
+              <Item
+                name="radio-group"
+                rules={[
+                  {
+                    required: true,
+                    message: "กรุณาเลือกวิธีชำระเงิน",
+                  },
+                ]}
+              >
+                <Radio.Group onChange={onChangePayment} value={selectPayment}>
+                  <Radio value={1}>
+                    <CreditCardOutlined style={{ fontSize: "150%" }} />{" "}
+                    ชำระผ่านบัตรเครดิต
+                  </Radio>
+                  <Radio value={2}>
+                    <BankOutlined style={{ fontSize: "150%" }} />{" "}
+                    ชำระโอนผ่านธนาคาร
+                  </Radio>
+                </Radio.Group>
+              </Item>
+            </div>
+            <div className="submit_button_wrapper_reserve">
+              <div className="button_box_reserve">
+                <Item>
+                  <Script
+                    url="https://cdn.omise.co/omise.js"
+                    onLoad={handleLoadScript}
+                  />
                   <Button type="primary" htmlType="submit" size={700} id={selectPayment === 1 ? "credit-card" : "internet-banking"}>
                     ทำการจองรถ
                   </Button>
-              </Item>
-              <Link to="/search-car-book">
-                <Button size={500}>ย้อนกลับ</Button>
-              </Link>
+                </Item>
+                <Link to="/search-car-book">
+                  <Button size={500}>ย้อนกลับ</Button>
+                </Link>
+              </div>
             </div>
-          </div>
-        </Form>
-      </div>
+          </Form>
+        </div>
+      )}
     </div>
   );
 };

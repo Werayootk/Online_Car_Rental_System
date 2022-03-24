@@ -1,4 +1,3 @@
-const { data } = require("cheerio/lib/api/attributes");
 const { Op } = require("sequelize");
 const db = require("../models");
 class FilterLocation {
