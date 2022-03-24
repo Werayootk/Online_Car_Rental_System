@@ -1,0 +1,84 @@
+2022-03-24 21:20:33:2033 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 2.463 ms[39m
+[35m[39m
+2022-03-24 21:20:33:2033 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 46.236 ms[39m
+[35m[39m
+2022-03-24 21:20:33:2033 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 74.297 ms[39m
+[35m[39m
+2022-03-24 21:20:34:2034 [35mhttp[39m: [35m::1 - - GET /facebook/callback?code=AQA6Kxo6Tc2GY0pGZjPkBngsxMQ4A7uncXUc1H1z3EtytwGEg8YnZjgg5irVQ90F03qEMJt0vno_H6DT_JFekp3e5ggppMnFPdHbmbL9ywcfIdtYriPOgtlVfMkMOOYPTbrnYYt5b-koDWitk01K8yL9M5r15bBX_FGZDP2gVtDDMu3Q5PPYP-iz60hVDEIj54GzLTh28hDRFciato6CC84CKezmI8wnRB6MJS4gdQRROke3lZ4DyoGMuvFMj2WWdUBl6cBXKZwMqnJNH1uKuNiyO49YBvqivFKYNhRGPtW4etvRAI6HImkiWStznyiWU5BbCgr_GlSEW08AyPBuVX4WE3shB1mxMc2hiOQlYrE9QrZHIZQzygUI9kXA6s9ffaI 404 47 - 3.129 ms[39m
+[35m[39m
+2022-03-24 21:21:18:2118 [35mhttp[39m: [35m::1 - - GET /facebook/callback?code=AQA6Kxo6Tc2GY0pGZjPkBngsxMQ4A7uncXUc1H1z3EtytwGEg8YnZjgg5irVQ90F03qEMJt0vno_H6DT_JFekp3e5ggppMnFPdHbmbL9ywcfIdtYriPOgtlVfMkMOOYPTbrnYYt5b-koDWitk01K8yL9M5r15bBX_FGZDP2gVtDDMu3Q5PPYP-iz60hVDEIj54GzLTh28hDRFciato6CC84CKezmI8wnRB6MJS4gdQRROke3lZ4DyoGMuvFMj2WWdUBl6cBXKZwMqnJNH1uKuNiyO49YBvqivFKYNhRGPtW4etvRAI6HImkiWStznyiWU5BbCgr_GlSEW08AyPBuVX4WE3shB1mxMc2hiOQlYrE9QrZHIZQzygUI9kXA6s9ffaI 404 47 - 20.176 ms[39m
+[35m[39m
+2022-03-24 21:21:21:2121 [35mhttp[39m: [35m::1 - - GET /facebook/callback?code=AQA6Kxo6Tc2GY0pGZjPkBngsxMQ4A7uncXUc1H1z3EtytwGEg8YnZjgg5irVQ90F03qEMJt0vno_H6DT_JFekp3e5ggppMnFPdHbmbL9ywcfIdtYriPOgtlVfMkMOOYPTbrnYYt5b-koDWitk01K8yL9M5r15bBX_FGZDP2gVtDDMu3Q5PPYP-iz60hVDEIj54GzLTh28hDRFciato6CC84CKezmI8wnRB6MJS4gdQRROke3lZ4DyoGMuvFMj2WWdUBl6cBXKZwMqnJNH1uKuNiyO49YBvqivFKYNhRGPtW4etvRAI6HImkiWStznyiWU5BbCgr_GlSEW08AyPBuVX4WE3shB1mxMc2hiOQlYrE9QrZHIZQzygUI9kXA6s9ffaI 404 47 - 1.257 ms[39m
+[35m[39m
+2022-03-24 21:21:27:2127 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 576.164 ms[39m
+[35m[39m
+2022-03-24 21:21:30:2130 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 0.537 ms[39m
+[35m[39m
+2022-03-24 21:21:30:2130 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 66.421 ms[39m
+[35m[39m
+2022-03-24 21:21:30:2130 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 3.602 ms[39m
+[35m[39m
+2022-03-24 21:21:31:2131 [35mhttp[39m: [35m::1 - - GET /auth/facebook/callback?code=AQBW1tWZXcsAmkUJ-R_XgkWYVlct9Z0diYVWeSR-yILYLIAbvXagEQwo3s4Q6HqViXA5mKbeH95qLcZy7Asvm1mbN9fGp0OyzTeQIrk1bDdXyn40D0KTBQzge1vH_cnvVJFBXnUdvJmTi3gnEk67zusT4mtwuuiJzdqzTj-k0IRNwiZgPKC1q1_ihUTcu-kok2ThFP1NakfG2PIsYdYrj4V_BQmscPiZC2umYGDNsO7MpSxhJiWOziSDcx3D8mSi6ctpScX__OwA7AJpJA4AIzni9bJVOSDyUACMk9emcvPJfAGKyVzVNvmbAHD67UIareTrYg4bJ5_wWNjIExElrXu84nq7CMMICZteIvrBsphQQUZXhOdoD-Xu-Wi8n968gcM 404 47 - 7.540 ms[39m
+[35m[39m
+2022-03-24 21:22:13:2213 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 89.546 ms[39m
+[35m[39m
+2022-03-24 21:22:19:2219 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 0.856 ms[39m
+[35m[39m
+2022-03-24 21:22:19:2219 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 58.003 ms[39m
+[35m[39m
+2022-03-24 21:22:19:2219 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 4.881 ms[39m
+[35m[39m
+2022-03-24 21:22:21:2221 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 1.599 ms[39m
+[35m[39m
+2022-03-24 21:22:22:2222 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQBAhpEu79rk6mvfNk6XF0l6uiSbb3H3V-U6JzUQQ5gQC7CwxBZSh_WhW84tI3s-wp5pvNXf9DIfLEM2MsO3pL6g1XVUCNqc4awioVqwGke3nO0pmtApDRV4o4VnXjsjKv1oBvfIDlEJu60EIhmX9BCZifKNogWYuAqH2EiD7tf2h26ObBx-Qlmm6lmJb1TneudGa7O6mvh2o46wBDg4YSEVBZJuwv3rHyEzpwp7WWGUxIj1JXRd_233loAwmIMb1UveEVyJ-nWPcubfbnbnlUNGqg0EZ5nlsdnTN2jd44D88O4TLTmVeTRkv9JMdYFJ2FCjfpYPrDfb1T5gkAbBm4_Ef9Z13HhRay-HIZuv1IR5zbJbL-83TaKWyScB0baPYnk 302 88 - 1508.566 ms[39m
+[35m[39m
+2022-03-24 21:22:23:2223 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 47.729 ms[39m
+[35m[39m
+2022-03-24 21:27:34:2734 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 1.095 ms[39m
+[35m[39m
+2022-03-24 21:27:34:2734 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 43.204 ms[39m
+[35m[39m
+2022-03-24 21:27:34:2734 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 6.089 ms[39m
+[35m[39m
+2022-03-24 21:27:37:2737 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 6.049 ms[39m
+[35m[39m
+2022-03-24 21:27:37:2737 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQA9Sb8xGm-jAYku88wRdk_-jH_L2-KO2qYzuJ1h3ij1xKZMMU7VwX3lhiNvoGdITKO_snWWvjUsMg4rUlxiiommVzGmrtu9SFw0VHFcAmKFroVLGSiTO7YowdTLxfe0ABpDH784PMFbO6grADTw9sM6xk8X2dChzU9uNHd_BVtDkpAnB7Y9bvF2dr1HygJB2QMjfT9jLhMwuWL0Mg6_MciJCIPgTqyHkZwLjBSFtglnWMDNsNkLitoA_FyPF8MA9qWtSrZtSg3Dgflv6DcRa6eh_IgejfCFQuSVBTux87nmN3JsqoAbrGf5TwLY-LEQ16mole5hfH4maXUnya7Y84jNCKaX7gfqVPgxT9iLoEyhjIz41yAYE_20FwOIXCvioNE 500 42 - 1508.888 ms[39m
+[35m[39m
+2022-03-24 21:28:00:280 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 20.784 ms[39m
+[35m[39m
+2022-03-24 21:28:40:2840 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 0.929 ms[39m
+[35m[39m
+2022-03-24 21:28:40:2840 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 3.412 ms[39m
+[35m[39m
+2022-03-24 21:28:40:2840 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 12.240 ms[39m
+[35m[39m
+2022-03-24 21:29:28:2928 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQCbYo4EerzfnAyPXHGnVGLufDMM7e1harvI9Z_Fv24Q11VL3ilH-aowT3z7e8JtoDV8penv-hZ1IjuGwlJv-UZbdW7zCypN9VEMFMXMUcty8AW9FnnHZmdmNlKWMTfg3IhA-pHLs3b6Wu5k9SSy_00eLqf-iWiD1JNAbF9vHcyiN7z8eN348JWREK4fgkjZMn9O9GPECklv47RliKICdtUDoHY7yFoyoNY6c_eLb0FdPomEdFpHofdWFvBHixDiDAS65KJfxD8LErp3YHwKpfLOUaF27N9ouvqePZBdYYKkV95Ewq1y-RQXY_wr8j4iyV7l0AY1JvFi4c1JyjiyE-7tmwq8yLkjJMijYDe96kRwA2hCXXgEZlWZFLw8bO7TTX8 302 88 - 1435.667 ms[39m
+[35m[39m
+2022-03-24 21:29:30:2930 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.149 ms[39m
+[35m[39m
+2022-03-24 21:29:30:2930 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 10.553 ms[39m
+[35m[39m
+2022-03-24 21:30:30:3030 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 39.021 ms[39m
+[35m[39m
+2022-03-24 21:30:35:3035 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 4.654 ms[39m
+[35m[39m
+2022-03-24 21:30:35:3035 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 1.607 ms[39m
+[35m[39m
+2022-03-24 21:30:35:3035 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 2.102 ms[39m
+[35m[39m
+2022-03-24 21:30:36:3036 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 0.735 ms[39m
+[35m[39m
+2022-03-24 21:30:36:3036 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQCMrDsmXYIkwoH0MVmWtiu9QrGwcN6khulCvof9ZJC7nJChQdf7R7B0xOfSBQYxtzpaLQ1TK3a4FhwIrXtNQuXpgIzesTour-HgL5WxRjcWpXfY_ez67iGO4BQLKLfJbZJGFKlP1SbZWXZAOtYfagwvfwmMdpKUxLgYUQ8vmVqhIf4qrXxF7108pMBPESD2BSg5XiVyS_fwXFmLncaJnWVjw7j3V8dTKbNByoB1q9INgtmt-sbU6UIKs3SWAS3OFrev8Tyej-k7a-BNVOt6zMCryRANLsbx1BqK1dK2lPBzDHc2F2MXNu_j1FJMkTmewiUWd7ukUJp-aFKRr-l_0XRUnw41iD_Z1D5IVMggShkLcpBwi--kq3hbvsMB5b_BQM0 302 88 - 1118.568 ms[39m
+[35m[39m
+2022-03-24 21:30:38:3038 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.155 ms[39m
+[35m[39m
+2022-03-24 21:30:38:3038 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 9.272 ms[39m
+[35m[39m
+2022-03-24 21:30:46:3046 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.125 ms[39m
+[35m[39m
+2022-03-24 21:30:46:3046 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 55.125 ms[39m
+[35m[39m
+2022-03-24 21:30:49:3049 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.130 ms[39m
+[35m[39m
+2022-03-24 21:30:49:3049 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 8.084 ms[39m
+[35m[39m

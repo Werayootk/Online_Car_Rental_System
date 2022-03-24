@@ -77,8 +77,27 @@ router.get('/facebook/callback',
     session: true,
   }), 
   async (req, res) => {
-    console.log('User face -->', req.user);
-    return res.redirect(CLIENT_URL);
+    console.log('User facebook -->', req.user);
+    const user = req.user
+    if (req.user) {
+      let existUser;
+      existUser = await User.findOne({ where: {email: req.user.emails[0].value}})
+      const payload = {
+        id: existUser.id,
+        social_id: req.user.id,
+        first_name: req.user.name.givenName,
+        last_name: req.user.name.familyName,
+        email: req.user.emails[0].value,
+        role: "user"
+      };
+      const token = jwt.sign(payload, process.env.JWT_SECRET_KEY, {
+        expiresIn: 60 * 60 * 24 * 30
+      });  
+      res.cookie('Authorization', token, {
+        maxAge: 24 * 60 * 60 * 1000 // 24 hours, // Lifetime
+      })
+      return res.redirect(CLIENT_URL);
+    }
   }
 );
 

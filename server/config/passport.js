@@ -85,15 +85,37 @@ passport.use(
     {
       clientID: process.env.FACEBOOK_APP_ID,
       clientSecret: process.env.FACEBOOK_APP_SECRET,
-      callbackURL: `user/facebook/callback`,
+      callbackURL: `http://localhost:8000/user/facebook/callback`,
       profileFields: ['id', 'displayName', 'email', 'first_name', 'middle_name', 'last_name'],
       passReqToCallback: true,
     },
     async function (req, accessToken, refreshToken, profile, done) {
-      try {
-        console.log("user profile facebook is: ", profile)      
-          done(null, profile)
-      } catch (err) {
+      try{
+        console.log("user profile facebook is: ", profile)        
+        const email = profile._json.email;
+        const existUser = await User.findOne({
+          where: {
+            email: {
+              [Op.eq]: email,
+            },
+          },
+         });
+        if (existUser) {
+         done(null, profile);
+        } else {
+          console.log('not found email');
+          const hashedPassword = await bcrypt.hash(profile.id, 10);
+          await User.create({
+            social_id: profile.id,
+            email: email,
+            first_name: profile.name.givenName,
+            last_name: profile.name.familyName,
+            password: hashedPassword,
+            role:"user"
+          });
+         done(null, profile);
+         }
+        } catch (err) {
         done(err, false);
       }
     }
