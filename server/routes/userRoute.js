@@ -76,9 +76,8 @@ router.get('/facebook/callback',
     //successRedirect: '/login/success',
     session: true,
   }), 
-  (req, res) => {
-    
-    console.log('Facebook called us back!');
+  async (req, res) => {
+    console.log('User face -->', req.user);
   }
 );
 

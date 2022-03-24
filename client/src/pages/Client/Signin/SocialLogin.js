@@ -7,6 +7,7 @@ import userService from "../../../services/userServices";
 import localStorageServices from "../../../services/localStorageUserServices";
 import { notification } from "antd";
 import GoogleLogin from "react-google-login";
+import FacebookLogin from 'react-facebook-login';
 import axios from "axios";
 
 const { setToken } = localStorageServices;
@@ -35,9 +36,21 @@ const SocialLogin = () => {
       data: {
         user,
       },
-    }).then(res => {
-        console.log(res);
-    });
+    })
+  };
+
+  const signinWithFaceBook = async (response) => {
+    console.log('Res -->', response)
+    const { name, email, accessToken, userID } = response
+    const user = { name, email, accessToken, userId: userID }
+
+    await axios({
+      method: 'post',
+      url: 'http://localhost:8000/user/facebook',
+      data: {
+        user,
+      },
+    })
   };
 
   return (
@@ -49,7 +62,7 @@ const SocialLogin = () => {
         >
           <Google_Logo />
           <GoogleLogin
-            clientId={process.env.GOOGLE_CLIENT_ID}
+            clientId={process.env.GOOGLE_CLIENT_ID} 
             buttonText="Google"
             onSuccess={signinWithGoogle}
             onFailure={signinWithGoogle}
@@ -61,6 +74,12 @@ const SocialLogin = () => {
       <div className="facebook-signup">
         <Facebook_Logo />
         Facebook
+        <FacebookLogin
+          appId={process.env.FACEBOOK_APP_ID}
+          fields='name,email'
+          scope='public_profile, email'
+          callback={signinWithFaceBook}
+        />
       </div>
     </div>
   );
