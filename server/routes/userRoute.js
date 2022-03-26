@@ -20,6 +20,7 @@ router.put("/update-password", authController.updatePassword);
 
 //router.get("/google", passport.authenticate("google", { scope: ["https://www.googleapis.com/auth/userinfo.email","https://www.googleapis.com/auth/userinfo.profile"] }));
 router.get("/google", passport.authenticate("google", { scope: ["profile", "email"], }));
+//router.post("/google", passport.authenticate("google", { scope: ["profile", "email"], }));
 router.get("/facebook", passport.authenticate("facebook"));
 router.get("/google/login/success", authenticateMiddleware,userController.getSocialUserLogin);
 router.get("/google/user/login/failed", userController.getSocialUserFail);

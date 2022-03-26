@@ -4,17 +4,21 @@ import localStorageServices from '../services/localStorageUserServices'
 const { getToken, removeToken, getCookieToken, removeCookieToken } = localStorageServices;
 
 axios.defaults.baseURL = "http://localhost:8000"
+//axios.defaults.headers = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',}
 
 axios.interceptors.request.use(
     (req) => {
         if (req.url.includes('/login') || req.url.includes('/register') || req.url.includes('/google')) {
+           // req.headers['Access-Control-Allow-Origin'] = "*"
             return req;
         }
         const token = getToken();
         const token_cookies = getCookieToken();
         if (token) {
+            //req.headers['Access-Control-Allow-Origin'] = "*"
             req.headers['Authorization'] = `Bearer ${token}`;           
-        }else if (token_cookies) {
+        } else if (token_cookies) {
+            //req.headers['Access-Control-Allow-Origin'] = "*"
             req.headers['Authorization'] = `Bearer ${token_cookies}`;           
         }
         return req;

@@ -19,7 +19,9 @@ const morganMiddleware = require("./middlewares/morganMiddleware");
 const app = express();
 app.use(morganMiddleware);
 
-app.use(cors());
+app.use(cors({
+  origin: "*",
+}));
 app.use(helmet());
 
 app.use(cookieSession({

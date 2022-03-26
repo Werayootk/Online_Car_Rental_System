@@ -103,7 +103,7 @@ const Main = () => {
                           {getLocation.data?.map((item) => {
                             return (
                                 <TreeNode
-                                key={item.id + Date.now()}
+                                key={item.id+uuidv4()}
                                 title={item.location}
                                 value={item.location}
                               >
