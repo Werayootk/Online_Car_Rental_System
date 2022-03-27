@@ -130,7 +130,7 @@ const ResponsibilityElement = () => {
             <Column key="id" dataIndex="id" title="ID" />
             <Column
               key="action"
-              title="ดูรายละเอียด"
+              title="แก้ไขรายละเอียด"
               render={(dataSource, index) => (
                 <span
                   className="customer-table-action-icon"

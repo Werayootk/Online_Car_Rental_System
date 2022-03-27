@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './Location.scss';
 import { Col, Row, Modal, Button, Form, Input, notification, Select } from 'antd';
 import { FileTextOutlined } from '@ant-design/icons';
-
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import SearchFilterLocation from './SearchFilterLocation';
 import Table from "../../../components/Table/Table";
 
@@ -24,12 +24,28 @@ const ResponsibilityLocationElement = (props) => {
   const [tableLoading, setTableLoading] = useState(false);
   const [dataSource, setDataSource] = useState();
   const [dataModal, setDataModal] = useState();
+  const [dataLocation, setDataLocation] = useState();
 
   const filterOptions = [...LOCATION_FILTER_OPTIONS];
   const isModalVisible = !!dataModal;
 
   const onClickEditLocation = (data, index) => {
     setDataModal(data);
+  };
+
+  const onClickDeleteLocation = async (data, index) => {
+    console.log(data);
+    setTableLoading(true);
+    await adminService.deleteLocationById(data.id).then(res => {
+      setDataLocation(res.data);
+      notification.success({
+        message: res.data.message
+      })
+    }).catch(err => {
+      console.error(err);
+    }).finally(() => { 
+      setTableLoading(false);
+    })
   };
 
   const fetchDataLocation = async () => {
@@ -75,6 +91,7 @@ const ResponsibilityLocationElement = (props) => {
       location: values.location,
     }
     await adminService.updateLocationById(dataModal.id, modifyLocation).then(res => {
+      setDataLocation(res.data);
       notification.success({
         message: res.data.message
       })
@@ -88,7 +105,7 @@ const ResponsibilityLocationElement = (props) => {
 
   useEffect(() => {
     fetchDataLocation();
-  }, [filterOption, searchInput, currentPage]);
+  }, [filterOption, searchInput, currentPage, dataLocation]);
 
   return (
       <>    
@@ -135,6 +152,17 @@ const ResponsibilityLocationElement = (props) => {
                 onClick={onClickEditLocation.bind(this, dataSource, index)}          
                 >
                     <FileTextOutlined className="clickable" />
+                </span>
+              )}
+            />
+             <Column
+              key="action"
+              title="ลบสถานที่"
+              render={(dataSource, index) => (
+                <span className="location-table-action-icon"
+                onClick={onClickDeleteLocation.bind(this, dataSource, index)}          
+                >
+                    <DeleteOutlineIcon className="clickable" />
                 </span>
               )}
             />

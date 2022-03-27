@@ -196,7 +196,7 @@ const ResponsibilityOrderElement = (props) => {
             />
             <Column
               key="action"
-              title="ดูรายละเอียด"
+              title="แก้ไขรายละเอียด"
               render={(dataSource, index) => (
                 <span
                   className="order-table-action-icon"

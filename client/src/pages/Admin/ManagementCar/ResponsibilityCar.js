@@ -135,7 +135,7 @@ const ResponsibilityCarElement = (props) => {
           <Column key="car_price" title="ราคาเช่าต่อวัน" dataIndex="car_price"/>
           <Column
             key="action"
-            title="ดูรายละเอียด"
+            title="แก้ไขรายละเอียด"
             render={(dataSource, index) => (
               <span className="car-table-action-icon"
               onClick={onClickEditCar.bind(this, dataSource, index)}

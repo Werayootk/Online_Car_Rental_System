@@ -129,7 +129,7 @@ exports.addLocation = async (req, res, next) => {
       location,
     });
 
-    res.status(201).json({ message: "location created" });
+    res.status(201).json({ message: "นำเข้าสถานที่เรียบร้อยแล้ว" });
   } catch (err) {
     next(err);
   }
@@ -186,7 +186,7 @@ exports.deleteLocationById = async (req, res, next) => {
     }
 
     await dataLocation.destroy();
-    res.status(204).json({ message: "this location was deleted" });
+    res.status(204).json({ message: "ลบสถานที่เรียบร้อยร้อย" });
   } catch (err) {
     next(err);
   }
