@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Order.scss";
-import { Col, Row, Modal, Button, Form, Input, notification } from "antd";
+import { Col, Row, Modal, Button, Form, Input, notification, Select } from "antd";
 import { FileTextOutlined } from "@ant-design/icons";
 
 import SearchFilterOrder from "./SearchFilterOrder";
@@ -13,6 +13,7 @@ import { fetchOrderData } from "../../../storage/reducers/orderActions";
 
 const { Column } = Table;
 const { Item } = Form;
+const { Option } = Select;
 
 const ResponsibilityOrderElement = (props) => {
   const [form] = Form.useForm();
@@ -79,7 +80,7 @@ const ResponsibilityOrderElement = (props) => {
 
   const onFinish = async (values) => {
     setLoading(true);
-    //console.log(values, dataModal);
+    console.log(values, dataModal);
     const modifyOrder = {
       return_location: values.return_location,
       refund: values.refund,
@@ -117,7 +118,7 @@ const ResponsibilityOrderElement = (props) => {
       { name: ['end_datetime'], value: orderThis[0].end_datetime },
       // { name: ['end_datetime'], value: moment(orderThis[0].end_datetime).format("DD-MM-YYYY hh:mm:ss") },
       { name: ['refund'], value: orderThis[0].refund },
-      { name: ['booking_status'], value: orderThis[0].booking_status },
+      // { name: ['booking_status'], value: orderThis[0].booking_status },
     ]);
   };
 
@@ -284,7 +285,7 @@ const ResponsibilityOrderElement = (props) => {
             name="end_datetime"
             label="เวลาคืนรถ"
             rules={[
-              { required: true, message: "Please input your end datetime!" },
+              { required: false, message: "Please input your end datetime!" },
             ]}
           >
             <Input placeholder={"เวลาคืนรถ"} />
@@ -293,7 +294,6 @@ const ResponsibilityOrderElement = (props) => {
           <Form.Item
             name="refund"
             label="การคืนเงิน"
-            rules={[{ required: true, message: "Please input your refund!" }]}
           >
             <Input placeholder={"การคืนเงิน"} />
           </Form.Item>
@@ -305,7 +305,23 @@ const ResponsibilityOrderElement = (props) => {
               { required: true, message: "Please input your booking status!" },
             ]}
           >
-            <Input placeholder={"สถานะการจอง"} />
+            {/* <Input placeholder={"สถานะการจอง"} /> */}
+            <Select
+                showSearch
+                placeholder="เลือกสถานะการจอง"
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                  option.children.toLowerCase().indexOf(input.toLowerCase()) >=
+                  0
+                }
+                size="large"
+            >
+                <Option value="" selected>--------- เลือกสถานะการจอง ---------</Option>
+                <Option value="ตรวจสอบแล้ว">ตรวจสอบแล้ว </Option>
+                <Option value="รับรถแล้ว">รับรถแล้ว</Option>
+                <Option value="คืนรถแล้ว">คืนรถแล้ว </Option>
+                <Option value="ยกเลิก">ยกเลิก </Option>
+            </Select>
           </Form.Item>
         </Form>
       </Modal>
