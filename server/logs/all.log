@@ -2768,3 +2768,447 @@
 [35m[39m
 2022-03-29 19:26:01:261 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 47.774 ms[39m
 [35m[39m
+2022-04-10 19:28:24:2824 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 169.687 ms[39m
+[35m[39m
+2022-04-10 19:31:35:3135 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 142.106 ms[39m
+[35m[39m
+2022-04-10 19:31:43:3143 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 18.070 ms[39m
+[35m[39m
+2022-04-10 19:31:56:3156 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 59.045 ms[39m
+[35m[39m
+2022-04-10 19:32:24:3224 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 143.851 ms[39m
+[35m[39m
+2022-04-10 19:36:12:3612 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 149.930 ms[39m
+[35m[39m
+2022-04-10 19:36:27:3627 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 66.504 ms[39m
+[35m[39m
+2022-04-10 19:37:50:3750 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 76.312 ms[39m
+[35m[39m
+2022-04-10 19:38:33:3833 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 49.012 ms[39m
+[35m[39m
+2022-04-10 19:47:08:478 [35mhttp[39m: [35m::1 - - GET /search-car/location 500 59 - 101.243 ms[39m
+[35m[39m
+2022-04-11 05:30:52:3052 [35mhttp[39m: [35m::1 - - GET /search-car/location 200 22153 - 183.955 ms[39m
+[35m[39m
+2022-04-11 05:32:25:3225 [35mhttp[39m: [35m::1 - - OPTIONS /user/register 204 0 - 1.117 ms[39m
+[35m[39m
+2022-04-11 05:32:25:3225 [35mhttp[39m: [35m::1 - - POST /user/register 201 65 - 139.471 ms[39m
+[35m[39m
+2022-04-11 05:33:12:3312 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 2.521 ms[39m
+[35m[39m
+2022-04-11 05:33:12:3312 [35mhttp[39m: [35m::1 - - POST /user/login 200 443 - 114.455 ms[39m
+[35m[39m
+2022-04-11 05:33:12:3312 [35mhttp[39m: [35m::1 - - OPTIONS /admin/customer?offset=0 204 0 - 0.493 ms[39m
+[35m[39m
+2022-04-11 05:33:12:3312 [35mhttp[39m: [35m::1 - - GET /admin/customer?offset=0 400 25 - 20.552 ms[39m
+[35m[39m
+2022-04-11 05:33:19:3319 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 24.988 ms[39m
+[35m[39m
+2022-04-11 05:49:45:4945 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 0.708 ms[39m
+[35m[39m
+2022-04-11 05:49:45:4945 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 6.486 ms[39m
+[35m[39m
+2022-04-11 05:49:45:4945 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 4.885 ms[39m
+[35m[39m
+2022-04-11 05:49:47:4947 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQC7tK1S1vnlMdKyIVHIfgMUJEhJdT7FGod077Ht7oXH_62BD8-BvatvTAn_f0xMU0MdJdGycnMt2bgRS1q8TOP0lsAfgCDsHZfzBYsmAfSBKbItwT4sJp4nAYYq3dNoHl_UYAXpgBLkkWoTP2nb3L65kAQCM_frNUjPHZ04RAeAbHTdfAJV4IQGvcew7LcrP_pxjSUuBEVC6BUQm2QsdO8TaZO7xGDCKiiUxOtq7oM-WWdzpph-Sl70HKYaIcphcQuGmLzbZHeW7p0uHCqnYHaeccVZjmxBmD7M9uvZytSvcDQJdNSEryVcoFoTAnyJ1ndSY9GQttaBT665tHUHIIZf2dBo32vKacnjz_ImT660rsrsUuSiuVh_rdl4QxPoeJM 302 88 - 1562.745 ms[39m
+[35m[39m
+2022-04-11 05:49:48:4948 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 2.822 ms[39m
+[35m[39m
+2022-04-11 05:49:48:4948 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 16.378 ms[39m
+[35m[39m
+2022-04-11 05:50:04:504 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 29.756 ms[39m
+[35m[39m
+2022-04-11 05:53:12:5312 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 19.924 ms[39m
+[35m[39m
+2022-04-11 05:53:27:5327 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 39.085 ms[39m
+[35m[39m
+2022-04-11 05:54:46:5446 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 31.186 ms[39m
+[35m[39m
+2022-04-11 05:55:45:5545 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 1.225 ms[39m
+[35m[39m
+2022-04-11 05:55:45:5545 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 7.362 ms[39m
+[35m[39m
+2022-04-11 05:55:45:5545 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 3.906 ms[39m
+[35m[39m
+2022-04-11 05:56:01:561 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQArW5hrE5DQj2ZBGcDmJWXF2tQdaUUHLKTgH_kXNNYU7LJgbj7WbTgP441dieEkVbsiecbl6aCVJJOx5_z34M1imj3zi7w9GgwIhx2xg3FKfjkEND1Zw7s2dAQBhxuIfC-bSXozFoVdNXZmTpYfJozj4W4i3GrDIH23z2wT5h-ajLoDmaysJWJAyj7VIg9gjIWqH9Yb_Xqh26pn6iyGkGGGWaJ9FIHg3gWjXquDGsSgqsRKi4ruOEfrFf482P6xyjqQEIIrLiZacfUSivK0ND5GllIutnQPYGLiE7LL7NBDDAJoX8f9aGj-qiMK3zA6ryyP-q0Dl_Dj6hVk43-5nziYTevJGEZwcE4XWcS3Mt_Ae08b5gt1Z4Gu9jaJ7St42ss 302 88 - 1170.256 ms[39m
+[35m[39m
+2022-04-11 05:56:02:562 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.642 ms[39m
+[35m[39m
+2022-04-11 05:56:02:562 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 23.528 ms[39m
+[35m[39m
+2022-04-11 05:56:09:569 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 21.854 ms[39m
+[35m[39m
+2022-04-11 05:56:13:5613 [35mhttp[39m: [35m::1 - - OPTIONS /user/facebook 204 0 - 3.804 ms[39m
+[35m[39m
+2022-04-11 05:56:13:5613 [35mhttp[39m: [35m::1 - - POST /user/facebook 404 47 - 7.317 ms[39m
+[35m[39m
+2022-04-11 05:56:13:5613 [35mhttp[39m: [35m::1 - - GET /user/facebook 302 0 - 5.461 ms[39m
+[35m[39m
+2022-04-11 05:56:15:5615 [35mhttp[39m: [35m::1 - - GET /user/facebook/callback?code=AQAP6DIEsGRhu4-GP59zRnMRVor_ZEcbqRHXyX7CX2DKRFUwLlB1y_EmqmlHLUSfX1DKHdQEXl4q3X9zSd_2lg-hAtdUSMGuRL-nCl24pkD-q1au134C_d_X4nMCLtDoRFiuJQITWcKBNlQKqFQ9QX4qXV7f38QkyieMsf0JHm2iWkc_lwLn6mgguyQAK0OJz-2VdXNOsFfzh014HFZWYUv77_0fmlD2gP4J-5dyArBpto36U0ri-_eeTEYVnACKsR-TT-E37CWOTFo5CxGs089OUJ_ThKcBfMLAzIfg-ONXSvs8b3XMjtUrmasT0TINkhzGm7Qd4gqfs-RNYxr320oiMCmxcqTVs7OUfRu1KQa3ToDfz1BBnlDEwEBOkVe7HTA 302 88 - 1786.806 ms[39m
+[35m[39m
+2022-04-11 05:56:16:5616 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 1.131 ms[39m
+[35m[39m
+2022-04-11 05:56:16:5616 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 28.567 ms[39m
+[35m[39m
+2022-04-11 05:56:22:5622 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 24.025 ms[39m
+[35m[39m
+2022-04-11 05:56:28:5628 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 15.984 ms[39m
+[35m[39m
+2022-04-11 05:56:35:5635 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWiquap5SUUM5EB5yWJ8WxZ86ivhvYvygevdWMqa8e_P1_pW2_JNz6YFmcfkKv2TnQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 500 39 - 261.311 ms[39m
+[35m[39m
+2022-04-11 05:56:36:5636 [35mhttp[39m: [35m::1 - - GET /favicon.ico 404 47 - 7.393 ms[39m
+[35m[39m
+2022-04-11 05:56:41:5641 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWjRpE6z_WK5psg-SW3o4xr6LLpl9JAs-0vgkFnXR7Eh-Y_BMhejCePjIJyJEdUnLw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 500 39 - 308.777 ms[39m
+[35m[39m
+2022-04-11 05:56:42:5642 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWhAD788S_oofoBxfjK4WfKkY3z41saJb5mFO01WAdTAIuwmG78tV-GSUEujNKmfNw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none 500 39 - 256.306 ms[39m
+[35m[39m
+2022-04-11 05:59:21:5921 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 7.306 ms[39m
+[35m[39m
+2022-04-11 05:59:21:5921 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWjwbcECNM4g6MkeCKY68hVpbCeyoYOHSwx0_-YPPK3eHS7HApDOId5_JMtyy4GndQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 500 39 - 306.321 ms[39m
+[35m[39m
+2022-04-11 06:01:42:142 [35mhttp[39m: [35m::1 - - GET /user/google 302 0 - 6.355 ms[39m
+[35m[39m
+2022-04-11 06:01:49:149 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWgy4yAnLEba0Xk3aY5DCsRox95AWYI96VuHcLPWBgqm8N3ieYbG2MSMvQqNRXVWRg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 500 39 - 590.121 ms[39m
+[35m[39m
+2022-04-11 06:03:28:328 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWgy4yAnLEba0Xk3aY5DCsRox95AWYI96VuHcLPWBgqm8N3ieYbG2MSMvQqNRXVWRg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent 500 39 - 529.748 ms[39m
+[35m[39m
+2022-04-11 06:03:32:332 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWjNWx3cG8yV8fT5rR-N_5Co3v1vT6YJflnuQe5wpoNdXZrIa7gyRXijZUQbnxj6tA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none 500 39 - 293.921 ms[39m
+[35m[39m
+2022-04-11 06:03:33:333 [35mhttp[39m: [35m::1 - - GET /user/google/callback?code=4%2F0AX4XfWhhZo0ogpAHZppcaEvVfUI6n-09x82a-pVKkl19zoAckRoeh0U9YAg5I7jSnmELiA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none 500 39 - 250.568 ms[39m
+[35m[39m
+2022-04-11 06:03:39:339 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 118.182 ms[39m
+[35m[39m
+2022-04-11 06:04:18:418 [35mhttp[39m: [35m::1 - - OPTIONS /user/google 204 0 - 2.440 ms[39m
+[35m[39m
+2022-04-11 06:04:18:418 [35mhttp[39m: [35m::1 - - POST /user/google 404 47 - 12.048 ms[39m
+[35m[39m
+2022-04-11 06:04:23:423 [35mhttp[39m: [35m::1 - - OPTIONS /user/google 204 0 - 3.177 ms[39m
+[35m[39m
+2022-04-11 06:04:23:423 [35mhttp[39m: [35m::1 - - POST /user/google 404 47 - 7.998 ms[39m
+[35m[39m
+2022-04-11 06:06:05:65 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 96.289 ms[39m
+[35m[39m
+2022-04-11 06:07:10:710 [35mhttp[39m: [35m::1 - - OPTIONS /user/google 204 0 - 2.182 ms[39m
+[35m[39m
+2022-04-11 06:07:10:710 [35mhttp[39m: [35m::1 - - POST /user/google 302 0 - 17.181 ms[39m
+[35m[39m
+2022-04-11 06:08:31:831 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 28.539 ms[39m
+[35m[39m
+2022-04-11 06:08:38:838 [35mhttp[39m: [35m::1 - - OPTIONS /user/google 204 0 - 5.198 ms[39m
+[35m[39m
+2022-04-11 06:08:38:838 [35mhttp[39m: [35m::1 - - POST /user/google 302 0 - 12.465 ms[39m
+[35m[39m
+2022-04-11 06:09:46:946 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 27.795 ms[39m
+[35m[39m
+2022-04-11 06:10:41:1041 [35mhttp[39m: [35m::1 - - OPTIONS /user/google 204 0 - 1.808 ms[39m
+[35m[39m
+2022-04-11 06:10:41:1041 [35mhttp[39m: [35m::1 - - POST /user/google 302 0 - 13.440 ms[39m
+[35m[39m
+2022-04-11 06:12:43:1243 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 98.087 ms[39m
+[35m[39m
+2022-04-11 06:12:58:1258 [35mhttp[39m: [35m::1 - - OPTIONS /user/google 204 0 - 1.962 ms[39m
+[35m[39m
+2022-04-11 06:12:59:1259 [35mhttp[39m: [35m::1 - - POST /user/google 302 0 - 18.034 ms[39m
+[35m[39m
+2022-04-11 06:20:32:2032 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 101.119 ms[39m
+[35m[39m
+2022-04-11 06:20:36:2036 [35mhttp[39m: [35m::1 - - OPTIONS /user/google 204 0 - 1.757 ms[39m
+[35m[39m
+2022-04-11 06:20:36:2036 [35mhttp[39m: [35m::1 - - POST /user/google 302 0 - 29.738 ms[39m
+[35m[39m
+2022-04-11 06:21:46:2146 [35mhttp[39m: [35m::1 - - OPTIONS /user/register 204 0 - 3.491 ms[39m
+[35m[39m
+2022-04-11 06:21:46:2146 [35mhttp[39m: [35m::1 - - POST /user/register 201 65 - 138.986 ms[39m
+[35m[39m
+2022-04-11 06:22:00:220 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 2.130 ms[39m
+[35m[39m
+2022-04-11 06:22:01:221 [35mhttp[39m: [35m::1 - - POST /user/login 200 466 - 113.538 ms[39m
+[35m[39m
+2022-04-11 06:22:01:221 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.534 ms[39m
+[35m[39m
+2022-04-11 06:22:01:221 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 8.874 ms[39m
+[35m[39m
+2022-04-11 06:22:09:229 [35mhttp[39m: [35m::1 - - OPTIONS /user/edit-profile 204 0 - 1.105 ms[39m
+[35m[39m
+2022-04-11 06:22:09:229 [35mhttp[39m: [35m::1 - - PUT /user/edit-profile 200 74 - 29.597 ms[39m
+[35m[39m
+2022-04-11 06:22:13:2213 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 19.769 ms[39m
+[35m[39m
+2022-04-11 06:22:29:2229 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 2.461 ms[39m
+[35m[39m
+2022-04-11 06:22:29:2229 [35mhttp[39m: [35m::1 - - POST /user/login 400 39 - 101.753 ms[39m
+[35m[39m
+2022-04-11 06:22:36:2236 [35mhttp[39m: [35m::1 - - OPTIONS /user/forgot-password 204 0 - 1.837 ms[39m
+[35m[39m
+2022-04-11 06:22:40:2240 [35mhttp[39m: [35m::1 - - POST /user/forgot-password 200 102 - 3448.416 ms[39m
+[35m[39m
+2022-04-11 06:23:06:236 [35mhttp[39m: [35m::1 - - OPTIONS /user/update-password 204 0 - 1.806 ms[39m
+[35m[39m
+2022-04-11 06:23:06:236 [35mhttp[39m: [35m::1 - - PUT /user/update-password 200 44 - 117.447 ms[39m
+[35m[39m
+2022-04-11 06:23:34:2334 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 0.865 ms[39m
+[35m[39m
+2022-04-11 06:23:34:2334 [35mhttp[39m: [35m::1 - - POST /user/login 200 474 - 112.345 ms[39m
+[35m[39m
+2022-04-11 06:23:34:2334 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.460 ms[39m
+[35m[39m
+2022-04-11 06:23:34:2334 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 8.786 ms[39m
+[35m[39m
+2022-04-11 06:25:11:2511 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 3.042 ms[39m
+[35m[39m
+2022-04-11 06:25:11:2511 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 200 2159 - 30.294 ms[39m
+[35m[39m
+2022-04-11 06:25:12:2512 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 14.913 ms[39m
+[35m[39m
+2022-04-11 06:25:14:2514 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=4 204 0 - 2.579 ms[39m
+[35m[39m
+2022-04-11 06:25:14:2514 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=4 200 2859 - 38.620 ms[39m
+[35m[39m
+2022-04-11 06:25:15:2515 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=8 204 0 - 0.440 ms[39m
+[35m[39m
+2022-04-11 06:25:15:2515 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=8 200 3014 - 38.329 ms[39m
+[35m[39m
+2022-04-11 06:25:20:2520 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=12 204 0 - 0.631 ms[39m
+[35m[39m
+2022-04-11 06:25:20:2520 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=12 200 2995 - 35.770 ms[39m
+[35m[39m
+2022-04-11 06:25:21:2521 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=16 204 0 - 0.740 ms[39m
+[35m[39m
+2022-04-11 06:25:21:2521 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=16 200 2767 - 39.262 ms[39m
+[35m[39m
+2022-04-11 06:25:22:2522 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=20 204 0 - 2.211 ms[39m
+[35m[39m
+2022-04-11 06:25:22:2522 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=20 200 2883 - 51.435 ms[39m
+[35m[39m
+2022-04-11 06:25:24:2524 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small&sort_price=asc&offset=0 204 0 - 0.618 ms[39m
+[35m[39m
+2022-04-11 06:25:24:2524 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small&sort_price=asc&offset=0 200 2638 - 39.610 ms[39m
+[35m[39m
+2022-04-11 06:25:26:2526 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small&sort_price=asc&offset=4 204 0 - 0.772 ms[39m
+[35m[39m
+2022-04-11 06:25:26:2526 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small&sort_price=asc&offset=4 200 810 - 34.039 ms[39m
+[35m[39m
+2022-04-11 06:25:30:2530 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,eco&sort_price=asc&offset=0 204 0 - 0.994 ms[39m
+[35m[39m
+2022-04-11 06:25:30:2530 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,eco&sort_price=asc&offset=0 200 2159 - 30.653 ms[39m
+[35m[39m
+2022-04-11 06:25:32:2532 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,eco&sort_price=asc&offset=4 204 0 - 0.532 ms[39m
+[35m[39m
+2022-04-11 06:25:32:2532 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,eco&sort_price=asc&offset=4 200 2859 - 31.747 ms[39m
+[35m[39m
+2022-04-11 06:25:33:2533 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=small,eco&sort_price=asc&offset=8 204 0 - 0.313 ms[39m
+[35m[39m
+2022-04-11 06:25:33:2533 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=small,eco&sort_price=asc&offset=8 200 1458 - 33.564 ms[39m
+[35m[39m
+2022-04-11 06:25:37:2537 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 0.223 ms[39m
+[35m[39m
+2022-04-11 06:25:37:2537 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 28.252 ms[39m
+[35m[39m
+2022-04-11 06:25:38:2538 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=luxury&sort_price=asc&offset=0 204 0 - 0.258 ms[39m
+[35m[39m
+2022-04-11 06:25:39:2539 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=luxury&sort_price=asc&offset=0 200 2987 - 37.313 ms[39m
+[35m[39m
+2022-04-11 06:25:41:2541 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=luxury&sort_price=desc&offset=0 204 0 - 0.478 ms[39m
+[35m[39m
+2022-04-11 06:25:42:2542 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=luxury&sort_price=desc&offset=0 200 3119 - 33.345 ms[39m
+[35m[39m
+2022-04-11 06:25:43:2543 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=luxury&sort_price=desc&offset=4 204 0 - 0.721 ms[39m
+[35m[39m
+2022-04-11 06:25:43:2543 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=luxury&sort_price=desc&offset=4 200 3108 - 41.196 ms[39m
+[35m[39m
+2022-04-11 06:25:50:2550 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=desc&offset=0 204 0 - 0.385 ms[39m
+[35m[39m
+2022-04-11 06:25:50:2550 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=desc&offset=0 200 3119 - 30.050 ms[39m
+[35m[39m
+2022-04-11 06:25:51:2551 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium&sort_price=desc&offset=0 204 0 - 0.431 ms[39m
+[35m[39m
+2022-04-11 06:25:51:2551 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=desc&offset=0 200 2406 - 39.332 ms[39m
+[35m[39m
+2022-04-11 06:25:54:2554 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium&sort_price=desc&offset=4 204 0 - 0.723 ms[39m
+[35m[39m
+2022-04-11 06:25:54:2554 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=desc&offset=4 200 2338 - 36.881 ms[39m
+[35m[39m
+2022-04-11 06:25:56:2556 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-detail/22 204 0 - 0.569 ms[39m
+[35m[39m
+2022-04-11 06:25:56:2556 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/22 200 761 - 26.384 ms[39m
+[35m[39m
+2022-04-11 06:27:00:270 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.418 ms[39m
+[35m[39m
+2022-04-11 06:27:01:271 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 25.134 ms[39m
+[35m[39m
+2022-04-11 06:30:35:3035 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 1.367 ms[39m
+[35m[39m
+2022-04-11 06:30:35:3035 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 92.994 ms[39m
+[35m[39m
+2022-04-11 06:31:06:316 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 0.703 ms[39m
+[35m[39m
+2022-04-11 06:31:06:316 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 0.293 ms[39m
+[35m[39m
+2022-04-11 06:31:06:316 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 54.021 ms[39m
+[35m[39m
+2022-04-11 06:31:06:316 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 29.185 ms[39m
+[35m[39m
+2022-04-11 06:31:07:317 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium&sort_price=asc&offset=0 204 0 - 1.872 ms[39m
+[35m[39m
+2022-04-11 06:31:07:317 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=asc&offset=0 200 2632 - 31.840 ms[39m
+[35m[39m
+2022-04-11 06:31:08:318 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=medium&sort_price=asc&offset=4 204 0 - 1.556 ms[39m
+[35m[39m
+2022-04-11 06:31:08:318 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=medium&sort_price=asc&offset=4 200 2112 - 42.365 ms[39m
+[35m[39m
+2022-04-11 06:31:10:3110 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-detail/22 204 0 - 1.016 ms[39m
+[35m[39m
+2022-04-11 06:31:10:3110 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/22 304 - - 40.129 ms[39m
+[35m[39m
+2022-04-11 06:31:41:3141 [35mhttp[39m: [35m::1 - - OPTIONS /payment/checkout-creditCard 204 0 - 1.277 ms[39m
+[35m[39m
+2022-04-11 06:31:43:3143 [35mhttp[39m: [35m::1 - - POST /payment/checkout-creditCard 200 103 - 1910.602 ms[39m
+[35m[39m
+2022-04-11 06:31:46:3146 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/create-booking 204 0 - 0.525 ms[39m
+[35m[39m
+2022-04-11 06:31:47:3147 [35mhttp[39m: [35m::1 - - POST /search-car/create-booking 201 257 - 63.975 ms[39m
+[35m[39m
+2022-04-11 06:31:47:3147 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4221649633506952 204 0 - 3.575 ms[39m
+[35m[39m
+2022-04-11 06:31:47:3147 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4221649633506952 200 1426 - 14.612 ms[39m
+[35m[39m
+2022-04-11 06:32:46:3246 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.925 ms[39m
+[35m[39m
+2022-04-11 06:32:46:3246 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 200 1272 - 27.297 ms[39m
+[35m[39m
+2022-04-11 06:32:51:3251 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4221649633506952 204 0 - 1.276 ms[39m
+[35m[39m
+2022-04-11 06:32:51:3251 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4221649633506952 304 - - 40.777 ms[39m
+[35m[39m
+2022-04-11 06:33:28:3328 [35mhttp[39m: [35m::1 - - GET /search-car/location 200 22153 - 25.766 ms[39m
+[35m[39m
+2022-04-11 06:34:22:3422 [35mhttp[39m: [35m::1 - - OPTIONS /user/login 204 0 - 1.051 ms[39m
+[35m[39m
+2022-04-11 06:34:23:3423 [35mhttp[39m: [35m::1 - - POST /user/login 200 443 - 130.635 ms[39m
+[35m[39m
+2022-04-11 06:34:23:3423 [35mhttp[39m: [35m::1 - - OPTIONS /admin/customer?offset=0 204 0 - 0.325 ms[39m
+[35m[39m
+2022-04-11 06:34:23:3423 [35mhttp[39m: [35m::1 - - GET /admin/customer?offset=0 200 857 - 11.802 ms[39m
+[35m[39m
+2022-04-11 06:34:29:3429 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order?offset=0 204 0 - 0.746 ms[39m
+[35m[39m
+2022-04-11 06:34:29:3429 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order?offset=0 204 0 - 1.087 ms[39m
+[35m[39m
+2022-04-11 06:34:29:3429 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 200 389 - 29.409 ms[39m
+[35m[39m
+2022-04-11 06:34:29:3429 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 304 - - 20.833 ms[39m
+[35m[39m
+2022-04-11 06:34:40:3440 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order/1 204 0 - 1.399 ms[39m
+[35m[39m
+2022-04-11 06:34:40:3440 [35mhttp[39m: [35m::1 - - PUT /admin/order/1 200 113 - 33.650 ms[39m
+[35m[39m
+2022-04-11 06:34:45:3445 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4221649633506952 204 0 - 0.254 ms[39m
+[35m[39m
+2022-04-11 06:34:45:3445 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4221649633506952 200 1423 - 28.320 ms[39m
+[35m[39m
+2022-04-11 06:35:06:356 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.234 ms[39m
+[35m[39m
+2022-04-11 06:35:06:356 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 33.752 ms[39m
+[35m[39m
+2022-04-11 06:35:09:359 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.331 ms[39m
+[35m[39m
+2022-04-11 06:35:09:359 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 200 1269 - 80.380 ms[39m
+[35m[39m
+2022-04-11 06:35:12:3512 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4221649633506952 204 0 - 0.222 ms[39m
+[35m[39m
+2022-04-11 06:35:12:3512 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4221649633506952 304 - - 49.865 ms[39m
+[35m[39m
+2022-04-11 06:35:21:3521 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order/1 204 0 - 0.241 ms[39m
+[35m[39m
+2022-04-11 06:35:21:3521 [35mhttp[39m: [35m::1 - - PUT /admin/order/1 200 113 - 29.762 ms[39m
+[35m[39m
+2022-04-11 06:35:24:3524 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4221649633506952 204 0 - 0.171 ms[39m
+[35m[39m
+2022-04-11 06:35:24:3524 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4221649633506952 200 1417 - 34.690 ms[39m
+[35m[39m
+2022-04-11 06:35:36:3536 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.195 ms[39m
+[35m[39m
+2022-04-11 06:35:36:3536 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 28.826 ms[39m
+[35m[39m
+2022-04-11 06:35:39:3539 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.687 ms[39m
+[35m[39m
+2022-04-11 06:35:39:3539 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 19.812 ms[39m
+[35m[39m
+2022-04-11 06:35:41:3541 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 1.147 ms[39m
+[35m[39m
+2022-04-11 06:35:41:3541 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 500 32 - 15.241 ms[39m
+[35m[39m
+2022-04-11 06:35:48:3548 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order/1 204 0 - 0.296 ms[39m
+[35m[39m
+2022-04-11 06:35:48:3548 [35mhttp[39m: [35m::1 - - PUT /admin/order/1 200 113 - 34.060 ms[39m
+[35m[39m
+2022-04-11 06:35:54:3554 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 204 0 - 0.555 ms[39m
+[35m[39m
+2022-04-11 06:35:54:3554 [35mhttp[39m: [35m::1 - - GET /booking/booking-list?booking_status=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7&offset=0 200 1263 - 35.689 ms[39m
+[35m[39m
+2022-04-11 06:35:57:3557 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4221649633506952 204 0 - 0.425 ms[39m
+[35m[39m
+2022-04-11 06:35:57:3557 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4221649633506952 200 1417 - 34.035 ms[39m
+[35m[39m
+2022-04-11 06:36:02:362 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/location 204 0 - 0.320 ms[39m
+[35m[39m
+2022-04-11 06:36:02:362 [35mhttp[39m: [35m::1 - - GET /search-car/location 304 - - 19.191 ms[39m
+[35m[39m
+2022-04-11 06:36:11:3611 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-list?car_type=&sort_price=asc&offset=0 204 0 - 1.003 ms[39m
+[35m[39m
+2022-04-11 06:36:11:3611 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 33.360 ms[39m
+[35m[39m
+2022-04-11 06:36:11:3611 [35mhttp[39m: [35m::1 - - GET /search-car/car-list?car_type=&sort_price=asc&offset=0 304 - - 42.338 ms[39m
+[35m[39m
+2022-04-11 06:36:12:3612 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/car-detail/26 204 0 - 0.819 ms[39m
+[35m[39m
+2022-04-11 06:36:12:3612 [35mhttp[39m: [35m::1 - - GET /search-car/car-detail/26 200 649 - 27.453 ms[39m
+[35m[39m
+2022-04-11 06:36:35:3635 [35mhttp[39m: [35m::1 - - OPTIONS /payment/checkout-creditCard 204 0 - 0.821 ms[39m
+[35m[39m
+2022-04-11 06:36:38:3638 [35mhttp[39m: [35m::1 - - POST /payment/checkout-creditCard 200 103 - 2168.094 ms[39m
+[35m[39m
+2022-04-11 06:36:41:3641 [35mhttp[39m: [35m::1 - - OPTIONS /search-car/create-booking 204 0 - 0.476 ms[39m
+[35m[39m
+2022-04-11 06:36:41:3641 [35mhttp[39m: [35m::1 - - POST /search-car/create-booking 201 257 - 67.352 ms[39m
+[35m[39m
+2022-04-11 06:36:41:3641 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4261649633801178 204 0 - 0.711 ms[39m
+[35m[39m
+2022-04-11 06:36:41:3641 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4261649633801178 200 1287 - 19.195 ms[39m
+[35m[39m
+2022-04-11 06:36:50:3650 [35mhttp[39m: [35m::1 - - OPTIONS /booking/cancel-booking/4261649633801178 204 0 - 0.355 ms[39m
+[35m[39m
+2022-04-11 06:36:50:3650 [35mhttp[39m: [35m::1 - - PATCH /booking/cancel-booking/4261649633801178 201 89 - 29.788 ms[39m
+[35m[39m
+2022-04-11 06:36:54:3654 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order?offset=0 204 0 - 0.171 ms[39m
+[35m[39m
+2022-04-11 06:36:54:3654 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order?offset=0 204 0 - 0.481 ms[39m
+[35m[39m
+2022-04-11 06:36:54:3654 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 200 683 - 20.794 ms[39m
+[35m[39m
+2022-04-11 06:36:54:3654 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 304 - - 12.618 ms[39m
+[35m[39m
+2022-04-11 06:37:03:373 [35mhttp[39m: [35m::1 - - OPTIONS /booking/booking-status/4261649633801178 204 0 - 0.085 ms[39m
+[35m[39m
+2022-04-11 06:37:03:373 [35mhttp[39m: [35m::1 - - GET /booking/booking-status/4261649633801178 200 1269 - 32.398 ms[39m
+[35m[39m
+2022-04-11 06:37:36:3736 [35mhttp[39m: [35m::1 - - OPTIONS /admin/location?offset=0 204 0 - 0.190 ms[39m
+[35m[39m
+2022-04-11 06:37:36:3736 [35mhttp[39m: [35m::1 - - GET /admin/location?offset=0 200 1159 - 32.261 ms[39m
+[35m[39m
+2022-04-11 06:37:41:3741 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order?offset=0 204 0 - 0.398 ms[39m
+[35m[39m
+2022-04-11 06:37:41:3741 [35mhttp[39m: [35m::1 - - OPTIONS /admin/order?offset=0 204 0 - 0.175 ms[39m
+[35m[39m
+2022-04-11 06:37:41:3741 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 304 - - 21.520 ms[39m
+[35m[39m
+2022-04-11 06:37:41:3741 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 304 - - 18.344 ms[39m
+[35m[39m
+2022-04-11 06:37:42:3742 [35mhttp[39m: [35m::1 - - OPTIONS /admin/customer?offset=0 204 0 - 0.181 ms[39m
+[35m[39m
+2022-04-11 06:37:42:3742 [35mhttp[39m: [35m::1 - - GET /admin/customer?offset=0 304 - - 20.249 ms[39m
+[35m[39m
+2022-04-11 06:37:43:3743 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 304 - - 24.499 ms[39m
+[35m[39m
+2022-04-11 06:37:43:3743 [35mhttp[39m: [35m::1 - - GET /admin/order?offset=0 304 - - 15.443 ms[39m
+[35m[39m

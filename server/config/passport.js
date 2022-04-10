@@ -14,7 +14,7 @@ const jwt = require('jsonwebtoken');
 
 const options = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-  secretOrKey: process.env.JWT_SECRET_KEY || 'verystrongsecretpassword'
+  secretOrKey: process.env.JWT_SECRET_KEY
 };
 
 passport.use(
@@ -34,7 +34,7 @@ passport.use(
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com" ,
+      clientID: process.env.GOOGLE_CLIENT_ID  || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com",
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "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",
       callbackURL: `http://localhost:8000/user/google/callback`,
       passReqToCallback: true,

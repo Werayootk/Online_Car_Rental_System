@@ -59,10 +59,10 @@ const SocialLogin = () => {
   return (
     <div className="signup-buttons">
       <div className="google-signup" onClick={signinWithGoogle}>
-      {/* <a
+      <a
           style={{ color: "white", textDecoration: "none" , border: "none", cursor:"pointer"}}
           href="http://localhost:8000/user/google"
-        > */}
+        >
           <GoogleLogin
             clientId={process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com"} 
             onSuccess={signinWithGoogle}
@@ -74,7 +74,7 @@ const SocialLogin = () => {
           >
             <span>&nbsp;&nbsp;Google</span> 
             </GoogleLogin>
-        {/* </a> */}
+        </a>
       </div>
       <div className="facebook-signup" onClick={signinWithFaceBook}>
       <a
@@ -82,7 +82,7 @@ const SocialLogin = () => {
           href="http://localhost:8000/user/facebook"
         >
         <FacebookLogin
-          appId={process.env.FACEBOOK_APP_ID || "691743551857593"}
+          appId={process.env.FACEBOOK_APP_ID}
           fields='name,email'
           scope='public_profile, email'
           callback={signinWithFaceBook}
